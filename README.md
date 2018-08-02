@@ -1,6 +1,8 @@
-# WebpackLicensePlugin
+<p align="center"><img title="webpack-license-plugin logo" alt="webpack-license-plugin logo" src="logo.svg" width="600" style="margin-top:20px;"></p>
 
-Extracts OSS license information of the npm packages in your webpack output. The underlying license parsing is done by [license-checker](https://github.com/davglass/license-checker).
+---
+
+Extracts OSS licensing information about the npm packages in your webpack output. The underlying license parsing is done by [license-checker](https://github.com/davglass/license-checker).
 
 ## Installation
 
