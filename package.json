@@ -1,8 +1,25 @@
 {
   "name": "webpack-license-plugin",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Extracts a file with information about OSS licenses of the npm packages in your webpack output",
+  "keywords": [
+    "webpack",
+    "build",
+    "artifact",
+    "oss",
+    "open source",
+    "compliance",
+    "copyright",
+    "license",
+    "licence",
+    "licenses",
+    "licences",
+    "scan",
+    "scanner",
+    "bom",
+    "bill of materials",
+    "plugin"
+  ],
   "main": "./lib/index.js",
   "author": "Christoph Werner <christoph@codepunkt.de>",
   "repository": {

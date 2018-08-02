@@ -19,7 +19,7 @@ module.exports = {
 
   mode: 'production',
 
-  plugins: [new WebpackLicensePlugin({ logToConsole: false })],
+  plugins: [new WebpackLicensePlugin({ logLevel: 'none' })],
 
   module: {
     rules: [
