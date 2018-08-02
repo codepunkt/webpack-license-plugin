@@ -2,6 +2,8 @@
 
 ---
 
+[![CircleCI](https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master.svg?style=shield)](https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master)
+
 Extracts OSS licensing information about the npm packages in your webpack output. The underlying license parsing is done by [license-checker](https://github.com/davglass/license-checker).
 
 ## Installation
