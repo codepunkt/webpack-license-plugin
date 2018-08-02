@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "jest": "^23.4.2",
+    "lint-staged": "^7.2.0",
     "prettier": "^1.13.4"
   },
   "dependencies": {
@@ -30,5 +31,11 @@
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
