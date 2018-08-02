@@ -1,7 +1,7 @@
 {
   "name": "webpack-license-plugin",
   "version": "1.0.0",
-  "description": "Extracts a file with information about OSS licenses of the npm packages in your webpack output",
+  "description": "Extracts OSS license information of the npm packages in your webpack output",
   "keywords": [
     "webpack",
     "build",

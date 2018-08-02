@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`WebpackLicensePlugin basic example 1`] = `
+exports[`WebpackLicensePlugin basic example emits a file with the right contents 1`] = `
 "[
   {
     \\"name\\": \\"fbjs\\",

@@ -1,6 +1,6 @@
 # WebpackLicensePlugin
 
-Extracts OSS license information of the npm packages in your webpack output.
+Extracts OSS license information of the npm packages in your webpack output. The underlying license parsing is done by [license-checker](https://github.com/davglass/license-checker).
 
 ## Installation
 
@@ -31,12 +31,40 @@ It will help you:
 new BundleAnalyzerPlugin(options?: object)
 ```
 
-|      Name      |                Type                | Description                                                                                                            |
-| :------------: | :--------------------------------: | :--------------------------------------------------------------------------------------------------------------------- |
-| **`fileName`** |              `String`              | Default: `oss-licenses.json`. Path to the output file that will be generated. Relative to the bundle output directory. |
-| **`logLevel`** | One of `none`, `info` or `verbose` | Default: `info`. Used to control how much details the plugin outputs.                                                  |
+|      Name       |                Type                | Description                                                                                                              |
+| :-------------: | :--------------------------------: | :----------------------------------------------------------------------------------------------------------------------- |
+| **`fileName`**  |              `String`              | Default: `oss-licenses.json`. Path to the output file that will be generated. Relative to the bundle output directory.   |
+| **`logLevel`**  | One of `none`, `info` or `verbose` | Default: `info`. Used to control how much details the plugin outputs.                                                    |
+| **`blacklist`** |          `Array<string>`           | Default: `[]`. Fail (exit with code 1) on the first occurrence of a package with one of the licenses in the given array. |
 
-## Example output file
+### Example with custom options
+
+This example has verbose logging output on the terminal, writes the result to a file named `meta/licenses.json` in the output directory and fails whenever it encounters one of the given licenses.
+
+```js
+const LicensePlugin = require('webpack-license-plugin')
+
+module.exports = {
+  plugins: [
+    new LicensePlugin({
+      fileName: 'meta/licenses.json',
+      logLevel: 'verbose',
+      blacklist: ['GPL', 'AGPL', 'LGPL', 'NGPL'],
+    }),
+  ],
+}
+```
+
+## Example file
+
+This is a small example for a resulting file. For every npm package that was found to be part of the webpack output, it lists:
+
+- package name
+- package version
+- page repository _(if available in the package's meta data)_
+- package source on npm registry
+- license
+- licenseText _(if a `/^licen[cs]e/i` file was found in the package's root)_
 
 ```json
 [
@@ -46,7 +74,7 @@ new BundleAnalyzerPlugin(options?: object)
     "repository": "https://github.com/facebook/fbjs",
     "source": "https://registry.npmjs.org/fbjs/-/fbjs-0.8.17.tgz",
     "license": "MIT",
-    "licenseText": "MIT License\n\nCopyright (c) 2013-present, Facebook, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+    "licenseText": "..."
   },
   {
     "name": "object-assign",
@@ -54,7 +82,7 @@ new BundleAnalyzerPlugin(options?: object)
     "repository": "https://github.com/sindresorhus/object-assign",
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "license": "MIT",
-    "licenseText": "The MIT License (MIT)\n\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n"
+    "licenseText": "..."
   },
   {
     "name": "react-dom",
@@ -62,7 +90,7 @@ new BundleAnalyzerPlugin(options?: object)
     "repository": "https://github.com/facebook/react",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.4.2.tgz",
     "license": "MIT",
-    "licenseText": "MIT License\n\nCopyright (c) 2013-present, Facebook, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    "licenseText": "..."
   },
   {
     "name": "react",
@@ -70,7 +98,7 @@ new BundleAnalyzerPlugin(options?: object)
     "repository": "https://github.com/facebook/react",
     "source": "https://registry.npmjs.org/react/-/react-16.4.2.tgz",
     "license": "MIT",
-    "licenseText": "MIT License\n\nCopyright (c) 2013-present, Facebook, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    "licenseText": "..."
   }
 ]
 ```
