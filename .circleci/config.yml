@@ -6,8 +6,8 @@ jobs:
       - image: circleci/node:10.1.0-stretch
     steps:
       - checkout
-      - run: npm i
-      - run: cd example/empty && npm i
-      - run: cd example/basic && npm i
-      - run: cd example/blacklisted-licenses && npm i
-      - run: npm run test
+      - run: yarn
+      - run: cd example/empty && yarn
+      - run: cd example/basic && yarn
+      - run: cd example/blacklisted-licenses && yarn
+      - run: yarn run test
