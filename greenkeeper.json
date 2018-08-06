@@ -2,9 +2,6 @@
   "groups": {
     "default": {
       "packages": [
-        "example/basic/package.json",
-        "example/blacklisted-licenses/package.json",
-        "example/empty/package.json",
         "package.json"
       ]
     }
