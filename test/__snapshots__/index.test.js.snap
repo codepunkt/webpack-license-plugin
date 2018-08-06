@@ -5,7 +5,7 @@ exports[`WebpackLicensePlugin basic example emits a file with the right contents
   \\"summary\\": {
     \\"MIT\\": 4
   },
-  \\"licenses\\": [
+  \\"packages\\": [
     {
       \\"name\\": \\"fbjs\\",
       \\"version\\": \\"0.8.17\\",
@@ -48,7 +48,7 @@ exports[`WebpackLicensePlugin packages with unknown licenseFiles work 1`] = `
   \\"summary\\": {
     \\"MIT\\": 4
   },
-  \\"licenses\\": [
+  \\"packages\\": [
     {
       \\"name\\": \\"fbjs\\",
       \\"version\\": \\"0.8.17\\",

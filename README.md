@@ -76,7 +76,7 @@ This is a small example of a resulting file. It lists a license summary and addi
   "summary": {
     "MIT": 4
   },
-  "licenses": [
+  "packages": [
     {
       "name": "fbjs",
       "version": "0.8.17",
