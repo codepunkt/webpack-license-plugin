@@ -15,11 +15,11 @@ npm install --save-dev webpack-license-plugin
 ## Usage
 
 ```js
-const LicensePlugin = require("webpack-license-plugin");
+const LicensePlugin = require('webpack-license-plugin')
 
 module.exports = {
-  plugins: [new LicensePlugin()]
-};
+  plugins: [new LicensePlugin()],
+}
 ```
 
 This plugin will create a file called `oss-licenses.json` that contains license related information about all of the npm packages in your webpack output.
@@ -46,17 +46,17 @@ new BundleAnalyzerPlugin(options?: object)
 This example has verbose logging output on the terminal, writes the result to a file named `meta/licenses.json` in the output directory and fails whenever it encounters one of the given licenses.
 
 ```js
-const LicensePlugin = require("webpack-license-plugin");
+const LicensePlugin = require('webpack-license-plugin')
 
 module.exports = {
   plugins: [
     new LicensePlugin({
-      fileName: "meta/licenses.json",
-      logLevel: "verbose",
-      blacklist: ["GPL", "AGPL", "LGPL", "NGPL"]
-    })
-  ]
-};
+      fileName: 'meta/licenses.json',
+      logLevel: 'verbose',
+      blacklist: ['GPL', 'AGPL', 'LGPL', 'NGPL'],
+    }),
+  ],
+}
 ```
 
 ## Example file
@@ -83,6 +83,7 @@ This is a small example for a resulting file. For every npm package that was fou
   {
     "name": "object-assign",
     "version": "4.1.1",
+    "author": "Sindre Sorhus",
     "repository": "https://github.com/sindresorhus/object-assign",
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "license": "MIT",
