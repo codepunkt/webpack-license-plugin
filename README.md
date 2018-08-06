@@ -61,7 +61,7 @@ module.exports = {
 
 ## Example file
 
-This is a small example for a resulting file. For every npm package that was found to be part of the webpack output, it lists:
+This is a small example of a resulting file. It lists a license summary and additional details for every npm package that was found to be part of the webpack output:
 
 - package name
 - package version
@@ -72,39 +72,44 @@ This is a small example for a resulting file. For every npm package that was fou
 - licenseText _(if a `/^licen[cs]e/i` file was found in the package's root)_
 
 ```json
-[
-  {
-    "name": "fbjs",
-    "version": "0.8.17",
-    "repository": "https://github.com/facebook/fbjs",
-    "source": "https://registry.npmjs.org/fbjs/-/fbjs-0.8.17.tgz",
-    "license": "MIT",
-    "licenseText": "..."
+{
+  "summary": {
+    "MIT": 4
   },
-  {
-    "name": "object-assign",
-    "version": "4.1.1",
-    "author": "Sindre Sorhus",
-    "repository": "https://github.com/sindresorhus/object-assign",
-    "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
-    "license": "MIT",
-    "licenseText": "..."
-  },
-  {
-    "name": "react-dom",
-    "version": "16.4.2",
-    "repository": "https://github.com/facebook/react",
-    "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.4.2.tgz",
-    "license": "MIT",
-    "licenseText": "..."
-  },
-  {
-    "name": "react",
-    "version": "16.4.2",
-    "repository": "https://github.com/facebook/react",
-    "source": "https://registry.npmjs.org/react/-/react-16.4.2.tgz",
-    "license": "MIT",
-    "licenseText": "..."
-  }
-]
+  "licenses": [
+    {
+      "name": "fbjs",
+      "version": "0.8.17",
+      "repository": "https://github.com/facebook/fbjs",
+      "source": "https://registry.npmjs.org/fbjs/-/fbjs-0.8.17.tgz",
+      "license": "MIT",
+      "licenseText": "..."
+    },
+    {
+      "name": "object-assign",
+      "version": "4.1.1",
+      "author": "Sindre Sorhus",
+      "repository": "https://github.com/sindresorhus/object-assign",
+      "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+      "license": "MIT",
+      "licenseText": "..."
+    },
+    {
+      "name": "react-dom",
+      "version": "16.4.2",
+      "repository": "https://github.com/facebook/react",
+      "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.4.2.tgz",
+      "license": "MIT",
+      "licenseText": "..."
+    },
+    {
+      "name": "react",
+      "version": "16.4.2",
+      "repository": "https://github.com/facebook/react",
+      "source": "https://registry.npmjs.org/react/-/react-16.4.2.tgz",
+      "license": "MIT",
+      "licenseText": "..."
+    }
+  ]
+}
 ```
