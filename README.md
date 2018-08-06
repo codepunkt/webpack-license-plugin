@@ -32,7 +32,7 @@ It will help you:
 ## Options
 
 ```js
-new BundleAnalyzerPlugin(options?: object)
+new LicensePlugin(options?: object)
 ```
 
 |      Name       |                Type                | Description                                                                                                              |
