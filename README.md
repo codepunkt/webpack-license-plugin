@@ -39,11 +39,12 @@ new LicensePlugin(options?: object)
 | :-------------: | :--------------------------------: | :----------------------------------------------------------------------------------------------------------------------- |
 | **`fileName`**  |              `String`              | Default: `oss-licenses.json`. Path to the output file that will be generated. Relative to the bundle output directory.   |
 | **`logLevel`**  | One of `none`, `info` or `verbose` | Default: `info`. Used to control how much details the plugin outputs.                                                    |
+| **`overrides`** |          `Object`           | Default: `{}`. Object with licenses to override. Keys have the format `<name>@<version>`, values are valid [spdx license expressions](https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60). This can be helpful when license information is inconclusive and has been manually checked. |
 | **`blacklist`** |          `Array<string>`           | Default: `[]`. Fail (exit with code 1) on the first occurrence of a package with one of the licenses in the given array. |
 
 ### Example with custom options
 
-This example has verbose logging output on the terminal, writes the result to a file named `meta/licenses.json` in the output directory and fails whenever it encounters one of the given licenses.
+This example has verbose logging output on the terminal, writes the result to a file named `meta/licenses.json` in the output directory, fails whenever it encounters one of the given licenses and overrides the license of the package `fuse.js@3.2.1`.
 
 ```js
 const LicensePlugin = require('webpack-license-plugin')
@@ -54,6 +55,10 @@ module.exports = {
       fileName: 'meta/licenses.json',
       logLevel: 'verbose',
       blacklist: ['GPL', 'AGPL', 'LGPL', 'NGPL'],
+      overrides: {
+        // has "Apache" in package.json, but Apache-2.0 text in LICENSE file
+        'fuse.js@3.2.1': 'Apache-2.0'
+      },
     }),
   ],
 }
