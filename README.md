@@ -65,8 +65,9 @@ This is a small example for a resulting file. For every npm package that was fou
 
 - package name
 - package version
+- package author _(if available in the package's meta data)_
 - page repository _(if available in the package's meta data)_
-- package source on npm registry
+- package url on npm registry
 - license
 - licenseText _(if a `/^licen[cs]e/i` file was found in the package's root)_
 
