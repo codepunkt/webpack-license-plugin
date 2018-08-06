@@ -11,17 +11,37 @@ describe('getChunkMeta', () => {
       [base, 'node_modules', 'package-b'].join(sep),
       [base, 'node_modules', '@scope', 'package-c', 'dist'].join(sep),
       [base, 'node_modules', '@scope', 'package-d'].join(sep),
-      [base, 'node_modules', 'package-e', 'node_modules', 'package-f'].join(sep),
+      [base, 'node_modules', 'package-e', 'node_modules', 'package-f'].join(
+        sep
+      ),
     ].map(context => ({ context }))
 
     expect(getChunkMeta(modules)).toEqual([
-      { name: 'package-a', path: [base, 'node_modules', 'package-a'].join(sep) },
-      { name: 'package-b', path: [base, 'node_modules', 'package-b'].join(sep) },
-      { name: '@scope/package-c', path: [base, 'node_modules', '@scope', 'package-c'].join(sep) },
-      { name: '@scope/package-d', path: [base, 'node_modules', '@scope', 'package-d'].join(sep) },
+      {
+        name: 'package-a',
+        path: [base, 'node_modules', 'package-a'].join(sep),
+      },
+      {
+        name: 'package-b',
+        path: [base, 'node_modules', 'package-b'].join(sep),
+      },
+      {
+        name: '@scope/package-c',
+        path: [base, 'node_modules', '@scope', 'package-c'].join(sep),
+      },
+      {
+        name: '@scope/package-d',
+        path: [base, 'node_modules', '@scope', 'package-d'].join(sep),
+      },
       {
         name: 'package-f',
-        path: [base, 'node_modules', 'package-e', 'node_modules', 'package-f'].join(sep),
+        path: [
+          base,
+          'node_modules',
+          'package-e',
+          'node_modules',
+          'package-f',
+        ].join(sep),
       },
     ])
   })

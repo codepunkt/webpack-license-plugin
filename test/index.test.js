@@ -20,13 +20,17 @@ describe('WebpackLicensePlugin', () => {
     const files = stats.toJson().assets.map(x => x.name)
 
     expect(files.includes('oss-licenses.json')).toBe(true)
-    const file = fs.readFileSync('./example/basic/public/oss-licenses.json').toString()
+    const file = fs
+      .readFileSync('./example/basic/public/oss-licenses.json')
+      .toString()
     expect(file).toMatchSnapshot()
   })
 
   test('blacklisted licenses throw', async () => {
     const compile = async () => await compileWebpack(blacklistOptions)
-    await expect(compile()).rejects.toThrow(/WebpackLicensePlugin: found blacklisted license "MIT"/)
+    await expect(compile()).rejects.toThrow(
+      /WebpackLicensePlugin: found blacklisted license "MIT"/
+    )
   })
 
   test('packages with unknown licenseFiles work', async () => {
@@ -34,7 +38,9 @@ describe('WebpackLicensePlugin', () => {
     const files = stats.toJson().assets.map(x => x.name)
 
     expect(files.includes('oss-licenses.json')).toBe(true)
-    const file = fs.readFileSync('./example/basic/public/oss-licenses.json').toString()
+    const file = fs
+      .readFileSync('./example/basic/public/oss-licenses.json')
+      .toString()
     expect(file).toMatchSnapshot()
   })
 })
