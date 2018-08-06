@@ -32,7 +32,7 @@
   },
   "scripts": {
     "test": "jest",
-    "postinstall": "cd example/empty && yarn && cd ../basic && yarn && cd ../blacklisted-licenses && yarn"
+    "pretest": "cd example/empty && yarn && cd ../basic && yarn && cd ../blacklisted-licenses && yarn"
   },
   "devDependencies": {
     "jest": "^23.4.2",
