@@ -20,7 +20,7 @@ It will help you
 
 # Installation & Usage
 
-## → Step 1
+### → Step 1
 
 Install `webpack-license-plugin` as a development dependency to your current project by running this command:
 
@@ -30,7 +30,7 @@ npm install --save-dev webpack-license-plugin
 
 > ⚠️ Make sure run this command in your projects folder (where the `package.json` of your project is)
 
-## → Step 2
+### → Step 2
 
 Use `webpack-license-plugin` in your webpack configuration by adding it to the `plugins` array.
 
