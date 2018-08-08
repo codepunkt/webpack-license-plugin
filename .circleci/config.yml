@@ -7,5 +7,5 @@ jobs:
     steps:
       - checkout
       - run: yarn
-      - run: cd example/unknown-licensefile && yarn
+      - run: cd test/example && yarn
       - run: yarn run test:ci
