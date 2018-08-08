@@ -16,7 +16,7 @@ It will help you
 - 🕵️ find out how it is licensed
 - 📈 summarize the number of packages for each license
 - ❌ cancel builds that include blacklisted licenses
-- 📃 create a customized inventory report or BOM (_bill of materials_)
+- 📃 create a customized inventory report or BOM (_bill of materials_) in `json`, `html`, `csv` or other formats
 
 # Installation & Usage
 
@@ -183,33 +183,30 @@ module.exports = {
 const ejs = require('ejs')
 const LicensePlugin = require('webpack-license-plugin')
 
-const htmlTransform = (output) => {
-  const packages = JSON.parse(output).packages
-  return ejs.render(
-    `<table>
-        <tr>
-          <th>name</th>
-          <th>version</th>
-          <th>license</th>
-        </tr>
-        <% packages.forEach(function(package) { %>
-          <tr>
-            <td><%= package.name %></td>
-            <td><%= package.version %></td>
-            <td><%= package.license %></td>
-          </tr>
-        <% }); %>
-    </table>`,
-    { packages }
-  )
-}
+const template = `<table>
+  <tr>
+    <th>name</th>
+    <th>version</th>
+    <th>license</th>
+  </tr>
+  <% packages.forEach(function(package) { %>
+    <tr>
+      <td><%= package.name %></td>
+      <td><%= package.version %></td>
+      <td><%= package.license %></td>
+    </tr>
+  <% }); %>
+</table>`
 
 module.exports = {
   // ...
   plugins: [
     new LicensePlugin({
       outputFilename: 'oss-licenses.html',
-      outputTransform: htmlTransform
+      outputTransform: (output) => {
+        const packages = JSON.parse(output).packages
+        return ejs.render(template, { packages })
+      }
     }),
   ],
 }
