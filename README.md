@@ -215,8 +215,6 @@ module.exports = {
 }
 ```
 
-### What are you going to build?
-Anything is possible. Transform the output to a standalone `.html` page with additional information about your project, product or library.
+### Your transforms
 
-> 🗨️ Be sure to let [me](https://twitter.com/code_punkt) and others know what you've built! Publish your transforms as an npm module so others can benefit from it.
-
+> 🗨️ Anything is possible. Be sure to let [me](https://twitter.com/code_punkt) and others know what you've built!
