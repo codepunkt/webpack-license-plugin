@@ -7,9 +7,5 @@ jobs:
     steps:
       - checkout
       - run: yarn
-      - run: cd example/empty && yarn
-      - run: cd example/basic && yarn
-      - run: cd example/blacklisted-licenses && yarn
       - run: cd example/unknown-licensefile && yarn
-      - run: cd example/overrides && yarn
-      - run: yarn run test
+      - run: yarn run test:ci

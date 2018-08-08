@@ -31,33 +31,6 @@ describe('getCompilationMeta', () => {
       ],
     }
 
-    expect(getCompilationMeta(compilation)).toEqual([
-      {
-        name: '@scope/package-c',
-        path: [base, 'node_modules', '@scope', 'package-c'].join(sep),
-      },
-      {
-        name: '@scope/package-d',
-        path: [base, 'node_modules', '@scope', 'package-d'].join(sep),
-      },
-      {
-        name: 'package-a',
-        path: [base, 'node_modules', 'package-a'].join(sep),
-      },
-      {
-        name: 'package-b',
-        path: [base, 'node_modules', 'package-b'].join(sep),
-      },
-      {
-        name: 'package-f',
-        path: [
-          base,
-          'node_modules',
-          'package-e',
-          'node_modules',
-          'package-f',
-        ].join(sep),
-      },
-    ])
+    expect(getCompilationMeta(compilation)).toMatchSnapshot()
   })
 })

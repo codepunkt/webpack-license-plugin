@@ -31,9 +31,11 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "test": "jest"
+      "test": "jest",
+      "test:ci": "jest && coveralls < coverage/lcov.info"
   },
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "jest": "^23.4.2",
     "lint-staged": "^7.2.0",
     "prettier": "^1.13.4",
@@ -48,7 +50,12 @@
     "spdx-expression-parse": "^3.0.0"
   },
   "jest": {
-    "testEnvironment": "node"
+    "collectCoverage": true,
+    "restoreMocks": true,
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ]
   },
   "lint-staged": {
     "*.{js}": [

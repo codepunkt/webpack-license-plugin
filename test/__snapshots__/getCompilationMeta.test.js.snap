@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getCompilationMeta returns sorted, flattened and unique package meta for all chunks 1`] = `
+Array [
+  Object {
+    "name": "@scope/package-c",
+    "path": "home/codepunkt/projects/monorepo/node_modules/@scope/package-c",
+  },
+  Object {
+    "name": "@scope/package-d",
+    "path": "home/codepunkt/projects/monorepo/node_modules/@scope/package-d",
+  },
+  Object {
+    "name": "package-a",
+    "path": "home/codepunkt/projects/monorepo/node_modules/package-a",
+  },
+  Object {
+    "name": "package-b",
+    "path": "home/codepunkt/projects/monorepo/node_modules/package-b",
+  },
+  Object {
+    "name": "package-f",
+    "path": "home/codepunkt/projects/monorepo/node_modules/package-e/node_modules/package-f",
+  },
+]
+`;
