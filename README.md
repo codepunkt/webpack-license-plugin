@@ -50,17 +50,18 @@ module.exports = {
 Options are given as an `Object` to the first parameter of the `LicensePlugin` constructor:
 
 ```js
-new LicensePlugin({ fileName: 'oss.json' })
+new LicensePlugin({ outputFilename: 'thirdPartyNotice.json' })
 ```
 
 The available options are:
 
 |      Name       |                Type                | Description                                                                                                              |
 | :-------------: | :--------------------------------: | :----------------------------------------------------------------------------------------------------------------------- |
-| **`fileName`**  |              `String`              | Default: `oss-licenses.json`. Path to the output file that will be generated. Relative to the bundle output directory.   |
-| **`logLevel`**  | One of `none`, `info` or `verbose` | Default: `info`. Used to control how much details the plugin outputs.                                                    |
-| **`overrides`** |          `Object`           | Default: `{}`. Object with licenses to override. Keys have the format `<name>@<version>`, values are valid [spdx license expressions](https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60). This can be helpful when license information is inconclusive and has been manually checked. |
-| **`blacklist`** |          `Array<string>`           | Default: `[]`. Fail (exit with code 1) on the first occurrence of a package with one of the licenses in the given array. |
+| **`outputFilename`** | `string` | Default: `oss-licenses.json`. Path to the output file that will be generated. Relative to the bundle output directory. |
+| **`outputTransform`** | `function` | Default: `null`. When this option is set, the given function is invoked with the json output string and the return value is written to the `outputFilename`. |
+| **`logLevel`**  | `none`, `info` or `verbose` | Default: `info`. Used to control how much details the plugin outputs.  |
+| **`overrides`** | `object` | Default: `{}`. Object with licenses to override. Keys have the format `<name>@<version>`, values are valid [spdx license expressions](https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60). This can be helpful when license information is inconclusive and has been manually checked. |
+| **`blacklist`** | `string[]` | Default: `[]`. Fail (exit with code 1) on the first occurrence of a package with one of the licenses in the given array. |
 
 ### Example with custom options
 
@@ -70,9 +71,10 @@ This example has verbose logging output on the terminal, writes the result to a 
 const LicensePlugin = require('webpack-license-plugin')
 
 module.exports = {
+  // ...
   plugins: [
     new LicensePlugin({
-      fileName: 'meta/licenses.json',
+      outputFilename: 'meta/licenses.json',
       logLevel: 'verbose',
       blacklist: ['GPL', 'AGPL', 'LGPL', 'NGPL'],
       overrides: {
@@ -84,11 +86,11 @@ module.exports = {
 }
 ```
 
-# Output
+# Default output
 
-The output usually is a `json` file in the webpack build output directory. It consists of a license summary where the amount of packages that are licensed under a specific license is summarized and a package list that lists a few details for every npm package that was found to be part of the webpack output:
+When the `outputTransform` option is not set, the output is a `json` file in the webpack build output directory. It consists of a license summary where the amount of packages that are licensed under a specific license is summarized and a package list that lists a few details for every npm package that was found to be part of the webpack output:
 
-| |      Name       | Description                                                                                                              |
+| | Name | Description |
 | :-- | :------------- | :-------------------------------- |
 | 🆔 | **`name`**  | package name |
 | 🔢 | **`version`**  | package version |
@@ -141,3 +143,80 @@ The output usually is a `json` file in the webpack build output directory. It co
   ]
 }
 ```
+
+
+# Templated output
+When the `outputTransform` option is set, the output shown above is passed into that function as a string and the returned value is written to the `outputFilename`.
+
+This way, the output can be formatted to anything you might need.
+
+### Example: Package list as CSV
+
+```js
+const LicensePlugin = require('webpack-license-plugin')
+
+const csvTransform = (output) => {
+  const keys = ['name', 'version', 'license']
+  const packages = JSON.parse(output).packages
+
+  return [
+    '"sep=,"',
+    keys.join(','),
+    ...packages.map(pckg => keys.map(key => `="${pckg[key]}"`).join(',')),
+  ].join('\n')
+}
+
+module.exports = {
+  // ...
+  plugins: [
+    new LicensePlugin({
+      outputFilename: 'oss-licenses.csv',
+      outputTransform: csvTransform
+    }),
+  ],
+}
+```
+
+### Example: Package list as HTML
+
+```js
+const ejs = require('ejs')
+const LicensePlugin = require('webpack-license-plugin')
+
+const htmlTransform = (output) => {
+  const packages = JSON.parse(output).packages
+  return ejs.render(
+    `<table>
+        <tr>
+          <th>name</th>
+          <th>version</th>
+          <th>license</th>
+        </tr>
+        <% packages.forEach(function(package) { %>
+          <tr>
+            <td><%= package.name %></td>
+            <td><%= package.version %></td>
+            <td><%= package.license %></td>
+          </tr>
+        <% }); %>
+    </table>`,
+    { packages }
+  )
+}
+
+module.exports = {
+  // ...
+  plugins: [
+    new LicensePlugin({
+      outputFilename: 'oss-licenses.html',
+      outputTransform: htmlTransform
+    }),
+  ],
+}
+```
+
+### What are you going to build?
+Anything is possible. Transform the output to a standalone `.html` page with additional information about your project, product or library.
+
+> 🗨️ Be sure to let [me](https://twitter.com/code_punkt) and others know what you've built! Publish your transforms as an npm module so others can benefit from it.
+
