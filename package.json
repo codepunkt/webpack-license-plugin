@@ -31,14 +31,16 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-      "test": "jest",
-      "test:ci": "jest && coveralls < coverage/lcov.info"
+    "test": "jest",
+    "test:ci": "jest && coveralls < coverage/lcov.info"
   },
   "devDependencies": {
     "coveralls": "^3.0.2",
+    "ejs": "^2.6.1",
     "jest": "^23.4.2",
     "lint-staged": "^7.2.0",
     "prettier": "^1.13.4",
+    "react-dom": "^16.4.2",
     "webpack": "^4.16.3"
   },
   "dependencies": {
