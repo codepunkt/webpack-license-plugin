@@ -58,7 +58,7 @@ The available options are:
 |      Name       |                Type                | Description                                                                                                              |
 | :------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
 | **`outputFilename`** | `string` | Default: `oss-licenses.json`. Path to the output file that will be generated. Relative to the bundle output directory. |
-| **`outputTransform`** | `function` | Default: `null`. When this option is set, the given function is invoked with the json output string and the return value is written to the `outputFilename`. |
+| **`outputTransform`** | `function` | Default: `null`. When this option is set, the given function is invoked with the json output string and the return value is written to the `outputFilename`. Can be an `async` method or return a `Promise`. |
 | **`logLevel`**  | `none`, `info` or `verbose` | Default: `info`. Used to control how much details the plugin outputs.  |
 | **`overrides`** | `object` | Default: `{}`. Object with licenses to override. Keys have the format `<name>@<version>`, values are valid [spdx license expressions](https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60). This can be helpful when license information is inconclusive and has been manually checked. |
 | **`blacklist`** | `string[]` | Default: `[]`. Fail (exit with code 1) on the first occurrence of a package with one of the licenses in the given array. |
@@ -179,11 +179,10 @@ module.exports = {
 
 ### Example: Package list as HTML
 
-```js
-const ejs = require('ejs')
-const LicensePlugin = require('webpack-license-plugin')
+```html
+<!-- template.ejs -->
 
-const template = `<table>
+<table>
   <tr>
     <th>name</th>
     <th>version</th>
@@ -196,16 +195,21 @@ const template = `<table>
       <td><%= package.license %></td>
     </tr>
   <% }); %>
-</table>`
+</table>
+```
+
+```js
+const ejs = require('ejs')
+const LicensePlugin = require('webpack-license-plugin')
 
 module.exports = {
   // ...
   plugins: [
     new LicensePlugin({
       outputFilename: 'oss-licenses.html',
-      outputTransform: (output) => {
+      outputTransform: async (output) => {
         const packages = JSON.parse(output).packages
-        return ejs.render(template, { packages })
+        return await ejs.renderFile('template.ejs', { packages }, { async: true })
       }
     }),
   ],
