@@ -1,4 +1,4 @@
-<p align="center"><img title="webpack-license-plugin logo" alt="webpack-license-plugin logo" src="logo.svg" width="600" style="margin-top:20px;"></p>
+<p align="center"><img title="webpack-license-plugin logo" alt="webpack-license-plugin logo" src="https://cdn.rawgit.com/codepunkt/webpack-license-plugin/4dac378d/logo.svg" width="600" style="margin-top:20px;"></p>
 
 ---
 
