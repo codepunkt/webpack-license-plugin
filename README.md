@@ -56,7 +56,7 @@ new LicensePlugin({ outputFilename: 'thirdPartyNotice.json' })
 The available options are:
 
 |      Name       |                Type                | Description                                                                                                              |
-| :-------------: | :--------------------------------: | :----------------------------------------------------------------------------------------------------------------------- |
+| :------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
 | **`outputFilename`** | `string` | Default: `oss-licenses.json`. Path to the output file that will be generated. Relative to the bundle output directory. |
 | **`outputTransform`** | `function` | Default: `null`. When this option is set, the given function is invoked with the json output string and the return value is written to the `outputFilename`. |
 | **`logLevel`**  | `none`, `info` or `verbose` | Default: `info`. Used to control how much details the plugin outputs.  |
