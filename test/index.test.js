@@ -4,15 +4,15 @@ const ejs = require('ejs')
 
 jest.setTimeout(30000)
 
-let consoleLogSpy
-
-beforeEach(() => {
-  consoleLogSpy = jest.spyOn(global.console, 'log').mockImplementation()
-})
-
 describe('WebpackLicensePlugin', () => {
+  let consoleLogSpy
+
+  beforeEach(() => {
+    consoleLogSpy = jest.spyOn(global.console, 'log').mockImplementation()
+  })
+
   it('doesnt emit a file when no deps are found', async () => {
-    const result = await runWebpack({}, './src/empty.js')
+    const [result] = await runWebpack({}, './src/empty.js')
     expect(result).toBe(null)
   })
 
@@ -30,7 +30,7 @@ describe('WebpackLicensePlugin', () => {
   })
 
   it('matches the snapshot when deps are found', async () => {
-    const result = await runWebpack()
+    const [result] = await runWebpack()
     expect(result).not.toBe(null)
     expect(result).toMatchSnapshot()
   })
@@ -113,11 +113,27 @@ describe('WebpackLicensePlugin', () => {
     const outputTransform = jest.fn().mockImplementation(function(output) {
       return returnValue
     })
-    const result = await runWebpack({
+    const [result] = await runWebpack({
       outputFilename: 'oss-licenses.csv',
       outputTransform,
     })
     expect(result).toBe(returnValue)
     expect(outputTransform).toHaveBeenCalledTimes(1)
+  })
+
+  it('adds additional files', async () => {
+    const [result, assets, readFile] = await runWebpack({
+      outputFilename: 'oss-licenses.html',
+      outputTransform: (output, addFile) => {
+        addFile('oss-licenses.json', 'json')
+        return 'lmth'
+          .split('')
+          .reverse()
+          .join('')
+      },
+    })
+    expect(result).toBe('html')
+    expect(assets).toEqual(expect.arrayContaining(['oss-licenses.json']))
+    expect(readFile('oss-licenses.json')).toBe('json')
   })
 })
