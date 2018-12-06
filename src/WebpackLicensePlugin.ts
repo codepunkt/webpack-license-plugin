@@ -1,7 +1,8 @@
 import * as webpack from 'webpack'
-import LicenseChecker from './LicenseChecker'
+import LicenseFileWriter from './LicenseFileWriter'
+import LicenseMetaAggregator from './LicenseMetaAggregator'
+import ModuleDirectoryLocator from './ModuleDirectoryLocator'
 import OptionsProvider, { IPluginOptions } from './OptionsProvider'
-import IWebpackChunkIterator from './types/IWebpackChunkIterator'
 import IWebpackPlugin from './types/IWebpackPlugin'
 import WebpackAssetManager from './WebpackAssetManager'
 import WebpackChunkIterator from './WebpackChunkIterator'
@@ -27,13 +28,13 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     }
   }
 
-  private handleCompilation(
+  public handleCompilation(
     compiler: webpack.Compiler,
     compilation: webpack.compilation.Compilation
   ) {
     if (typeof compilation.hooks !== 'undefined') {
       compilation.hooks.optimizeChunkAssets.tap(
-        'LicenseWebpackPlugin',
+        'webpack-license-plugin',
         this.handleChunkAssetOptimization.bind(this, compiler, compilation)
       )
     } else if (typeof compilation.plugin !== 'undefined') {
@@ -44,30 +45,34 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     }
   }
 
-  private handleChunkAssetOptimization(
+  public handleChunkAssetOptimization(
     compiler: webpack.Compiler,
     compilation: webpack.compilation.Compilation,
     chunks: webpack.compilation.Chunk[],
-    callback: () => void
+    callback: () => void,
+    optionsProvider: OptionsProvider = new OptionsProvider(),
+    chunkIterator: WebpackChunkIterator = new WebpackChunkIterator(),
+    fileSystem: WebpackFileSystem = new WebpackFileSystem(
+      compiler.inputFileSystem
+    ),
+    licenseFileWriter: LicenseFileWriter = new LicenseFileWriter(
+      new WebpackAssetManager(compilation),
+      new ModuleDirectoryLocator(fileSystem, compiler.options.context),
+      new LicenseMetaAggregator(fileSystem)
+    )
   ) {
-    const buildRoot = compiler.options.context
     const handleError = err => {
       compilation.errors.push(err)
     }
 
-    const fileSystem = new WebpackFileSystem(compiler.inputFileSystem)
-    const chunkIterator: IWebpackChunkIterator = new WebpackChunkIterator()
-    const optionsProvider: OptionsProvider = new OptionsProvider(handleError)
-    const options = optionsProvider.getOptions(this.pluginOptions)
-    const assetManager = new WebpackAssetManager(compilation)
-    const allFilenames = chunkIterator.iterateChunks(chunks)
+    // get options
+    const options = optionsProvider.getOptions(this.pluginOptions, handleError)
 
-    const licenseChecker = new LicenseChecker(
-      buildRoot,
-      fileSystem,
-      assetManager
-    )
-    licenseChecker.checkLicenses(allFilenames, options, handleError)
+    // retrieve filenames
+    const filenames = chunkIterator.iterateChunks(chunks)
+
+    // write license meta files
+    licenseFileWriter.writeLicenseFiles(filenames, options, handleError)
 
     if (callback) {
       callback()

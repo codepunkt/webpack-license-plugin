@@ -1,5 +1,6 @@
 // @ts-ignore
 import * as validate from 'spdx-expression-validate'
+import defaultOptions from './defaultOptions'
 
 export interface IPluginOptions {
   additionalFiles: { [filename: string]: (output: string) => string }
@@ -10,27 +11,23 @@ export interface IPluginOptions {
 }
 
 export default class OptionsProvider {
-  private defaultOptions: IPluginOptions = {
-    additionalFiles: {},
-    licenseOverrides: {},
-    outputFilename: 'oss-licenses.json',
-    outputTransform: a => a,
-    unacceptableLicenseTest: () => false,
-  }
-
-  constructor(private handleError: (err: Error) => void) {}
-
-  public getOptions(inputOptions: Partial<IPluginOptions>): IPluginOptions {
-    this.validateOptions(inputOptions)
-    const options = { ...this.defaultOptions, ...inputOptions }
+  public getOptions(
+    inputOptions: Partial<IPluginOptions>,
+    handleError: (err: Error) => void
+  ): IPluginOptions {
+    this.validateOptions(inputOptions, handleError)
+    const options = { ...defaultOptions, ...inputOptions }
     return options
   }
 
-  private validateOptions(inputOptions: Partial<IPluginOptions>) {
+  public validateOptions(
+    inputOptions: Partial<IPluginOptions>,
+    handleError: (err: Error) => void
+  ) {
     if (inputOptions.licenseOverrides) {
       for (const packageVersion of Object.keys(inputOptions.licenseOverrides)) {
         if (!validate(inputOptions.licenseOverrides[packageVersion])) {
-          this.handleError(
+          handleError(
             new Error(
               `WebpackLicensePlugin: "${
                 inputOptions.licenseOverrides[packageVersion]

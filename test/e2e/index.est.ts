@@ -138,7 +138,7 @@ describe('e2e', () => {
         expect(err).toBe(null)
         expect(stats.errors).toEqual(
           expect.arrayContaining([
-            'WebpackLicensePlugin: found unacceptable license "MIT" for webpack@4.16.3',
+            'WebpackLicensePlugin: found unacceptable license "MIT" for get-npm-tarball-url@2.0.1',
           ])
         )
 

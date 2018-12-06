@@ -1,7 +1,8 @@
 import { sep } from 'path'
 import IFileSystem from './types/IFileSystem'
+import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
 
-export default class ModuleDirectoryLocator {
+export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
   constructor(private fileSystem: IFileSystem, private buildRoot: string) {}
 
   public getModuleDir(filename: string): string | null {

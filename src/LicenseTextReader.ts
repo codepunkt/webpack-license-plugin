@@ -25,7 +25,7 @@ export default class LicenseTextReader {
     return null
   }
 
-  private getLicenseFilename(paths: string[]): string | null {
+  public getLicenseFilename(paths: string[]): string | null {
     for (const path of paths) {
       if (/^licen[cs]e/i.test(path)) {
         return path
@@ -34,7 +34,7 @@ export default class LicenseTextReader {
     return null
   }
 
-  private readFile(directory: string, filename: string): string {
+  public readFile(directory: string, filename: string): string {
     return this.fileSystem
       .readFile(this.fileSystem.join(directory, filename))
       .replace(/\r\n/g, '\n')

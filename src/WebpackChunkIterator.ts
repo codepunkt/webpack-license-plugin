@@ -1,9 +1,8 @@
 import * as webpack from 'webpack'
-import IWebpackChunkIterator from './types/IWebpackChunkIterator'
 import WebpackChunkModuleIterator from './WebpackChunkModuleIterator'
 import WebpackModuleFileIterator from './WebpackModuleFileIterator'
 
-export default class WebpackChunkIterator implements IWebpackChunkIterator {
+export default class WebpackChunkIterator {
   constructor(
     private moduleIterator: WebpackChunkModuleIterator = new WebpackChunkModuleIterator(),
     private fileIterator: WebpackModuleFileIterator = new WebpackModuleFileIterator()
