@@ -32,13 +32,12 @@ describe('LicenseTextReader', () => {
     test('reads file contents', () => {
       const instance = new LicenseTextReader(
         new FileSystem({
-          join: (d, f) => `${d}#${f}`,
           readFile: p => `license text in ${p}`,
         })
       )
 
       expect(instance.readFile('/path/to/directory', 'LICENSE')).toEqual(
-        'license text in /path/to/directory#LICENSE'
+        'license text in /path/to/directory/LICENSE'
       )
     })
   })
@@ -69,7 +68,6 @@ describe('LicenseTextReader', () => {
     test("reads license from 'SEE LICENSE IN' licensefile", () => {
       const instance = new LicenseTextReader(
         new FileSystem({
-          join: (d, f) => `${d}!${f}`,
           listPaths: d => ['index.js', 'foo.md'],
           readFile: p => `foo in ${p}`,
         })
@@ -79,7 +77,7 @@ describe('LicenseTextReader', () => {
         '/path/to/directory'
       )
 
-      expect(result).toEqual('foo in /path/to/directory!foo.md')
+      expect(result).toEqual('foo in /path/to/directory/foo.md')
     })
   })
 })

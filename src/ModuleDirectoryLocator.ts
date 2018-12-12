@@ -1,4 +1,4 @@
-import { sep } from 'path'
+import { join, resolve, sep } from 'path'
 import IFileSystem from './types/IFileSystem'
 import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
 
@@ -9,14 +9,10 @@ export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
     let moduleDir = filename.substring(0, filename.lastIndexOf(sep))
     let prevModuleDir: string | null = null
 
-    while (
-      !this.fileSystem.pathExists(
-        this.fileSystem.join(moduleDir, 'package.json')
-      )
-    ) {
+    while (!this.fileSystem.pathExists(join(moduleDir, 'package.json'))) {
       // check parent directory
       prevModuleDir = moduleDir
-      moduleDir = this.fileSystem.resolve(`${moduleDir}${sep}..${sep}`)
+      moduleDir = resolve(`${moduleDir}${sep}..${sep}`)
 
       // reached filesystem root
       if (prevModuleDir === moduleDir) {

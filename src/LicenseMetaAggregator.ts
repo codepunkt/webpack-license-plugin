@@ -23,24 +23,26 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   ) {}
 
   public aggregateMeta(moduleDirs: string[], options: IPluginOptions) {
-    return moduleDirs.map(moduleDir => {
-      const meta = this.packageJsonReader.readPackageJson(moduleDir)
-      const license = this.licenseIdentifier.identifyLicense(meta, options)
-      const licenseText = this.licenseTextReader.readLicenseText(
-        license,
-        moduleDir
-      )
+    return moduleDirs
+      .map(moduleDir => {
+        const meta = this.packageJsonReader.readPackageJson(moduleDir)
+        const license = this.licenseIdentifier.identifyLicense(meta, options)
+        const licenseText = this.licenseTextReader.readLicenseText(
+          license,
+          moduleDir
+        )
 
-      return {
-        name: meta.name,
-        version: meta.version,
-        author: this.getAuthor(meta),
-        repository: this.getRepository(meta),
-        source: getNpmTarballUrl(meta.name, meta.version),
-        license,
-        licenseText,
-      }
-    })
+        return {
+          name: meta.name,
+          version: meta.version,
+          author: this.getAuthor(meta),
+          repository: this.getRepository(meta),
+          source: getNpmTarballUrl(meta.name, meta.version),
+          license,
+          licenseText,
+        }
+      })
+      .sort((a, b) => a.name.localeCompare(b.name))
   }
 
   public getAuthor(meta: Pick<IPackageJson, 'author'>): string {

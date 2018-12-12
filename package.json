@@ -36,7 +36,8 @@
     "build": "yarn run lint && yarn run clean && tsc",
     "prepublishOnly": "yarn run build",
     "manual": "tsc && webpack --config test/e2e/webpack.config.js",
-    "test": "jest --runInBand",
+    "test:e2e": "jest --runInBand --testPathPattern test/e2e",
+    "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
     "test:ci": "jest && coveralls < coverage/lcov.info"
   },
   "devDependencies": {
@@ -61,7 +62,9 @@
     "tslint-microsoft-contrib": "^5.2.1",
     "typescript": "^3.1.6",
     "webpack": "^4.16.3",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack2": "npm:webpack@^2",
+    "webpack3": "npm:webpack@^3"
   },
   "dependencies": {
     "chalk": "^2.4.1",

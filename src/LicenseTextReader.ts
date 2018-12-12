@@ -1,3 +1,4 @@
+import { join } from 'path'
 import IFileSystem from './types/IFileSystem'
 
 /**
@@ -36,7 +37,7 @@ export default class LicenseTextReader {
 
   public readFile(directory: string, filename: string): string {
     return this.fileSystem
-      .readFile(this.fileSystem.join(directory, filename))
+      .readFile(join(directory, filename))
       .replace(/\r\n/g, '\n')
   }
 }
