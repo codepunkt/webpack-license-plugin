@@ -1,0 +1,30 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+  "compilerOptions": {
+    "lib": ["es2018", "dom", "esnext.asynciterable"],
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": false,
+    "downlevelIteration": true
+    // "strict": true,
+    // "noImplicitAny": true,
+    // "strictNullChecks": true,
+    // "strictFunctionTypes": true,
+    // "strictPropertyInitialization": true,
+    // "noImplicitThis": true,
+    // "alwaysStrict": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noImplicitReturns": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "esModuleInterop": true
+  }
+}

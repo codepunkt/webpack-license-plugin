@@ -1,0 +1,17 @@
+// {type:class}
+// {direction:leftToRight}
+// {generate:true}
+[WebpackFileSystem]-.-^[<< IFileSystem >>]
+[WebpackAssetManager]-.-^[<< IAssetManager >>]
+[WebpackLicensePlugin]++-1[WebpackFileSystem]
+[WebpackLicensePlugin]++-1[WebpackChunkIterator]
+[WebpackChunkIterator]++-1[WebpackChunkModuleIterator]
+[WebpackChunkIterator]++-1[WebpackModuleFileIterator]
+[WebpackLicensePlugin]++-1[WebpackAssetManager]
+[WebpackLicensePlugin]++-1[OptionsProvider]
+[WebpackLicensePlugin]++-1[LicenseFileWriter]
+[LicenseFileWriter]++-1[ModuleDirectoryLocator]
+[LicenseFileWriter]++-1[LicenseMetaAggregator]
+[LicenseMetaAggregator]++-1[LicenseIdentifier]
+[LicenseMetaAggregator]++-1[LicenseTextReader]
+[LicenseMetaAggregator]++-1[PackageJsonReader]

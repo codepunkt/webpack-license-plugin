@@ -1,0 +1,17 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
+  },
+  "rulesDirectory": ["tslint-microsoft-contrib"],
+  "defaultSeverity": "warning",
+  "rules": {
+    "max-classes-per-file": false,
+    "interface-name": false,
+    "no-console": false,
+    "no-debugger": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "typedef": [true, "parameter", "property-declaration"]
+  }
+}

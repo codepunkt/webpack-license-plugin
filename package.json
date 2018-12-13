@@ -28,39 +28,63 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "jest",
-    "test:ci": "jest && coveralls < coverage/lcov.info"
+    "clean": "rimraf dist",
+    "lint": "tslint 'src/**/*.ts' --project tsconfig.json",
+    "build": "yarn run lint && yarn run clean && tsc",
+    "prepublishOnly": "yarn run build",
+    "manual": "tsc && webpack --config test/e2e/webpack.config.js",
+    "test": "jest --runInBand --verbose",
+    "test:e2e": "jest --runInBand --testPathPattern test/e2e",
+    "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
+    "test:ci": "CI=true jest --runInBand --verbose --colors && codecov -t $CODECOV_TOKEN"
   },
   "devDependencies": {
-    "coveralls": "^3.0.2",
-    "ejs": "^2.6.1",
+    "@types/jest": "^23.3.10",
+    "@types/lodash": "^4.14.118",
+    "@types/memory-fs": "^0.3.2",
+    "@types/node": "^10.12.10",
+    "@types/webpack": "^4.4.19",
+    "@types/webpack-sources": "^0.1.5",
+    "codecov": "^3.1.0",
+    "cross-env": "^5.2.0",
     "jest": "^23.4.2",
     "lint-staged": "^7.2.0",
+    "memory-fs": "^0.4.1",
     "prettier": "^1.13.4",
-    "react-dom": "^16.4.2",
-    "webpack": "^4.16.3"
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.10.5",
+    "ts-loader": "^5.3.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-microsoft-contrib": "^5.2.1",
+    "typescript": "^3.1.6",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.2",
+    "webpack2": "npm:webpack@^2",
+    "webpack3": "npm:webpack@^3"
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "cli-table": "^0.3.1",
     "get-npm-tarball-url": "^2.0.1",
-    "license-checker": "^24.0.1",
     "lodash": "^4.17.10",
-    "spdx-expression-parse": "^3.0.0"
+    "spdx-expression-validate": "^1.0.2",
+    "webpack-sources": "^1.3.0"
   },
   "jest": {
     "collectCoverage": true,
     "restoreMocks": true,
+    "preset": "ts-jest",
     "testEnvironment": "node",
     "collectCoverageFrom": [
-      "lib/**/*.js"
+      "src/**/*.ts",
+      "!src/**/*.d.ts"
     ]
   },
   "lint-staged": {
-    "*.{js}": [
+    "*.{ts}": [
       "prettier --write",
       "git add"
     ]

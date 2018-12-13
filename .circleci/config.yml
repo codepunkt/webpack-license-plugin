@@ -6,6 +6,5 @@ jobs:
       - image: circleci/node:10.1.0-stretch
     steps:
       - checkout
-      - run: yarn
-      - run: cd test/example && yarn
+      - run: yarn && cd test/e2e/example && yarn
       - run: yarn run test:ci
