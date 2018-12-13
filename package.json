@@ -39,7 +39,7 @@
     "test": "jest --runInBand --verbose",
     "test:e2e": "jest --runInBand --testPathPattern test/e2e",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
-    "test:ci": "jest && coveralls < coverage/lcov.info"
+    "test:ci": "jest --runInBand --verbose && coveralls < coverage/lcov.info"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
