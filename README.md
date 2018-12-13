@@ -4,7 +4,7 @@
 
 <div align="center">
 
-[![npm version](https://badge.fury.io/js/webpack-license-plugin.svg)](https://badge.fury.io/js/webpack-license-plugin) [![CircleCI](https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master.svg?style=shield)](https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master) [![Coverage Status](https://coveralls.io/repos/github/codepunkt/webpack-license-plugin/badge.svg?branch=master)](https://coveralls.io/github/codepunkt/webpack-license-plugin?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/codepunkt/webpack-license-plugin.svg)](https://greenkeeper.io/) [![Contact on Twitter](https://img.shields.io/twitter/follow/code_punkt.svg?style=flat&label=Contact%20on%20Twitter)](https://twitter.com/code_punkt/)
+[![npm version](https://badge.fury.io/js/webpack-license-plugin.svg)](https://badge.fury.io/js/webpack-license-plugin) [![CircleCI](https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master.svg?style=shield)](https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master) [![Contact on Twitter](https://img.shields.io/twitter/follow/code_punkt.svg?style=flat&label=Contact%20on%20Twitter)](https://twitter.com/code_punkt/)
 
 </div>
 
