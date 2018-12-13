@@ -36,6 +36,7 @@
     "build": "yarn run lint && yarn run clean && tsc",
     "prepublishOnly": "yarn run build",
     "manual": "tsc && webpack --config test/e2e/webpack.config.js",
+    "test": "jest --runInBand --verbose",
     "test:e2e": "jest --runInBand --testPathPattern test/e2e",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
     "test:ci": "jest && coveralls < coverage/lcov.info"

@@ -38,7 +38,7 @@ describe('LicenseMetaAggregator', () => {
   describe('aggregateMeta', () => {
     test('returns license meta for the given modules', () => {
       const meta = instance.aggregateMeta(
-        ['react', 'react-dom'],
+        ['react-dom', 'react'],
         defaultOptions
       )
 

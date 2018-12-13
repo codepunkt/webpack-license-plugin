@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`end to end webpack v3 additionalFiles match snapshot 1`] = `
+exports[`end to end webpack v2 additionalFiles match snapshot 1`] = `
 "]
 }  
 llun :\\"txeTesnecil\\"    
@@ -10,6 +10,15 @@ llun :\\"txeTesnecil\\"
 ,\\">ed.tknupedoc@hpotsirhc< renreW hpotsirhC\\" :\\"rohtua\\"    
 ,\\"0.0.1\\" :\\"noisrev\\"    
 ,\\"elpmaxe-tset-nigulp-esnecil-kcapbew\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOS EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOSn\\\\EHT HTIW NOITCENNOC NI RO FO TUO ,MORF GNISIRA ,ESIWREHTO RO TROTn\\\\,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAIL REHTO RO SEGAMAD ,MIALCn\\\\YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUA EHT LLAHS TNEVE ON NIn\\\\.TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIF ,YTILIBATNAHCREMn\\\\FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMI RO SSERPXEn\\\\,DNIK YNA FO YTNARRAW TUOHTIW ,'SI SA' DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipoc lla ni dedulcnin\\\\eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof ehtn\\\\ot tcejbus ,os od ot dehsinruf si erawtfoS eht mohw ot snosrep timrepn\\\\ot dna ,erawtfoS eht fo seipoc lles ro/dna ,esnecilbus ,etubirtsidn\\\\,hsilbup ,egrem ,yfidom ,ypoc ,esu ot sthgir eht noitatimil tuohtiwn\\\\gnidulcni ,noitcirtser tuohtiw erawtfoS eht ni laed ot ,)'erawtfoS'n\\\\eht( selif noitatnemucod detaicossa dna erawtfos siht fo ypoc an\\\\gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\srotubirtnoc rehto dna noitadnuoF SJ thgirypoC\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.0.7.2-kcapbew/-/kcapbew/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,\\"kcapbew/kcapbew/moc.buhtig//:sptth\\" :\\"yrotisoper\\"    
+,\\"arkos@ sreppoK saiboT\\" :\\"rohtua\\"    
+,\\"0.7.2\\" :\\"noisrev\\"    
+,\\"kcapbew\\" :\\"eman\\"    
 {  
 ,}  
 \\"n\\\\.ERAWTFOSn\\\\EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOS EHT HTIW NOITCENNOC NI RO FO TUOn\\\\,MORF GNISIRA ,ESIWREHTO RO TROT ,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAILn\\\\REHTO RO SEGAMAD ,MIALC YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUAn\\\\EHT LLAHS TNEVE ON NI .TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIFn\\\\,YTILIBATNAHCREM FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMIn\\\\RO SSERPXE ,DNIK YNA FO YTNARRAW TUOHTIW ,\\"\\\\SI SA\\"\\\\ DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipocn\\\\lla ni dedulcni eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof eht ot tcejbus ,os od ot dehsinrufn\\\\si erawtfoS eht mohw ot snosrep timrep ot dna ,erawtfoS eht fo seipocn\\\\lles ro/dna ,esnecilbus ,etubirtsid ,hsilbup ,egrem ,yfidom ,ypoc ,esu otn\\\\sthgir eht noitatimil tuohtiw gnidulcni ,noitcirtser tuohtiw erawtfoS eht nin\\\\laed ot ,)\\"\\\\erawtfoS\\"\\\\ eht( selif noitatnemucod detaicossa dna erawtfos siht fon\\\\ypoc a gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\.setailiffa sti dna .cnI ,koobecaF )c( thgirypoCn\\\\n\\\\esneciL TIM\\" :\\"txeTesnecil\\"    
@@ -42,6 +51,528 @@ llun :\\"txeTesnecil\\"
 ,llun :\\"yrotisoper\\"    
 ,\\"2.6.51\\" :\\"noisrev\\"    
 ,\\"sepyt-porp\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOS EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOSn\\\\EHT HTIW NOITCENNOC NI RO FO TUO ,MORF GNISIRA ,ESIWREHTO RO TROTn\\\\,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAIL REHTO RO SEGAMAD ,MIALCn\\\\YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUA EHT LLAHS TNEVE ON NIn\\\\.TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIF ,YTILIBATNAHCREMn\\\\FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMI RO SSERPXEn\\\\,DNIK YNA FO YTNARRAW TUOHTIW ,'SI SA' DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipoc lla ni dedulcnin\\\\eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof ehtn\\\\ot tcejbus ,os od ot dehsinruf si erawtfoS eht mohw ot snosrep timrepn\\\\ot dna ,erawtfoS eht fo seipoc lles ro/dna ,esnecilbus ,etubirtsidn\\\\,hsilbup ,egrem ,yfidom ,ypoc ,esu ot sthgir eht noitatimil tuohtiwn\\\\gnidulcni ,noitcirtser tuohtiw erawtfoS eht ni laed ot ,)'erawtfoS'n\\\\eht( selif noitatnemucod detaicossa dna erawtfos siht fo ypoc an\\\\gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\>moc.liamg@namlyths< namlythS namoR 3102 )c( thgirypoCn\\\\n\\\\)esneciL TIM ehT(\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.01.11.0-ssecorp/-/ssecorp/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,\\"ssecorp-edon/namlyths/moc.buhtig//:sptth\\" :\\"yrotisoper\\"    
+,\\">moc.liamg@namlyths< namlythS namoR\\" :\\"rohtua\\"    
+,\\"01.11.0\\" :\\"noisrev\\"    
+,\\"ssecorp\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOS EHTn\\\\NI SGNILAED REHTO RO ESU EHT RO ERAWTFOS EHT HTIW NOITCENNOC NI RO FO TUOn\\\\,MORF GNISIRA ,ESIWREHTO RO TROT ,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAILn\\\\REHTO RO SEGAMAD ,MIALC YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUAn\\\\EHT LLAHS TNEVE ON NI .TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIFn\\\\,YTILIBATNAHCREM FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMIn\\\\RO SSERPXE ,DNIK YNA FO YTNARRAW TUOHTIW ,\\"\\\\SI SA\\"\\\\ DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipoc llan\\\\ni dedulcni eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof eht ot tcejbus ,os od ot dehsinrufn\\\\si erawtfoS eht mohw ot snosrep timrep ot dna ,erawtfoS eht fo seipocn\\\\lles ro/dna ,esnecilbus ,etubirtsid ,hsilbup ,egrem ,yfidom ,ypoc ,esu otn\\\\sthgir eht noitatimil tuohtiw gnidulcni ,noitcirtser tuohtiw erawtfoS eht nin\\\\laed ot ,)\\"\\\\erawtfoS\\"\\\\ eht( selif noitatnemucod detaicossa dna erawtfos siht fon\\\\ypoc a gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\)moc.suhroserdnis( >moc.liamg@suhroserdnis< suhroS erdniS )c( thgirypoCn\\\\n\\\\)TIM( esneciL TIM ehT\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.1.1.4-ngissa-tcejbo/-/ngissa-tcejbo/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,llun :\\"yrotisoper\\"    
+,\\")moc.suhroserdnis( >moc.liamg@suhroserdnis< suhroS erdniS\\" :\\"rohtua\\"    
+,\\"1.1.4\\" :\\"noisrev\\"    
+,\\"ngissa-tcejbo\\" :\\"eman\\"    
+{  
+["
+`;
+
+exports[`end to end webpack v2 output matches snapshot 1`] = `
+Array [
+  Object {
+    "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
+    "license": "MIT",
+    "licenseText": "The MIT License (MIT)
+
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+",
+    "name": "object-assign",
+    "repository": null,
+    "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+    "version": "4.1.1",
+  },
+  Object {
+    "author": "Roman Shtylman <shtylman@gmail.com>",
+    "license": "MIT",
+    "licenseText": "(The MIT License)
+
+Copyright (c) 2013 Roman Shtylman <shtylman@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "process",
+    "repository": "https://github.com/shtylman/node-process",
+    "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
+    "version": "0.11.10",
+  },
+  Object {
+    "license": "MIT",
+    "licenseText": "MIT License
+
+Copyright (c) 2013-present, Facebook, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
+    "name": "prop-types",
+    "repository": null,
+    "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.6.2.tgz",
+    "version": "15.6.2",
+  },
+  Object {
+    "license": "MIT",
+    "licenseText": "MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
+    "name": "react",
+    "repository": null,
+    "source": "https://registry.npmjs.org/react/-/react-16.6.3.tgz",
+    "version": "16.6.3",
+  },
+  Object {
+    "license": "MIT",
+    "licenseText": "MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
+    "name": "react-dom",
+    "repository": null,
+    "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.6.3.tgz",
+    "version": "16.6.3",
+  },
+  Object {
+    "license": "MIT",
+    "licenseText": "MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
+    "name": "scheduler",
+    "repository": null,
+    "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.11.3.tgz",
+    "version": "0.11.3",
+  },
+  Object {
+    "author": "Tobias Koppers @sokra",
+    "license": "MIT",
+    "licenseText": "Copyright JS Foundation and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "webpack",
+    "repository": "https://github.com/webpack/webpack",
+    "source": "https://registry.npmjs.org/webpack/-/webpack-2.7.0.tgz",
+    "version": "2.7.0",
+  },
+  Object {
+    "author": "Christoph Werner <christoph@codepunkt.de>",
+    "license": "MIT",
+    "licenseText": null,
+    "name": "webpack-license-plugin-test-example",
+    "repository": null,
+    "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
+    "version": "1.0.0",
+  },
+]
+`;
+
+exports[`end to end webpack v2 output to a different outputFilename matches snapshot 1`] = `
+Array [
+  Object {
+    "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
+    "license": "MIT",
+    "licenseText": "The MIT License (MIT)
+
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+",
+    "name": "object-assign",
+    "repository": null,
+    "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
+    "version": "4.1.1",
+  },
+  Object {
+    "author": "Roman Shtylman <shtylman@gmail.com>",
+    "license": "MIT",
+    "licenseText": "(The MIT License)
+
+Copyright (c) 2013 Roman Shtylman <shtylman@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "process",
+    "repository": "https://github.com/shtylman/node-process",
+    "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
+    "version": "0.11.10",
+  },
+  Object {
+    "license": "MIT",
+    "licenseText": "MIT License
+
+Copyright (c) 2013-present, Facebook, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
+    "name": "prop-types",
+    "repository": null,
+    "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.6.2.tgz",
+    "version": "15.6.2",
+  },
+  Object {
+    "license": "MIT",
+    "licenseText": "MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
+    "name": "react",
+    "repository": null,
+    "source": "https://registry.npmjs.org/react/-/react-16.6.3.tgz",
+    "version": "16.6.3",
+  },
+  Object {
+    "license": "MIT",
+    "licenseText": "MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
+    "name": "react-dom",
+    "repository": null,
+    "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.6.3.tgz",
+    "version": "16.6.3",
+  },
+  Object {
+    "license": "MIT",
+    "licenseText": "MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \\"Software\\"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
+    "name": "scheduler",
+    "repository": null,
+    "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.11.3.tgz",
+    "version": "0.11.3",
+  },
+  Object {
+    "author": "Tobias Koppers @sokra",
+    "license": "MIT",
+    "licenseText": "Copyright JS Foundation and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "webpack",
+    "repository": "https://github.com/webpack/webpack",
+    "source": "https://registry.npmjs.org/webpack/-/webpack-2.7.0.tgz",
+    "version": "2.7.0",
+  },
+  Object {
+    "author": "Christoph Werner <christoph@codepunkt.de>",
+    "license": "MIT",
+    "licenseText": null,
+    "name": "webpack-license-plugin-test-example",
+    "repository": null,
+    "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
+    "version": "1.0.0",
+  },
+]
+`;
+
+exports[`end to end webpack v3 additionalFiles match snapshot 1`] = `
+"]
+}  
+llun :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.0.0.1-elpmaxe-tset-nigulp-esnecil-kcapbew/-/elpmaxe-tset-nigulp-esnecil-kcapbew/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,llun :\\"yrotisoper\\"    
+,\\">ed.tknupedoc@hpotsirhc< renreW hpotsirhC\\" :\\"rohtua\\"    
+,\\"0.0.1\\" :\\"noisrev\\"    
+,\\"elpmaxe-tset-nigulp-esnecil-kcapbew\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOS EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOSn\\\\EHT HTIW NOITCENNOC NI RO FO TUO ,MORF GNISIRA ,ESIWREHTO RO TROTn\\\\,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAIL REHTO RO SEGAMAD ,MIALCn\\\\YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUA EHT LLAHS TNEVE ON NIn\\\\.TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIF ,YTILIBATNAHCREMn\\\\FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMI RO SSERPXEn\\\\,DNIK YNA FO YTNARRAW TUOHTIW ,'SI SA' DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipoc lla ni dedulcnin\\\\eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof ehtn\\\\ot tcejbus ,os od ot dehsinruf si erawtfoS eht mohw ot snosrep timrepn\\\\ot dna ,erawtfoS eht fo seipoc lles ro/dna ,esnecilbus ,etubirtsidn\\\\,hsilbup ,egrem ,yfidom ,ypoc ,esu ot sthgir eht noitatimil tuohtiwn\\\\gnidulcni ,noitcirtser tuohtiw erawtfoS eht ni laed ot ,)'erawtfoS'n\\\\eht( selif noitatnemucod detaicossa dna erawtfos siht fo ypoc an\\\\gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\srotubirtnoc rehto dna noitadnuoF SJ thgirypoC\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.0.21.3-kcapbew/-/kcapbew/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,\\"kcapbew/kcapbew/moc.buhtig//:sptth\\" :\\"yrotisoper\\"    
+,\\"arkos@ sreppoK saiboT\\" :\\"rohtua\\"    
+,\\"0.21.3\\" :\\"noisrev\\"    
+,\\"kcapbew\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOSn\\\\EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOS EHT HTIW NOITCENNOC NI RO FO TUOn\\\\,MORF GNISIRA ,ESIWREHTO RO TROT ,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAILn\\\\REHTO RO SEGAMAD ,MIALC YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUAn\\\\EHT LLAHS TNEVE ON NI .TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIFn\\\\,YTILIBATNAHCREM FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMIn\\\\RO SSERPXE ,DNIK YNA FO YTNARRAW TUOHTIW ,\\"\\\\SI SA\\"\\\\ DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipocn\\\\lla ni dedulcni eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof eht ot tcejbus ,os od ot dehsinrufn\\\\si erawtfoS eht mohw ot snosrep timrep ot dna ,erawtfoS eht fo seipocn\\\\lles ro/dna ,esnecilbus ,etubirtsid ,hsilbup ,egrem ,yfidom ,ypoc ,esu otn\\\\sthgir eht noitatimil tuohtiw gnidulcni ,noitcirtser tuohtiw erawtfoS eht nin\\\\laed ot ,)\\"\\\\erawtfoS\\"\\\\ eht( selif noitatnemucod detaicossa dna erawtfos siht fon\\\\ypoc a gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\.setailiffa sti dna .cnI ,koobecaF )c( thgirypoCn\\\\n\\\\esneciL TIM\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.3.11.0-reludehcs/-/reludehcs/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,llun :\\"yrotisoper\\"    
+,\\"3.11.0\\" :\\"noisrev\\"    
+,\\"reludehcs\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOSn\\\\EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOS EHT HTIW NOITCENNOC NI RO FO TUOn\\\\,MORF GNISIRA ,ESIWREHTO RO TROT ,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAILn\\\\REHTO RO SEGAMAD ,MIALC YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUAn\\\\EHT LLAHS TNEVE ON NI .TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIFn\\\\,YTILIBATNAHCREM FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMIn\\\\RO SSERPXE ,DNIK YNA FO YTNARRAW TUOHTIW ,\\"\\\\SI SA\\"\\\\ DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipocn\\\\lla ni dedulcni eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof eht ot tcejbus ,os od ot dehsinrufn\\\\si erawtfoS eht mohw ot snosrep timrep ot dna ,erawtfoS eht fo seipocn\\\\lles ro/dna ,esnecilbus ,etubirtsid ,hsilbup ,egrem ,yfidom ,ypoc ,esu otn\\\\sthgir eht noitatimil tuohtiw gnidulcni ,noitcirtser tuohtiw erawtfoS eht nin\\\\laed ot ,)\\"\\\\erawtfoS\\"\\\\ eht( selif noitatnemucod detaicossa dna erawtfos siht fon\\\\ypoc a gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\.setailiffa sti dna .cnI ,koobecaF )c( thgirypoCn\\\\n\\\\esneciL TIM\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.3.6.61-mod-tcaer/-/mod-tcaer/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,llun :\\"yrotisoper\\"    
+,\\"3.6.61\\" :\\"noisrev\\"    
+,\\"mod-tcaer\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOSn\\\\EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOS EHT HTIW NOITCENNOC NI RO FO TUOn\\\\,MORF GNISIRA ,ESIWREHTO RO TROT ,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAILn\\\\REHTO RO SEGAMAD ,MIALC YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUAn\\\\EHT LLAHS TNEVE ON NI .TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIFn\\\\,YTILIBATNAHCREM FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMIn\\\\RO SSERPXE ,DNIK YNA FO YTNARRAW TUOHTIW ,\\"\\\\SI SA\\"\\\\ DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipocn\\\\lla ni dedulcni eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof eht ot tcejbus ,os od ot dehsinrufn\\\\si erawtfoS eht mohw ot snosrep timrep ot dna ,erawtfoS eht fo seipocn\\\\lles ro/dna ,esnecilbus ,etubirtsid ,hsilbup ,egrem ,yfidom ,ypoc ,esu otn\\\\sthgir eht noitatimil tuohtiw gnidulcni ,noitcirtser tuohtiw erawtfoS eht nin\\\\laed ot ,)\\"\\\\erawtfoS\\"\\\\ eht( selif noitatnemucod detaicossa dna erawtfos siht fon\\\\ypoc a gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\.setailiffa sti dna .cnI ,koobecaF )c( thgirypoCn\\\\n\\\\esneciL TIM\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.3.6.61-tcaer/-/tcaer/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,llun :\\"yrotisoper\\"    
+,\\"3.6.61\\" :\\"noisrev\\"    
+,\\"tcaer\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOSn\\\\EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOS EHT HTIW NOITCENNOC NI RO FO TUOn\\\\,MORF GNISIRA ,ESIWREHTO RO TROT ,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAILn\\\\REHTO RO SEGAMAD ,MIALC YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUAn\\\\EHT LLAHS TNEVE ON NI .TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIFn\\\\,YTILIBATNAHCREM FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMIn\\\\RO SSERPXE ,DNIK YNA FO YTNARRAW TUOHTIW ,\\"\\\\SI SA\\"\\\\ DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipocn\\\\lla ni dedulcni eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof eht ot tcejbus ,os od ot dehsinrufn\\\\si erawtfoS eht mohw ot snosrep timrep ot dna ,erawtfoS eht fo seipocn\\\\lles ro/dna ,esnecilbus ,etubirtsid ,hsilbup ,egrem ,yfidom ,ypoc ,esu otn\\\\sthgir eht noitatimil tuohtiw gnidulcni ,noitcirtser tuohtiw erawtfoS eht nin\\\\laed ot ,)\\"\\\\erawtfoS\\"\\\\ eht( selif noitatnemucod detaicossa dna erawtfos siht fon\\\\ypoc a gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\.cnI ,koobecaF ,tneserp-3102 )c( thgirypoCn\\\\n\\\\esneciL TIM\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.2.6.51-sepyt-porp/-/sepyt-porp/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,llun :\\"yrotisoper\\"    
+,\\"2.6.51\\" :\\"noisrev\\"    
+,\\"sepyt-porp\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOS EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOSn\\\\EHT HTIW NOITCENNOC NI RO FO TUO ,MORF GNISIRA ,ESIWREHTO RO TROTn\\\\,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAIL REHTO RO SEGAMAD ,MIALCn\\\\YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUA EHT LLAHS TNEVE ON NIn\\\\.TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIF ,YTILIBATNAHCREMn\\\\FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMI RO SSERPXEn\\\\,DNIK YNA FO YTNARRAW TUOHTIW ,'SI SA' DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipoc lla ni dedulcnin\\\\eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof ehtn\\\\ot tcejbus ,os od ot dehsinruf si erawtfoS eht mohw ot snosrep timrepn\\\\ot dna ,erawtfoS eht fo seipoc lles ro/dna ,esnecilbus ,etubirtsidn\\\\,hsilbup ,egrem ,yfidom ,ypoc ,esu ot sthgir eht noitatimil tuohtiwn\\\\gnidulcni ,noitcirtser tuohtiw erawtfoS eht ni laed ot ,)'erawtfoS'n\\\\eht( selif noitatnemucod detaicossa dna erawtfos siht fo ypoc an\\\\gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\>moc.liamg@namlyths< namlythS namoR 3102 )c( thgirypoCn\\\\n\\\\)esneciL TIM ehT(\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.01.11.0-ssecorp/-/ssecorp/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,\\"ssecorp-edon/namlyths/moc.buhtig//:sptth\\" :\\"yrotisoper\\"    
+,\\">moc.liamg@namlyths< namlythS namoR\\" :\\"rohtua\\"    
+,\\"01.11.0\\" :\\"noisrev\\"    
+,\\"ssecorp\\" :\\"eman\\"    
 {  
 ,}  
 \\"n\\\\.ERAWTFOS EHTn\\\\NI SGNILAED REHTO RO ESU EHT RO ERAWTFOS EHT HTIW NOITCENNOC NI RO FO TUOn\\\\,MORF GNISIRA ,ESIWREHTO RO TROT ,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAILn\\\\REHTO RO SEGAMAD ,MIALC YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUAn\\\\EHT LLAHS TNEVE ON NI .TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIFn\\\\,YTILIBATNAHCREM FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMIn\\\\RO SSERPXE ,DNIK YNA FO YTNARRAW TUOHTIW ,\\"\\\\SI SA\\"\\\\ DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipoc llan\\\\ni dedulcni eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof eht ot tcejbus ,os od ot dehsinrufn\\\\si erawtfoS eht mohw ot snosrep timrep ot dna ,erawtfoS eht fo seipocn\\\\lles ro/dna ,esnecilbus ,etubirtsid ,hsilbup ,egrem ,yfidom ,ypoc ,esu otn\\\\sthgir eht noitatimil tuohtiw gnidulcni ,noitcirtser tuohtiw erawtfoS eht nin\\\\laed ot ,)\\"\\\\erawtfoS\\"\\\\ eht( selif noitatnemucod detaicossa dna erawtfos siht fon\\\\ypoc a gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\)moc.suhroserdnis( >moc.liamg@suhroserdnis< suhroS erdniS )c( thgirypoCn\\\\n\\\\)TIM( esneciL TIM ehT\\" :\\"txeTesnecil\\"    
@@ -88,6 +619,37 @@ THE SOFTWARE.
     "version": "4.1.1",
   },
   Object {
+    "author": "Roman Shtylman <shtylman@gmail.com>",
+    "license": "MIT",
+    "licenseText": "(The MIT License)
+
+Copyright (c) 2013 Roman Shtylman <shtylman@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "process",
+    "repository": "https://github.com/shtylman/node-process",
+    "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
+    "version": "0.11.10",
+  },
+  Object {
     "license": "MIT",
     "licenseText": "MIT License
 
@@ -202,6 +764,35 @@ SOFTWARE.
     "repository": null,
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.11.3.tgz",
     "version": "0.11.3",
+  },
+  Object {
+    "author": "Tobias Koppers @sokra",
+    "license": "MIT",
+    "licenseText": "Copyright JS Foundation and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "webpack",
+    "repository": "https://github.com/webpack/webpack",
+    "source": "https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz",
+    "version": "3.12.0",
   },
   Object {
     "author": "Christoph Werner <christoph@codepunkt.de>",
@@ -248,6 +839,37 @@ THE SOFTWARE.
     "version": "4.1.1",
   },
   Object {
+    "author": "Roman Shtylman <shtylman@gmail.com>",
+    "license": "MIT",
+    "licenseText": "(The MIT License)
+
+Copyright (c) 2013 Roman Shtylman <shtylman@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "process",
+    "repository": "https://github.com/shtylman/node-process",
+    "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
+    "version": "0.11.10",
+  },
+  Object {
     "license": "MIT",
     "licenseText": "MIT License
 
@@ -364,6 +986,35 @@ SOFTWARE.
     "version": "0.11.3",
   },
   Object {
+    "author": "Tobias Koppers @sokra",
+    "license": "MIT",
+    "licenseText": "Copyright JS Foundation and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "webpack",
+    "repository": "https://github.com/webpack/webpack",
+    "source": "https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz",
+    "version": "3.12.0",
+  },
+  Object {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -385,6 +1036,15 @@ llun :\\"txeTesnecil\\"
 ,\\">ed.tknupedoc@hpotsirhc< renreW hpotsirhC\\" :\\"rohtua\\"    
 ,\\"0.0.1\\" :\\"noisrev\\"    
 ,\\"elpmaxe-tset-nigulp-esnecil-kcapbew\\" :\\"eman\\"    
+{  
+,}  
+\\"n\\\\.ERAWTFOS EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOSn\\\\EHT HTIW NOITCENNOC NI RO FO TUO ,MORF GNISIRA ,ESIWREHTO RO TROTn\\\\,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAIL REHTO RO SEGAMAD ,MIALCn\\\\YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUA EHT LLAHS TNEVE ON NIn\\\\.TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIF ,YTILIBATNAHCREMn\\\\FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMI RO SSERPXEn\\\\,DNIK YNA FO YTNARRAW TUOHTIW ,'SI SA' DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipoc lla ni dedulcnin\\\\eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof ehtn\\\\ot tcejbus ,os od ot dehsinruf si erawtfoS eht mohw ot snosrep timrepn\\\\ot dna ,erawtfoS eht fo seipoc lles ro/dna ,esnecilbus ,etubirtsidn\\\\,hsilbup ,egrem ,yfidom ,ypoc ,esu ot sthgir eht noitatimil tuohtiwn\\\\gnidulcni ,noitcirtser tuohtiw erawtfoS eht ni laed ot ,)'erawtfoS'n\\\\eht( selif noitatnemucod detaicossa dna erawtfos siht fo ypoc an\\\\gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\srotubirtnoc rehto dna noitadnuoF SJ thgirypoC\\" :\\"txeTesnecil\\"    
+,\\"TIM\\" :\\"esnecil\\"    
+,\\"zgt.3.61.4-kcapbew/-/kcapbew/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,\\"kcapbew/kcapbew/moc.buhtig//:sptth\\" :\\"yrotisoper\\"    
+,\\"arkos@ sreppoK saiboT\\" :\\"rohtua\\"    
+,\\"3.61.4\\" :\\"noisrev\\"    
+,\\"kcapbew\\" :\\"eman\\"    
 {  
 ,}  
 \\"n\\\\.ERAWTFOSn\\\\EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOS EHT HTIW NOITCENNOC NI RO FO TUOn\\\\,MORF GNISIRA ,ESIWREHTO RO TROT ,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAILn\\\\REHTO RO SEGAMAD ,MIALC YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUAn\\\\EHT LLAHS TNEVE ON NI .TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIFn\\\\,YTILIBATNAHCREM FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMIn\\\\RO SSERPXE ,DNIK YNA FO YTNARRAW TUOHTIW ,\\"\\\\SI SA\\"\\\\ DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipocn\\\\lla ni dedulcni eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof eht ot tcejbus ,os od ot dehsinrufn\\\\si erawtfoS eht mohw ot snosrep timrep ot dna ,erawtfoS eht fo seipocn\\\\lles ro/dna ,esnecilbus ,etubirtsid ,hsilbup ,egrem ,yfidom ,ypoc ,esu otn\\\\sthgir eht noitatimil tuohtiw gnidulcni ,noitcirtser tuohtiw erawtfoS eht nin\\\\laed ot ,)\\"\\\\erawtfoS\\"\\\\ eht( selif noitatnemucod detaicossa dna erawtfos siht fon\\\\ypoc a gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\.setailiffa sti dna .cnI ,koobecaF )c( thgirypoCn\\\\n\\\\esneciL TIM\\" :\\"txeTesnecil\\"    
@@ -542,6 +1202,35 @@ SOFTWARE.
     "version": "0.11.3",
   },
   Object {
+    "author": "Tobias Koppers @sokra",
+    "license": "MIT",
+    "licenseText": "Copyright JS Foundation and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "webpack",
+    "repository": "https://github.com/webpack/webpack",
+    "source": "https://registry.npmjs.org/webpack/-/webpack-4.16.3.tgz",
+    "version": "4.16.3",
+  },
+  Object {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -671,6 +1360,35 @@ SOFTWARE.
     "repository": null,
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.11.3.tgz",
     "version": "0.11.3",
+  },
+  Object {
+    "author": "Tobias Koppers @sokra",
+    "license": "MIT",
+    "licenseText": "Copyright JS Foundation and other contributors
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+",
+    "name": "webpack",
+    "repository": "https://github.com/webpack/webpack",
+    "source": "https://registry.npmjs.org/webpack/-/webpack-4.16.3.tgz",
+    "version": "4.16.3",
   },
   Object {
     "author": "Christoph Werner <christoph@codepunkt.de>",

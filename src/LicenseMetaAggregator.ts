@@ -24,6 +24,11 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
 
   public aggregateMeta(moduleDirs: string[], options: IPluginOptions) {
     return moduleDirs
+      .sort((a, b) =>
+        this.packageJsonReader
+          .readPackageJson(a)
+          .name.localeCompare(this.packageJsonReader.readPackageJson(b).name)
+      )
       .map(moduleDir => {
         const meta = this.packageJsonReader.readPackageJson(moduleDir)
         const license = this.licenseIdentifier.identifyLicense(meta, options)
@@ -42,7 +47,6 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
           licenseText,
         }
       })
-      .sort((a, b) => a.name.localeCompare(b.name))
   }
 
   public getAuthor(meta: Pick<IPackageJson, 'author'>): string {
