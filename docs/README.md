@@ -8,15 +8,17 @@
 
 </div>
 
-This plugin extracts OSS licensing information about all of the npm packages in your webpack output.
+### This plugin extracts _open source license information_ about all of the npm packages in your webpack output and helps you identify and fix problems with your open source licensing policy.
 
-It will help you
+### It is end to end tested with webpack 2.x, 3.x and 4.x and has full unit test coverage!
 
-- 📦 discover every npm package used in your output
-- 🕵️ find out how it is licensed
-- 📈 summarize the number of packages for each license
-- ❌ cancel builds that include unacceptable licenses
-- 📃 create a customized inventory report or BOM (_bill of materials_) in `json`, `html`, `csv` or other formats
+### It will help you
+
+- 📦 Discover every npm package used in your webpack output
+- 🕵️ Find out how it is licensed
+- 📈 Summarize the number of packages for each license
+- ❌ Cancel builds that include unacceptable licenses
+- 📃 Create a customized inventory report or BOM (_bill of materials_) in `json`, `html`, `csv` or other formats
 
 # Installation & Usage
 
