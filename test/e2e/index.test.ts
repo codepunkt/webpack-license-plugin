@@ -87,17 +87,14 @@ describe('end to end', () => {
         build(
           new WebpackLicensePlugin({
             additionalFiles: {
-              'reverse.txt': output =>
-                output
-                  .split('')
-                  .reverse()
-                  .join(''),
+              'oss-reverse.json': packages =>
+                JSON.stringify(packages.reverse()),
             },
           }),
           fileSystem,
           (err, stats) => {
             const additionalFile = fileSystem
-              .readFileSync(`${outputPath}${sep}reverse.txt`)
+              .readFileSync(`${outputPath}${sep}oss-reverse.json`)
               .toString()
 
             expect(err).toBe(null)

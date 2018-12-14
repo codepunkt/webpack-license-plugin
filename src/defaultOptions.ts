@@ -1,4 +1,4 @@
-import { IPluginOptions } from './OptionsProvider'
+import IPluginOptions from './types/IPluginOptions'
 
 const defaultOptions: IPluginOptions = {
   additionalFiles: {},

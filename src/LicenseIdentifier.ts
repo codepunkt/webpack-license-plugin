@@ -1,5 +1,5 @@
-import { IPluginOptions } from './OptionsProvider'
 import IPackageJson from './types/IPackageJson'
+import IPluginOptions from './types/IPluginOptions'
 
 /**
  * Identifies license type based on package.json and selects
