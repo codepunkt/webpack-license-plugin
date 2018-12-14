@@ -90,9 +90,9 @@
     source-map "^0.6.1"
 
 "@types/webpack@^4.4.19":
-  version "4.4.19"
-  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.4.19.tgz#6019c1825af582219011eaa6cdc179f2d57835f0"
-  integrity sha512-vO/PuQ9iF9Gy8spN8RUUjt5reu9Z+Tb7iWxeAopCmXaIZaIsOgtY5U6UE2ELlcRUBO1HbNWhy+lQE9G92IJcmQ==
+  version "4.4.21"
+  resolved "https://registry.yarnpkg.com/@types/webpack/-/webpack-4.4.21.tgz#1a80de6d3e465f35067dd2f4533bf6e04c2e7187"
+  integrity sha512-QJfA6GeLSlnx8yyrEQ7fNLYj1MYKzqHlo89skOwnKG4nblpwAyXe9Gcm/eTz/BpX0vBEtiehrSv9b/W9TMkhKg==
   dependencies:
     "@types/anymatch" "*"
     "@types/node" "*"
