@@ -1,8 +1,8 @@
 import { compact, uniq } from 'lodash'
-import { IPluginOptions } from './OptionsProvider'
 import IAssetManager from './types/IAssetManager'
 import ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
 import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
+import IPluginOptions from './types/IPluginOptions'
 
 export default class LicenseFileWriter {
   constructor(
@@ -24,13 +24,10 @@ export default class LicenseFileWriter {
       )
 
       const licenseMetaString = JSON.stringify(licenseMeta, null, 2)
-
       this.assetManager.addFile(options.outputFilename, licenseMetaString)
 
       for (const filename of Object.keys(options.additionalFiles)) {
-        const result = await options.additionalFiles[filename](
-          licenseMetaString
-        )
+        const result = await options.additionalFiles[filename](licenseMeta)
         this.assetManager.addFile(filename, result)
       }
     } catch (err) {

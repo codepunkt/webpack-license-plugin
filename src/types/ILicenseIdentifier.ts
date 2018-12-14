@@ -1,5 +1,5 @@
-import { IPluginOptions } from '../OptionsProvider'
 import IPackageJson from './IPackageJson'
+import IPluginOptions from './IPluginOptions'
 
 export default interface ILicenseIdentifier {
   identifyLicense(

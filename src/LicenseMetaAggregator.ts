@@ -1,7 +1,6 @@
 import getNpmTarballUrl from 'get-npm-tarball-url'
 import LicenseIdentifier from './LicenseIdentifier'
 import LicenseTextReader from './LicenseTextReader'
-import { IPluginOptions } from './OptionsProvider'
 import PackageJsonReader from './PackageJsonReader'
 import IFileSystem from './types/IFileSystem'
 import ILicenseIdentifier from './types/ILicenseIdentifier'
@@ -9,6 +8,8 @@ import ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
 import ILicenseTextReader from './types/ILicenseTextReader'
 import IPackageJson from './types/IPackageJson'
 import IPackageJsonReader from './types/IPackageJsonReader'
+import IPackageLicenseMeta from './types/IPackageLicenseMeta'
+import IPluginOptions from './types/IPluginOptions'
 
 export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   constructor(
@@ -22,7 +23,10 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
     )
   ) {}
 
-  public aggregateMeta(moduleDirs: string[], options: IPluginOptions) {
+  public aggregateMeta(
+    moduleDirs: string[],
+    options: IPluginOptions
+  ): IPackageLicenseMeta[] {
     return moduleDirs
       .sort((a, b) =>
         this.packageJsonReader
