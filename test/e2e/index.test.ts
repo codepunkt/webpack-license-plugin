@@ -1,9 +1,11 @@
 import MemoryFs = require('memory-fs')
 import { resolve, sep } from 'path'
 import * as webpack4 from 'webpack'
+// @ts-ignore
 import * as webpack2 from 'webpack2'
+// @ts-ignore
 import * as webpack3 from 'webpack3'
-import WebpackLicensePlugin from '../../src'
+import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 
 const outputPath = resolve(__dirname, './example/dist')
 
