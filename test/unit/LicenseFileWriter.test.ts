@@ -48,14 +48,15 @@ describe('LicenseFileWriter', () => {
   })
 
   describe('writeLicenseFiles', () => {
-    test('adds meta file to the output', () => {
+    test('adds meta file to the output', async () => {
       const assetManager = new AssetManager()
       const instance = new LicenseFileWriter(
         assetManager,
         new DirectoryLocator(d => `dir-${d}`),
         new MetaAggregator(() => ({ foo: 'bar' }))
       )
-      instance.writeLicenseFiles([], defaultOptions, () => undefined)
+
+      await instance.writeLicenseFiles([], defaultOptions, () => undefined)
 
       expect(assetManager.addFile).toHaveBeenCalledTimes(1)
       expect(assetManager.addFile).toHaveBeenCalledWith(
@@ -64,39 +65,15 @@ describe('LicenseFileWriter', () => {
       )
     })
 
-    test('transforms output when options.outputTransform is set', () => {
+    test('adds a different file when options.outputFilename is set', async () => {
       const assetManager = new AssetManager()
       const instance = new LicenseFileWriter(
         assetManager,
         new DirectoryLocator(d => `dir-${d}`),
         new MetaAggregator(() => ({ foo: 'bar' }))
       )
-      const outputTransform = jest
-        .fn()
-        .mockImplementation(o => `transformed${o}`)
-      instance.writeLicenseFiles(
-        [],
-        { ...defaultOptions, outputTransform },
-        () => undefined
-      )
 
-      expect(outputTransform).toHaveBeenCalledTimes(1)
-      expect(outputTransform).toHaveBeenCalledWith('{\n  "foo": "bar"\n}')
-      expect(assetManager.addFile).toHaveBeenCalledTimes(1)
-      expect(assetManager.addFile).toHaveBeenCalledWith(
-        defaultOptions.outputFilename,
-        'transformed{\n  "foo": "bar"\n}'
-      )
-    })
-
-    test('adds a different file when options.outputFilename is set', () => {
-      const assetManager = new AssetManager()
-      const instance = new LicenseFileWriter(
-        assetManager,
-        new DirectoryLocator(d => `dir-${d}`),
-        new MetaAggregator(() => ({ foo: 'bar' }))
-      )
-      instance.writeLicenseFiles(
+      await instance.writeLicenseFiles(
         [],
         { ...defaultOptions, outputFilename: 'bom.json' },
         () => undefined
@@ -109,20 +86,27 @@ describe('LicenseFileWriter', () => {
       )
     })
 
-    test('adds an additional file when options.additionalFiles', () => {
+    test('options.additionalFiles adds additional files', async () => {
       const assetManager = new AssetManager()
       const instance = new LicenseFileWriter(
         assetManager,
         new DirectoryLocator(d => `dir-${d}`),
         new MetaAggregator(() => ({ foo: 'bar' }))
       )
-      instance.writeLicenseFiles(
+
+      await instance.writeLicenseFiles(
         [],
-        { ...defaultOptions, additionalFiles: { 'bom.json': o => `bom${o}` } },
+        {
+          ...defaultOptions,
+          additionalFiles: {
+            'bom.json': o => `bom${o}`,
+            'bom_async.json': async o => `bom_async${o}`,
+          },
+        },
         () => undefined
       )
 
-      expect(assetManager.addFile).toHaveBeenCalledTimes(2)
+      expect(assetManager.addFile).toHaveBeenCalledTimes(3)
       expect(assetManager.addFile).toHaveBeenNthCalledWith(
         1,
         defaultOptions.outputFilename,
@@ -133,9 +117,14 @@ describe('LicenseFileWriter', () => {
         'bom.json',
         'bom{\n  "foo": "bar"\n}'
       )
+      expect(assetManager.addFile).toHaveBeenNthCalledWith(
+        3,
+        'bom_async.json',
+        'bom_async{\n  "foo": "bar"\n}'
+      )
     })
 
-    test('handles errors', () => {
+    test('handles errors', async () => {
       const errorHandler = jest.fn()
       const instance = new LicenseFileWriter(
         new AssetManager(),
@@ -144,7 +133,8 @@ describe('LicenseFileWriter', () => {
           throw new Error('failure')
         })
       )
-      instance.writeLicenseFiles([], defaultOptions, errorHandler)
+
+      await instance.writeLicenseFiles([], defaultOptions, errorHandler)
 
       expect(errorHandler).toHaveBeenCalledTimes(1)
       expect(errorHandler).toHaveBeenCalledWith(new Error('failure'))

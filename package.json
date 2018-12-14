@@ -34,11 +34,13 @@
     "clean": "rimraf dist",
     "lint": "tslint 'src/**/*.ts' --project tsconfig.json",
     "build": "yarn run lint && yarn run clean && tsc",
-    "prepublishOnly": "yarn run build",
+    "install:e2e": "cd test/e2e/example && yarn",
     "manual": "tsc && webpack --config test/e2e/webpack.config.js",
+    "prepublishOnly": "yarn run build",
     "test": "jest --runInBand --verbose",
     "test:e2e": "jest --runInBand --testPathPattern test/e2e",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
+    "test:watch": "jest --runInBand --testPathPattern test/unit --watch",
     "test:ci": "CI=true jest --runInBand --verbose --colors && codecov -t $CODECOV_TOKEN"
   },
   "devDependencies": {

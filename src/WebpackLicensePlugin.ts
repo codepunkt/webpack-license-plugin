@@ -45,7 +45,7 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     }
   }
 
-  public handleChunkAssetOptimization(
+  public async handleChunkAssetOptimization(
     compiler: webpack.Compiler,
     compilation: webpack.compilation.Compilation,
     chunks: webpack.compilation.Chunk[],
@@ -72,7 +72,7 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     const filenames = chunkIterator.iterateChunks(chunks)
 
     // write license meta files
-    licenseFileWriter.writeLicenseFiles(filenames, options, handleError)
+    await licenseFileWriter.writeLicenseFiles(filenames, options, handleError)
 
     if (callback) {
       callback()
