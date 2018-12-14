@@ -4,7 +4,6 @@ const defaultOptions: IPluginOptions = {
   additionalFiles: {},
   licenseOverrides: {},
   outputFilename: 'oss-licenses.json',
-  outputTransform: a => a,
   unacceptableLicenseTest: () => false,
 }
 

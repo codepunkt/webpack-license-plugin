@@ -1040,10 +1040,10 @@ llun :\\"txeTesnecil\\"
 ,}  
 \\"n\\\\.ERAWTFOS EHT NI SGNILAED REHTO RO ESU EHT RO ERAWTFOSn\\\\EHT HTIW NOITCENNOC NI RO FO TUO ,MORF GNISIRA ,ESIWREHTO RO TROTn\\\\,TCARTNOC FO NOITCA NA NI REHTEHW ,YTILIBAIL REHTO RO SEGAMAD ,MIALCn\\\\YNA ROF ELBAIL EB SREDLOH THGIRYPOC RO SROHTUA EHT LLAHS TNEVE ON NIn\\\\.TNEMEGNIRFNINON DNA ESOPRUP RALUCITRAP A ROF SSENTIF ,YTILIBATNAHCREMn\\\\FO SEITNARRAW EHT OT DETIMIL TON TUB GNIDULCNI ,DEILPMI RO SSERPXEn\\\\,DNIK YNA FO YTNARRAW TUOHTIW ,'SI SA' DEDIVORP SI ERAWTFOS EHTn\\\\n\\\\.erawtfoS eht fo snoitrop laitnatsbus ro seipoc lla ni dedulcnin\\\\eb llahs eciton noissimrep siht dna eciton thgirypoc evoba ehTn\\\\n\\\\:snoitidnoc gniwollof ehtn\\\\ot tcejbus ,os od ot dehsinruf si erawtfoS eht mohw ot snosrep timrepn\\\\ot dna ,erawtfoS eht fo seipoc lles ro/dna ,esnecilbus ,etubirtsidn\\\\,hsilbup ,egrem ,yfidom ,ypoc ,esu ot sthgir eht noitatimil tuohtiwn\\\\gnidulcni ,noitcirtser tuohtiw erawtfoS eht ni laed ot ,)'erawtfoS'n\\\\eht( selif noitatnemucod detaicossa dna erawtfos siht fo ypoc an\\\\gniniatbo nosrep yna ot ,egrahc fo eerf ,detnarg ybereh si noissimrePn\\\\n\\\\srotubirtnoc rehto dna noitadnuoF SJ thgirypoC\\" :\\"txeTesnecil\\"    
 ,\\"TIM\\" :\\"esnecil\\"    
-,\\"zgt.3.61.4-kcapbew/-/kcapbew/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
+,\\"zgt.1.72.4-kcapbew/-/kcapbew/gro.sjmpn.yrtsiger//:sptth\\" :\\"ecruos\\"    
 ,\\"kcapbew/kcapbew/moc.buhtig//:sptth\\" :\\"yrotisoper\\"    
 ,\\"arkos@ sreppoK saiboT\\" :\\"rohtua\\"    
-,\\"3.61.4\\" :\\"noisrev\\"    
+,\\"1.72.4\\" :\\"noisrev\\"    
 ,\\"kcapbew\\" :\\"eman\\"    
 {  
 ,}  
@@ -1227,8 +1227,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
     "repository": "https://github.com/webpack/webpack",
-    "source": "https://registry.npmjs.org/webpack/-/webpack-4.16.3.tgz",
-    "version": "4.16.3",
+    "source": "https://registry.npmjs.org/webpack/-/webpack-4.27.1.tgz",
+    "version": "4.27.1",
   },
   Object {
     "author": "Christoph Werner <christoph@codepunkt.de>",
@@ -1387,8 +1387,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
     "repository": "https://github.com/webpack/webpack",
-    "source": "https://registry.npmjs.org/webpack/-/webpack-4.16.3.tgz",
-    "version": "4.16.3",
+    "source": "https://registry.npmjs.org/webpack/-/webpack-4.27.1.tgz",
+    "version": "4.27.1",
   },
   Object {
     "author": "Christoph Werner <christoph@codepunkt.de>",

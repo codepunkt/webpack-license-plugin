@@ -3,10 +3,11 @@ import * as validate from 'spdx-expression-validate'
 import defaultOptions from './defaultOptions'
 
 export interface IPluginOptions {
-  additionalFiles: { [filename: string]: (output: string) => string }
+  additionalFiles: {
+    [filename: string]: (output: string) => string | Promise<string>
+  }
   licenseOverrides: { [packageVersion: string]: string }
   outputFilename: string
-  outputTransform: (output: string) => string
   unacceptableLicenseTest: (license: string) => boolean
 }
 

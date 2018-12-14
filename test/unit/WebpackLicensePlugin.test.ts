@@ -69,11 +69,11 @@ describe('WebpackLicensePlugin', () => {
   })
 
   describe('handleChunkAssetOptimization', () => {
-    test('calls callback for plugin mechanism', () => {
+    test('calls callback for plugin mechanism', async () => {
       const instance = new WebpackLicensePlugin()
       const callback = jest.fn()
 
-      instance.handleChunkAssetOptimization(
+      await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         new MockCompilation({ assets: [], errors: [] }),
         [new MockChunk()],
@@ -83,14 +83,14 @@ describe('WebpackLicensePlugin', () => {
       expect(callback).toHaveBeenCalledTimes(1)
     })
 
-    test('gets plugin options', () => {
+    test('gets plugin options', async () => {
       const options = { outputFilename: 'oss-bom.json' }
       const instance = new WebpackLicensePlugin(options)
       const optionsProvider = new MockOptionsProvider({
         getOptions: jest.fn(),
       })
 
-      instance.handleChunkAssetOptimization(
+      await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         new MockCompilation({ assets: [], errors: [] }),
         [new MockChunk()],
@@ -105,12 +105,12 @@ describe('WebpackLicensePlugin', () => {
       )
     })
 
-    test('iterates through chunks to retrieve filenames', () => {
+    test('iterates through chunks to retrieve filenames', async () => {
       const instance = new WebpackLicensePlugin()
       const chunkIterator = new MockChunkIterator({ iterateChunks: jest.fn() })
       const chunks = [new MockChunk()]
 
-      instance.handleChunkAssetOptimization(
+      await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         new MockCompilation({ assets: [], errors: [] }),
         chunks,
@@ -123,7 +123,7 @@ describe('WebpackLicensePlugin', () => {
       expect(chunkIterator.iterateChunks).toHaveBeenCalledWith(chunks)
     })
 
-    test('calls licenseFileWriter with filenames', () => {
+    test('calls licenseFileWriter with filenames', async () => {
       const instance = new WebpackLicensePlugin()
       const licenseFileWriter = new MockLicenseFileWriter({
         writeLicenseFiles: jest.fn(),
@@ -131,7 +131,7 @@ describe('WebpackLicensePlugin', () => {
       const filenames = ['index.js', 'node_modules/module/index.js']
       const options = { outputFilename: 'bom.json' }
 
-      instance.handleChunkAssetOptimization(
+      await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         new MockCompilation({ assets: [], errors: [] }),
         [new MockChunk()],
