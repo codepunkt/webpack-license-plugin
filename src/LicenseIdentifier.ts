@@ -41,7 +41,7 @@ export default class LicenseIdentifier {
     }
 
     if (!license) {
-      throw new Error('no license found')
+      throw new Error(`no license found for ${id}`)
     }
 
     if (options.unacceptableLicenseTest(license)) {

@@ -1,2 +1,4 @@
 // @todo * license information (see old docs)
-export { default } from './WebpackLicensePlugin'
+import WebpackLicensePlugin from './WebpackLicensePlugin'
+
+export = WebpackLicensePlugin
