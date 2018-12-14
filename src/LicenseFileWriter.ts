@@ -28,6 +28,7 @@ export default class LicenseFileWriter {
 
       for (const filename of Object.keys(options.additionalFiles)) {
         const result = await options.additionalFiles[filename](licenseMeta)
+        // @todo if result is not a string, error!
         this.assetManager.addFile(filename, result)
       }
     } catch (err) {

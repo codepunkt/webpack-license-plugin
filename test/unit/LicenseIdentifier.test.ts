@@ -2,7 +2,7 @@ import LicenseIdentifier from '../../src/LicenseIdentifier'
 
 describe('LicenseIdentifier', () => {
   describe('identifyLicense', () => {
-    test('throws when no license information exists', () => {
+    test('throws when invalid license info was found', () => {
       const licenseIdentifier = new LicenseIdentifier()
 
       expect(() =>
@@ -10,13 +10,13 @@ describe('LicenseIdentifier', () => {
           { name: 'foo', version: '1.0.0' },
           { licenseOverrides: {}, unacceptableLicenseTest: () => false }
         )
-      ).toThrow(/no license found/)
+      ).toThrow(/found invalid license info/)
       expect(() =>
         licenseIdentifier.identifyLicense(
           { name: 'foo', version: '1.0.0', licenses: [] },
           { licenseOverrides: {}, unacceptableLicenseTest: () => false }
         )
-      ).toThrow(/no license found/)
+      ).toThrow(/found invalid license info/)
     })
 
     test('throws when unacceptableLicenseTest takes effect', () => {
