@@ -1,21 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="420 336 3090 876">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="420 336 776 876">
   <defs>
-    <style type="text/css">
-      @font-face {
-        font-family: "handwriting";
-        src: url("data:application/font-woff;charset=utf-8;base64,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");
-      }
-      .title { font: 700 200px sans-serif; }
-      .catch { font: 300 125px handwriting; }
-    </style>
+    <linearGradient id="oss_left" x1="0%" y1="0%" x2="32%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(118,49%,44%);stop-opacity:1" />
+      <stop offset="31%" style="stop-color:hsl(118,49%,44%);stop-opacity:1" />
+      <stop offset="90%" style="stop-color:hsl(118,49%,24%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(118,49%,24%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="oss_right" x1="0%" y1="0%" x2="-38%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(118,49%,44%);stop-opacity:1" />
+      <stop offset="1%" style="stop-color:hsl(118,49%,44%);stop-opacity:1" />
+      <stop offset="54%" style="stop-color:hsl(118,49%,24%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(118,49%,24%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cube_left" x1="0%" y1="0%" x2="-34%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(206,75%,43%);stop-opacity:1" />
+      <stop offset="60%" style="stop-color:hsl(206,75%,23%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(206,75%,23%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cube_right" x1="0%" y1="0%" x2="52%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(206,75%,43%);stop-opacity:1" />
+      <stop offset="64%" style="stop-color:hsl(206,75%,43%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(206,75%,23%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wp_left" x1="0%" y1="0%" x2="-50%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(200,93%,67%);stop-opacity:1" />
+      <stop offset="46%" style="stop-color:hsl(200,93%,67%);stop-opacity:1" />
+      <stop offset="53%" style="stop-color:hsl(200,93%,77%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(200,93%,77%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wp_right" x1="0%" y1="0%" x2="72%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(200,93%,67%);stop-opacity:1" />
+      <stop offset="30%" style="stop-color:hsl(200,93%,67%);stop-opacity:1" />
+      <stop offset="40%" style="stop-color:hsl(200,93%,77%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(200,93%,77%);stop-opacity:1" />
+    </linearGradient>
   </defs>
   <path fill="none" d="M420 336h776v876H420z"/>
   <path fill="#FFF" d="M808 336l387 218.9v437.9l-387 218.9-387-218.9V554.9z"/>
-  <path fill="#8ED6FB" d="M1125.9 977.7l-305.1 172.6v-134.4l190.1-104.6 115 66.4zm20.9-18.9V597.9l-111.6 64.5v232l111.6 64.4zm-657.9 18.9L794 1150.3v-134.4L603.8 911.3l-114.9 66.4zM468 958.8V597.9l111.6 64.5v232L468 958.8zm13.1-384.3l312.9-177v129.9L593.5 637.7l-1.6.9-110.8-64.1zm652.6 0l-312.9-177v129.9l200.5 110.2 1.6.9 110.8-64z"/>
-  <path fill="#3da639" d="M902.332 857.317l1.231-2.6v5.33l.927-.34-5.383-.24zM1146.8 958.8V597.9l-111.6 64.5v232l111.6 64.4zM684.522 840.12l-.156 3.849v-4.344l-1.027.735.108.834zM468 958.8V597.9l111.6 64.5v232L468 958.8zm13.1-384.3l312.9-177v129.9L593.5 637.7l-1.6.9-110.8-64.1zm652.6 0l-312.9-177v129.9l200.5 110.2 1.6.9 110.8-64z"/>
-  <path fill="#1C78C0" d="M794 985.3L606.4 882.1V677.8L794 786.1v199.2zm26.8 0l187.6-103.1V677.8L820.8 786.1v199.2zm-13.4-207zM619.1 654.2l188.3-103.5 188.3 103.5-188.3 108.7-188.3-108.7z"/>
-  <text fill="#000" class="title" x="1260" y="780">webpack-license-plugin</text>
-  <g transform="rotate(2, 2360, 960)">
-    <text fill="#f00" class="catch" x="1560" y="940">break the build, not the law!</text>
-  </g>
+  <path class="wp_left" fill="url(#wp_left)" d="M1125.9 977.7l-305.1 172.6v-134.4l190.1-104.6 115 66.4zm20.9-18.9V597.9l-111.6 64.5v232l111.6 64.4zm-657.9 18.9L794 1150.3v-134.4L603.8 911.3l-114.9 66.4zM468 958.8V597.9l111.6 64.5v232L468 958.8zm13.1-384.3l312.9-177v129.9L593.5 637.7l-1.6.9-110.8-64.1zm652.6 0l-312.9-177v129.9l200.5 110.2 1.6.9 110.8-64z"/>
+  <path class="wp_right" fill="url(#wp_right)" d="M1125.9 977.7l-305.1 172.6v-134.4l190.1-104.6 115 66.4z"/>
+  <path class="oss_top" fill="hsl(118,49%,44%)" d="M902.332 857.317l1.231-2.6v5.33l.927-.34-5.383-.24zM1146.8 958.8V597.9l-111.6 64.5v232l111.6 64.4zM684.522 840.12l-.156 3.849v-4.344l-1.027.735.108.834zM468 958.8V597.9l111.6 64.5v232L468 958.8zm13.1-384.3l312.9-177v129.9L593.5 637.7l-1.6.9-110.8-64.1zm652.6 0l-312.9-177v129.9l200.5 110.2 1.6.9 110.8-64z"/>
+  <path class="oss_left" fill="url(#oss_left)" d="M684.522 840.12l-.156 3.849v-4.344l-1.027.735.108.834zM468 958.8V597.9l111.6 64.5v232L468 958.8z"/>
+  <path class="oss_right" fill="url(#oss_right)" d="M902.332 857.317l1.231-2.6v5.33l.927-.34-5.383-.24zM1146.8 958.8V597.9l-111.6 64.5v232l111.6 64.4z"/>
+  <path class="cube_right" fill="url(#cube_right)" d="M794 985.3L606.4 882.1V677.8L794 786.1v199.2zm26.8 0l187.6-103.1V677.8L820.8 786.1v199.2zm-13.4-207zM619.1 654.2l188.3-103.5 188.3 103.5-188.3 108.7-188.3-108.7z"/>
+  <path class="cube_left" fill="url(#cube_left)" d="M794 985.3L606.4 882.1V677.8L794 786.1"/>
+  <path class="cube_top" fill="hsl(206,75%,46%)" d="M-13.4-207zM619.1 654.2l188.3-103.5 188.3 103.5-188.3 108.7-188.3-108.7z"/>
 </svg>

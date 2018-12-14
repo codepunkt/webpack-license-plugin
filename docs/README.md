@@ -1,18 +1,44 @@
-<p align="center"><img title="webpack-license-plugin logo" alt="webpack-license-plugin logo" src="https://cdn.rawgit.com/codepunkt/webpack-license-plugin/4dac378d/logo.svg" width="600" style="margin-top:20px;"></p>
+<h1 align="center">
+  <br>
+  <a href="https://github.com/codepunkt/webpack-license-plugin"><img src="https://raw.githubusercontent.com/codepunkt/webpack-license-plugin/master/docs/logo.png" alt="webpack-license-plugin logo" width="200"></a>
+  <br>
+  webpack-license-plugin
+  <br>
+</h1>
 
----
+<h4 align="center">A webpack plugin that helps you with the management of your open source dependencies</h4>
 
-<div align="center">
+<p align="center">
+  <a href="https://badge.fury.io/js/webpack-license-plugin">
+    <img src="https://img.shields.io/npm/v/webpack-license-plugin.svg?logo=npm&style=popout"/>
+  </a>
+  <a href="https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master">
+    <img src="https://img.shields.io/circleci/project/github/codepunkt/webpack-license-plugin/master.svg?style=popout&logo=circleci&logoColor=ddd" alt="CircleCI status"/>
+  </a>
+  <a href="https://codecov.io/gh/codepunkt/webpack-license-plugin">
+    <img src="https://img.shields.io/codecov/c/github/codepunkt/webpack-license-plugin/master.svg?style=popout&logo=codecov" alt="Code coverage"/>
+  </a>
+  <a href="https://choosealicense.com/licenses/mit/">
+    <img src="https://img.shields.io/npm/l/webpack-license-plugin.svg?style=popout&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIzIDMgMjYgMjYiPgogIDxwYXRoIGZpbGw9IiMzZGE2MzkiIGQ9Ik0xNiA1LjU1OWMtNi4xMTggMC0xMS4wNzggNC45Ni0xMS4wNzggMTEuMDc5IDAgNC43NDkgMi45ODkgOC43OTkgNy4xODggMTAuMzc0bDIuNTUzLTYuODA4YTMuODA4IDMuODA4IDAgMSAxIDIuNjc0IDBsMi41NTMgNi44MDhjNC4xOTktMS41NzUgNy4xODgtNS42MjUgNy4xODgtMTAuMzc0IDAtNi4xMTktNC45Ni0xMS4wNzktMTEuMDc5LTExLjA3OXoiLz4KPC9zdmc+Cg==&colorB=lightgray" alt="License: MIT"/>
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=webpack-license-plugin%20by%20@code_punkt%20extracts%20open%20source%20license%20information%20about%20the%20npm%20packages%20in%20your%20webpack%20output%20and%20helps%20you%20identify%20and%20fix%20problems%20with%20open%20source%20licensing%20https://github.com/codepunkt/webpack-license-plugin%20#webpack%20#oss">
+    <img src="https://img.shields.io/badge/tweet-⇢-1da1f3.svg?logo=twitter&style=popout" alt="Contact on Twitter"/>
+  </a>
+</p>
 
-[![npm version](https://badge.fury.io/js/webpack-license-plugin.svg)](https://badge.fury.io/js/webpack-license-plugin) [![CircleCI](https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master.svg?style=shield)](https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master) [![Contact on Twitter](https://img.shields.io/twitter/follow/code_punkt.svg?style=flat&label=Contact%20on%20Twitter)](https://twitter.com/code_punkt/)
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#how-to-use">How to use</a> •
+  <a href="#available-options">Available options</a> •
+  <a href="#examples">Examples</a>
+</p>
 
-</div>
+# Key features
 
-### This plugin extracts _open source license information_ about all of the npm packages in your webpack output and helps you identify and fix problems with your open source licensing policy.
+> This plugin extracts _open source license information_ about all of the npm packages in your webpack output and helps you identify and fix problems with your open source licensing policy.
 
-### It is end to end tested with webpack 2.x, 3.x and 4.x and has full unit test coverage!
-
-### It will help you
+This plugin has full test coverage and is tested with **webpack 2.x, 3.x and 4.x**. It will help you:
 
 - 📦 Discover every npm package used in your webpack output
 - 🕵️ Find out how it is licensed
@@ -20,19 +46,24 @@
 - ❌ Cancel builds that include unacceptable licenses
 - 📃 Create a customized inventory report or BOM (_bill of materials_) in `json`, `html`, `csv` or other formats
 
-# Installation & Usage
 
-### → Step 1
+# Installation
 
-Install `webpack-license-plugin` as a development dependency to your current project by running this command:
+Install `webpack-license-plugin` as a development dependency to your current project
+
+#### npm
 
 ```bash
-npm install --save-dev webpack-license-plugin
+npm install -D webpack-license-plugin
 ```
 
-> ⚠️ Make sure run this command in your projects folder (where the `package.json` of your project is)
+#### yarn
 
-### → Step 2
+```bash
+yarn add -D webpack-license-plugin
+```
+
+# How to use
 
 Use `webpack-license-plugin` in your webpack configuration by adding it to the `plugins` array.
 
@@ -47,7 +78,7 @@ module.exports = {
 }
 ```
 
-# Options
+# Available options
 
 Options are given as an `Object` to the first parameter of the `LicensePlugin` constructor:
 
@@ -204,7 +235,3 @@ module.exports = {
   ],
 }
 ```
-
-### Your transforms
-
-> 🗨️ Anything is possible. Be sure to let [me](https://twitter.com/code_punkt) and others know what you've built!
