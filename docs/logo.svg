@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="420 336 776 876">
+  <defs>
+    <linearGradient id="oss_left" x1="0%" y1="0%" x2="32%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(118,49%,44%);stop-opacity:1" />
+      <stop offset="31%" style="stop-color:hsl(118,49%,44%);stop-opacity:1" />
+      <stop offset="90%" style="stop-color:hsl(118,49%,24%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(118,49%,24%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="oss_right" x1="0%" y1="0%" x2="-38%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(118,49%,44%);stop-opacity:1" />
+      <stop offset="1%" style="stop-color:hsl(118,49%,44%);stop-opacity:1" />
+      <stop offset="54%" style="stop-color:hsl(118,49%,24%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(118,49%,24%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cube_left" x1="0%" y1="0%" x2="-34%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(206,75%,43%);stop-opacity:1" />
+      <stop offset="60%" style="stop-color:hsl(206,75%,23%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(206,75%,23%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cube_right" x1="0%" y1="0%" x2="52%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(206,75%,43%);stop-opacity:1" />
+      <stop offset="64%" style="stop-color:hsl(206,75%,43%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(206,75%,23%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wp_left" x1="0%" y1="0%" x2="-50%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(200,93%,67%);stop-opacity:1" />
+      <stop offset="46%" style="stop-color:hsl(200,93%,67%);stop-opacity:1" />
+      <stop offset="53%" style="stop-color:hsl(200,93%,77%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(200,93%,77%);stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wp_right" x1="0%" y1="0%" x2="72%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(200,93%,67%);stop-opacity:1" />
+      <stop offset="30%" style="stop-color:hsl(200,93%,67%);stop-opacity:1" />
+      <stop offset="40%" style="stop-color:hsl(200,93%,77%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(200,93%,77%);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path fill="none" d="M420 336h776v876H420z"/>
+  <path fill="#FFF" d="M808 336l387 218.9v437.9l-387 218.9-387-218.9V554.9z"/>
+  <path class="wp_left" fill="url(#wp_left)" d="M1125.9 977.7l-305.1 172.6v-134.4l190.1-104.6 115 66.4zm20.9-18.9V597.9l-111.6 64.5v232l111.6 64.4zm-657.9 18.9L794 1150.3v-134.4L603.8 911.3l-114.9 66.4zM468 958.8V597.9l111.6 64.5v232L468 958.8zm13.1-384.3l312.9-177v129.9L593.5 637.7l-1.6.9-110.8-64.1zm652.6 0l-312.9-177v129.9l200.5 110.2 1.6.9 110.8-64z"/>
+  <path class="wp_right" fill="url(#wp_right)" d="M1125.9 977.7l-305.1 172.6v-134.4l190.1-104.6 115 66.4z"/>
+  <path class="oss_top" fill="hsl(118,49%,44%)" d="M902.332 857.317l1.231-2.6v5.33l.927-.34-5.383-.24zM1146.8 958.8V597.9l-111.6 64.5v232l111.6 64.4zM684.522 840.12l-.156 3.849v-4.344l-1.027.735.108.834zM468 958.8V597.9l111.6 64.5v232L468 958.8zm13.1-384.3l312.9-177v129.9L593.5 637.7l-1.6.9-110.8-64.1zm652.6 0l-312.9-177v129.9l200.5 110.2 1.6.9 110.8-64z"/>
+  <path class="oss_left" fill="url(#oss_left)" d="M684.522 840.12l-.156 3.849v-4.344l-1.027.735.108.834zM468 958.8V597.9l111.6 64.5v232L468 958.8z"/>
+  <path class="oss_right" fill="url(#oss_right)" d="M902.332 857.317l1.231-2.6v5.33l.927-.34-5.383-.24zM1146.8 958.8V597.9l-111.6 64.5v232l111.6 64.4z"/>
+  <path class="cube_right" fill="url(#cube_right)" d="M794 985.3L606.4 882.1V677.8L794 786.1v199.2zm26.8 0l187.6-103.1V677.8L820.8 786.1v199.2zm-13.4-207zM619.1 654.2l188.3-103.5 188.3 103.5-188.3 108.7-188.3-108.7z"/>
+  <path class="cube_left" fill="url(#cube_left)" d="M794 985.3L606.4 882.1V677.8L794 786.1"/>
+  <path class="cube_top" fill="hsl(206,75%,46%)" d="M-13.4-207zM619.1 654.2l188.3-103.5 188.3 103.5-188.3 108.7-188.3-108.7z"/>
+</svg>
