@@ -5,6 +5,7 @@ import ModuleDirectoryLocator from './ModuleDirectoryLocator'
 import OptionsProvider from './OptionsProvider'
 import IPluginOptions from './types/IPluginOptions'
 import IWebpackPlugin from './types/IWebpackPlugin'
+import WebpackAlertAggregator from './WebpackAlertAggregator'
 import WebpackAssetManager from './WebpackAssetManager'
 import WebpackChunkIterator from './WebpackChunkIterator'
 import WebpackFileSystem from './WebpackFileSystem'
@@ -50,30 +51,25 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     compiler: webpack.Compiler,
     compilation: webpack.compilation.Compilation,
     chunks: webpack.compilation.Chunk[],
-    callback: () => void,
-    optionsProvider: OptionsProvider = new OptionsProvider(),
-    chunkIterator: WebpackChunkIterator = new WebpackChunkIterator(),
-    fileSystem: WebpackFileSystem = new WebpackFileSystem(
-      compiler.inputFileSystem
-    ),
-    licenseFileWriter: LicenseFileWriter = new LicenseFileWriter(
+    callback: () => void
+  ) {
+    const alertAggregator = new WebpackAlertAggregator(compilation)
+    const optionsProvider = new OptionsProvider(alertAggregator)
+    const chunkIterator = new WebpackChunkIterator()
+    const fileSystem = new WebpackFileSystem(compiler.inputFileSystem)
+    const licenseFileWriter = new LicenseFileWriter(
       new WebpackAssetManager(compilation),
       new ModuleDirectoryLocator(fileSystem, compiler.options.context),
-      new LicenseMetaAggregator(fileSystem)
+      new LicenseMetaAggregator(fileSystem, alertAggregator)
     )
-  ) {
-    const handleError = err => {
-      compilation.errors.push(err)
-    }
 
-    // get options
-    const options = optionsProvider.getOptions(this.pluginOptions, handleError)
+    const options = optionsProvider.getOptions(this.pluginOptions)
+    alertAggregator.flushAlerts()
 
-    // retrieve filenames
     const filenames = chunkIterator.iterateChunks(chunks)
 
-    // write license meta files
-    await licenseFileWriter.writeLicenseFiles(filenames, options, handleError)
+    await licenseFileWriter.writeLicenseFiles(filenames, options)
+    alertAggregator.flushAlerts()
 
     if (callback) {
       callback()

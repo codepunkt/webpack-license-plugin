@@ -1,3 +1,4 @@
+import IAlertAggregator from './types/IAlertAggregator'
 import IPackageJson from './types/IPackageJson'
 import IPluginOptions from './types/IPluginOptions'
 
@@ -7,13 +8,17 @@ import IPluginOptions from './types/IPluginOptions'
  *
  * @todo handle "SEE LICENSE IN" `license` fields
  * @see https://docs.npmjs.com/files/package.json#license
- *
  * @todo handle spdx OR case
- *
+ * @todo batch multiple license errors
+ * @todo handle "licenses" string by emitting a warning
+ * @todo perform spdx check on license values!
  * @todo handle license ambiguity via option (default to choosing the first)
  */
 export default class LicenseIdentifier {
-  constructor(private preferredLicenses: string[] = []) {}
+  constructor(
+    private alertAggregator: IAlertAggregator,
+    private readonly preferredLicenses: string[] = []
+  ) {}
 
   public identifyLicense(
     meta: IPackageJson,
@@ -34,30 +39,25 @@ export default class LicenseIdentifier {
     } else if (Array.isArray(meta.licenses) && meta.licenses.length > 0) {
       // handle deprecated `licenses` field
       license =
-        this.findPreferredLicense(
-          meta.licenses.map(l => l.type),
-          this.preferredLicenses
-        ) || meta.licenses[0].type
+        this.findPreferredLicense(meta.licenses.map(l => l.type)) ||
+        meta.licenses[0].type
     }
 
     if (!license) {
-      throw new Error(`no license found for ${id}`)
-    }
-
-    if (options.unacceptableLicenseTest(license)) {
-      throw new Error(
-        `WebpackLicensePlugin: found unacceptable license "${license}" for ${id}`
+      this.alertAggregator.addError(
+        `could not find license info in package.json of ${id}`
+      )
+    } else if (options.unacceptableLicenseTest(license)) {
+      this.alertAggregator.addError(
+        `found unacceptable license "${license}" for ${id}`
       )
     }
 
     return license
   }
 
-  private findPreferredLicense(
-    licenseTypes: string[],
-    preferredLicenses: string[]
-  ): string | null {
-    for (const preferredLicenseType of preferredLicenses) {
+  private findPreferredLicense(licenseTypes: string[]): string | null {
+    for (const preferredLicenseType of this.preferredLicenses) {
       for (const licenseType of licenseTypes) {
         if (preferredLicenseType === licenseType) {
           return preferredLicenseType

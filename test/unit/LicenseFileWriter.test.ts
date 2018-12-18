@@ -56,7 +56,7 @@ describe('LicenseFileWriter', () => {
         new MetaAggregator(() => ({ foo: 'bar' }))
       )
 
-      await instance.writeLicenseFiles([], defaultOptions, () => undefined)
+      await instance.writeLicenseFiles([], defaultOptions)
 
       expect(assetManager.addFile).toHaveBeenCalledTimes(1)
       expect(assetManager.addFile).toHaveBeenCalledWith(
@@ -73,11 +73,10 @@ describe('LicenseFileWriter', () => {
         new MetaAggregator(() => ({ foo: 'bar' }))
       )
 
-      await instance.writeLicenseFiles(
-        [],
-        { ...defaultOptions, outputFilename: 'bom.json' },
-        () => undefined
-      )
+      await instance.writeLicenseFiles([], {
+        ...defaultOptions,
+        outputFilename: 'bom.json',
+      })
 
       expect(assetManager.addFile).toHaveBeenCalledTimes(1)
       expect(assetManager.addFile).toHaveBeenCalledWith(
@@ -94,17 +93,13 @@ describe('LicenseFileWriter', () => {
         new MetaAggregator(() => ({ foo: 'bar' }))
       )
 
-      await instance.writeLicenseFiles(
-        [],
-        {
-          ...defaultOptions,
-          additionalFiles: {
-            'bom.json': o => `bom${JSON.stringify(o)}`,
-            'bom_async.json': async o => `bom_async${JSON.stringify(o)}`,
-          },
+      await instance.writeLicenseFiles([], {
+        ...defaultOptions,
+        additionalFiles: {
+          'bom.json': o => `bom${JSON.stringify(o)}`,
+          'bom_async.json': async o => `bom_async${JSON.stringify(o)}`,
         },
-        () => undefined
-      )
+      })
 
       expect(assetManager.addFile).toHaveBeenCalledTimes(3)
       expect(assetManager.addFile).toHaveBeenNthCalledWith(
@@ -122,22 +117,6 @@ describe('LicenseFileWriter', () => {
         'bom_async.json',
         'bom_async{"foo":"bar"}'
       )
-    })
-
-    test('handles errors', async () => {
-      const errorHandler = jest.fn()
-      const instance = new LicenseFileWriter(
-        new AssetManager(),
-        new DirectoryLocator(d => `dir-${d}`),
-        new MetaAggregator(() => {
-          throw new Error('failure')
-        })
-      )
-
-      await instance.writeLicenseFiles([], defaultOptions, errorHandler)
-
-      expect(errorHandler).toHaveBeenCalledTimes(1)
-      expect(errorHandler).toHaveBeenCalledWith(new Error('failure'))
     })
   })
 })

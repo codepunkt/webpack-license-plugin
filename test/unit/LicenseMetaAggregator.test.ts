@@ -1,20 +1,14 @@
 import defaultOptions from '../../src/defaultOptions'
 import LicenseMetaAggregator from '../../src/LicenseMetaAggregator'
+import IAlertAggregator from '../../src/types/IAlertAggregator'
 import ILicenseIdentifier from '../../src/types/ILicenseIdentifier'
 import ILicenseTextReader from '../../src/types/ILicenseTextReader'
 import IPackageJsonReader from '../../src/types/IPackageJsonReader'
 
-const LicenseIdentifier = jest.fn<ILicenseIdentifier>(() => ({
-  identifyLicense: jest.fn().mockImplementation(() => 'MIT'),
-}))
-const LicenseTextReader = jest.fn<ILicenseTextReader>(() => ({
-  readLicenseText: jest.fn().mockImplementation(() => 'MIT text'),
-}))
-const PackageJsonReader = jest.fn<IPackageJsonReader>(
-  ({ readPackageJson }) => ({
-    readPackageJson: jest.fn().mockImplementation(readPackageJson),
-  })
-)
+const MockLicenseIdentifier = jest.fn<ILicenseIdentifier>(i => i)
+const MockLicenseTextReader = jest.fn<ILicenseTextReader>(i => i)
+const MockPackageJsonReader = jest.fn<IPackageJsonReader>(i => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator>(i => i)
 
 describe('LicenseMetaAggregator', () => {
   let instance: LicenseMetaAggregator
@@ -22,9 +16,10 @@ describe('LicenseMetaAggregator', () => {
   beforeEach(() => {
     instance = new LicenseMetaAggregator(
       null,
-      new LicenseIdentifier(),
-      new LicenseTextReader(),
-      new PackageJsonReader({
+      null,
+      new MockLicenseIdentifier({ identifyLicense: () => 'MIT' }),
+      new MockLicenseTextReader({ readLicenseText: () => 'MIT text' }),
+      new MockPackageJsonReader({
         readPackageJson: name => ({
           name,
           version: '16.6.0',
