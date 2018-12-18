@@ -6,33 +6,28 @@ import IPluginOptions from './types/IPluginOptions'
 
 export default class LicenseFileWriter {
   constructor(
-    public assetManager: IAssetManager,
+    private assetManager: IAssetManager,
     private moduleDirectoryLocator: IModuleDirectoryLocator,
     private licenseMetaAggregator: ILicenseMetaAggregator
   ) {}
 
   public async writeLicenseFiles(
     filenames: string[],
-    options: IPluginOptions,
-    handleError: (error: Error) => void
+    options: IPluginOptions
   ): Promise<void> {
-    try {
-      const moduleDirs = this.getModuleDirs(filenames)
-      const licenseMeta = this.licenseMetaAggregator.aggregateMeta(
-        moduleDirs,
-        options
-      )
+    const moduleDirs = this.getModuleDirs(filenames)
+    const licenseMeta = this.licenseMetaAggregator.aggregateMeta(
+      moduleDirs,
+      options
+    )
 
-      const licenseMetaString = JSON.stringify(licenseMeta, null, 2)
-      this.assetManager.addFile(options.outputFilename, licenseMetaString)
+    const licenseMetaString = JSON.stringify(licenseMeta, null, 2)
+    this.assetManager.addFile(options.outputFilename, licenseMetaString)
 
-      for (const filename of Object.keys(options.additionalFiles)) {
-        const result = await options.additionalFiles[filename](licenseMeta)
-        // @todo if result is not a string, error!
-        this.assetManager.addFile(filename, result)
-      }
-    } catch (err) {
-      handleError(err)
+    for (const filename of Object.keys(options.additionalFiles)) {
+      const result = await options.additionalFiles[filename](licenseMeta)
+      // @todo if result is not a string, error!
+      this.assetManager.addFile(filename, result)
     }
   }
 

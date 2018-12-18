@@ -2,6 +2,7 @@ import getNpmTarballUrl from 'get-npm-tarball-url'
 import LicenseIdentifier from './LicenseIdentifier'
 import LicenseTextReader from './LicenseTextReader'
 import PackageJsonReader from './PackageJsonReader'
+import IAlertAggregator from './types/IAlertAggregator'
 import IFileSystem from './types/IFileSystem'
 import ILicenseIdentifier from './types/ILicenseIdentifier'
 import ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
@@ -14,7 +15,10 @@ import IPluginOptions from './types/IPluginOptions'
 export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   constructor(
     fileSystem: IFileSystem,
-    private licenseIdentifier: ILicenseIdentifier = new LicenseIdentifier(),
+    alertAggregator: IAlertAggregator,
+    private licenseIdentifier: ILicenseIdentifier = new LicenseIdentifier(
+      alertAggregator
+    ),
     private licenseTextReader: ILicenseTextReader = new LicenseTextReader(
       fileSystem
     ),

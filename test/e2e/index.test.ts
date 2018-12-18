@@ -117,7 +117,7 @@ describe('end to end', () => {
           (err, stats) => {
             expect(err).toBe(null)
             expect(stats.errors).toEqual([
-              'WebpackLicensePlugin: "Apache 2.0" in licenseOverrides option is not a valid SPDX expression!',
+              'Invalid licenseOverrides option: "Apache 2.0" is not a valid SPDX expression!',
             ])
 
             done()
@@ -135,7 +135,8 @@ describe('end to end', () => {
             expect(err).toBe(null)
             expect(stats.errors).toEqual(
               expect.arrayContaining([
-                'WebpackLicensePlugin: found unacceptable license "MIT" for object-assign@4.1.1',
+                'found unacceptable license "MIT" for react@16.6.3',
+                'found unacceptable license "MIT" for react-dom@16.6.3',
               ])
             )
 

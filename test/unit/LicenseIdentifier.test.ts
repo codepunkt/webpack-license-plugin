@@ -1,37 +1,57 @@
 import LicenseIdentifier from '../../src/LicenseIdentifier'
+import IAlertAggregator from '../../src/types/IAlertAggregator'
+
+const MockAlertAggregator = jest
+  .fn<IAlertAggregator>()
+  .mockImplementation(i => i)
 
 describe('LicenseIdentifier', () => {
   describe('identifyLicense', () => {
-    test('throws when invalid license info was found', () => {
-      const licenseIdentifier = new LicenseIdentifier()
+    test('throws when no license info was found', () => {
+      const addError = jest.fn()
+      const licenseIdentifier = new LicenseIdentifier(
+        new MockAlertAggregator({ addError })
+      )
 
-      expect(() =>
-        licenseIdentifier.identifyLicense(
-          { name: 'foo', version: '1.0.0' },
-          { licenseOverrides: {}, unacceptableLicenseTest: () => false }
-        )
-      ).toThrow(/found invalid license info/)
-      expect(() =>
-        licenseIdentifier.identifyLicense(
-          { name: 'foo', version: '1.0.0', licenses: [] },
-          { licenseOverrides: {}, unacceptableLicenseTest: () => false }
-        )
-      ).toThrow(/found invalid license info/)
+      licenseIdentifier.identifyLicense(
+        { name: 'foo', version: '1.0.0' },
+        { licenseOverrides: {}, unacceptableLicenseTest: () => false }
+      )
+      licenseIdentifier.identifyLicense(
+        { name: 'bar', version: '1.0.0', licenses: [] },
+        { licenseOverrides: {}, unacceptableLicenseTest: () => false }
+      )
+
+      expect(addError).toHaveBeenCalledTimes(2)
+      expect(addError).toHaveBeenNthCalledWith(
+        1,
+        'could not find license info in package.json of foo@1.0.0'
+      )
+      expect(addError).toHaveBeenNthCalledWith(
+        2,
+        'could not find license info in package.json of bar@1.0.0'
+      )
     })
 
     test('throws when unacceptableLicenseTest takes effect', () => {
-      const licenseIdentifier = new LicenseIdentifier()
+      const addError = jest.fn()
+      const licenseIdentifier = new LicenseIdentifier(
+        new MockAlertAggregator({ addError })
+      )
 
-      expect(() =>
-        licenseIdentifier.identifyLicense(
-          { name: 'foo', version: '1.0.0', license: 'MIT' },
-          { licenseOverrides: {}, unacceptableLicenseTest: () => true }
-        )
-      ).toThrow(/found unacceptable license/)
+      licenseIdentifier.identifyLicense(
+        { name: 'foo', version: '1.0.0', license: 'MIT' },
+        { licenseOverrides: {}, unacceptableLicenseTest: () => true }
+      )
+      expect(addError).toHaveBeenCalledTimes(1)
+      expect(addError).toHaveBeenNthCalledWith(
+        1,
+        'found unacceptable license "MIT" for foo@1.0.0'
+      )
     })
 
     test('reads license from `license` field', () => {
-      const licenseIdentifier = new LicenseIdentifier()
+      const licenseIdentifier = new LicenseIdentifier(new MockAlertAggregator())
 
       expect(
         licenseIdentifier.identifyLicense(
@@ -46,7 +66,7 @@ describe('LicenseIdentifier', () => {
     })
 
     test('reads license from object version of `license` field', () => {
-      const licenseIdentifier = new LicenseIdentifier()
+      const licenseIdentifier = new LicenseIdentifier(new MockAlertAggregator())
       const result = licenseIdentifier.identifyLicense(
         {
           name: 'foo',
@@ -59,7 +79,10 @@ describe('LicenseIdentifier', () => {
     })
 
     test('reads preferred license from `licenses` field', () => {
-      const licenseIdentifier = new LicenseIdentifier(['MIT'])
+      const licenseIdentifier = new LicenseIdentifier(
+        new MockAlertAggregator(),
+        ['MIT']
+      )
       const result = licenseIdentifier.identifyLicense(
         {
           name: 'foo',
@@ -75,7 +98,7 @@ describe('LicenseIdentifier', () => {
     })
 
     test('reads first license from `licenses` field when no preferred licenses are given', () => {
-      const licenseIdentifier = new LicenseIdentifier()
+      const licenseIdentifier = new LicenseIdentifier(new MockAlertAggregator())
       const result = licenseIdentifier.identifyLicense(
         {
           name: 'foo',
@@ -91,7 +114,7 @@ describe('LicenseIdentifier', () => {
     })
 
     test('respects licenseOverrides', () => {
-      const licenseIdentifier = new LicenseIdentifier()
+      const licenseIdentifier = new LicenseIdentifier(new MockAlertAggregator())
       const result = licenseIdentifier.identifyLicense(
         { name: 'foo', version: '1.0.0' },
         {

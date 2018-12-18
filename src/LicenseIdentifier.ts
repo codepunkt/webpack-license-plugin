@@ -1,3 +1,4 @@
+import IAlertAggregator from './types/IAlertAggregator'
 import IPackageJson from './types/IPackageJson'
 import IPluginOptions from './types/IPluginOptions'
 
@@ -14,7 +15,10 @@ import IPluginOptions from './types/IPluginOptions'
  * @todo handle license ambiguity via option (default to choosing the first)
  */
 export default class LicenseIdentifier {
-  constructor(private readonly preferredLicenses: string[] = []) {}
+  constructor(
+    private alertAggregator: IAlertAggregator,
+    private readonly preferredLicenses: string[] = []
+  ) {}
 
   public identifyLicense(
     meta: IPackageJson,
@@ -40,14 +44,12 @@ export default class LicenseIdentifier {
     }
 
     if (!license) {
-      throw new Error(
-        `WebpackLicensePlugin: found invalid license info in package.json of ${id}`
+      this.alertAggregator.addError(
+        `could not find license info in package.json of ${id}`
       )
-    }
-
-    if (options.unacceptableLicenseTest(license)) {
-      throw new Error(
-        `WebpackLicensePlugin: found unacceptable license "${license}" for ${id}`
+    } else if (options.unacceptableLicenseTest(license)) {
+      this.alertAggregator.addError(
+        `found unacceptable license "${license}" for ${id}`
       )
     }
 

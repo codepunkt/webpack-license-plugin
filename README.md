@@ -34,6 +34,12 @@
   <a href="#examples">Examples</a>
 </p>
 
+<div style="background:lemonchiffon;padding:0.2em 1em;">
+
+⚠️ This documents an alpha version of `4.x` - see [webpack-license-plugin on NPM](https://www.npmjs.com/package/webpack-license-plugin) for the documentation of the current stable `3.x` version.
+
+</div>
+
 # Key features
 
 > This plugin extracts _open source license information_ about all of the npm packages in your webpack output and helps you identify and fix problems with your open source licensing policy.
@@ -96,7 +102,7 @@ The available options are:
 
 ### Example with custom options
 
-This example has verbose logging output on the terminal, writes the result to a file named `meta/licenses.json` in the output directory, fails whenever it encounters one of the given licenses and overrides the license of the package `fuse.js@3.2.1`.
+This example writes the result to a file named `meta/licenses.json` in the output directory, fails whenever it encounters one of the given licenses and overrides the license of the package `fuse.js@3.2.1`.
 
 ```js
 const LicensePlugin = require('webpack-license-plugin')
