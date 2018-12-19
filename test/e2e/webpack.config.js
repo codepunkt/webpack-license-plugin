@@ -1,42 +1,12 @@
 const { resolve } = require('path')
-// const WebpackLicensePlugin = require('../../dist/index').default
+const WebpackLicensePlugin = require('../../dist/index')
 
 module.exports = {
-  entry: resolve(__dirname, '../../src/index.ts'),
+  entry: resolve(__dirname, './example/src/index.js'),
   output: {
-    path: resolve(__dirname, 'e2e'),
-  },
-  module: {
-    rules: [
-      {
-        test: /\.ts$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-      },
-    ],
-  },
-  resolve: {
-    extensions: ['.ts', '.js'],
+    path: resolve(__dirname, './example/dist'),
   },
   target: 'node',
   mode: 'development',
-  // plugins: [
-  //   new WebpackLicensePlugin({
-  //     additionalFiles: {
-  //       'oss-summary.json': output => {
-  //         return JSON.stringify(
-  //           JSON.parse(output).reduce(
-  //             (prev, { license }) => ({
-  //               ...prev,
-  //               [license]: prev[license] ? prev[license] + 1 : 1,
-  //             }),
-  //             {}
-  //           ),
-  //           null,
-  //           2
-  //         )
-  //       },
-  //     },
-  //   }),
-  // ],
+  plugins: [new WebpackLicensePlugin({ replenishDefaultLicenseTexts: true })],
 }

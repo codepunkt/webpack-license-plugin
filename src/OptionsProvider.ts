@@ -14,6 +14,16 @@ export default class OptionsProvider {
   }
 
   public validateOptions(inputOptions: Partial<IPluginOptions>) {
+    if (inputOptions.additionalFiles) {
+      for (const fileName of Object.keys(inputOptions.additionalFiles)) {
+        if (typeof inputOptions.additionalFiles[fileName]([]) !== 'string') {
+          this.alertAggregator.addError(
+            `Invalid additionalFiles option: Return value for "${fileName}" is not a string!`
+          )
+        }
+      }
+    }
+
     if (inputOptions.licenseOverrides) {
       for (const packageVersion of Object.keys(inputOptions.licenseOverrides)) {
         if (!validate(inputOptions.licenseOverrides[packageVersion])) {
@@ -24,6 +34,15 @@ export default class OptionsProvider {
           )
         }
       }
+    }
+
+    if (
+      inputOptions.replenishDefaultLicenseTexts &&
+      typeof inputOptions.replenishDefaultLicenseTexts !== 'boolean'
+    ) {
+      this.alertAggregator.addError(
+        `Invalid replenishDefaultLicenseTexts option: Not a boolean!`
+      )
     }
   }
 }

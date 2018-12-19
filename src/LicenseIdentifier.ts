@@ -1,3 +1,5 @@
+// @ts-ignore
+import * as validate from 'spdx-expression-validate'
 import IAlertAggregator from './types/IAlertAggregator'
 import IPackageJson from './types/IPackageJson'
 import IPluginOptions from './types/IPluginOptions'
@@ -6,12 +8,7 @@ import IPluginOptions from './types/IPluginOptions'
  * Identifies license type based on package.json and selects
  * preferred license type if multiple are found
  *
- * @todo handle "SEE LICENSE IN" `license` fields
- * @see https://docs.npmjs.com/files/package.json#license
  * @todo handle spdx OR case
- * @todo batch multiple license errors
- * @todo handle "licenses" string by emitting a warning
- * @todo perform spdx check on license values!
  * @todo handle license ambiguity via option (default to choosing the first)
  */
 export default class LicenseIdentifier {
@@ -26,7 +23,7 @@ export default class LicenseIdentifier {
       IPluginOptions,
       'licenseOverrides' | 'unacceptableLicenseTest'
     >
-  ): string {
+  ): string | null {
     const id = `${meta.name}@${meta.version}`
     let license: string
 
@@ -41,19 +38,25 @@ export default class LicenseIdentifier {
       license =
         this.findPreferredLicense(meta.licenses.map(l => l.type)) ||
         meta.licenses[0].type
+    } else if (typeof meta.licenses === 'string') {
+      // handle invalid string values for deprecated `licenses` field,
+      // which are unfortunately rather common
+      license = meta.licenses
     }
 
     if (!license) {
-      this.alertAggregator.addError(
-        `could not find license info in package.json of ${id}`
-      )
+      this.alertAggregator.addError(`Could not find license info for ${id}`)
     } else if (options.unacceptableLicenseTest(license)) {
       this.alertAggregator.addError(
-        `found unacceptable license "${license}" for ${id}`
+        `Found unacceptable license "${license}" for ${id}`
+      )
+    } else if (!validate(license)) {
+      this.alertAggregator.addError(
+        `License "${license}" for ${id} is not a valid SPDX expression!`
       )
     }
 
-    return license
+    return license || null
   }
 
   private findPreferredLicense(licenseTypes: string[]): string | null {

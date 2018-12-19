@@ -10,6 +10,8 @@ import WebpackAssetManager from './WebpackAssetManager'
 import WebpackChunkIterator from './WebpackChunkIterator'
 import WebpackFileSystem from './WebpackFileSystem'
 
+const pluginName = 'WebpackLicensePlugin'
+
 /**
  * @todo "emit" vs "compilation" & "optimizeChunkAssets" hooks
  */
@@ -35,7 +37,7 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     compilation: webpack.compilation.Compilation
   ) {
     if (typeof compilation.hooks !== 'undefined') {
-      compilation.hooks.optimizeChunkAssets.tap(
+      compilation.hooks.optimizeChunkAssets.tapAsync(
         'webpack-license-plugin',
         this.handleChunkAssetOptimization.bind(this, compiler, compilation)
       )
@@ -55,21 +57,22 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
   ) {
     const alertAggregator = new WebpackAlertAggregator(compilation)
     const optionsProvider = new OptionsProvider(alertAggregator)
+
+    const options = optionsProvider.getOptions(this.pluginOptions)
+    alertAggregator.flushAlerts(pluginName)
+
     const chunkIterator = new WebpackChunkIterator()
+    const filenames = chunkIterator.iterateChunks(chunks)
+
     const fileSystem = new WebpackFileSystem(compiler.inputFileSystem)
     const licenseFileWriter = new LicenseFileWriter(
       new WebpackAssetManager(compilation),
       new ModuleDirectoryLocator(fileSystem, compiler.options.context),
-      new LicenseMetaAggregator(fileSystem, alertAggregator)
+      new LicenseMetaAggregator(fileSystem, alertAggregator, options)
     )
 
-    const options = optionsProvider.getOptions(this.pluginOptions)
-    alertAggregator.flushAlerts()
-
-    const filenames = chunkIterator.iterateChunks(chunks)
-
     await licenseFileWriter.writeLicenseFiles(filenames, options)
-    alertAggregator.flushAlerts()
+    alertAggregator.flushAlerts(pluginName)
 
     if (callback) {
       callback()

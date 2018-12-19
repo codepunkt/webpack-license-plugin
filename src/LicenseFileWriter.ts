@@ -16,17 +16,15 @@ export default class LicenseFileWriter {
     options: IPluginOptions
   ): Promise<void> {
     const moduleDirs = this.getModuleDirs(filenames)
-    const licenseMeta = this.licenseMetaAggregator.aggregateMeta(
-      moduleDirs,
-      options
+    const licenseMeta = await this.licenseMetaAggregator.aggregateMeta(
+      moduleDirs
     )
 
-    const licenseMetaString = JSON.stringify(licenseMeta, null, 2)
-    this.assetManager.addFile(options.outputFilename, licenseMetaString)
+    const fileContents = JSON.stringify(licenseMeta, null, 2)
+    this.assetManager.addFile(options.outputFilename, fileContents)
 
     for (const filename of Object.keys(options.additionalFiles)) {
       const result = await options.additionalFiles[filename](licenseMeta)
-      // @todo if result is not a string, error!
       this.assetManager.addFile(filename, result)
     }
   }
