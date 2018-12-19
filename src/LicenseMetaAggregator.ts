@@ -29,6 +29,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
     )
   ) {}
 
+  // @todo skip excluded packages, when option `excludedPackageTest` is set
   public async aggregateMeta(
     moduleDirs: string[]
   ): Promise<IPackageLicenseMeta[]> {
