@@ -14,6 +14,12 @@ const pluginName = 'WebpackLicensePlugin'
 
 /**
  * @todo "emit" vs "compilation" & "optimizeChunkAssets" hooks
+ * @todo add banner to chunks? boolean option + banner formatter?
+ * @todo override license text or license filename
+ * @todo override for version ranges or *
+ * @todo select output fields
+ * @todo error on missing license text?
+ * @todo preferred license types on ambiguity (licenses array or spdx expression)
  */
 export default class WebpackLicensePlugin implements IWebpackPlugin {
   constructor(private pluginOptions: Partial<IPluginOptions> = {}) {}
