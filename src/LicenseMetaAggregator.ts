@@ -16,45 +16,50 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   constructor(
     fileSystem: IFileSystem,
     alertAggregator: IAlertAggregator,
+    private options: IPluginOptions,
     private licenseIdentifier: ILicenseIdentifier = new LicenseIdentifier(
       alertAggregator
     ),
     private licenseTextReader: ILicenseTextReader = new LicenseTextReader(
-      fileSystem
+      fileSystem,
+      options
     ),
     private packageJsonReader: IPackageJsonReader = new PackageJsonReader(
       fileSystem
     )
   ) {}
 
-  public aggregateMeta(
-    moduleDirs: string[],
-    options: IPluginOptions
-  ): IPackageLicenseMeta[] {
-    return moduleDirs
-      .sort((a, b) =>
-        this.packageJsonReader
-          .readPackageJson(a)
-          .name.localeCompare(this.packageJsonReader.readPackageJson(b).name)
-      )
-      .map(moduleDir => {
-        const meta = this.packageJsonReader.readPackageJson(moduleDir)
-        const license = this.licenseIdentifier.identifyLicense(meta, options)
-        const licenseText = this.licenseTextReader.readLicenseText(
-          license,
-          moduleDir
-        )
+  public async aggregateMeta(
+    moduleDirs: string[]
+  ): Promise<IPackageLicenseMeta[]> {
+    const result: IPackageLicenseMeta[] = []
+    const sortedModuleDirs = moduleDirs.sort((a, b) =>
+      this.packageJsonReader
+        .readPackageJson(a)
+        .name.localeCompare(this.packageJsonReader.readPackageJson(b).name)
+    )
 
-        return {
-          name: meta.name,
-          version: meta.version,
-          author: this.getAuthor(meta),
-          repository: this.getRepository(meta),
-          source: getNpmTarballUrl(meta.name, meta.version),
-          license,
-          licenseText,
-        }
+    // @todo parallel with Promise.all
+    for (const moduleDir of sortedModuleDirs) {
+      const meta = this.packageJsonReader.readPackageJson(moduleDir)
+      const license = this.licenseIdentifier.identifyLicense(meta, this.options)
+      const licenseText = await this.licenseTextReader.readLicenseText(
+        license,
+        moduleDir
+      )
+
+      result.push({
+        name: meta.name,
+        version: meta.version,
+        author: this.getAuthor(meta),
+        repository: this.getRepository(meta),
+        source: getNpmTarballUrl(meta.name, meta.version),
+        license,
+        licenseText,
       })
+    }
+
+    return result
   }
 
   public getAuthor(meta: Pick<IPackageJson, 'author'>): string {

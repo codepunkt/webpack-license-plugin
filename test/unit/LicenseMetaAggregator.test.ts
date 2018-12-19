@@ -17,6 +17,7 @@ describe('LicenseMetaAggregator', () => {
     instance = new LicenseMetaAggregator(
       null,
       null,
+      defaultOptions,
       new MockLicenseIdentifier({ identifyLicense: () => 'MIT' }),
       new MockLicenseTextReader({ readLicenseText: () => 'MIT text' }),
       new MockPackageJsonReader({
@@ -31,11 +32,8 @@ describe('LicenseMetaAggregator', () => {
   })
 
   describe('aggregateMeta', () => {
-    test('returns license meta for the given modules', () => {
-      const meta = instance.aggregateMeta(
-        ['react-dom', 'react'],
-        defaultOptions
-      )
+    test('returns license meta for the given modules', async () => {
+      const meta = await instance.aggregateMeta(['react-dom', 'react'])
 
       expect(meta).toEqual([
         {

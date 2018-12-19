@@ -35,7 +35,7 @@
     "lint": "tslint 'src/**/*.ts' --project tsconfig.json",
     "build": "yarn run lint && yarn run clean && tsc",
     "install:e2e": "cd test/e2e/example && yarn",
-    "manual": "tsc && webpack --config test/e2e/webpack.config.js",
+    "manual": "yarn run build && webpack --config test/e2e/webpack.config.js",
     "prepublishOnly": "yarn run build",
     "test": "jest --runInBand --verbose",
     "test:e2e": "jest --runInBand --testPathPattern test/e2e",

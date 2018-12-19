@@ -15,10 +15,10 @@ export default class WebpackAlertAggregator implements IAlertAggregator {
     this.warnings.push(message)
   }
 
-  public flushAlerts(): void {
-    this.compilation.errors.push(...this.errors)
+  public flushAlerts(prefix: string): void {
+    this.compilation.errors.push(...this.errors.map(e => `${prefix}: ${e}`))
     this.errors = []
-    this.compilation.warnings.push(...this.warnings)
+    this.compilation.warnings.push(...this.warnings.map(w => `${prefix}: ${w}`))
     this.warnings = []
   }
 }

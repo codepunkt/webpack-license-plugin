@@ -1,17 +1,32 @@
 import { join } from 'path'
+import DefaultLicenseTextProvider from './DefaultLicenseTextProvider'
 import IFileSystem from './types/IFileSystem'
+import IPluginOptions from './types/IPluginOptions'
 
 /**
- * Reads license text.
+ * Reads license text from license file.
  *
- * @todo read fallback licenses from directory
- * @todo read fallback licenses from spdx.org
+ * If no license file is found, default license texts can automatically
+ * be added (either retrieved from spdx github repository or read from
+ * a directory).
  */
 export default class LicenseTextReader {
-  constructor(private fileSystem: IFileSystem) {}
+  constructor(
+    private fileSystem: IFileSystem,
+    private options: Pick<
+      IPluginOptions,
+      'defaultLicenseTextDir' | 'replenishDefaultLicenseTexts'
+    >,
+    private defaultLicenseReader: DefaultLicenseTextProvider = new DefaultLicenseTextProvider(
+      options
+    )
+  ) {}
 
-  public readLicenseText(license: string, moduleDir: string): string | null {
-    if (license.indexOf('SEE LICENSE IN ') === 0) {
+  public async readLicenseText(
+    license: string,
+    moduleDir: string
+  ): Promise<string | null> {
+    if (license && license.indexOf('SEE LICENSE IN ') === 0) {
       const filename = license.split(' ')[3]
       return this.readFile(moduleDir, filename)
     }
@@ -21,6 +36,10 @@ export default class LicenseTextReader {
 
     if (licenseFilename !== null) {
       return this.readFile(moduleDir, licenseFilename)
+    }
+
+    if (this.options.replenishDefaultLicenseTexts) {
+      return await this.getDefaultLicenseText(license)
     }
 
     return null
@@ -39,5 +58,9 @@ export default class LicenseTextReader {
     return this.fileSystem
       .readFile(join(directory, filename))
       .replace(/\r\n/g, '\n')
+  }
+
+  public async getDefaultLicenseText(license: string): Promise<string> {
+    return await this.defaultLicenseReader.retrieveLicenseText(license)
   }
 }

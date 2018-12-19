@@ -2,6 +2,10 @@ import { join, resolve, sep } from 'path'
 import IFileSystem from './types/IFileSystem'
 import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
 
+/**
+ * Locates module directories for given filenames by searching
+ * the directory tree for package.json files.
+ */
 export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
   constructor(private fileSystem: IFileSystem, private buildRoot: string) {}
 
