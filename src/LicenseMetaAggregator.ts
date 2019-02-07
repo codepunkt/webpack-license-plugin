@@ -20,6 +20,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
       alertAggregator
     ),
     private licenseTextReader: ILicenseTextReader = new LicenseTextReader(
+      alertAggregator,
       fileSystem
     ),
     private packageJsonReader: IPackageJsonReader = new PackageJsonReader(
@@ -41,6 +42,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
         const meta = this.packageJsonReader.readPackageJson(moduleDir)
         const license = this.licenseIdentifier.identifyLicense(meta, options)
         const licenseText = this.licenseTextReader.readLicenseText(
+          meta,
           license,
           moduleDir
         )
