@@ -10,6 +10,8 @@ import WebpackAssetManager from './WebpackAssetManager'
 import WebpackChunkIterator from './WebpackChunkIterator'
 import WebpackFileSystem from './WebpackFileSystem'
 
+const pluginName = 'WebpackLicensePlugin'
+
 /**
  * @todo "emit" vs "compilation" & "optimizeChunkAssets" hooks
  */
@@ -64,12 +66,12 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     )
 
     const options = optionsProvider.getOptions(this.pluginOptions)
-    alertAggregator.flushAlerts()
+    alertAggregator.flushAlerts(pluginName)
 
     const filenames = chunkIterator.iterateChunks(chunks)
 
     await licenseFileWriter.writeLicenseFiles(filenames, options)
-    alertAggregator.flushAlerts()
+    alertAggregator.flushAlerts(pluginName)
 
     if (callback) {
       callback()
