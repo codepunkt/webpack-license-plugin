@@ -54,7 +54,7 @@
     "@types/jest": "^23.3.10",
     "@types/lodash": "^4.14.118",
     "@types/memory-fs": "^0.3.2",
-    "@types/node": "^10.12.10",
+    "@types/node": "^11.9.5",
     "@types/webpack": "^4.4.19",
     "@types/webpack-sources": "^0.1.5",
     "codecov": "^3.1.0",
