@@ -4706,11 +4706,6 @@ spdx-exceptions@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/spdx-exceptions/-/spdx-exceptions-2.1.0.tgz#2c7ae61056c714a5b9b9b2b2af7d311ef5c78fe9"
 
-spdx-expression-parse@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/spdx-expression-parse/-/spdx-expression-parse-1.0.4.tgz#9bdf2f20e1f40ed447fbe273266191fced51626c"
-  integrity sha1-m98vIOH0DtRH++JzJmGR/O1RYmw=
-
 spdx-expression-parse@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/spdx-expression-parse/-/spdx-expression-parse-3.0.0.tgz#99e119b7a5da00e05491c9fa338b7904823b41d0"
@@ -4719,12 +4714,12 @@ spdx-expression-parse@^3.0.0:
     spdx-exceptions "^2.1.0"
     spdx-license-ids "^3.0.0"
 
-spdx-expression-validate@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/spdx-expression-validate/-/spdx-expression-validate-1.0.2.tgz#5a4e4d7616ed1c9b88150366b4217f767c27e9e3"
-  integrity sha1-Wk5NdhbtHJuIFQNmtCF/dnwn6eM=
+spdx-expression-validate@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/spdx-expression-validate/-/spdx-expression-validate-2.0.0.tgz#25c9408e1c63fad94fff5517bb7101ffcd23350b"
+  integrity sha512-b3wydZLM+Tc6CFvaRDBOF9d76oGIHNCLYFeHbftFXUWjnfZWganmDmvtM5sm1cRwJc/VDBMLyGGrsLFd1vOxbg==
   dependencies:
-    spdx-expression-parse "^1.0.0"
+    spdx-expression-parse "^3.0.0"
 
 spdx-license-ids@^3.0.0:
   version "3.0.0"
