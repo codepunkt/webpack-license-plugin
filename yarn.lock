@@ -40,9 +40,9 @@
   integrity sha512-ePl4l+7dLLmCucIwgQHAgjiepY++qcI6nb8eAwGNkB6OxmTe3Z9rQU3rSpomqu42PCCnlThZbOoxsf+qylJsLA==
 
 "@types/lodash@^4.14.118":
-  version "4.14.121"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.121.tgz#9327e20d49b95fc2bf983fc2f045b2c6effc80b9"
-  integrity sha512-ORj7IBWj13iYufXt/VXrCNMbUuCTJfhzme5kx9U/UtcIPdJYuvPDUAlHlbNhz/8lKCLy9XGIZnGrqXOtQbPGoQ==
+  version "4.14.123"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.123.tgz#39be5d211478c8dd3bdae98ee75bb7efe4abfe4d"
+  integrity sha512-pQvPkc4Nltyx7G1Ww45OjVqUsJP4UsZm+GWJpigXgkikZqJgRm4c48g027o6tdgubWHwFRF15iFd+Y4Pmqv6+Q==
 
 "@types/memory-fs@^0.3.2":
   version "0.3.2"
