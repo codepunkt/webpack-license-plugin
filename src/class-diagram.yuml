@@ -17,6 +17,7 @@
 [PluginChunkReadHandler]++-1[LicenseTextReader]
 [LicenseTextReader]++-1[Logger]
 [LicenseTextReader]++-1[WebpackFileSystem]
+[LicenseTextReader]++-1[DefaultLicenseTextProvider]
 [PluginChunkReadHandler]++-1[PluginLicensePolicy]
 [PluginLicensePolicy]++-2[PluginLicenseTestRunner]
 [LicenseWebpackPlugin]++-1[PluginOptionsReader]
@@ -33,3 +34,4 @@
 [LicenseTextReader]-[note: tries to identifiy license file and read license text{bg:cornsilk}]
 [WebpackAssetManager]-[note: writes/adds assets via webpack.Compiler {bg:cornsilk}]
 [PluginModuleCache]-[note: manages chunk-module correlations{bg:cornsilk}]
+[DefaultLicenseTextProvider]-[note: provides default license texts from spdx or file{bg:cornsilk}]

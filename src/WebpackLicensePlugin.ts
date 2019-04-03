@@ -14,6 +14,12 @@ const pluginName = 'WebpackLicensePlugin'
 
 /**
  * @todo "emit" vs "compilation" & "optimizeChunkAssets" hooks
+ * @todo add banner to chunks? boolean option + banner formatter?
+ * @todo override license text or license filename
+ * @todo override for version ranges or *
+ * @todo select output fields
+ * @todo error on missing license text?
+ * @todo preferred license types on ambiguity (licenses array or spdx expression)
  */
 export default class WebpackLicensePlugin implements IWebpackPlugin {
   constructor(private pluginOptions: Partial<IPluginOptions> = {}) {}
@@ -57,18 +63,19 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
   ) {
     const alertAggregator = new WebpackAlertAggregator(compilation)
     const optionsProvider = new OptionsProvider(alertAggregator)
-    const chunkIterator = new WebpackChunkIterator()
-    const fileSystem = new WebpackFileSystem(compiler.inputFileSystem)
-    const licenseFileWriter = new LicenseFileWriter(
-      new WebpackAssetManager(compilation),
-      new ModuleDirectoryLocator(fileSystem, compiler.options.context),
-      new LicenseMetaAggregator(fileSystem, alertAggregator)
-    )
 
     const options = optionsProvider.getOptions(this.pluginOptions)
     alertAggregator.flushAlerts(pluginName)
 
+    const chunkIterator = new WebpackChunkIterator()
     const filenames = chunkIterator.iterateChunks(chunks)
+
+    const fileSystem = new WebpackFileSystem(compiler.inputFileSystem)
+    const licenseFileWriter = new LicenseFileWriter(
+      new WebpackAssetManager(compilation),
+      new ModuleDirectoryLocator(fileSystem, compiler.options.context),
+      new LicenseMetaAggregator(fileSystem, alertAggregator, options)
+    )
 
     await licenseFileWriter.writeLicenseFiles(filenames, options)
     alertAggregator.flushAlerts(pluginName)

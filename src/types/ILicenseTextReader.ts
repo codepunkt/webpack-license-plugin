@@ -5,5 +5,5 @@ export default interface ILicenseTextReader {
     meta: IPackageJson,
     license: string,
     moduleDir: string
-  ): string | null
+  ): Promise<string | null>
 }

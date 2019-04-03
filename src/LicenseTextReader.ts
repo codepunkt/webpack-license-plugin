@@ -1,26 +1,36 @@
 import { join } from 'path'
+import DefaultLicenseTextProvider from './DefaultLicenseTextProvider'
 import IAlertAggregator from './types/IAlertAggregator'
+import IDefaultLicenseTextProvider from './types/IDefaultLicenseTextProvider'
 import IFileSystem from './types/IFileSystem'
 import IPackageJson from './types/IPackageJson'
+import IPluginOptions from './types/IPluginOptions'
 
 /**
- * Reads license text.
+ * Reads license text from license file.
  *
- * @todo read fallback licenses from directory
- * @todo read fallback licenses from spdx.org
+ * If no license file is found, default license texts can automatically
+ * be added (either retrieved from spdx github repository or read from
+ * a directory).
  */
 export default class LicenseTextReader {
   constructor(
     private alertAggregator: IAlertAggregator,
-    private fileSystem: IFileSystem
+    private fileSystem: IFileSystem,
+    private options: Pick<IPluginOptions, 'replenishDefaultLicenseTexts'>,
+    private defaultLicenseReader: IDefaultLicenseTextProvider = new DefaultLicenseTextProvider()
   ) {}
 
-  public readLicenseText(
+  public async readLicenseText(
     meta: IPackageJson,
     license: string,
     moduleDir: string
-  ): string | null {
+  ): Promise<string | null> {
     const id = `${meta.name}@${meta.version}`
+
+    if (!license) {
+      return null
+    }
 
     if (license.indexOf('SEE LICENSE IN ') === 0) {
       const filename = license.split(' ')[3]
@@ -40,6 +50,10 @@ export default class LicenseTextReader {
       return this.readFile(moduleDir, licenseFilename)
     }
 
+    if (this.options.replenishDefaultLicenseTexts) {
+      return await this.getDefaultLicenseText(license)
+    }
+
     return null
   }
 
@@ -49,6 +63,7 @@ export default class LicenseTextReader {
         return path
       }
     }
+
     return null
   }
 
@@ -56,5 +71,9 @@ export default class LicenseTextReader {
     return this.fileSystem
       .readFile(join(directory, filename))
       .replace(/\r\n/g, '\n')
+  }
+
+  public async getDefaultLicenseText(license: string): Promise<string> {
+    return await this.defaultLicenseReader.retrieveLicenseText(license)
   }
 }

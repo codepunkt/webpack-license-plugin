@@ -1,9 +1,7 @@
 import LicenseIdentifier from '../../src/LicenseIdentifier'
 import IAlertAggregator from '../../src/types/IAlertAggregator'
 
-const MockAlertAggregator = jest
-  .fn<IAlertAggregator>()
-  .mockImplementation(i => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
 
 describe('LicenseIdentifier', () => {
   describe('identifyLicense', () => {
@@ -25,11 +23,11 @@ describe('LicenseIdentifier', () => {
       expect(addError).toHaveBeenCalledTimes(2)
       expect(addError).toHaveBeenNthCalledWith(
         1,
-        'could not find license info in package.json of foo@1.0.0'
+        'Could not find license info for foo@1.0.0'
       )
       expect(addError).toHaveBeenNthCalledWith(
         2,
-        'could not find license info in package.json of bar@1.0.0'
+        'Could not find license info for bar@1.0.0'
       )
     })
 
@@ -46,7 +44,7 @@ describe('LicenseIdentifier', () => {
       expect(addError).toHaveBeenCalledTimes(1)
       expect(addError).toHaveBeenNthCalledWith(
         1,
-        'found unacceptable license "MIT" for foo@1.0.0'
+        'Found unacceptable license "MIT" for foo@1.0.0'
       )
     })
 
@@ -72,6 +70,20 @@ describe('LicenseIdentifier', () => {
           name: 'foo',
           version: '1.0.0',
           license: { type: 'ISC', url: 'http://example.com/' },
+        },
+        { licenseOverrides: {}, unacceptableLicenseTest: () => false }
+      )
+      expect(result).toBe('ISC')
+    })
+
+    test('reads license from string version of `licenses` field', () => {
+      const licenseIdentifier = new LicenseIdentifier(new MockAlertAggregator())
+      const result = licenseIdentifier.identifyLicense(
+        {
+          name: 'foo',
+          version: '1.0.0',
+          // @ts-ignore
+          licenses: 'ISC',
         },
         { licenseOverrides: {}, unacceptableLicenseTest: () => false }
       )
@@ -115,14 +127,30 @@ describe('LicenseIdentifier', () => {
 
     test('respects licenseOverrides', () => {
       const licenseIdentifier = new LicenseIdentifier(new MockAlertAggregator())
+
       const result = licenseIdentifier.identifyLicense(
         { name: 'foo', version: '1.0.0' },
         {
-          licenseOverrides: { 'foo@1.0.0': 'bar' },
+          licenseOverrides: { 'foo@1.0.0': 'MIT' },
           unacceptableLicenseTest: () => false,
         }
       )
-      expect(result).toBe('bar')
+
+      expect(result).toBe('MIT')
+    })
+
+    test('errors when identifier license is not a valid spdx expression', () => {
+      const addError = jest.fn()
+      const licenseIdentifier = new LicenseIdentifier(
+        new MockAlertAggregator({ addError })
+      )
+
+      licenseIdentifier.identifyLicense(
+        { name: 'foo', version: '1.0.0', license: 'Apache 2.0' },
+        { licenseOverrides: {}, unacceptableLicenseTest: () => false }
+      )
+
+      expect(addError).toHaveBeenCalledTimes(1)
     })
   })
 })

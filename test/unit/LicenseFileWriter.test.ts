@@ -4,12 +4,14 @@ import IAssetManager from '../../src/types/IAssetManager'
 import ILicenseMetaAggregator from '../../src/types/ILicenseMetaAggregator'
 import IModuleDirectoryLocator from '../../src/types/IModuleDirectoryLocator'
 
-const AssetManager = jest.fn<IAssetManager>(() => ({ addFile: jest.fn() }))
-const DirectoryLocator = jest.fn<IModuleDirectoryLocator>(impl => ({
-  getModuleDir: jest.fn().mockImplementation(impl),
+const AssetManager = jest.fn<IAssetManager, any[]>(() => ({
+  addFile: jest.fn(),
 }))
-const MetaAggregator = jest.fn<ILicenseMetaAggregator>(impl => ({
-  aggregateMeta: jest.fn().mockImplementation(impl),
+const DirectoryLocator = jest.fn<IModuleDirectoryLocator, any[]>(impl => ({
+  getModuleDir: jest.fn(impl),
+}))
+const MetaAggregator = jest.fn<ILicenseMetaAggregator, any[]>(impl => ({
+  aggregateMeta: jest.fn(impl),
 }))
 
 describe('LicenseFileWriter', () => {

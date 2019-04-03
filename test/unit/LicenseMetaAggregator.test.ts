@@ -5,10 +5,10 @@ import ILicenseIdentifier from '../../src/types/ILicenseIdentifier'
 import ILicenseTextReader from '../../src/types/ILicenseTextReader'
 import IPackageJsonReader from '../../src/types/IPackageJsonReader'
 
-const MockLicenseIdentifier = jest.fn<ILicenseIdentifier>(i => i)
-const MockLicenseTextReader = jest.fn<ILicenseTextReader>(i => i)
-const MockPackageJsonReader = jest.fn<IPackageJsonReader>(i => i)
-const MockAlertAggregator = jest.fn<IAlertAggregator>(i => i)
+const MockLicenseIdentifier = jest.fn<ILicenseIdentifier, any[]>(i => i)
+const MockLicenseTextReader = jest.fn<ILicenseTextReader, any[]>(i => i)
+const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>(i => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
 
 describe('LicenseMetaAggregator', () => {
   let instance: LicenseMetaAggregator
@@ -17,6 +17,7 @@ describe('LicenseMetaAggregator', () => {
     instance = new LicenseMetaAggregator(
       null,
       null,
+      defaultOptions,
       new MockLicenseIdentifier({ identifyLicense: () => 'MIT' }),
       new MockLicenseTextReader({ readLicenseText: () => 'MIT text' }),
       new MockPackageJsonReader({
@@ -31,11 +32,8 @@ describe('LicenseMetaAggregator', () => {
   })
 
   describe('aggregateMeta', () => {
-    test('returns license meta for the given modules', () => {
-      const meta = instance.aggregateMeta(
-        ['react-dom', 'react'],
-        defaultOptions
-      )
+    test('returns license meta for the given modules', async () => {
+      const meta = await instance.aggregateMeta(['react-dom', 'react'])
 
       expect(meta).toEqual([
         {

@@ -135,8 +135,8 @@ describe('end to end', () => {
             expect(err).toBe(null)
             expect(stats.errors).toEqual(
               expect.arrayContaining([
-                'WebpackLicensePlugin: found unacceptable license "MIT" for react@16.6.3',
-                'WebpackLicensePlugin: found unacceptable license "MIT" for react-dom@16.6.3',
+                'WebpackLicensePlugin: Found unacceptable license "MIT" for react@16.6.3',
+                'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@16.6.3',
               ])
             )
 
