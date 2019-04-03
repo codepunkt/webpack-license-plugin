@@ -23,7 +23,7 @@ describe('PackageJsonReader', () => {
     })
 
     test('reads from the cache when applicable', () => {
-      const readFile = jest.fn().mockImplementation(() => `{"foo":"bar"}`)
+      const readFile = jest.fn(() => `{"foo":"bar"}`)
       const instance = new PackageJsonReader(new FileSystem({ readFile }))
 
       instance.readPackageJson('/path/to/directory')

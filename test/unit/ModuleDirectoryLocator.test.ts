@@ -5,9 +5,9 @@ const FileSystem = jest.fn<IFileSystem, any[]>(
   ({ join, pathExists, resolve }) => ({
     listPaths: jest.fn(),
     readFile: jest.fn(),
-    join: jest.fn().mockImplementation(join),
-    pathExists: jest.fn().mockImplementation(pathExists),
-    resolve: jest.fn().mockImplementation(resolve),
+    join: jest.fn(join),
+    pathExists: jest.fn(pathExists),
+    resolve: jest.fn(resolve),
   })
 )
 

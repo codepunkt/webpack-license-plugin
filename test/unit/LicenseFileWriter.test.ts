@@ -8,10 +8,10 @@ const AssetManager = jest.fn<IAssetManager, any[]>(() => ({
   addFile: jest.fn(),
 }))
 const DirectoryLocator = jest.fn<IModuleDirectoryLocator, any[]>(impl => ({
-  getModuleDir: jest.fn().mockImplementation(impl),
+  getModuleDir: jest.fn(impl),
 }))
 const MetaAggregator = jest.fn<ILicenseMetaAggregator, any[]>(impl => ({
-  aggregateMeta: jest.fn().mockImplementation(impl),
+  aggregateMeta: jest.fn(impl),
 }))
 
 describe('LicenseFileWriter', () => {

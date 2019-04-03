@@ -7,16 +7,16 @@ import IFileSystem from '../../src/types/IFileSystem'
 
 const FileSystem = jest.fn<IFileSystem, any[]>(
   ({ join, listPaths, readFile }) => ({
-    join: jest.fn().mockImplementation(join),
-    listPaths: jest.fn().mockImplementation(listPaths),
-    readFile: jest.fn().mockImplementation(readFile),
+    join: jest.fn(join),
+    listPaths: jest.fn(listPaths),
+    readFile: jest.fn(readFile),
     pathExists: jest.fn(),
   })
 )
 
 const DefaultLicenseTextProvider = jest.fn<IDefaultLicenseTextProvider, any[]>(
   ({ retrieveLicenseText }) => ({
-    retrieveLicenseText: jest.fn().mockImplementation(retrieveLicenseText),
+    retrieveLicenseText: jest.fn(retrieveLicenseText),
   })
 )
 
