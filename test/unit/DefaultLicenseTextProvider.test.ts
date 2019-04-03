@@ -4,8 +4,6 @@ import DefaultLicenseTextProvider, {
   REPO_URL,
 } from '../../src/DefaultLicenseTextProvider'
 
-const mockOptions = { defaultLicenseTextDir: 'wat' }
-
 jest.mock('needle', () =>
   jest.fn(async (method: string, url: string) => {
     return url.match(/notfound$/i)
@@ -52,7 +50,7 @@ describe('DefaultLicenseTextProvider', () => {
 
   test('returns null when no license text was found on spdx', async () => {
     const unknownLicenseName = 'foo'
-    const instance = new DefaultLicenseTextProvider(mockOptions, mockRequest)
+    const instance = new DefaultLicenseTextProvider(mockRequest)
     const result = await instance.retrieveLicenseText(unknownLicenseName)
 
     expect(result).toBe(null)
@@ -63,7 +61,7 @@ describe('DefaultLicenseTextProvider', () => {
   })
 
   test('returns license text when one exists on spdx', async () => {
-    const instance = new DefaultLicenseTextProvider(mockOptions, mockRequest)
+    const instance = new DefaultLicenseTextProvider(mockRequest)
 
     const result1 = await instance.retrieveLicenseText('MIT')
     expect(result1).toBe('MIT License Text')
@@ -73,7 +71,7 @@ describe('DefaultLicenseTextProvider', () => {
   })
 
   test('returns license text from cache on cache hit', async () => {
-    const instance = new DefaultLicenseTextProvider(mockOptions, mockRequest)
+    const instance = new DefaultLicenseTextProvider(mockRequest)
 
     const result1 = await instance.retrieveLicenseText('MIT')
     expect(result1).toBe('MIT License Text')
@@ -83,7 +81,7 @@ describe('DefaultLicenseTextProvider', () => {
   })
 
   test('uses fetch when not given a request method', async () => {
-    const instance = new DefaultLicenseTextProvider(mockOptions)
+    const instance = new DefaultLicenseTextProvider()
 
     await instance.retrieveLicenseText('MIT')
     expect(needle).toHaveBeenCalledTimes(1)

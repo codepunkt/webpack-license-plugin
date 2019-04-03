@@ -1,5 +1,4 @@
 import * as needle from 'needle'
-import IPluginOptions from './types/IPluginOptions'
 
 export const fetch = async (url: string): Promise<string | null> => {
   const res = await needle('get', url)
@@ -12,13 +11,11 @@ export const REPO_URL =
 interface IDefaultLicenseTextCache {
   [license: string]: string | null
 }
+
 export default class DefaultLicenseTextProvider {
   private cache: IDefaultLicenseTextCache = {}
 
-  constructor(
-    private options: Pick<IPluginOptions, 'defaultLicenseTextDir'>,
-    private request = fetch
-  ) {}
+  constructor(private request = fetch) {}
 
   public async retrieveLicenseText(license: string): Promise<string | null> {
     if (!this.cache[license]) {
