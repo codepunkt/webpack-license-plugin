@@ -39,8 +39,8 @@ export default class LicenseIdentifier {
         this.findPreferredLicense(meta.licenses.map(l => l.type)) ||
         meta.licenses[0].type
     } else if (typeof meta.licenses === 'string') {
-      // handle invalid string values for deprecated `licenses` field,
-      // which are unfortunately rather common
+      // handle invalid string values for deprecated `licenses` field
+      // unfortunately, these are rather common
       license = meta.licenses
     }
 

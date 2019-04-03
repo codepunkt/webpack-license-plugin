@@ -59,5 +59,20 @@ describe('OptionsProvider', () => {
         'Invalid additionalFiles option: Return value for "bar.json" is not a string!'
       )
     })
+
+    test('errors on invalid type for replenishDefaultLicenseTexts option', () => {
+      const addError = jest.fn()
+      const instance = new OptionsProvider(
+        new MockAlertAggregator({ addError })
+      )
+
+      // @ts-ignore
+      instance.validateOptions({ replenishDefaultLicenseTexts: 'foo' })
+
+      expect(addError).toHaveBeenCalledTimes(1)
+      expect(addError).toHaveBeenCalledWith(
+        'Invalid replenishDefaultLicenseTexts option: Not a boolean!'
+      )
+    })
   })
 })

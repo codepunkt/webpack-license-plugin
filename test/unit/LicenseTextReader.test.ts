@@ -1,5 +1,7 @@
+import { sep } from 'path'
 import defaultOptions from '../../src/defaultOptions'
 import LicenseTextReader from '../../src/LicenseTextReader'
+import IDefaultLicenseTextProvider from '../../src/types/IDefaultLicenseTextProvider'
 import IFileSystem from '../../src/types/IFileSystem'
 
 const FileSystem = jest.fn<IFileSystem>(({ join, listPaths, readFile }) => ({
@@ -8,8 +10,28 @@ const FileSystem = jest.fn<IFileSystem>(({ join, listPaths, readFile }) => ({
   readFile: jest.fn().mockImplementation(readFile),
 }))
 
+const DefaultLicenseTextProvider = jest.fn<IDefaultLicenseTextProvider>(
+  ({ retrieveLicenseText }) => ({
+    retrieveLicenseText: jest.fn().mockImplementation(retrieveLicenseText),
+  })
+)
+
 describe('LicenseTextReader', () => {
   describe('getLicenseFilename', () => {
+    test('returns null if the license is undefined', async () => {
+      const instance = new LicenseTextReader(
+        new FileSystem({ listPaths: d => ['index.js'] }),
+        defaultOptions
+      )
+
+      const result = await instance.readLicenseText(
+        undefined,
+        `${sep}path${sep}to${sep}directory`
+      )
+
+      expect(result).toBe(null)
+    })
+
     test('returns null if no license file is found', () => {
       const instance = new LicenseTextReader(
         new FileSystem({ listPaths: d => ['index.js'] }),
@@ -40,9 +62,9 @@ describe('LicenseTextReader', () => {
         defaultOptions
       )
 
-      const result = instance.readFile('/path/to/directory', 'LICENSE')
+      const result = instance.readFile('path', 'LICENSE')
 
-      expect(result).toEqual('license text in /path/to/directory/LICENSE')
+      expect(result).toEqual(`license text in path${sep}LICENSE`)
     })
   })
 
@@ -57,9 +79,14 @@ describe('LicenseTextReader', () => {
         defaultOptions
       )
 
-      const result = await instance.readLicenseText('MIT', '/path/to/directory')
+      const result = await instance.readLicenseText(
+        'MIT',
+        `${sep}path${sep}to${sep}directory`
+      )
 
-      expect(result).toEqual('license in /path/to/directory/LICENSE')
+      expect(result).toEqual(
+        `license in ${sep}path${sep}to${sep}directory${sep}LICENSE`
+      )
     })
 
     test('returns `null` when no license file was found', async () => {
@@ -73,6 +100,26 @@ describe('LicenseTextReader', () => {
       expect(result).toBe(null)
     })
 
+    test('respects replenishDefaultLicenseTexts option', async () => {
+      const licenseTextProvider = new DefaultLicenseTextProvider({
+        retrieveLicenseText: () => 'wat',
+      })
+      const instance = new LicenseTextReader(
+        new FileSystem({ listPaths: d => ['index.js'] }),
+        { ...defaultOptions, replenishDefaultLicenseTexts: true },
+        licenseTextProvider
+      )
+
+      const result = await instance.readLicenseText('MIT', '/path/to/directory')
+
+      expect(result).toBe('wat')
+      expect(licenseTextProvider.retrieveLicenseText).toHaveBeenCalledTimes(1)
+      expect(licenseTextProvider.retrieveLicenseText).toHaveBeenNthCalledWith(
+        1,
+        'MIT'
+      )
+    })
+
     test("reads license from 'SEE LICENSE IN' licensefile", async () => {
       const instance = new LicenseTextReader(
         new FileSystem({
@@ -84,10 +131,12 @@ describe('LicenseTextReader', () => {
 
       const result = await instance.readLicenseText(
         'SEE LICENSE IN foo.md',
-        '/path/to/directory'
+        `${sep}path${sep}to${sep}directory`
       )
 
-      expect(result).toEqual('foo in /path/to/directory/foo.md')
+      expect(result).toEqual(
+        `foo in ${sep}path${sep}to${sep}directory${sep}foo.md`
+      )
     })
   })
 })

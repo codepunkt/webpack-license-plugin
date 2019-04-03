@@ -1,4 +1,4 @@
-import { join, resolve, sep } from 'path'
+import { resolve, sep } from 'path'
 import IFileSystem from './types/IFileSystem'
 import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
 
@@ -6,6 +6,7 @@ import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
  * Locates module directories for given filenames by searching
  * the directory tree for package.json files.
  */
+
 export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
   constructor(private fileSystem: IFileSystem, private buildRoot: string) {}
 
@@ -13,7 +14,9 @@ export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
     let moduleDir = filename.substring(0, filename.lastIndexOf(sep))
     let prevModuleDir: string | null = null
 
-    while (!this.fileSystem.pathExists(join(moduleDir, 'package.json'))) {
+    while (
+      !this.fileSystem.pathExists(resolve(`${moduleDir}${sep}package.json`))
+    ) {
       // check parent directory
       prevModuleDir = moduleDir
       moduleDir = resolve(`${moduleDir}${sep}..${sep}`)

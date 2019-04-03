@@ -7,25 +7,21 @@ const FileSystem = jest.fn<IFileSystem>(({ join, readFile }) => ({
 }))
 
 describe('PackageJsonReader', () => {
-  describe('readPackageJson', () => {
+  describe.only('readPackageJson', () => {
     test('reads and parses package.json', () => {
       const instance = new PackageJsonReader(
-        new FileSystem({
-          readFile: f => `{"foo":"bar","file":"${f}"}`,
-        })
+        new FileSystem({ readFile: () => `{"foo":"bar"}` })
       )
-      const result = instance.readPackageJson('/path/to/directory')
+
+      const result = instance.readPackageJson('path')
 
       expect(result).toEqual({
-        file: '/path/to/directory/package.json',
         foo: 'bar',
       })
     })
 
     test('reads from the cache when applicable', () => {
-      const readFile = jest
-        .fn()
-        .mockImplementation(f => `{"foo":"bar","file":"${f}"}`)
+      const readFile = jest.fn().mockImplementation(() => `{"foo":"bar"}`)
       const instance = new PackageJsonReader(new FileSystem({ readFile }))
 
       instance.readPackageJson('/path/to/directory')

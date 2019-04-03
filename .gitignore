@@ -1,5 +1,5 @@
 coverage
 node_modules
 public
-.yarn-error.log
+yarn-error.log
 dist

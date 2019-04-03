@@ -43,7 +43,7 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     compilation: webpack.compilation.Compilation
   ) {
     if (typeof compilation.hooks !== 'undefined') {
-      compilation.hooks.optimizeChunkAssets.tapAsync(
+      compilation.hooks.optimizeChunkAssets.tap(
         'webpack-license-plugin',
         this.handleChunkAssetOptimization.bind(this, compiler, compilation)
       )

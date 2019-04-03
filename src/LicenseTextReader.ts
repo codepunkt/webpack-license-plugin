@@ -1,5 +1,6 @@
 import { join } from 'path'
 import DefaultLicenseTextProvider from './DefaultLicenseTextProvider'
+import IDefaultLicenseTextProvider from './types/IDefaultLicenseTextProvider'
 import IFileSystem from './types/IFileSystem'
 import IPluginOptions from './types/IPluginOptions'
 
@@ -17,7 +18,7 @@ export default class LicenseTextReader {
       IPluginOptions,
       'defaultLicenseTextDir' | 'replenishDefaultLicenseTexts'
     >,
-    private defaultLicenseReader: DefaultLicenseTextProvider = new DefaultLicenseTextProvider(
+    private defaultLicenseReader: IDefaultLicenseTextProvider = new DefaultLicenseTextProvider(
       options
     )
   ) {}
@@ -26,6 +27,10 @@ export default class LicenseTextReader {
     license: string,
     moduleDir: string
   ): Promise<string | null> {
+    if (!license) {
+      return null
+    }
+
     if (license && license.indexOf('SEE LICENSE IN ') === 0) {
       const filename = license.split(' ')[3]
       return this.readFile(moduleDir, filename)
@@ -51,6 +56,7 @@ export default class LicenseTextReader {
         return path
       }
     }
+
     return null
   }
 

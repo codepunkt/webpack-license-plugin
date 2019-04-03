@@ -32,9 +32,9 @@ export default class LicenseFileWriter {
   public getModuleDirs(filenames: string[]): string[] {
     return uniq(
       compact(
-        filenames.map(filename =>
-          this.moduleDirectoryLocator.getModuleDir(filename)
-        )
+        filenames.map(filename => {
+          return this.moduleDirectoryLocator.getModuleDir(filename)
+        })
       )
     )
   }
