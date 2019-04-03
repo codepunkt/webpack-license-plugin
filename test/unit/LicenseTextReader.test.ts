@@ -1,6 +1,7 @@
 import { sep } from 'path'
 import defaultOptions from '../../src/defaultOptions'
 import LicenseTextReader from '../../src/LicenseTextReader'
+import IAlertAggregator from '../../src/types/IAlertAggregator'
 import IDefaultLicenseTextProvider from '../../src/types/IDefaultLicenseTextProvider'
 import IFileSystem from '../../src/types/IFileSystem'
 
@@ -16,15 +17,21 @@ const DefaultLicenseTextProvider = jest.fn<IDefaultLicenseTextProvider>(
   })
 )
 
+const MockAlertAggregator = jest
+  .fn<IAlertAggregator>()
+  .mockImplementation(i => i)
+
 describe('LicenseTextReader', () => {
   describe('getLicenseFilename', () => {
     test('returns null if the license is undefined', async () => {
       const instance = new LicenseTextReader(
+        new MockAlertAggregator(),
         new FileSystem({ listPaths: d => ['index.js'] }),
         defaultOptions
       )
 
       const result = await instance.readLicenseText(
+        { name: 'foo', version: 'bla' },
         undefined,
         `${sep}path${sep}to${sep}directory`
       )
@@ -34,6 +41,7 @@ describe('LicenseTextReader', () => {
 
     test('returns null if no license file is found', () => {
       const instance = new LicenseTextReader(
+        new MockAlertAggregator(),
         new FileSystem({ listPaths: d => ['index.js'] }),
         defaultOptions
       )
@@ -43,6 +51,7 @@ describe('LicenseTextReader', () => {
 
     test('returns null if no license file is found', () => {
       const instance = new LicenseTextReader(
+        new MockAlertAggregator(),
         new FileSystem({ listPaths: d => ['index.js', 'LICENSE'] }),
         defaultOptions
       )
@@ -56,6 +65,7 @@ describe('LicenseTextReader', () => {
   describe('readFile', () => {
     test('reads file contents', () => {
       const instance = new LicenseTextReader(
+        new MockAlertAggregator(),
         new FileSystem({
           readFile: p => `license text in ${p}`,
         }),
@@ -71,6 +81,7 @@ describe('LicenseTextReader', () => {
   describe('readLicenseText', () => {
     test('reads license file and returns contents', async () => {
       const instance = new LicenseTextReader(
+        new MockAlertAggregator(),
         new FileSystem({
           join: (d, f) => `${d}/${f}`,
           listPaths: d => ['index.js', 'LICENSE'],
@@ -80,6 +91,7 @@ describe('LicenseTextReader', () => {
       )
 
       const result = await instance.readLicenseText(
+        { name: 'bar', version: '1.0.0' },
         'MIT',
         `${sep}path${sep}to${sep}directory`
       )
@@ -91,11 +103,16 @@ describe('LicenseTextReader', () => {
 
     test('returns `null` when no license file was found', async () => {
       const instance = new LicenseTextReader(
+        new MockAlertAggregator(),
         new FileSystem({ listPaths: d => ['index.js'] }),
         defaultOptions
       )
 
-      const result = await instance.readLicenseText('MIT', '/path/to/directory')
+      const result = await instance.readLicenseText(
+        { name: 'bar', version: '1.0.0' },
+        'MIT',
+        '/path/to/directory'
+      )
 
       expect(result).toBe(null)
     })
@@ -105,12 +122,17 @@ describe('LicenseTextReader', () => {
         retrieveLicenseText: () => 'wat',
       })
       const instance = new LicenseTextReader(
+        new MockAlertAggregator(),
         new FileSystem({ listPaths: d => ['index.js'] }),
         { ...defaultOptions, replenishDefaultLicenseTexts: true },
         licenseTextProvider
       )
 
-      const result = await instance.readLicenseText('MIT', '/path/to/directory')
+      const result = await instance.readLicenseText(
+        { name: 'bar', version: '1.0.0' },
+        'MIT',
+        '/path/to/directory'
+      )
 
       expect(result).toBe('wat')
       expect(licenseTextProvider.retrieveLicenseText).toHaveBeenCalledTimes(1)
@@ -122,6 +144,7 @@ describe('LicenseTextReader', () => {
 
     test("reads license from 'SEE LICENSE IN' licensefile", async () => {
       const instance = new LicenseTextReader(
+        new MockAlertAggregator(),
         new FileSystem({
           listPaths: d => ['index.js', 'foo.md'],
           readFile: p => `foo in ${p}`,
@@ -130,12 +153,38 @@ describe('LicenseTextReader', () => {
       )
 
       const result = await instance.readLicenseText(
+        { name: 'bar', version: '1.0.0' },
         'SEE LICENSE IN foo.md',
         `${sep}path${sep}to${sep}directory`
       )
 
       expect(result).toEqual(
         `foo in ${sep}path${sep}to${sep}directory${sep}foo.md`
+      )
+    })
+
+    test("adds error when not able to read from 'SEE LICENSE IN' file", () => {
+      const addError = jest.fn()
+      const instance = new LicenseTextReader(
+        new MockAlertAggregator({ addError }),
+        new FileSystem({
+          listPaths: d => ['index.js', 'foo.md'],
+          readFile: p => {
+            throw new Error('fail')
+          },
+        }),
+        defaultOptions
+      )
+
+      instance.readLicenseText(
+        { name: 'bar', version: '1.0.0' },
+        'SEE LICENSE IN foo.md',
+        '/path/to/directory'
+      )
+
+      expect(addError).toHaveBeenCalledTimes(1)
+      expect(addError).toHaveBeenCalledWith(
+        'could not find file specified in package.json license field of bar@1.0.0'
       )
     })
   })

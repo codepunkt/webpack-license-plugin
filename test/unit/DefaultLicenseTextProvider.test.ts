@@ -31,11 +31,7 @@ const mockRequest = jest.fn((url: string) => {
   return Promise.resolve(result)
 })
 
-describe('DefaultLicenseTextProvider', () => {
-  beforeEach(() => {
-    jest.clearAllMocks()
-  })
-
+describe('fetch', () => {
   test('fetch starts get request with url and returns the response body or null', async () => {
     const okUrl = 'https://example.com'
     const notFoundUrl = 'https://example.com/notfound'
@@ -46,6 +42,12 @@ describe('DefaultLicenseTextProvider', () => {
     expect(needle.mock.calls).toEqual([['get', okUrl], ['get', notFoundUrl]])
     expect(notFoundResult).toBe(null)
     expect(okResult).toBe('body content')
+  })
+})
+
+describe('DefaultLicenseTextProvider', () => {
+  beforeEach(() => {
+    jest.clearAllMocks()
   })
 
   test('returns null when no license text was found on spdx', async () => {
@@ -60,7 +62,7 @@ describe('DefaultLicenseTextProvider', () => {
     )
   })
 
-  test('returns license text when one exists on spdx', async () => {
+  test('returns license text from spdx', async () => {
     const instance = new DefaultLicenseTextProvider(mockRequest)
 
     const result1 = await instance.retrieveLicenseText('MIT')

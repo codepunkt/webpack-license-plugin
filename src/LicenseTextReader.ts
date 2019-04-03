@@ -1,7 +1,9 @@
 import { join } from 'path'
 import DefaultLicenseTextProvider from './DefaultLicenseTextProvider'
+import IAlertAggregator from './types/IAlertAggregator'
 import IDefaultLicenseTextProvider from './types/IDefaultLicenseTextProvider'
 import IFileSystem from './types/IFileSystem'
+import IPackageJson from './types/IPackageJson'
 import IPluginOptions from './types/IPluginOptions'
 
 /**
@@ -13,22 +15,32 @@ import IPluginOptions from './types/IPluginOptions'
  */
 export default class LicenseTextReader {
   constructor(
+    private alertAggregator: IAlertAggregator,
     private fileSystem: IFileSystem,
     private options: Pick<IPluginOptions, 'replenishDefaultLicenseTexts'>,
     private defaultLicenseReader: IDefaultLicenseTextProvider = new DefaultLicenseTextProvider()
   ) {}
 
   public async readLicenseText(
+    meta: IPackageJson,
     license: string,
     moduleDir: string
   ): Promise<string | null> {
+    const id = `${meta.name}@${meta.version}`
+
     if (!license) {
       return null
     }
 
-    if (license && license.indexOf('SEE LICENSE IN ') === 0) {
+    if (license.indexOf('SEE LICENSE IN ') === 0) {
       const filename = license.split(' ')[3]
-      return this.readFile(moduleDir, filename)
+      try {
+        return this.readFile(moduleDir, filename)
+      } catch (e) {
+        this.alertAggregator.addError(
+          `could not find file specified in package.json license field of ${id}`
+        )
+      }
     }
 
     const pathsInModuleDir = this.fileSystem.listPaths(moduleDir)

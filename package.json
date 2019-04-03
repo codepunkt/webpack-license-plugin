@@ -1,6 +1,6 @@
 {
   "name": "webpack-license-plugin",
-  "version": "4.0.0-alpha.2",
+  "version": "4.0.0-alpha.4",
   "description": "Extracts OSS license information of the npm packages in your webpack output",
   "keywords": [
     "webpack",
@@ -41,7 +41,7 @@
     "test:e2e": "jest --runInBand --testPathPattern test/e2e",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
     "test:watch": "jest --runInBand --testPathPattern test/unit --watch",
-    "test:ci": "CI=true jest --runInBand --verbose --colors && codecov -t $CODECOV_TOKEN"
+    "test:ci": "cross-env CI=true jest --runInBand --verbose --colors && codecov -t $CODECOV_TOKEN"
   },
   "dependencies": {
     "chalk": "^2.4.1",

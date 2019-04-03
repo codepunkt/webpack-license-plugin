@@ -7,7 +7,7 @@ const MockAlertAggregator = jest
 
 describe('LicenseIdentifier', () => {
   describe('identifyLicense', () => {
-    test('throws when no license info was found', () => {
+    test('adds error when no license info was found', () => {
       const addError = jest.fn()
       const licenseIdentifier = new LicenseIdentifier(
         new MockAlertAggregator({ addError })
@@ -33,7 +33,7 @@ describe('LicenseIdentifier', () => {
       )
     })
 
-    test('throws when unacceptableLicenseTest takes effect', () => {
+    test('adds error when unacceptableLicenseTest takes effect', () => {
       const addError = jest.fn()
       const licenseIdentifier = new LicenseIdentifier(
         new MockAlertAggregator({ addError })
