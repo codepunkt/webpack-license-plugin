@@ -14,13 +14,8 @@ import IPluginOptions from './types/IPluginOptions'
 export default class LicenseTextReader {
   constructor(
     private fileSystem: IFileSystem,
-    private options: Pick<
-      IPluginOptions,
-      'defaultLicenseTextDir' | 'replenishDefaultLicenseTexts'
-    >,
-    private defaultLicenseReader: IDefaultLicenseTextProvider = new DefaultLicenseTextProvider(
-      options
-    )
+    private options: Pick<IPluginOptions, 'replenishDefaultLicenseTexts'>,
+    private defaultLicenseReader: IDefaultLicenseTextProvider = new DefaultLicenseTextProvider()
   ) {}
 
   public async readLicenseText(

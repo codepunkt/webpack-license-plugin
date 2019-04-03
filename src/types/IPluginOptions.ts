@@ -6,7 +6,6 @@ export default interface IPluginOptions {
       packages: IPackageLicenseMeta[]
     ) => string | Promise<string>
   }
-  defaultLicenseTextDir: string | null
   licenseOverrides: { [packageVersion: string]: string }
   outputFilename: string
   replenishDefaultLicenseTexts: boolean
