@@ -1,11 +1,15 @@
 import ModuleDirectoryLocator from '../../src/ModuleDirectoryLocator'
 import IFileSystem from '../../src/types/IFileSystem'
 
-const FileSystem = jest.fn<IFileSystem>(({ join, pathExists, resolve }) => ({
-  join: jest.fn().mockImplementation(join),
-  pathExists: jest.fn().mockImplementation(pathExists),
-  resolve: jest.fn().mockImplementation(resolve),
-}))
+const FileSystem = jest.fn<IFileSystem, any[]>(
+  ({ join, pathExists, resolve }) => ({
+    listPaths: jest.fn(),
+    readFile: jest.fn(),
+    join: jest.fn().mockImplementation(join),
+    pathExists: jest.fn().mockImplementation(pathExists),
+    resolve: jest.fn().mockImplementation(resolve),
+  })
+)
 
 const isWin = process.platform === 'win32'
 

@@ -5,21 +5,22 @@ import IAlertAggregator from '../../src/types/IAlertAggregator'
 import IDefaultLicenseTextProvider from '../../src/types/IDefaultLicenseTextProvider'
 import IFileSystem from '../../src/types/IFileSystem'
 
-const FileSystem = jest.fn<IFileSystem>(({ join, listPaths, readFile }) => ({
-  join: jest.fn().mockImplementation(join),
-  listPaths: jest.fn().mockImplementation(listPaths),
-  readFile: jest.fn().mockImplementation(readFile),
-}))
+const FileSystem = jest.fn<IFileSystem, any[]>(
+  ({ join, listPaths, readFile }) => ({
+    join: jest.fn().mockImplementation(join),
+    listPaths: jest.fn().mockImplementation(listPaths),
+    readFile: jest.fn().mockImplementation(readFile),
+    pathExists: jest.fn(),
+  })
+)
 
-const DefaultLicenseTextProvider = jest.fn<IDefaultLicenseTextProvider>(
+const DefaultLicenseTextProvider = jest.fn<IDefaultLicenseTextProvider, any[]>(
   ({ retrieveLicenseText }) => ({
     retrieveLicenseText: jest.fn().mockImplementation(retrieveLicenseText),
   })
 )
 
-const MockAlertAggregator = jest
-  .fn<IAlertAggregator>()
-  .mockImplementation(i => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
 
 describe('LicenseTextReader', () => {
   describe('getLicenseFilename', () => {

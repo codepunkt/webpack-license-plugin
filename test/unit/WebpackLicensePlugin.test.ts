@@ -1,9 +1,9 @@
 import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 import webpack = require('webpack')
 
-const MockCompiler = jest.fn<webpack.Compiler>(i => i)
-const MockCompilation = jest.fn<webpack.compilation.Compilation>(i => i)
-const MockChunk = jest.fn<webpack.compilation.Chunk>(i => i)
+const MockCompiler = jest.fn<webpack.Compiler, any[]>(i => i)
+const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>(i => i)
+const MockChunk = jest.fn<webpack.compilation.Chunk, any[]>(i => i)
 
 describe('WebpackLicensePlugin', () => {
   describe('apply', () => {

@@ -1,9 +1,11 @@
 import PackageJsonReader from '../../src/PackageJsonReader'
 import IFileSystem from '../../src/types/IFileSystem'
 
-const FileSystem = jest.fn<IFileSystem>(({ join, readFile }) => ({
-  join: jest.fn().mockImplementation(join),
-  readFile: jest.fn().mockImplementation(readFile),
+const FileSystem = jest.fn<IFileSystem, any[]>(({ join, readFile }) => ({
+  join: jest.fn(join),
+  readFile: jest.fn(readFile),
+  listPaths: jest.fn(),
+  pathExists: jest.fn(),
 }))
 
 describe('PackageJsonReader', () => {

@@ -4,11 +4,13 @@ import IAssetManager from '../../src/types/IAssetManager'
 import ILicenseMetaAggregator from '../../src/types/ILicenseMetaAggregator'
 import IModuleDirectoryLocator from '../../src/types/IModuleDirectoryLocator'
 
-const AssetManager = jest.fn<IAssetManager>(() => ({ addFile: jest.fn() }))
-const DirectoryLocator = jest.fn<IModuleDirectoryLocator>(impl => ({
+const AssetManager = jest.fn<IAssetManager, any[]>(() => ({
+  addFile: jest.fn(),
+}))
+const DirectoryLocator = jest.fn<IModuleDirectoryLocator, any[]>(impl => ({
   getModuleDir: jest.fn().mockImplementation(impl),
 }))
-const MetaAggregator = jest.fn<ILicenseMetaAggregator>(impl => ({
+const MetaAggregator = jest.fn<ILicenseMetaAggregator, any[]>(impl => ({
   aggregateMeta: jest.fn().mockImplementation(impl),
 }))
 

@@ -3,9 +3,9 @@ import WebpackChunkModuleIterator from '../../src/WebpackChunkModuleIterator'
 import WebpackModuleFileIterator from '../../src/WebpackModuleFileIterator'
 import webpack = require('webpack')
 
-const MockChunk = jest.fn<webpack.compilation.Chunk>(i => i)
-const MockModuleIterator = jest.fn<WebpackChunkModuleIterator>(i => i)
-const MockFileIterator = jest.fn<WebpackModuleFileIterator>(i => i)
+const MockChunk = jest.fn<webpack.compilation.Chunk, any[]>(i => i)
+const MockModuleIterator = jest.fn<WebpackChunkModuleIterator, any[]>(i => i)
+const MockFileIterator = jest.fn<WebpackModuleFileIterator, any[]>(i => i)
 
 describe('WebpackChunkIterator', () => {
   describe('iterateChunks', () => {

@@ -1,9 +1,7 @@
 import LicenseIdentifier from '../../src/LicenseIdentifier'
 import IAlertAggregator from '../../src/types/IAlertAggregator'
 
-const MockAlertAggregator = jest
-  .fn<IAlertAggregator>()
-  .mockImplementation(i => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
 
 describe('LicenseIdentifier', () => {
   describe('identifyLicense', () => {

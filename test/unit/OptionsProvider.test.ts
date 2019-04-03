@@ -2,7 +2,7 @@ import defaultOptions from '../../src/defaultOptions'
 import OptionsProvider from '../../src/OptionsProvider'
 import IAlertAggregator from '../../src/types/IAlertAggregator'
 
-const MockAlertAggregator = jest.fn<IAlertAggregator>(i => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
 
 describe('OptionsProvider', () => {
   describe('getOptions', () => {

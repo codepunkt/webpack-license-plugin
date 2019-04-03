@@ -1,7 +1,7 @@
 import WebpackAlertAggregator from '../../src/WebpackAlertAggregator'
 import webpack = require('webpack')
 
-const MockCompilation = jest.fn<webpack.compilation.Compilation>(i => i)
+const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>(i => i)
 
 describe('WebpackAlertAggregator', () => {
   test('stores errors and flushes previously added errors', () => {
