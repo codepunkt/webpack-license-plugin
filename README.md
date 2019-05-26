@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-<h4 align="center">A webpack plugin that manages the license compliance of your build</h4>
+<h4 align="center">Manage third-party license compliance in your webpack build</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/webpack-license-plugin">
@@ -43,7 +43,7 @@ This plugin has full test coverage and is tested with **webpack 2, 3, 4 and 5**.
 - Discover every npm package used in your webpack output
 - Find out how it is licensed
 - Cancel builds that include unacceptable licenses
-- Create a customized inventory report or BOM (_bill of materials_) in `json`, `html`, `csv` or other formats
+- Create a customized inventory (usually called _bill of materials_) in `json`, `html`, `csv` or other formats
 
 
 # Installation
