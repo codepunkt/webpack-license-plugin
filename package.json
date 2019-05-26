@@ -77,7 +77,8 @@
     "webpack": "4.27.1",
     "webpack-cli": "^3.1.2",
     "webpack2": "npm:webpack@^2",
-    "webpack3": "npm:webpack@^3"
+    "webpack3": "npm:webpack@^3",
+    "webpack5": "npm:webpack@5.0.0-alpha.14"
   },
   "peerDependencies": {
     "webpack": ">=2.7.0"
