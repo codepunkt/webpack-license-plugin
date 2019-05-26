@@ -38,7 +38,7 @@
 
 > This plugin extracts _open source license information_ about all of the npm packages in your webpack output and helps you identify and fix problems with your open source licensing policy.
 
-This plugin has full test coverage and is tested with **webpack 2.x, 3.x and 4.x**. It will help you:
+This plugin has full test coverage and is tested with **webpack 2, 3, 4 and 5**. It will help you:
 
 - Discover every npm package used in your webpack output
 - Find out how it is licensed
