@@ -3,6 +3,7 @@ import LicenseFileWriter from './LicenseFileWriter'
 import LicenseMetaAggregator from './LicenseMetaAggregator'
 import ModuleDirectoryLocator from './ModuleDirectoryLocator'
 import OptionsProvider from './OptionsProvider'
+import PackageJsonReader from './PackageJsonReader'
 import IPluginOptions from './types/IPluginOptions'
 import IWebpackPlugin from './types/IWebpackPlugin'
 import WebpackAlertAggregator from './WebpackAlertAggregator'
@@ -71,10 +72,20 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     const filenames = chunkIterator.iterateChunks(chunks)
 
     const fileSystem = new WebpackFileSystem(compiler.inputFileSystem)
+    const packageJsonReader = new PackageJsonReader(fileSystem)
     const licenseFileWriter = new LicenseFileWriter(
       new WebpackAssetManager(compilation),
-      new ModuleDirectoryLocator(fileSystem, compiler.options.context),
-      new LicenseMetaAggregator(fileSystem, alertAggregator, options)
+      new ModuleDirectoryLocator(
+        fileSystem,
+        compiler.options.context,
+        packageJsonReader
+      ),
+      new LicenseMetaAggregator(
+        fileSystem,
+        alertAggregator,
+        options,
+        packageJsonReader
+      )
     )
 
     await licenseFileWriter.writeLicenseFiles(filenames, options)

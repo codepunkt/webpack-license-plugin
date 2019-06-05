@@ -18,8 +18,6 @@ describe('LicenseMetaAggregator', () => {
       null,
       null,
       defaultOptions,
-      new MockLicenseIdentifier({ identifyLicense: () => 'MIT' }),
-      new MockLicenseTextReader({ readLicenseText: () => 'MIT text' }),
       new MockPackageJsonReader({
         readPackageJson: name => ({
           name,
@@ -27,7 +25,9 @@ describe('LicenseMetaAggregator', () => {
           author: '@iamdevloper',
           repository: { url: 'git@github.com:facebook/react.git' },
         }),
-      })
+      }),
+      new MockLicenseIdentifier({ identifyLicense: () => 'MIT' }),
+      new MockLicenseTextReader({ readLicenseText: () => 'MIT text' })
     )
   })
 

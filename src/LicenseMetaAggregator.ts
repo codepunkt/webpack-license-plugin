@@ -1,22 +1,22 @@
-import getNpmTarballUrl from 'get-npm-tarball-url'
-import LicenseIdentifier from './LicenseIdentifier'
-import LicenseTextReader from './LicenseTextReader'
-import PackageJsonReader from './PackageJsonReader'
-import IAlertAggregator from './types/IAlertAggregator'
-import IFileSystem from './types/IFileSystem'
-import ILicenseIdentifier from './types/ILicenseIdentifier'
-import ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
-import ILicenseTextReader from './types/ILicenseTextReader'
-import IPackageJson from './types/IPackageJson'
-import IPackageJsonReader from './types/IPackageJsonReader'
-import IPackageLicenseMeta from './types/IPackageLicenseMeta'
-import IPluginOptions from './types/IPluginOptions'
+import getNpmTarballUrl from 'get-npm-tarball-url';
+import LicenseIdentifier from './LicenseIdentifier';
+import LicenseTextReader from './LicenseTextReader';
+import IAlertAggregator from './types/IAlertAggregator';
+import IFileSystem from './types/IFileSystem';
+import ILicenseIdentifier from './types/ILicenseIdentifier';
+import ILicenseMetaAggregator from './types/ILicenseMetaAggregator';
+import ILicenseTextReader from './types/ILicenseTextReader';
+import IPackageJson from './types/IPackageJson';
+import IPackageJsonReader from './types/IPackageJsonReader';
+import IPackageLicenseMeta from './types/IPackageLicenseMeta';
+import IPluginOptions from './types/IPluginOptions';
 
 export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   constructor(
     fileSystem: IFileSystem,
     alertAggregator: IAlertAggregator,
     private options: IPluginOptions,
+    private packageJsonReader: IPackageJsonReader,
     private licenseIdentifier: ILicenseIdentifier = new LicenseIdentifier(
       alertAggregator
     ),
@@ -25,9 +25,6 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
       fileSystem,
       options
     ),
-    private packageJsonReader: IPackageJsonReader = new PackageJsonReader(
-      fileSystem
-    )
   ) {}
 
   // @todo skip excluded packages, when option `excludedPackageTest` is set

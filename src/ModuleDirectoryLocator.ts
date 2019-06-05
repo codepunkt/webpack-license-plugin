@@ -1,6 +1,7 @@
 import { resolve, sep } from 'path'
 import IFileSystem from './types/IFileSystem'
 import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
+import IPackageJsonReader from './types/IPackageJsonReader'
 
 /**
  * Locates module directories for given filenames by searching
@@ -8,28 +9,40 @@ import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
  */
 
 export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
-  constructor(private fileSystem: IFileSystem, private buildRoot: string) {}
+  constructor(
+    private fileSystem: IFileSystem,
+    private buildRoot: string,
+    private packageJsonReader: IPackageJsonReader
+  ) {}
 
   public getModuleDir(filename: string): string | null {
     let moduleDir = filename.substring(0, filename.lastIndexOf(sep))
-    let prevModuleDir: string | null = null
+    return this.checkModuleDir(moduleDir)
+  }
 
-    while (
-      !this.fileSystem.pathExists(resolve(`${moduleDir}${sep}package.json`))
-    ) {
-      // check parent directory
-      prevModuleDir = moduleDir
-      moduleDir = resolve(`${moduleDir}${sep}..${sep}`)
+  private checkModuleDir(
+    moduleDir: string,
+    prevModuleDir: string | null = null
+  ): string | null {
+    const checkParent = () =>
+      this.checkModuleDir(resolve(`${moduleDir}${sep}..${sep}`), moduleDir)
 
-      // reached filesystem root
-      if (prevModuleDir === moduleDir) {
-        // @todo file does not belong to a module. throw?
-        return null
-      }
+    const isNotPartOfPackage =
+      moduleDir === prevModuleDir || moduleDir === this.buildRoot
+    if (isNotPartOfPackage) {
+      return null
     }
 
-    if (this.buildRoot === moduleDir) {
-      return null
+    const hasPackageJson = this.fileSystem.pathExists(
+      `${moduleDir}${sep}package.json`
+    )
+    if (!hasPackageJson) {
+      return checkParent()
+    }
+
+    const packageMeta = this.packageJsonReader.readPackageJson(moduleDir)
+    if (packageMeta.name === undefined || packageMeta.version === undefined) {
+      return checkParent()
     }
 
     return moduleDir

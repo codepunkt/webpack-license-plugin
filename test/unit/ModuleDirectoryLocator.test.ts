@@ -1,5 +1,8 @@
 import ModuleDirectoryLocator from '../../src/ModuleDirectoryLocator'
 import IFileSystem from '../../src/types/IFileSystem'
+import IPackageJsonReader from '../../src/types/IPackageJsonReader'
+
+const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>(i => i)
 
 const FileSystem = jest.fn<IFileSystem, any[]>(
   ({ join, pathExists, resolve }) => ({
@@ -18,20 +21,41 @@ describe('ModuleDirectoryLocator', () => {
     test('finds module dir', () => {
       const instance = new ModuleDirectoryLocator(
         new FileSystem({
-          pathExists: p =>
-            p ===
-            (isWin
-              ? 'C:\\project\\node_modules\\a\\package.json'
-              : '/project/node_modules/a/package.json'),
+          pathExists: p => {
+            return [
+              ...(isWin
+                ? [
+                    'C:\\project\\node_modules\\a\\package.json',
+                    'C:\\project\\node_modules\\a\\dist\\noversion\\package.json',
+                    'C:\\project\\node_modules\\a\\dist\\noversion\\noname\\package.json',
+                  ]
+                : [
+                    '/project/node_modules/a/package.json',
+                    '/project/node_modules/a/dist/noversion/package.json',
+                    '/project/node_modules/a/dist/noversion/noname/package.json',
+                  ]),
+            ].includes(p)
+          },
         }),
-        isWin ? 'C:\\project' : '/project'
+        isWin ? 'C:\\project' : '/project',
+        new MockPackageJsonReader({
+          readPackageJson: path => {
+            if (path.endsWith('noname')) {
+              return { version: '1.0.0' }
+            } else if (path.endsWith('noversion')) {
+              return { name: 'foo' }
+            } else {
+              return { name: 'foo', version: '1.0.0' }
+            }
+          },
+        })
       )
 
       expect(
         instance.getModuleDir(
           isWin
-            ? 'C:\\project\\node_modules\\a\\dist\\index.js'
-            : '/project/node_modules/a/dist/index.js'
+            ? 'C:\\project\\node_modules\\a\\dist\\noversion\\noname\\index.js'
+            : '/project/node_modules/a/dist/noversion/noname/index.js'
         )
       ).toEqual(
         isWin ? 'C:\\project\\node_modules\\a' : '/project/node_modules/a'
@@ -45,7 +69,10 @@ describe('ModuleDirectoryLocator', () => {
             p ===
             (isWin ? 'C:\\project\\package.json' : '/project/package.json'),
         }),
-        isWin ? 'C:\\project' : '/project'
+        isWin ? 'C:\\project' : '/project',
+        new MockPackageJsonReader({
+          readPackageJson: name => ({ name, version: '1.0.0' }),
+        })
       )
 
       expect(
@@ -60,7 +87,10 @@ describe('ModuleDirectoryLocator', () => {
         new FileSystem({
           pathExists: p => false,
         }),
-        isWin ? 'C:\\project' : '/project'
+        isWin ? 'C:\\project' : '/project',
+        new MockPackageJsonReader({
+          readPackageJson: name => ({ name, version: '1.0.0' }),
+        })
       )
 
       expect(
