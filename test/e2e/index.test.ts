@@ -3,6 +3,8 @@ import { resolve, sep } from 'path'
 import * as webpack4 from 'webpack'
 import * as webpack2 from 'webpack2'
 import * as webpack3 from 'webpack3'
+// @ts-ignore
+import * as webpack5 from 'webpack5'
 import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 
 const outputPath = resolve(__dirname, './example/dist')
@@ -27,10 +29,19 @@ const webpackVersions = [
   { description: 'webpack v2', fn: webpack2 },
   { description: 'webpack v3', fn: webpack3 },
   { description: 'webpack v4', fn: webpack4 },
+  { description: 'webpack v5', fn: webpack5 },
 ]
 
 describe('end to end', () => {
   webpackVersions.forEach(webpackVersion => {
+    const buildErrors = (
+      messages: string[]
+    ): string[] | { message: string }[] => {
+      return webpackVersion.description === 'webpack v5'
+        ? messages.map(message => ({ message }))
+        : messages
+    }
+
     describe(webpackVersion.description, () => {
       const build = createBuild(webpackVersion.fn)
       let fileSystem
@@ -114,9 +125,11 @@ describe('end to end', () => {
           fileSystem,
           (err, stats) => {
             expect(err).toBe(null)
-            expect(stats.errors).toEqual([
-              'WebpackLicensePlugin: Invalid licenseOverrides option: "Apache 2.0" is not a valid SPDX expression!',
-            ])
+            expect(stats.errors).toEqual(
+              buildErrors([
+                'WebpackLicensePlugin: Invalid licenseOverrides option: "Apache 2.0" is not a valid SPDX expression!',
+              ])
+            )
 
             done()
           }
@@ -132,10 +145,12 @@ describe('end to end', () => {
           (err, stats) => {
             expect(err).toBe(null)
             expect(stats.errors).toEqual(
-              expect.arrayContaining([
-                'WebpackLicensePlugin: Found unacceptable license "MIT" for react@16.6.3',
-                'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@16.6.3',
-              ])
+              expect.arrayContaining(
+                buildErrors([
+                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react@16.6.3',
+                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@16.6.3',
+                ])
+              )
             )
 
             done()
