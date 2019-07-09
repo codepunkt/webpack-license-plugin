@@ -64,7 +64,7 @@
     "is-ci-cli": "^1.1.1",
     "jest": "^24.1.0",
     "jest-watch-typeahead": "^0.3.0",
-    "lint-staged": "^8.1.0",
+    "lint-staged": "^9.1.0",
     "memory-fs": "^0.4.1",
     "prettier": "^1.13.4",
     "shx": "^0.3.2",
