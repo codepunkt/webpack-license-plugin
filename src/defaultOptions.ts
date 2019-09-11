@@ -6,6 +6,7 @@ const defaultOptions: IPluginOptions = {
   outputFilename: 'oss-licenses.json',
   replenishDefaultLicenseTexts: false,
   unacceptableLicenseTest: () => false,
+  excludedPackageTest: () => false,
 }
 
 export default defaultOptions

@@ -157,6 +157,29 @@ describe('end to end', () => {
           }
         )
       })
+
+      test('output matches snapshot when packages have been excluded', done => {
+        build(
+          new WebpackLicensePlugin({
+            excludedPackageTest: (packageName, version) =>
+              packageName === 'react',
+          }),
+          fileSystem,
+          (err, stats) => {
+            const output = JSON.parse(
+              fileSystem
+                .readFileSync(`${outputPath}${sep}oss-licenses.json`)
+                .toString()
+            )
+
+            expect(err).toBe(null)
+            expect(output).not.toBe(null)
+            expect(output).toMatchSnapshot()
+
+            done()
+          }
+        )
+      })
     })
   })
 })

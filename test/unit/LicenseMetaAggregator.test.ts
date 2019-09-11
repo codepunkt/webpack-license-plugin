@@ -1,6 +1,5 @@
 import defaultOptions from '../../src/defaultOptions'
 import LicenseMetaAggregator from '../../src/LicenseMetaAggregator'
-import IAlertAggregator from '../../src/types/IAlertAggregator'
 import ILicenseIdentifier from '../../src/types/ILicenseIdentifier'
 import ILicenseTextReader from '../../src/types/ILicenseTextReader'
 import IPackageJsonReader from '../../src/types/IPackageJsonReader'
@@ -8,7 +7,21 @@ import IPackageJsonReader from '../../src/types/IPackageJsonReader'
 const MockLicenseIdentifier = jest.fn<ILicenseIdentifier, any[]>(i => i)
 const MockLicenseTextReader = jest.fn<ILicenseTextReader, any[]>(i => i)
 const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>(i => i)
-const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
+
+const mockPackageJsonReader = new MockPackageJsonReader({
+  readPackageJson: name => ({
+    name,
+    version: '16.6.0',
+    author: '@iamdevloper',
+    repository: { url: 'git@github.com:facebook/react.git' },
+  }),
+})
+const mockLicenseIdentifier = new MockLicenseIdentifier({
+  identifyLicense: () => 'MIT',
+})
+const mockLicenseTextReader = new MockLicenseTextReader({
+  readLicenseText: () => 'MIT text',
+})
 
 describe('LicenseMetaAggregator', () => {
   let instance: LicenseMetaAggregator
@@ -18,16 +31,9 @@ describe('LicenseMetaAggregator', () => {
       null,
       null,
       defaultOptions,
-      new MockPackageJsonReader({
-        readPackageJson: name => ({
-          name,
-          version: '16.6.0',
-          author: '@iamdevloper',
-          repository: { url: 'git@github.com:facebook/react.git' },
-        }),
-      }),
-      new MockLicenseIdentifier({ identifyLicense: () => 'MIT' }),
-      new MockLicenseTextReader({ readLicenseText: () => 'MIT text' })
+      mockPackageJsonReader,
+      mockLicenseIdentifier,
+      mockLicenseTextReader
     )
   })
 
@@ -52,6 +58,35 @@ describe('LicenseMetaAggregator', () => {
           name: 'react-dom',
           repository: 'https://github.com/facebook/react',
           source: 'https://registry.npmjs.org/react-dom/-/react-dom-16.6.0.tgz',
+          version: '16.6.0',
+        },
+      ])
+    })
+
+    test('excludes license meta for excluded packages', async () => {
+      instance = new LicenseMetaAggregator(
+        null,
+        null,
+        {
+          ...defaultOptions,
+          excludedPackageTest: (packageName, version) =>
+            packageName === 'react-dom' && version === '16.6.0',
+        },
+        mockPackageJsonReader,
+        mockLicenseIdentifier,
+        mockLicenseTextReader
+      )
+
+      const meta = await instance.aggregateMeta(['react-dom', 'react'])
+
+      expect(meta).toEqual([
+        {
+          author: '@iamdevloper',
+          license: 'MIT',
+          licenseText: 'MIT text',
+          name: 'react',
+          repository: 'https://github.com/facebook/react',
+          source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
           version: '16.6.0',
         },
       ])

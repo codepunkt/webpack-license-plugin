@@ -9,5 +9,6 @@ export default interface IPluginOptions {
   licenseOverrides: { [packageVersion: string]: string }
   outputFilename: string
   replenishDefaultLicenseTexts: boolean
-  unacceptableLicenseTest: (license: string) => boolean
+  unacceptableLicenseTest: (licenseIdentifier: string) => boolean
+  excludedPackageTest: (packageName: string, packageVersion: string) => boolean
 }

@@ -1,15 +1,15 @@
-import getNpmTarballUrl from 'get-npm-tarball-url';
-import LicenseIdentifier from './LicenseIdentifier';
-import LicenseTextReader from './LicenseTextReader';
-import IAlertAggregator from './types/IAlertAggregator';
-import IFileSystem from './types/IFileSystem';
-import ILicenseIdentifier from './types/ILicenseIdentifier';
-import ILicenseMetaAggregator from './types/ILicenseMetaAggregator';
-import ILicenseTextReader from './types/ILicenseTextReader';
-import IPackageJson from './types/IPackageJson';
-import IPackageJsonReader from './types/IPackageJsonReader';
-import IPackageLicenseMeta from './types/IPackageLicenseMeta';
-import IPluginOptions from './types/IPluginOptions';
+import getNpmTarballUrl from 'get-npm-tarball-url'
+import LicenseIdentifier from './LicenseIdentifier'
+import LicenseTextReader from './LicenseTextReader'
+import IAlertAggregator from './types/IAlertAggregator'
+import IFileSystem from './types/IFileSystem'
+import ILicenseIdentifier from './types/ILicenseIdentifier'
+import ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
+import ILicenseTextReader from './types/ILicenseTextReader'
+import IPackageJson from './types/IPackageJson'
+import IPackageJsonReader from './types/IPackageJsonReader'
+import IPackageLicenseMeta from './types/IPackageLicenseMeta'
+import IPluginOptions from './types/IPluginOptions'
 
 export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   constructor(
@@ -24,7 +24,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
       alertAggregator,
       fileSystem,
       options
-    ),
+    )
   ) {}
 
   // @todo skip excluded packages, when option `excludedPackageTest` is set
@@ -41,6 +41,11 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
     // @todo parallel with Promise.all
     for (const moduleDir of sortedModuleDirs) {
       const meta = this.packageJsonReader.readPackageJson(moduleDir)
+
+      if (this.options.excludedPackageTest(meta.name, meta.version)) {
+        break
+      }
+
       const license = this.licenseIdentifier.identifyLicense(meta, this.options)
       const licenseText = await this.licenseTextReader.readLicenseText(
         meta,
