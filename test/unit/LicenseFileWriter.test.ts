@@ -100,10 +100,12 @@ describe('LicenseFileWriter', () => {
         additionalFiles: {
           'bom.json': o => `bom${JSON.stringify(o)}`,
           'bom_async.json': async o => `bom_async${JSON.stringify(o)}`,
+          'bom_promise.json': o =>
+            Promise.resolve(`bom_promise${JSON.stringify(o)}`),
         },
       })
 
-      expect(assetManager.addFile).toHaveBeenCalledTimes(3)
+      expect(assetManager.addFile).toHaveBeenCalledTimes(4)
       expect(assetManager.addFile).toHaveBeenNthCalledWith(
         1,
         defaultOptions.outputFilename,
@@ -118,6 +120,11 @@ describe('LicenseFileWriter', () => {
         3,
         'bom_async.json',
         'bom_async{"foo":"bar"}'
+      )
+      expect(assetManager.addFile).toHaveBeenNthCalledWith(
+        4,
+        'bom_promise.json',
+        'bom_promise{"foo":"bar"}'
       )
     })
   })

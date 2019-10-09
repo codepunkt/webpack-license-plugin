@@ -16,9 +16,9 @@ export default class OptionsProvider {
   public validateOptions(inputOptions: Partial<IPluginOptions>) {
     if (inputOptions.additionalFiles) {
       for (const fileName of Object.keys(inputOptions.additionalFiles)) {
-        if (typeof inputOptions.additionalFiles[fileName]([]) !== 'string') {
+        if (typeof inputOptions.additionalFiles[fileName] !== 'function') {
           this.alertAggregator.addError(
-            `Invalid additionalFiles option: Return value for "${fileName}" is not a string!`
+            `Invalid additionalFiles option: Value for key "${fileName}" is not a function!`
           )
         }
       }
@@ -28,9 +28,7 @@ export default class OptionsProvider {
       for (const packageVersion of Object.keys(inputOptions.licenseOverrides)) {
         if (!validate(inputOptions.licenseOverrides[packageVersion])) {
           this.alertAggregator.addError(
-            `Invalid licenseOverrides option: "${
-              inputOptions.licenseOverrides[packageVersion]
-            }" is not a valid SPDX expression!`
+            `Invalid licenseOverrides option: "${inputOptions.licenseOverrides[packageVersion]}" is not a valid SPDX expression!`
           )
         }
       }
