@@ -50,13 +50,17 @@ describe('OptionsProvider', () => {
       )
 
       instance.validateOptions({
-        // @ts-ignore
-        additionalFiles: { 'foo.json': () => 'foo', 'bar.json': () => 5 },
+        additionalFiles: {
+          'foo.json': () => 'foo',
+          'bar.json': () => Promise.resolve('bar'),
+          // @ts-ignore
+          'baz.json': 'baz',
+        },
       })
 
       expect(addError).toHaveBeenCalledTimes(1)
       expect(addError).toHaveBeenCalledWith(
-        'Invalid additionalFiles option: Return value for "bar.json" is not a string!'
+        'Invalid additionalFiles option: Value for key "baz.json" is not a function!'
       )
     })
 
