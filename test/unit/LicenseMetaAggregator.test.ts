@@ -77,18 +77,19 @@ describe('LicenseMetaAggregator', () => {
         mockLicenseTextReader
       )
 
-      const meta = await instance.aggregateMeta(['react-dom', 'react'])
+      const meta = await instance.aggregateMeta([
+        'react',
+        'react-dom',
+        'styled-components',
+      ])
 
       expect(meta).toEqual([
-        {
-          author: '@iamdevloper',
-          license: 'MIT',
-          licenseText: 'MIT text',
+        expect.objectContaining({
           name: 'react',
-          repository: 'https://github.com/facebook/react',
-          source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
-          version: '16.6.0',
-        },
+        }),
+        expect.objectContaining({
+          name: 'styled-components',
+        }),
       ])
     })
   })
