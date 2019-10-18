@@ -61,7 +61,7 @@
     "@types/webpack-sources": "^0.1.5",
     "codecov": "^3.1.0",
     "cross-env": "^6.0.3",
-    "is-ci-cli": "^1.1.1",
+    "is-ci-cli": "^2.0.0",
     "jest": "^24.1.0",
     "jest-watch-typeahead": "^0.4.0",
     "lint-staged": "^9.1.0",
