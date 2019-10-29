@@ -95,7 +95,7 @@ The available options are:
 | **`licenseOverrides`** | Default: `{}`. Object with licenses to override. Keys have the format `<name>@<version>`, values are valid [spdx license expressions](https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60). This can be helpful when license information is inconclusive and has been manually checked. |
 | **`outputFilename`** | Default: `oss-licenses.json`. Path to the output file that will be generated. Relative to the bundle output directory. |
 | **`replenishDefaultLicenseTexts`** | Default: `false`. When this is enabled, default license texts are taken from spdx.org for packages where no license text was found. |
-| **`unacceptableLicenseTest`** | A method to define license identifiers as unacceptable. It is invoked `licenseIdentifier` (string) for every package and should return true when the license is unacceptable and encountering it should fail the build. |
+| **`unacceptableLicenseTest`** | A method to define license identifiers as unacceptable. It is invoked with `licenseIdentifier` (string) for every package and should return true when the license is unacceptable and encountering it should fail the build. |
 
 ### Example with custom options
 
