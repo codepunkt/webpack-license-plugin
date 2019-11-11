@@ -44,7 +44,7 @@
     "test:ci": "cross-env CI=true jest --runInBand --verbose --colors && codecov -t $CODECOV_TOKEN"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^3.0.0",
     "get-npm-tarball-url": "^2.0.1",
     "lodash": "^4.17.10",
     "needle": "^2.2.4",
