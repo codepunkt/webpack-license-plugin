@@ -92,6 +92,35 @@ describe('LicenseMetaAggregator', () => {
         }),
       ])
     })
+
+    test('deduplicates package/version identifiers', async () => {
+      const meta = await instance.aggregateMeta([
+        'react-dom',
+        'react',
+        'react-dom',
+      ])
+
+      expect(meta).toEqual([
+        {
+          author: '@iamdevloper',
+          license: 'MIT',
+          licenseText: 'MIT text',
+          name: 'react',
+          repository: 'https://github.com/facebook/react',
+          source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
+          version: '16.6.0',
+        },
+        {
+          author: '@iamdevloper',
+          license: 'MIT',
+          licenseText: 'MIT text',
+          name: 'react-dom',
+          repository: 'https://github.com/facebook/react',
+          source: 'https://registry.npmjs.org/react-dom/-/react-dom-16.6.0.tgz',
+          version: '16.6.0',
+        },
+      ])
+    })
   })
 
   describe('getAuthor', () => {

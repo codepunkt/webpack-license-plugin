@@ -30,6 +30,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   public async aggregateMeta(
     moduleDirs: string[]
   ): Promise<IPackageLicenseMeta[]> {
+    const packageSet = new Set()
     const result: IPackageLicenseMeta[] = []
     const sortedModuleDirs = moduleDirs.sort((a, b) =>
       this.packageJsonReader
@@ -40,11 +41,17 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
     // @todo parallel with Promise.all
     for (const moduleDir of sortedModuleDirs) {
       const meta = this.packageJsonReader.readPackageJson(moduleDir)
+      const packageIdentifier = `${meta.name}@${meta.version}`
+
+      if (packageSet.has(packageIdentifier)) {
+        continue
+      }
 
       if (this.options.excludedPackageTest(meta.name, meta.version)) {
         continue
       }
 
+      packageSet.add(packageIdentifier)
       const license = this.licenseIdentifier.identifyLicense(meta, this.options)
       const licenseText = await this.licenseTextReader.readLicenseText(
         meta,
