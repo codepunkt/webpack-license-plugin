@@ -18,6 +18,9 @@
   <a href="https://codecov.io/gh/codepunkt/webpack-license-plugin">
     <img src="https://img.shields.io/codecov/c/github/codepunkt/webpack-license-plugin/master.svg?style=popout&logo=codecov" alt="Code coverage"/>
   </a>
+  <a href="https://snyk.io/test/github/codepunkt/webpack-license-plugin">
+    <img src="https://img.shields.io/snyk/vulnerabilities/github/codepunkt/webpack-license-plugin.svg?logo=snyk&style=popout" alt="Known vulnerabilities"/>
+  </a>
   <a href="https://choosealicense.com/licenses/mit/">
     <img src="https://img.shields.io/npm/l/webpack-license-plugin.svg?style=popout&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIzIDMgMjYgMjYiPgogIDxwYXRoIGZpbGw9IiMzZGE2MzkiIGQ9Ik0xNiA1LjU1OWMtNi4xMTggMC0xMS4wNzggNC45Ni0xMS4wNzggMTEuMDc5IDAgNC43NDkgMi45ODkgOC43OTkgNy4xODggMTAuMzc0bDIuNTUzLTYuODA4YTMuODA4IDMuODA4IDAgMSAxIDIuNjc0IDBsMi41NTMgNi44MDhjNC4xOTktMS41NzUgNy4xODgtNS42MjUgNy4xODgtMTAuMzc0IDAtNi4xMTktNC45Ni0xMS4wNzktMTEuMDc5LTExLjA3OXoiLz4KPC9zdmc+Cg==&colorB=lightgray" alt="License: MIT"/>
   </a>
