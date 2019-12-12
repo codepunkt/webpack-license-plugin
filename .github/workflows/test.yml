@@ -27,8 +27,12 @@ jobs:
         yarn install --frozen-lockfile
       env:
         CI: true
-    - name: Run tests
+    - name: Run tests and generate coverage information
       run: |
         yarn run test:ci
       env:
         CI: true
+    - name: Upload coverage to Codecov  
+      uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
