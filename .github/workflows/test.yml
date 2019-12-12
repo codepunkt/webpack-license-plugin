@@ -9,6 +9,16 @@ on:
       - master
 
 jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run Snyk to check for vulnerabilities
+      uses: snyk/actions/node@master
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+#      with:
+#        args: --severity-threshold=high
   test:
     runs-on: ubuntu-latest
     strategy:
