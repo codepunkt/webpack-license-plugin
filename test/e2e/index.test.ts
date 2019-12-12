@@ -149,7 +149,7 @@ describe('end to end', () => {
                 buildErrors([
                   'WebpackLicensePlugin: Found unacceptable license "MIT" for react@16.6.3',
                   'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@16.6.3',
-                ])
+                ]) as string[]
               )
             )
 
