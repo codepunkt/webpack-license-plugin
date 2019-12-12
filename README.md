@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/npm/v/webpack-license-plugin.svg?logo=npm&style=popout"/>
   </a>
   <a href="https://circleci.com/gh/codepunkt/webpack-license-plugin/tree/master">
-    <img src="https://img.shields.io/circleci/project/github/codepunkt/webpack-license-plugin/master.svg?style=popout&logo=circleci&logoColor=ddd" alt="CircleCI status"/>
+    <img src="https://img.shields.io/github/workflow/status/codepunkt/webpack-license-plugin/tests.svg?style=popout&logo=circleci&logoColor=ddd" alt="CircleCI status"/>
   </a>
   <a href="https://codecov.io/gh/codepunkt/webpack-license-plugin">
     <img src="https://img.shields.io/codecov/c/github/codepunkt/webpack-license-plugin/master.svg?style=popout&logo=codecov" alt="Code coverage"/>
