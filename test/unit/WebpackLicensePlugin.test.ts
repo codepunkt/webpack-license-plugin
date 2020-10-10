@@ -1,9 +1,11 @@
 import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 import webpack = require('webpack')
 
-const MockCompiler = jest.fn<webpack.Compiler, any[]>(i => i)
-const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>(i => i)
-const MockChunk = jest.fn<webpack.compilation.Chunk, any[]>(i => i)
+const MockCompiler = jest.fn<webpack.Compiler, any[]>((i) => i)
+const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>(
+  (i) => i
+)
+const MockChunk = jest.fn<webpack.compilation.Chunk, any[]>((i) => i)
 
 describe('WebpackLicensePlugin', () => {
   describe('apply', () => {
@@ -38,15 +40,16 @@ describe('WebpackLicensePlugin', () => {
     test('taps into optimizeChunkAssets hook if hooks are defined', () => {
       const instance = new WebpackLicensePlugin()
       const compilation = new MockCompilation({
-        hooks: { optimizeChunkAssets: { tap: jest.fn() } },
+        hooks: { optimizeChunkAssets: { tap: jest.fn(), tapAsync: jest.fn() } },
       })
       instance.handleCompilation(new MockCompiler(), compilation)
 
-      expect(compilation.hooks.optimizeChunkAssets.tap).toHaveBeenCalledTimes(1)
-      expect(compilation.hooks.optimizeChunkAssets.tap).toHaveBeenCalledWith(
-        'webpack-license-plugin',
-        expect.any(Function)
-      )
+      expect(
+        compilation.hooks.optimizeChunkAssets.tapAsync
+      ).toHaveBeenCalledTimes(1)
+      expect(
+        compilation.hooks.optimizeChunkAssets.tapAsync
+      ).toHaveBeenCalledWith('webpack-license-plugin', expect.any(Function))
     })
 
     test('plugs into optimize-chunk-assets otherwise', () => {
