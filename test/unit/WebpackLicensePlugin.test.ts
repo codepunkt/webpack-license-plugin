@@ -38,12 +38,12 @@ describe('WebpackLicensePlugin', () => {
     test('taps into optimizeChunkAssets hook if hooks are defined', () => {
       const instance = new WebpackLicensePlugin()
       const compilation = new MockCompilation({
-        hooks: { optimizeChunkAssets: { tap: jest.fn() } },
+        hooks: { optimizeChunkAssets: { tapAsync: jest.fn() } },
       })
       instance.handleCompilation(new MockCompiler(), compilation)
 
-      expect(compilation.hooks.optimizeChunkAssets.tap).toHaveBeenCalledTimes(1)
-      expect(compilation.hooks.optimizeChunkAssets.tap).toHaveBeenCalledWith(
+      expect(compilation.hooks.optimizeChunkAssets.tapAsync).toHaveBeenCalledTimes(1)
+      expect(compilation.hooks.optimizeChunkAssets.tapAsync).toHaveBeenCalledWith(
         'webpack-license-plugin',
         expect.any(Function)
       )
