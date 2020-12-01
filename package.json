@@ -58,7 +58,7 @@
     "@types/needle": "^2.0.4",
     "@types/node": "^14.0.23",
     "@types/webpack": "^4.4.19",
-    "@types/webpack-sources": "^1.4.0",
+    "@types/webpack-sources": "^2.0.0",
     "codecov": "^3.1.0",
     "cross-env": "^7.0.2",
     "is-ci-cli": "^2.0.0",
