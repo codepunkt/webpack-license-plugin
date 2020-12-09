@@ -138,7 +138,7 @@ The output is a `oss-licenses.json` file in the webpack build output directory. 
 | **`author`** | author listed in `package.json` _(if available)_ |
 | **`repository`** | repository url listed in `package.json` _(if available)_ |
 | **`source`** | package tarball url on npm registry |
-| **`license`** | the license listed in `package.json`. If it's not available or not a valid [spdx license expression](https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60), additional files such as `LICENSE` or `README` are being looked at in order to parse the license data from them. _(this will be shown with a * next to the name of the license and may require further manual verification)_ |
+| **`license`** | the license listed in `package.json`. If this is not a valid [spdx license expression](https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60), this plugin will inform you. You can then inform the package maintainers about this problem and temporarily workaround this issue with the `licenseOverrides` option for the specific combination of package name and version. |
 | **`licenseText`** | the license text read from a file matching `/^licen[cs]e/i` in the package's root |
 
 ### Example output file
