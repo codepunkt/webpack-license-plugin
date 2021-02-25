@@ -46,7 +46,7 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "get-npm-tarball-url": "^2.0.1",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "needle": "^2.2.4",
     "spdx-expression-validate": "^2.0.0",
     "webpack-sources": "^2.0.0"
