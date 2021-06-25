@@ -8,12 +8,15 @@ export default class WebpackChunkIterator {
     private fileIterator: WebpackModuleFileIterator = new WebpackModuleFileIterator()
   ) {}
 
-  public iterateChunks(chunks: webpack.compilation.Chunk[]): string[] {
+  public iterateChunks(
+    compilation: webpack.compilation.Compilation,
+    chunks: webpack.compilation.Chunk[]
+  ): string[] {
     const filenames = []
 
     for (const chunk of chunks) {
-      this.moduleIterator.iterateModules(chunk, module => {
-        this.fileIterator.iterateFiles(module, filename => {
+      this.moduleIterator.iterateModules(compilation, chunk, (module) => {
+        this.fileIterator.iterateFiles(module, (filename) => {
           filenames.push(filename)
         })
       })

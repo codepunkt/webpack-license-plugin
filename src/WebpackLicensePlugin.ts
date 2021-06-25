@@ -69,7 +69,7 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     alertAggregator.flushAlerts(pluginName)
 
     const chunkIterator = new WebpackChunkIterator()
-    const filenames = chunkIterator.iterateChunks(chunks)
+    const filenames = chunkIterator.iterateChunks(compilation, chunks)
 
     const fileSystem = new WebpackFileSystem(compiler.inputFileSystem)
     const packageJsonReader = new PackageJsonReader(fileSystem)
