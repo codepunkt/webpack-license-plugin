@@ -1,6 +1,15 @@
 import * as webpack from 'webpack'
 import IWebpackChunkModule from './types/IWebpackChunkModule'
 
+type Compilation = Partial<
+  webpack.compilation.Compilation & {
+    chunkGraph: {
+      getChunkModulesIterable: (chunk: Chunk) => IWebpackChunkModule[]
+      getChunkEntryModulesIterable: (chunk: Chunk) => IWebpackChunkModule[]
+    }
+  }
+>
+
 type Chunk = Partial<
   Pick<
     webpack.compilation.Chunk & {
@@ -13,10 +22,17 @@ type Chunk = Partial<
 
 export default class WebpackChunkModuleIterator {
   public iterateModules(
+    compilation: Compilation,
     chunk: Chunk,
     callback: (module: IWebpackChunkModule) => void
   ): void {
-    if (typeof chunk.modulesIterable !== 'undefined') {
+    if (typeof compilation.chunkGraph !== 'undefined') {
+      for (const module of compilation.chunkGraph.getChunkModulesIterable(
+        chunk
+      )) {
+        callback(module)
+      }
+    } else if (typeof chunk.modulesIterable !== 'undefined') {
       for (const module of chunk.modulesIterable) {
         callback(module)
       }
@@ -25,10 +41,16 @@ export default class WebpackChunkModuleIterator {
     } else if (typeof chunk.forEachModule === 'function') {
       chunk.forEachModule(callback)
     } else if (Array.isArray(chunk.modules)) {
-      chunk.modules.forEach(module => callback(module))
+      chunk.modules.forEach((module) => callback(module))
     }
 
-    if (chunk.entryModule) {
+    if (typeof compilation.chunkGraph !== 'undefined') {
+      for (const module of compilation.chunkGraph.getChunkEntryModulesIterable(
+        chunk
+      )) {
+        callback(module)
+      }
+    } else if (chunk.entryModule) {
       callback(chunk.entryModule)
     }
   }

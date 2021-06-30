@@ -1,9 +1,9 @@
 import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 import webpack = require('webpack')
 
-const MockCompiler = jest.fn<webpack.Compiler, any[]>(i => i)
-const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>(i => i)
-const MockChunk = jest.fn<webpack.compilation.Chunk, any[]>(i => i)
+const MockCompiler = jest.fn<webpack.Compiler, any[]>((i) => i)
+const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>((i) => i)
+const MockChunk = jest.fn<webpack.compilation.Chunk, any[]>((i) => i)
 
 describe('WebpackLicensePlugin', () => {
   describe('apply', () => {
@@ -11,7 +11,7 @@ describe('WebpackLicensePlugin', () => {
       const compiler = new MockCompiler({
         hooks: { compilation: { tap: jest.fn() } },
       })
-      const instance = new WebpackLicensePlugin()
+      const instance = new WebpackLicensePlugin({})
       instance.apply(compiler)
 
       expect(compiler.hooks.compilation.tap).toHaveBeenCalledTimes(1)
@@ -27,10 +27,7 @@ describe('WebpackLicensePlugin', () => {
       instance.apply(compiler)
 
       expect(compiler.plugin).toHaveBeenCalledTimes(1)
-      expect(compiler.plugin).toHaveBeenCalledWith(
-        'compilation',
-        expect.any(Function)
-      )
+      expect(compiler.plugin).toHaveBeenCalledWith('compilation', expect.any(Function))
     })
   })
 
@@ -55,10 +52,7 @@ describe('WebpackLicensePlugin', () => {
       instance.handleCompilation(new MockCompiler(), compilation)
 
       expect(compilation.plugin).toHaveBeenCalledTimes(1)
-      expect(compilation.plugin).toHaveBeenCalledWith(
-        'optimize-chunk-assets',
-        expect.any(Function)
-      )
+      expect(compilation.plugin).toHaveBeenCalledWith('optimize-chunk-assets', expect.any(Function))
     })
   })
 
