@@ -15,7 +15,7 @@ interface IDefaultLicenseTextCache {
 export default class DefaultLicenseTextProvider {
   private cache: IDefaultLicenseTextCache = {}
 
-  constructor(private request = fetch) {}
+  constructor(private request: typeof fetch = fetch) {}
 
   public async retrieveLicenseText(license: string): Promise<string | null> {
     if (!this.cache[license]) {
