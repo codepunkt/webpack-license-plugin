@@ -1,6 +1,6 @@
 {
   "name": "webpack-license-plugin",
-  "version": "4.1.3",
+  "version": "4.1.4",
   "description": "Extracts OSS license information of the npm packages in your webpack output",
   "keywords": [
     "webpack",
@@ -31,7 +31,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=12.0.0"
   },
   "scripts": {
     "clean": "node -e \"fs.rmSync('dist', { force: true, recursive: true })\"",
