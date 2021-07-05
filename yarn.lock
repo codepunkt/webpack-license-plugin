@@ -2815,9 +2815,9 @@ get-caller-file@^2.0.1:
   integrity sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==
 
 get-npm-tarball-url@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/get-npm-tarball-url/-/get-npm-tarball-url-2.0.1.tgz#43c15223c35096e3e4068d8a6c6747bbdfc23462"
-  integrity sha512-POrVRGyS9X5w+855/H46JGVYBGuVgJXyIkbsTCzW+sv5x2qH+rfQjc7652DzkgOskF+cqLevA2En7V0hu0gZCg==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/get-npm-tarball-url/-/get-npm-tarball-url-2.0.2.tgz#1538165bdd19ad13d21ddff78e7a8ed57b782235"
+  integrity sha512-2dPhgT0K4pVyciTqdS0gr9nEwyCQwt9ql1/t5MCUMvcjWjAysjGJgT7Sx4n6oq3tFBjBN238mxX4RfTjT3838Q==
   dependencies:
     normalize-registry-url "^1.0.0"
 
