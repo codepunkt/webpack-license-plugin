@@ -9,6 +9,12 @@ on:
       - main
 
 jobs:
+   security:
+     runs-on: ubuntu-latest
+     steps:
+     - name: NPX SNYK
+       run: |
+         npx snyk test
 #  security:
 #    runs-on: ubuntu-latest
 #    steps:
