@@ -11,5 +11,5 @@ export default interface IPluginOptions {
   replenishDefaultLicenseTexts: boolean
   unacceptableLicenseTest: (licenseIdentifier: string) => boolean
   excludedPackageTest: (packageName: string, packageVersion: string) => boolean
-  includePackages: () => string[] | Promise<string>
+  includePackages: () => string[] | Promise<string[]>
 }
