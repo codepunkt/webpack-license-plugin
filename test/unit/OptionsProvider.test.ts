@@ -78,5 +78,20 @@ describe('OptionsProvider', () => {
         'Invalid replenishDefaultLicenseTexts option: Not a boolean!'
       )
     })
+
+    test('errors on invalid type for includePackages option', () => {
+      const addError = jest.fn()
+      const instance = new OptionsProvider(
+        new MockAlertAggregator({ addError })
+      )
+
+      // @ts-ignore
+      instance.validateOptions({ includePackages: 'foo' })
+
+      expect(addError).toHaveBeenCalledTimes(1)
+      expect(addError).toHaveBeenCalledWith(
+        'Invalid includePackages option: Not a function!'
+      )
+    })
   })
 })

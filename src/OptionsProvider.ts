@@ -42,5 +42,14 @@ export default class OptionsProvider {
         `Invalid replenishDefaultLicenseTexts option: Not a boolean!`
       )
     }
+
+    if (
+      inputOptions.includePackages &&
+      typeof inputOptions.includePackages !== 'function'
+    ) {
+      this.alertAggregator.addError(
+        `Invalid includePackages option: Not a function!`
+      )
+    }
   }
 }
