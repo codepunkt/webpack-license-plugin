@@ -13,9 +13,10 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-    - name: NPX SNYK
-      run: |
-        npx snyk test
+    - name: Run Snyk to check for vulnerabilities
+      run: npx snyk test --severity-threshold=high
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 #  security:
 #    runs-on: ubuntu-latest
 #    steps:
