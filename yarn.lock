@@ -479,9 +479,9 @@
     "@types/node" "*"
 
 "@types/needle@^2.0.4":
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/@types/needle/-/needle-2.5.1.tgz#2923f4a63a66048aed3038d76e8bc83b6905c784"
-  integrity sha512-OeI+1hQI6wzIKRwmK0XNJ1k0hpS9+p6Q4SvmnNNr6BpGCCjPIeR1FdlUV/ruw6GYCP3qmJ+iusXwIGtL4nq3Iw==
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/@types/needle/-/needle-2.5.2.tgz#b92571d2623fbcf91d143b55182494b562f4c926"
+  integrity sha512-FSckojxsXODVYE4oJ7q0OjUki27a6gsdIxp2WJHs9oEmXit/0rjzb/NK+tJnKwFMMyR6mzo+1Nyr83ELw3YT+Q==
   dependencies:
     "@types/node" "*"
 
