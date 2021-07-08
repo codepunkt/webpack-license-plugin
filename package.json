@@ -1,6 +1,6 @@
 {
   "name": "webpack-license-plugin",
-  "version": "4.1.4",
+  "version": "4.2.0",
   "description": "Extracts OSS license information of the npm packages in your webpack output",
   "keywords": [
     "webpack",

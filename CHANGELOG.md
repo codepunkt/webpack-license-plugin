@@ -1,3 +1,7 @@
+# 4.2.0
+
+- added `includePackages` option (thanks to @WIStudent)
+
 # 4.1.4
 
 - provide compatibility starting from Node 12 via package.json `engines` field
