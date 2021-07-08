@@ -18,7 +18,7 @@ export default class LicenseFileWriter {
     const moduleDirs = this.getModuleDirs(filenames)
     const includePackages = await options.includePackages();
     const licenseMeta = await this.licenseMetaAggregator.aggregateMeta(
-      [...moduleDirs, ...includePackages]
+      [...new Set([...moduleDirs, ...includePackages])]
     )
 
     const fileContents = JSON.stringify(licenseMeta, null, 2)
