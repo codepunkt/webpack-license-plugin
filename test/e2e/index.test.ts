@@ -180,6 +180,54 @@ describe('end to end', () => {
           }
         )
       })
+
+      test('output matches snapshot when packages have been included', done => {
+        build(
+          new WebpackLicensePlugin({
+            includePackages: () => [
+              resolve(__dirname, '../../node_modules/jest')
+            ]
+          }),
+          fileSystem,
+          (err, stats) => {
+            const output = JSON.parse(
+              fileSystem
+                .readFileSync(`${outputPath}${sep}oss-licenses.json`)
+                .toString()
+            )
+
+            expect(err).toBe(null)
+            expect(output).not.toBe(null)
+            expect(output).toMatchSnapshot()
+
+            done()
+          }
+        )
+      })
+
+      test('output matches snapshot when a package has been manually included that is also included in the build result', done => {
+        build(
+          new WebpackLicensePlugin({
+            includePackages: () => [
+              resolve(__dirname, 'example/node_modules/react')
+            ]
+          }),
+          fileSystem,
+          (err, stats) => {
+            const output = JSON.parse(
+              fileSystem
+                .readFileSync(`${outputPath}${sep}oss-licenses.json`)
+                .toString()
+            )
+
+            expect(err).toBe(null)
+            expect(output).not.toBe(null)
+            expect(output).toMatchSnapshot()
+
+            done()
+          }
+        )
+      })
     })
   })
 })

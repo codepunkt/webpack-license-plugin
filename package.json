@@ -23,7 +23,8 @@
   "main": "./dist/index.js",
   "author": "Christoph Werner <christoph@codepunkt.de>",
   "contributors": [
-    "Friedrich Wilms <f.wilms89@web.de>"
+    "Friedrich Wilms <f.wilms89@web.de>",
+    "Tobias Trumm <info@tobiastrumm.de>"
   ],
   "repository": {
     "type": "git",

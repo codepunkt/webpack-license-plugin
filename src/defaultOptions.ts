@@ -7,6 +7,7 @@ const defaultOptions: IPluginOptions = {
   replenishDefaultLicenseTexts: false,
   unacceptableLicenseTest: () => false,
   excludedPackageTest: () => false,
+  includePackages: () => []
 }
 
 export default defaultOptions
