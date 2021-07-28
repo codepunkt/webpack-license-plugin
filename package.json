@@ -54,7 +54,7 @@
     "lodash": "^4.17.20",
     "needle": "^2.2.4",
     "spdx-expression-validate": "^2.0.0",
-    "webpack-sources": "^2.0.0"
+    "webpack-sources": "^3.0.1"
   },
   "devDependencies": {
     "@types/jest": "26.0.24",
