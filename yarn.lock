@@ -6870,13 +6870,18 @@ webpack-sources@^1.0.1, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack-sources@^2.0.0, webpack-sources@^2.3.0:
+webpack-sources@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-2.3.0.tgz#9ed2de69b25143a4c18847586ad9eccb19278cfa"
   integrity sha512-WyOdtwSvOML1kbgtXbTDnEW0jkJ7hZr/bDByIwszhWd/4XX1A3XMkrbFMsuH4+/MfLlZCUzlAdg4r7jaGKEIgQ==
   dependencies:
     source-list-map "^2.0.1"
     source-map "^0.6.1"
+
+webpack-sources@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.1.1.tgz#586d15bc9a9723765f6a735f672357d6402f9c57"
+  integrity sha512-ztUmIWq0LWaw+1YyR3bXtUPjt8vQedtI9WxGn/q1V1ASHsombnaso7MN9S25lzKS/OuC9Q8lEg3GsZexjDbdlQ==
 
 "webpack2@npm:webpack@^2":
   version "2.7.0"
