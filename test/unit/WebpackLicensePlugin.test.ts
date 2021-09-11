@@ -1,11 +1,27 @@
+import type * as webpack from 'webpack'
+import LicenseFileWriter from '../../src/LicenseFileWriter'
+import WebpackChunkIterator from '../../src/WebpackChunkIterator'
 import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
-import webpack = require('webpack')
+
+jest.mock('../../src/LicenseFileWriter')
+jest.mock('../../src/WebpackChunkIterator')
 
 const MockCompiler = jest.fn<webpack.Compiler, any[]>((i) => i)
 const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>((i) => i)
 const MockChunk = jest.fn<webpack.compilation.Chunk, any[]>((i) => i)
 
 describe('WebpackLicensePlugin', () => {
+  beforeEach(() => {
+    (LicenseFileWriter as jest.Mock).mockReset();
+    (LicenseFileWriter as jest.Mock).mockImplementation(() => ({
+      writeLicenseFiles: jest.fn()
+    }));
+    (WebpackChunkIterator as jest.Mock).mockReset();
+    (WebpackChunkIterator as jest.Mock).mockImplementation(() => ({
+      iterateChunks: () => []
+    }))
+  })
+
   describe('apply', () => {
     test('taps into compilation hook if hooks are defined', () => {
       const compiler = new MockCompiler({
@@ -69,6 +85,45 @@ describe('WebpackLicensePlugin', () => {
       )
 
       expect(callback).toHaveBeenCalledTimes(1)
+    })
+
+    test('calls writeLicenseFiles with all filenames', async () => {
+      (WebpackChunkIterator as jest.Mock).mockReset();
+      (WebpackChunkIterator as jest.Mock)
+        .mockImplementationOnce(() => ({
+          iterateChunks: () => ['filename1', 'filename2']
+        }))
+        .mockImplementationOnce(() => ({
+          iterateChunks: () => ['filename3', 'filename4']
+        }))
+
+      const writeLicenseFiles = jest.fn();
+      (LicenseFileWriter as jest.Mock).mockReset();
+      (LicenseFileWriter as jest.Mock).mockImplementationOnce(() => ({ writeLicenseFiles }))
+
+      const instance = new WebpackLicensePlugin()
+      const callback1 = jest.fn()
+      const callback2 = jest.fn()
+
+      await instance.handleChunkAssetOptimization(
+        new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
+        new MockCompilation({ assets: [], errors: [], warnings: [], compiler: { isChild: () => true } }),
+        [new MockChunk()],
+        callback1
+      )
+
+      await instance.handleChunkAssetOptimization(
+        new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
+        new MockCompilation({ assets: [], errors: [], warnings: [] }),
+        [new MockChunk()],
+        callback2
+      )
+
+      expect(callback1).toHaveBeenCalledTimes(1)
+      expect(callback2).toHaveBeenCalledTimes(1)
+
+      expect(writeLicenseFiles).toHaveBeenCalledWith(['filename1', 'filename2', 'filename3', 'filename4'], expect.anything())
+      expect(writeLicenseFiles).toHaveBeenCalledTimes(1)
     })
   })
 })

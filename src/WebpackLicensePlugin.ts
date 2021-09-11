@@ -23,6 +23,8 @@ const pluginName = 'WebpackLicensePlugin'
  * @todo preferred license types on ambiguity (licenses array or spdx expression)
  */
 export default class WebpackLicensePlugin implements IWebpackPlugin {
+  private filenames: string[] = []
+
   constructor(private pluginOptions: Partial<IPluginOptions> = {}) {}
 
   public apply(compiler: webpack.Compiler) {
@@ -69,7 +71,12 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     alertAggregator.flushAlerts(pluginName)
 
     const chunkIterator = new WebpackChunkIterator()
-    const filenames = chunkIterator.iterateChunks(compilation, chunks)
+    this.filenames = [...this.filenames, ...chunkIterator.iterateChunks(compilation, chunks)]
+
+    if (compilation.compiler?.isChild()) {
+      callback?.()
+      return
+    }
 
     const fileSystem = new WebpackFileSystem(compiler.inputFileSystem)
     const packageJsonReader = new PackageJsonReader(fileSystem)
@@ -88,7 +95,7 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
       )
     )
 
-    await licenseFileWriter.writeLicenseFiles(filenames, options)
+    await licenseFileWriter.writeLicenseFiles(this.filenames, options)
     alertAggregator.flushAlerts(pluginName)
 
     if (callback) {
