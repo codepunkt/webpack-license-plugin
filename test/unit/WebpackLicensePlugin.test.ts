@@ -94,7 +94,7 @@ describe('WebpackLicensePlugin', () => {
           iterateChunks: () => ['filename1', 'filename2']
         }))
         .mockImplementationOnce(() => ({
-          iterateChunks: () => ['filename3', 'filename4']
+          iterateChunks: () => ['filename1', 'filename3', 'filename4']
         }))
 
       const writeLicenseFiles = jest.fn();
