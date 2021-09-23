@@ -57,7 +57,7 @@
     "webpack-sources": "^3.2.1"
   },
   "devDependencies": {
-    "@types/jest": "27.0.1",
+    "@types/jest": "27.0.2",
     "@types/lodash": "^4.14.118",
     "@types/memory-fs": "^0.3.2",
     "@types/needle": "^2.0.4",
