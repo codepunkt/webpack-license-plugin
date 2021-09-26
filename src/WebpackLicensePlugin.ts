@@ -13,6 +13,11 @@ import WebpackFileSystem from './WebpackFileSystem'
 
 const pluginName = 'WebpackLicensePlugin'
 
+interface ObservedCompiler {
+  name: string;
+  isChild: boolean;
+}
+
 /**
  * @todo "emit" vs "compilation" & "optimizeChunkAssets" hooks
  * @todo add banner to chunks? boolean option + banner formatter?
@@ -24,6 +29,8 @@ const pluginName = 'WebpackLicensePlugin'
  */
 export default class WebpackLicensePlugin implements IWebpackPlugin {
   private readonly filenames = new Set<string>()
+  private createdFiles = false
+  private observedCompilers: ObservedCompiler[] = []
 
   constructor(private pluginOptions: Partial<IPluginOptions> = {}) {}
 
@@ -33,12 +40,26 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
         'webpack-license-plugin',
         this.handleCompilation.bind(this, compiler)
       )
+      compiler.hooks.watchRun.tapAsync(
+        'webpack-license-plugin',
+        this.handleWatchRun.bind(this)
+      )
     } else if (typeof compiler.plugin !== 'undefined') {
       compiler.plugin(
         'compilation',
         this.handleCompilation.bind(this, compiler)
       )
+      compiler.plugin(
+        'watchRun',
+        this.handleWatchRun.bind(this)
+      )
     }
+  }
+
+  public async handleWatchRun(_: unknown, callback: () => void) {
+    this.createdFiles = false
+    this.observedCompilers = []
+    callback()
   }
 
   public handleCompilation(
@@ -64,6 +85,23 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     chunks: webpack.compilation.Chunk[],
     callback: () => void
   ) {
+    this.observedCompilers.push({
+      name: compilation.compiler.name,
+      isChild: compilation.compiler.isChild()
+    })
+
+    if (this.createdFiles) {
+      const observedCompilersMessage = this.observedCompilers.map(({ name, isChild }) => `compiler: ${name}, isChild: ${isChild}`).join('\n');
+      const errorMessage = `${pluginName}: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\n${observedCompilersMessage}`
+      compilation.errors.push(errorMessage)
+      callback()
+      return
+    }
+
+    if (!compilation.compiler.isChild()) {
+      this.createdFiles = true
+    }
+
     const alertAggregator = new WebpackAlertAggregator(compilation)
     const optionsProvider = new OptionsProvider(alertAggregator)
 
@@ -75,8 +113,8 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
       this.filenames.add(filename)
     }
 
-    if (compilation.compiler?.isChild()) {
-      callback?.()
+    if (compilation.compiler.isChild()) {
+      callback()
       return
     }
 
@@ -100,8 +138,6 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     await licenseFileWriter.writeLicenseFiles([...this.filenames], options)
     alertAggregator.flushAlerts(pluginName)
 
-    if (callback) {
-      callback()
-    }
+    callback()
   }
 }
