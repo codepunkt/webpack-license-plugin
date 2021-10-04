@@ -1,3 +1,7 @@
+# 4.2.1
+
+- collect filenames and licenses from child compilers (thanks to @WIStudent)
+
 # 4.2.0
 
 - added `includePackages` option (thanks to @WIStudent)
