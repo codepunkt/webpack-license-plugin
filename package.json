@@ -50,7 +50,7 @@
     "posttest:ci": "codecov -t $CODECOV_TOKEN"
   },
   "dependencies": {
-    "chalk": "^4.1.0",
+    "chalk": "^5.0.0",
     "get-npm-tarball-url": "^2.0.1",
     "lodash": "^4.17.20",
     "needle": "^2.2.4",
