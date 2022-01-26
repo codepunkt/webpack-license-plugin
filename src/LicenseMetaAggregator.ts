@@ -84,11 +84,8 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   public getRepository(meta: Pick<IPackageJson, 'repository'>): string {
     if (meta.repository && meta.repository.url) {
       return meta.repository.url
-        .replace('git+ssh://git@', 'git://')
-        .replace('git+https://github.com', 'https://github.com')
-        .replace('git://github.com', 'https://github.com')
-        .replace('git@github.com:', 'https://github.com/')
-        .replace(/\.git$/, '')
+    } else if (typeof meta.repository === 'string') {
+      return meta.repository
     }
 
     return null

@@ -37,7 +37,47 @@ describe('LicenseMetaAggregator', () => {
     )
   })
 
+
   describe('aggregateMeta', () => {
+    test('read repository string syntax', async () => {
+      const instance = new LicenseMetaAggregator(
+        null,
+        null,
+        defaultOptions,
+        new MockPackageJsonReader({
+          readPackageJson: name => ({
+            name,
+            version: '16.6.0',
+            author: '@iamdevloper',
+            repository: 'git@github.com:facebook/react.git',
+          }),
+        }),
+        mockLicenseIdentifier,
+        mockLicenseTextReader
+      )
+      const meta = await instance.aggregateMeta(['react-dom', 'react'])
+      expect(meta).toEqual([
+        {
+          author: '@iamdevloper',
+          license: 'MIT',
+          licenseText: 'MIT text',
+          name: 'react',
+          repository: 'git@github.com:facebook/react.git',
+          source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
+          version: '16.6.0',
+        },
+        {
+          author: '@iamdevloper',
+          license: 'MIT',
+          licenseText: 'MIT text',
+          name: 'react-dom',
+          repository: 'git@github.com:facebook/react.git',
+          source: 'https://registry.npmjs.org/react-dom/-/react-dom-16.6.0.tgz',
+          version: '16.6.0',
+        },
+      ])
+    })
+
     test('returns license meta for the given modules', async () => {
       const meta = await instance.aggregateMeta(['react-dom', 'react'])
 
@@ -47,7 +87,7 @@ describe('LicenseMetaAggregator', () => {
           license: 'MIT',
           licenseText: 'MIT text',
           name: 'react',
-          repository: 'https://github.com/facebook/react',
+          repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
           version: '16.6.0',
         },
@@ -56,7 +96,7 @@ describe('LicenseMetaAggregator', () => {
           license: 'MIT',
           licenseText: 'MIT text',
           name: 'react-dom',
-          repository: 'https://github.com/facebook/react',
+          repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react-dom/-/react-dom-16.6.0.tgz',
           version: '16.6.0',
         },
@@ -106,7 +146,7 @@ describe('LicenseMetaAggregator', () => {
           license: 'MIT',
           licenseText: 'MIT text',
           name: 'react',
-          repository: 'https://github.com/facebook/react',
+          repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
           version: '16.6.0',
         },
@@ -115,7 +155,7 @@ describe('LicenseMetaAggregator', () => {
           license: 'MIT',
           licenseText: 'MIT text',
           name: 'react-dom',
-          repository: 'https://github.com/facebook/react',
+          repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react-dom/-/react-dom-16.6.0.tgz',
           version: '16.6.0',
         },
@@ -164,7 +204,7 @@ describe('LicenseMetaAggregator', () => {
         instance.getRepository({
           repository: { url: 'git@github.com:facebook/react.git' },
         })
-      ).toEqual('https://github.com/facebook/react')
+      ).toEqual('git@github.com:facebook/react.git')
     })
   })
 })
