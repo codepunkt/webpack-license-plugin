@@ -16,7 +16,7 @@ export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
   ) {}
 
   public getModuleDir(filename: string): string | null {
-    let moduleDir = filename.substring(0, filename.lastIndexOf(sep))
+    const moduleDir = filename.substring(0, filename.lastIndexOf(sep))
     return this.checkModuleDir(moduleDir)
   }
 

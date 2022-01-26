@@ -99,6 +99,7 @@ The available options are:
 | **`outputFilename`** | Default: `oss-licenses.json`. Path to the output file that will be generated. Relative to the bundle output directory. |
 | **`replenishDefaultLicenseTexts`** | Default: `false`. When this is enabled, default license texts are taken from spdx.org for packages where no license text was found. |
 | **`unacceptableLicenseTest`** | A method to define license identifiers as unacceptable. It is invoked with `licenseIdentifier` (string) for every package and should return true when the license is unacceptable and encountering it should fail the build. |
+| **`includePackages`** | Default: `() => []`. A method to define packages that should always be included in the output. It must return an array containing the absolute paths of those packages. This function can be async or return a Promise.
 
 ### Example with custom options
 

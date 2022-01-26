@@ -1,6 +1,8 @@
+import webpack = require('webpack')
 import WebpackChunkModuleIterator from '../../src/WebpackChunkModuleIterator'
 
 const moduleIterator = new WebpackChunkModuleIterator()
+const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>((i) => i)
 
 describe('WebpackChunkModuleIterator', () => {
   describe('iterateModules', () => {
@@ -11,14 +13,32 @@ describe('WebpackChunkModuleIterator', () => {
     })
 
     test("doesn't iterate without modules", () => {
-      moduleIterator.iterateModules({}, callbackSpy)
-      moduleIterator.iterateModules({ forEachModule: null }, callbackSpy)
-      moduleIterator.iterateModules({ modules: null }, callbackSpy)
+      const compilation = new MockCompilation()
+      moduleIterator.iterateModules(compilation, {}, callbackSpy)
+      moduleIterator.iterateModules(compilation, { forEachModule: null }, callbackSpy)
+      moduleIterator.iterateModules(compilation, { modules: null }, callbackSpy)
       expect(callbackSpy).toHaveBeenCalledTimes(0)
     })
 
+    test('iterates over compilation.chunkGraph (webpack v5)', () => {
+      const compilation = new MockCompilation({
+        chunkGraph: {
+          getChunkModulesIterable: jest.fn((i) => [{ foo: 'bar' }, { baz: 'qux' }]), // Frage: woher soll dieser Return kommen?
+          getChunkEntryModulesIterable: jest.fn((i) => [{ foo: 'bar' }, { baz: 'qux' }]),
+        },
+      })
+
+      moduleIterator.iterateModules(compilation, {}, callbackSpy)
+      expect(callbackSpy).toHaveBeenCalledTimes(4)
+      expect(callbackSpy).toHaveBeenNthCalledWith(1, { foo: 'bar' })
+      expect(callbackSpy).toHaveBeenNthCalledWith(2, { baz: 'qux' })
+    })
+
     test('iterates over chunk.modulesIterable', () => {
+      const compilation = new MockCompilation()
+
       moduleIterator.iterateModules(
+        compilation,
         { modulesIterable: [{ foo: 'bar' }, { baz: 'qux' }] },
         callbackSpy
       )
@@ -28,17 +48,19 @@ describe('WebpackChunkModuleIterator', () => {
     })
 
     test('iterates using chunk.forEachModule', () => {
+      const compilation = new MockCompilation()
+
       const forEachModuleSpy = jest.fn()
-      moduleIterator.iterateModules(
-        { forEachModule: forEachModuleSpy },
-        callbackSpy
-      )
+      moduleIterator.iterateModules(compilation, { forEachModule: forEachModuleSpy }, callbackSpy)
       expect(forEachModuleSpy).toHaveBeenCalledTimes(1)
       expect(forEachModuleSpy).toHaveBeenNthCalledWith(1, callbackSpy)
     })
 
     test('iterates over chunk.modules', () => {
+      const compilation = new MockCompilation()
+
       moduleIterator.iterateModules(
+        compilation,
         {
           modules: [{ resource: 'wibble' }, { resource: 'wobble' }],
         },
@@ -50,7 +72,10 @@ describe('WebpackChunkModuleIterator', () => {
     })
 
     test('takes entryModule into account', () => {
+      const compilation = new MockCompilation()
+
       moduleIterator.iterateModules(
+        compilation,
         {
           modules: [{ resource: 'wibble' }, { resource: 'wobble' }],
           entryModule: 'flab',
