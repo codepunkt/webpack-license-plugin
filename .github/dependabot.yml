@@ -6,7 +6,7 @@ updates:
     interval: "weekly"
     day: "sunday"
     time: "06:00"
-    timezone: "Europe/Berlin"`
+    timezone: "Europe/Berlin"
   # minor and patch updates for webpack and webpack's typescript
   # types are updated manually as they will break the build
   # rather often`

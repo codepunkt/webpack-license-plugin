@@ -46,7 +46,8 @@
     "test:e2e": "jest --runInBand --testPathPattern test/e2e",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
     "test:watch": "jest --runInBand --testPathPattern test/unit --watch",
-    "test:ci": "cross-env CI=true jest --runInBand --verbose --colors && codecov -t $CODECOV_TOKEN"
+    "test:ci": "cross-env CI=true jest --runInBand --verbose --colors",
+    "posttest:ci": "codecov -t $CODECOV_TOKEN"
   },
   "dependencies": {
     "chalk": "^4.1.0",
