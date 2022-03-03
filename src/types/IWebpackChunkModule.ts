@@ -4,4 +4,5 @@ export default interface IWebpackChunkModule {
   originModule?: { resource?: string }
   fileDependencies?: string[]
   dependencies?: IWebpackChunkModule[]
+  _parentModule?: { resource?: string }
 }

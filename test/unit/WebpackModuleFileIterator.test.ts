@@ -59,17 +59,19 @@ describe('WebpackModuleFileIterator', () => {
             { originModule: { resource: '/home/codepunkt/.prettierrc' } },
             { originModule: { resource: '/home/codepunkt/.nvmrc' } },
             { originModule: {} },
+            { _parentModule: { resource: '/home/codepunkt/file1' } },
+            { _parentModule: { resource: '/home/codepunkt/file2' } },
+            { _parentModule: {} }
           ],
         },
         callbackSpy
       )
 
-      expect(callbackSpy).toHaveBeenCalledTimes(2)
-      expect(callbackSpy).toHaveBeenNthCalledWith(
-        1,
-        '/home/codepunkt/.prettierrc'
-      )
+      expect(callbackSpy).toHaveBeenCalledTimes(4)
+      expect(callbackSpy).toHaveBeenNthCalledWith(1,'/home/codepunkt/.prettierrc')
       expect(callbackSpy).toHaveBeenNthCalledWith(2, '/home/codepunkt/.nvmrc')
+      expect(callbackSpy).toHaveBeenNthCalledWith(3, '/home/codepunkt/file1')
+      expect(callbackSpy).toHaveBeenNthCalledWith(4, '/home/codepunkt/file2')
     })
   })
 })
