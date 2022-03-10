@@ -34,6 +34,7 @@ export default class WebpackChunkModuleIterator {
       }
     } else if (typeof chunk.modulesIterable !== 'undefined') {
       for (const module of chunk.modulesIterable) {
+        // @ts-ignore
         callback(module)
       }
       // } else if (typeof chunk.getModules === 'function') {
@@ -51,6 +52,7 @@ export default class WebpackChunkModuleIterator {
         callback(module)
       }
     } else if (chunk.entryModule) {
+      // @ts-ignore
       callback(chunk.entryModule)
     }
   }
