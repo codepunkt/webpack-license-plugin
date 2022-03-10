@@ -1,10 +1,14 @@
+# 4.2.2
+
+- fixed a bug where the plugin was missing omitting dependencies (thanks to [@WIStudent](https://github.com/WIStudent))
+
 # 4.2.1
 
-- collect filenames and licenses from child compilers (thanks to @WIStudent)
+- collect filenames and licenses from child compilers (thanks to [@WIStudent](https://github.com/WIStudent))
 
 # 4.2.0
 
-- added `includePackages` option (thanks to @WIStudent)
+- added `includePackages` option (thanks to [@WIStudent](https://github.com/WIStudent))
 
 # 4.1.4
 
