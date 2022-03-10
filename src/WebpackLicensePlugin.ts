@@ -14,8 +14,8 @@ import WebpackFileSystem from './WebpackFileSystem'
 const pluginName = 'WebpackLicensePlugin'
 
 interface ObservedCompiler {
-  name: string;
-  isChild: boolean;
+  name: string
+  isChild: boolean
 }
 
 /**
@@ -44,15 +44,15 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
         'webpack-license-plugin',
         this.handleWatchRun.bind(this)
       )
+      // @ts-ignore
     } else if (typeof compiler.plugin !== 'undefined') {
+      // @ts-ignore
       compiler.plugin(
         'compilation',
         this.handleCompilation.bind(this, compiler)
       )
-      compiler.plugin(
-        'watchRun',
-        this.handleWatchRun.bind(this)
-      )
+      // @ts-ignore
+      compiler.plugin('watchRun', this.handleWatchRun.bind(this))
     }
   }
 
@@ -71,7 +71,9 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
         'webpack-license-plugin',
         this.handleChunkAssetOptimization.bind(this, compiler, compilation)
       )
+      // @ts-ignore
     } else if (typeof compilation.plugin !== 'undefined') {
+      // @ts-ignore
       compilation.plugin(
         'optimize-chunk-assets',
         this.handleChunkAssetOptimization.bind(this, compiler, compilation)
@@ -87,11 +89,13 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
   ) {
     this.observedCompilers.push({
       name: compilation.compiler.name,
-      isChild: compilation.compiler.isChild()
+      isChild: compilation.compiler.isChild(),
     })
 
     if (this.createdFiles) {
-      const observedCompilersMessage = this.observedCompilers.map(({ name, isChild }) => `compiler: ${name}, isChild: ${isChild}`).join('\n');
+      const observedCompilersMessage = this.observedCompilers
+        .map(({ name, isChild }) => `compiler: ${name}, isChild: ${isChild}`)
+        .join('\n')
       const errorMessage = `${pluginName}: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\n${observedCompilersMessage}`
       compilation.errors.push(errorMessage)
       callback()
