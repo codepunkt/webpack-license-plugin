@@ -9,21 +9,23 @@ import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 
 const outputPath = resolve(__dirname, './example/dist')
 
-const createBuild = (wp: (options: object) => webpack4.Compiler) => (
-  plugin: WebpackLicensePlugin,
-  fileSystem: MemoryFs,
-  callback: (err: Error, stats: any) => void
-) => {
-  const compiler = wp({
-    entry: resolve(__dirname, './example/src/index.js'),
-    output: { path: outputPath },
-    target: 'web',
-    plugins: [plugin],
-  })
+const createBuild =
+  (wp: (options: object) => webpack5.Compiler) =>
+  (
+    plugin: WebpackLicensePlugin,
+    fileSystem: MemoryFs,
+    callback: (err: Error, stats: any) => void
+  ) => {
+    const compiler = wp({
+      entry: resolve(__dirname, './example/src/index.js'),
+      output: { path: outputPath },
+      target: 'web',
+      plugins: [plugin],
+    })
 
-  compiler.outputFileSystem = fileSystem
-  compiler.run((err, stats) => callback(err, stats.toJson()))
-}
+    compiler.outputFileSystem = fileSystem
+    compiler.run((err, stats) => callback(err, stats.toJson()))
+  }
 
 const webpackVersions = [
   { description: 'webpack v2', fn: webpack2 },
@@ -33,12 +35,12 @@ const webpackVersions = [
 ]
 
 describe('end to end', () => {
-  webpackVersions.forEach(webpackVersion => {
+  webpackVersions.forEach((webpackVersion) => {
     const buildErrors = (
       messages: string[]
     ): string[] | { message: string }[] => {
       return webpackVersion.description === 'webpack v5'
-        ? messages.map(message => ({ message }))
+        ? messages.map((message) => ({ message }))
         : messages
     }
 
@@ -50,7 +52,7 @@ describe('end to end', () => {
         fileSystem = new MemoryFs()
       })
 
-      test('output matches snapshot', done => {
+      test('output matches snapshot', (done) => {
         build(
           new WebpackLicensePlugin({
             licenseOverrides: { 'spdx-expression-parse@1.0.4': 'Apache-2.0' },
@@ -72,7 +74,7 @@ describe('end to end', () => {
         )
       })
 
-      test('output to a different outputFilename matches snapshot', done => {
+      test('output to a different outputFilename matches snapshot', (done) => {
         build(
           new WebpackLicensePlugin({
             outputFilename: 'bill-of-materials.json',
@@ -94,11 +96,11 @@ describe('end to end', () => {
         )
       })
 
-      test('additionalFiles match snapshot', done => {
+      test('additionalFiles match snapshot', (done) => {
         build(
           new WebpackLicensePlugin({
             additionalFiles: {
-              'oss-reverse.json': packages =>
+              'oss-reverse.json': (packages) =>
                 JSON.stringify(packages.reverse()),
             },
           }),
@@ -117,7 +119,7 @@ describe('end to end', () => {
         )
       })
 
-      test('has compilation error on invalid configuration', done => {
+      test('has compilation error on invalid configuration', (done) => {
         build(
           new WebpackLicensePlugin({
             licenseOverrides: { 'spdx-expression-parse@1.0.4': 'Apache 2.0' },
@@ -136,10 +138,10 @@ describe('end to end', () => {
         )
       })
 
-      test('has compilation error when encountering unacceptable licenses', done => {
+      test('has compilation error when encountering unacceptable licenses', (done) => {
         build(
           new WebpackLicensePlugin({
-            unacceptableLicenseTest: license => ['MIT'].includes(license),
+            unacceptableLicenseTest: (license) => ['MIT'].includes(license),
           }),
           fileSystem,
           (err, stats) => {
@@ -147,8 +149,8 @@ describe('end to end', () => {
             expect(stats.errors).toEqual(
               expect.arrayContaining(
                 buildErrors([
-                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react@16.6.3',
-                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@16.6.3',
+                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react@16.14.0',
+                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@16.14.0',
                 ]) as string[]
               )
             )
@@ -158,7 +160,7 @@ describe('end to end', () => {
         )
       })
 
-      test('output matches snapshot when packages have been excluded', done => {
+      test('output matches snapshot when packages have been excluded', (done) => {
         build(
           new WebpackLicensePlugin({
             excludedPackageTest: (packageName, version) =>
@@ -181,12 +183,12 @@ describe('end to end', () => {
         )
       })
 
-      test('output matches snapshot when packages have been included', done => {
+      test('output matches snapshot when packages have been included', (done) => {
         build(
           new WebpackLicensePlugin({
             includePackages: () => [
-              resolve(__dirname, '../../node_modules/jest')
-            ]
+              resolve(__dirname, '../../node_modules/jest'),
+            ],
           }),
           fileSystem,
           (err, stats) => {
@@ -205,12 +207,12 @@ describe('end to end', () => {
         )
       })
 
-      test('output matches snapshot when a package has been manually included that is also included in the build result', done => {
+      test('output matches snapshot when a package has been manually included that is also included in the build result', (done) => {
         build(
           new WebpackLicensePlugin({
             includePackages: () => [
-              resolve(__dirname, 'example/node_modules/react')
-            ]
+              resolve(__dirname, 'example/node_modules/react'),
+            ],
           }),
           fileSystem,
           (err, stats) => {

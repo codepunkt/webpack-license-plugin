@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [14.x, 16.x]
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -31,14 +31,14 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
       run: |
-        yarn install --frozen-lockfile
+        npm ci
         cd test/e2e/example
-        yarn install --frozen-lockfile
+        npm ci
       env:
         CI: true
     - name: Run tests and generate coverage information
       run: |
-        yarn run test:ci
+        npm run test:ci
       env:
         CI: true
     - name: Upload coverage to Codecov
