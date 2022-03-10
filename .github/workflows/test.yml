@@ -31,14 +31,14 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install dependencies
       run: |
-        yarn install --frozen-lockfile
+        npm ci
         cd test/e2e/example
-        yarn install --frozen-lockfile
+        npm ci
       env:
         CI: true
     - name: Run tests and generate coverage information
       run: |
-        yarn run test:ci
+        npm run test:ci
       env:
         CI: true
     - name: Upload coverage to Codecov
