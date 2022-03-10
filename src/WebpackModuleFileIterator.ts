@@ -2,23 +2,26 @@ import IWebpackChunkModule from './types/IWebpackChunkModule'
 
 export default class WebpackModuleFileIterator {
   public iterateFiles(
-    module: IWebpackChunkModule,
+    {resource, rootModule, fileDependencies, dependencies}: IWebpackChunkModule,
     callback: (filename: string) => void
   ): void {
-    if (module.resource) {
-      callback(module.resource)
-    } else if (module.rootModule && module.rootModule.resource) {
-      callback(module.rootModule.resource)
+    if (resource) {
+      callback(resource)
+    } else if (rootModule?.resource) {
+      callback(rootModule.resource)
     }
 
-    if (module.fileDependencies) {
-      module.fileDependencies.forEach(dep => callback(dep))
+    if (fileDependencies) {
+      fileDependencies.forEach(dep => callback(dep))
     }
 
-    if (module.dependencies) {
-      module.dependencies.forEach(dep => {
-        if (dep.originModule && dep.originModule.resource) {
-          callback(dep.originModule.resource)
+    if (dependencies) {
+      dependencies.forEach(({originModule, _parentModule}) => {
+        if (originModule?.resource) {
+          callback(originModule.resource)
+        }
+        if (_parentModule?.resource) {
+          callback(_parentModule.resource)
         }
       })
     }

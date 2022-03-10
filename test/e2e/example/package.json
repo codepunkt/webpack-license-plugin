@@ -6,6 +6,7 @@
   "author": "Christoph Werner <christoph@codepunkt.de>",
   "license": "MIT",
   "dependencies": {
+    "date-fns": "^2.28.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   }
