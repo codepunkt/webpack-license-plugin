@@ -37,11 +37,11 @@
   "scripts": {
     "clean": "node -e \"fs.rmSync('dist', { force: true, recursive: true })\"",
     "lint": "tslint 'src/**/*.ts' --project tsconfig.json",
-    "build": "yarn run lint && yarn run clean && yarn run typescript",
+    "build": "npm run lint && npm run clean && npm run typescript",
     "typescript": "tsc",
-    "install:e2e": "cd test/e2e/example && yarn",
-    "manual": "yarn run build && webpack --config test/e2e/webpack.config.js",
-    "prepublishOnly": "yarn run build",
+    "install:e2e": "cd test/e2e/example && npm i",
+    "manual": "npm run build && webpack --config test/e2e/webpack.config.js",
+    "prepublishOnly": "npm run build",
     "test": "is-ci \"test:ci\" \"test:watch\"",
     "test:e2e": "jest --runInBand --testPathPattern test/e2e",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
@@ -50,7 +50,7 @@
     "posttest:ci": "codecov -t $CODECOV_TOKEN"
   },
   "dependencies": {
-    "chalk": "^4.1.0",
+    "chalk": "^5.0.1",
     "get-npm-tarball-url": "^2.0.1",
     "lodash": "^4.17.20",
     "needle": "^2.2.4",
@@ -58,11 +58,11 @@
     "webpack-sources": "^3.2.1"
   },
   "devDependencies": {
-    "@types/jest": "27.0.2",
+    "@types/jest": "27.4.1",
     "@types/lodash": "^4.14.118",
     "@types/memory-fs": "^0.3.2",
     "@types/needle": "^2.0.4",
-    "@types/node": "^16.0.0",
+    "@types/node": "^17.0.21",
     "@types/webpack": "^4.4.19",
     "@types/webpack-sources": "^3.2.0",
     "codecov": "^3.1.0",
@@ -70,7 +70,7 @@
     "is-ci-cli": "^2.0.0",
     "jest": "^24.1.0",
     "jest-watch-typeahead": "^0.5.0",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^12.3.5",
     "memory-fs": "^0.5.0",
     "prettier": "^2.1.1",
     "ts-jest": "^24.0.0",
