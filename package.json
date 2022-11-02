@@ -63,8 +63,6 @@
     "@types/memory-fs": "^0.3.2",
     "@types/needle": "^2.0.4",
     "@types/node": "^17.0.21",
-    "@types/webpack": "^4.4.19",
-    "@types/webpack-sources": "^3.2.0",
     "codecov": "^3.1.0",
     "cross-env": "^7.0.2",
     "is-ci-cli": "^2.0.0",
@@ -79,11 +77,12 @@
     "tslint-config-prettier": "^1.17.0",
     "tslint-microsoft-contrib": "^6.0.0",
     "typescript": "^3.1.6",
-    "webpack": "4.43.0",
-    "webpack-cli": "4.8.0",
+    "webpack": "file:./node_modules/webpack5",
+    "webpack-cli": "^4.10.0",
     "webpack2": "npm:webpack@^2",
     "webpack3": "npm:webpack@^3",
-    "webpack5": "npm:webpack@5.41.1"
+    "webpack4": "npm:webpack@^4",
+    "webpack5": "npm:webpack@5.74.0"
   },
   "peerDependencies": {
     "webpack": ">=4.0.0 < 6.0.0"
