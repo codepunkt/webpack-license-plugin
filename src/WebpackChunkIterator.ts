@@ -12,7 +12,7 @@ export default class WebpackChunkIterator {
 
   public iterateChunks(
     compilation: webpack.Compilation,
-    chunks: webpack.Chunk[]
+    chunks: Set<webpack.Chunk>
   ): string[] {
     const filenames = []
 
