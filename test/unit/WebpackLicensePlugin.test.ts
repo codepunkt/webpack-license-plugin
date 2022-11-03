@@ -49,7 +49,7 @@ describe('WebpackLicensePlugin', () => {
       )
     })
 
-    test('plugs into compilation otherwise', () => {
+    test('plugs into compilation if no hooks but plugins are defined', () => {
       const compiler = new MockCompiler({ plugin: jest.fn() })
       const instance = new WebpackLicensePlugin()
       instance.apply(compiler)
@@ -63,6 +63,16 @@ describe('WebpackLicensePlugin', () => {
         'watchRun',
         expect.any(Function)
       )
+    })
+
+    test('do nothing otherwise', () => {
+      const compiler = new MockCompiler()
+      const instance = new WebpackLicensePlugin()
+
+      instance.handleCompilation = jest.fn()
+      instance.apply(compiler)
+
+      expect(instance.handleCompilation).toHaveBeenCalledTimes(0)
     })
   })
 
@@ -82,7 +92,41 @@ describe('WebpackLicensePlugin', () => {
       ).toHaveBeenCalledWith('webpack-license-plugin', expect.any(Function))
     })
 
-    test('plugs into optimize-chunk-assets otherwise', () => {
+    test('taps into processAssets hook even if optimizeChunkAssets exists', () => {
+      const instance = new WebpackLicensePlugin()
+      const compilation = new MockCompilation({
+        hooks: {
+          processAssets: { tapAsync: jest.fn() },
+          optimizeChunkAssets: { tapAsync: jest.fn() },
+        },
+      })
+      instance.handleChunkAssetOptimization = jest.fn()
+      instance.handleCompilation(new MockCompiler(), compilation)
+
+      expect(
+        compilation.hooks.optimizeChunkAssets.tapAsync
+      ).toHaveBeenCalledTimes(0)
+      expect(compilation.hooks.processAssets.tapAsync).toHaveBeenCalledTimes(1)
+      expect(compilation.hooks.processAssets.tapAsync).toHaveBeenCalledWith(
+        expect.objectContaining({
+          name: 'webpack-license-plugin',
+          stage: expect.any(Number),
+        }),
+        expect.any(Function)
+      )
+      // @ts-ignore
+      const callback = compilation.hooks.processAssets.tapAsync.mock.calls[0][1]
+      callback(null, () => {})
+      expect(instance.handleChunkAssetOptimization).toBeCalledTimes(1)
+      expect(instance.handleChunkAssetOptimization).toHaveBeenCalledWith(
+        expect.objectContaining({}), // compiler
+        expect.objectContaining({}), // compilation
+        expect.objectContaining({}), // chunks
+        expect.any(Function) // callback
+      )
+    })
+
+    test('plugs into optimize-chunk-assets if no hooks but plugin are defined', () => {
       const instance = new WebpackLicensePlugin()
       const compilation = new MockCompilation({ plugin: jest.fn() })
       instance.handleCompilation(new MockCompiler(), compilation)
@@ -92,6 +136,16 @@ describe('WebpackLicensePlugin', () => {
         'optimize-chunk-assets',
         expect.any(Function)
       )
+    })
+
+    test('handleChunkAssetOptimization not called otherwise', () => {
+      const instance = new WebpackLicensePlugin()
+      const compilation = new MockCompilation()
+
+      instance.handleChunkAssetOptimization = jest.fn()
+      instance.handleCompilation(new MockCompiler(), compilation)
+
+      expect(instance.handleChunkAssetOptimization).toHaveBeenCalledTimes(0)
     })
   })
 
