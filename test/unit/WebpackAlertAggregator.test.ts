@@ -1,7 +1,7 @@
 import WebpackAlertAggregator from '../../src/WebpackAlertAggregator'
 import webpack = require('webpack')
 
-const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>(i => i)
+const MockCompilation = jest.fn<webpack.Compilation, any[]>((i) => i)
 
 describe('WebpackAlertAggregator', () => {
   test('stores errors and flushes previously added errors', () => {
@@ -14,7 +14,10 @@ describe('WebpackAlertAggregator', () => {
     instance.flushAlerts(prefix)
     instance.flushAlerts(prefix)
 
-    expect(compilation.errors).toEqual([`${prefix}: foo`, `${prefix}: bar`])
+    expect(compilation.errors).toEqual([
+      new webpack.WebpackError(`${prefix}: foo`),
+      new webpack.WebpackError(`${prefix}: bar`),
+    ])
   })
 
   test('stores warnings and flushes previously added warnings', () => {
@@ -27,6 +30,9 @@ describe('WebpackAlertAggregator', () => {
     instance.flushAlerts(prefix)
     instance.flushAlerts(prefix)
 
-    expect(compilation.warnings).toEqual([`${prefix}: foo`, `${prefix}: bar`])
+    expect(compilation.warnings).toEqual([
+      new webpack.WebpackError(`${prefix}: foo`),
+      new webpack.WebpackError(`${prefix}: bar`),
+    ])
   })
 })
