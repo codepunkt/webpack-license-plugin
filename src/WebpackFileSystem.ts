@@ -1,5 +1,4 @@
 import IFileSystem from './types/IFileSystem'
-import webpack = require('webpack')
 
 // readFileSync(path: string): Buffer;
 // readlink(path: string, callback: (err: Error | undefined | null, linkString: string) => void): void;

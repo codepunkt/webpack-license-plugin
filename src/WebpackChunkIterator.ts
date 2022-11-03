@@ -1,5 +1,7 @@
 import * as webpack from 'webpack'
-import WebpackChunkModuleIterator from './WebpackChunkModuleIterator'
+import WebpackChunkModuleIterator, {
+  Compilation,
+} from './WebpackChunkModuleIterator'
 import WebpackModuleFileIterator from './WebpackModuleFileIterator'
 
 export default class WebpackChunkIterator {
@@ -9,17 +11,21 @@ export default class WebpackChunkIterator {
   ) {}
 
   public iterateChunks(
-    compilation: webpack.compilation.Compilation,
-    chunks: webpack.compilation.Chunk[]
+    compilation: webpack.Compilation,
+    chunks: webpack.Chunk[]
   ): string[] {
     const filenames = []
 
     for (const chunk of chunks) {
-      this.moduleIterator.iterateModules(compilation, chunk, (module) => {
-        this.fileIterator.iterateFiles(module, (filename) => {
-          filenames.push(filename)
-        })
-      })
+      this.moduleIterator.iterateModules(
+        compilation as Compilation,
+        chunk,
+        (module) => {
+          this.fileIterator.iterateFiles(module, (filename) => {
+            filenames.push(filename)
+          })
+        }
+      )
     }
 
     return filenames
