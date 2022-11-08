@@ -47,7 +47,9 @@
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
     "test:watch": "jest --runInBand --testPathPattern test/unit --watch",
     "test:ci": "cross-env CI=true jest --runInBand --verbose --colors",
-    "posttest:ci": "codecov -t $CODECOV_TOKEN"
+    "posttest:ci": "codecov -t $CODECOV_TOKEN",
+    "dev": "npm run typescript && npm run debug -- --config test/e2e/webpack.config.js",
+    "debug": "node --inspect ./node_modules/webpack/bin/webpack.js"
   },
   "dependencies": {
     "chalk": "^5.0.1",
