@@ -11,7 +11,6 @@ import IPackageJsonReader from './types/IPackageJsonReader'
 export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
   constructor(
     private fileSystem: IFileSystem,
-    private buildRoot: string,
     private packageJsonReader: IPackageJsonReader
   ) {}
 
@@ -27,9 +26,7 @@ export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
     const checkParent = () =>
       this.checkModuleDir(resolve(`${moduleDir}${sep}..${sep}`), moduleDir)
 
-    const isNotPartOfPackage =
-      moduleDir === prevModuleDir || moduleDir === this.buildRoot
-    if (isNotPartOfPackage) {
+    if (moduleDir === prevModuleDir) {
       return null
     }
 

@@ -126,11 +126,7 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     const packageJsonReader = new PackageJsonReader(fileSystem)
     const licenseFileWriter = new LicenseFileWriter(
       new WebpackAssetManager(compilation),
-      new ModuleDirectoryLocator(
-        fileSystem,
-        compiler.options.context,
-        packageJsonReader
-      ),
+      new ModuleDirectoryLocator(fileSystem, packageJsonReader),
       new LicenseMetaAggregator(
         fileSystem,
         alertAggregator,
