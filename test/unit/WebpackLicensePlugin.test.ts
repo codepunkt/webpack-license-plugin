@@ -1,4 +1,4 @@
-import type * as webpack from 'webpack'
+import * as webpack from 'webpack'
 import LicenseFileWriter from '../../src/LicenseFileWriter'
 import WebpackChunkIterator from '../../src/WebpackChunkIterator'
 import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
@@ -6,30 +6,33 @@ import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 jest.mock('../../src/LicenseFileWriter')
 jest.mock('../../src/WebpackChunkIterator')
 
-const MockCompiler = jest.fn<webpack.Compiler, any[]>((i) => i)
-const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>((i) => i)
-const MockChunk = jest.fn<webpack.compilation.Chunk, any[]>((i) => i)
+const MockCompiler = jest.fn<webpack.Compiler & { plugin: any }, any[]>(
+  (i) => i
+)
+const MockCompilation = jest.fn<webpack.Compilation & { plugin: any }, any[]>(
+  (i) => i
+)
+const MockChunk = jest.fn<webpack.Chunk, any[]>((i) => i)
 
 describe('WebpackLicensePlugin', () => {
   beforeEach(() => {
-    (LicenseFileWriter as jest.Mock).mockReset();
-    (LicenseFileWriter as jest.Mock).mockImplementation(() => ({
-      writeLicenseFiles: jest.fn()
-    }));
-    (WebpackChunkIterator as jest.Mock).mockReset();
-    (WebpackChunkIterator as jest.Mock).mockImplementation(() => ({
-      iterateChunks: () => []
+    ;(LicenseFileWriter as jest.Mock).mockReset()
+    ;(LicenseFileWriter as jest.Mock).mockImplementation(() => ({
+      writeLicenseFiles: jest.fn(),
+    }))
+    ;(WebpackChunkIterator as jest.Mock).mockReset()
+    ;(WebpackChunkIterator as jest.Mock).mockImplementation(() => ({
+      iterateChunks: () => [],
     }))
   })
 
   describe('apply', () => {
     test('taps into compilation and watchRun hooks if hooks are defined', () => {
       const compiler = new MockCompiler({
-        hooks: { 
+        hooks: {
           compilation: { tap: jest.fn() },
-          watchRun: { tapAsync: jest.fn() }
-         },
-          
+          watchRun: { tapAsync: jest.fn() },
+        },
       })
       const instance = new WebpackLicensePlugin({})
       instance.apply(compiler)
@@ -46,14 +49,30 @@ describe('WebpackLicensePlugin', () => {
       )
     })
 
-    test('plugs into compilation otherwise', () => {
+    test('plugs into compilation if no hooks but plugins are defined', () => {
       const compiler = new MockCompiler({ plugin: jest.fn() })
       const instance = new WebpackLicensePlugin()
       instance.apply(compiler)
 
       expect(compiler.plugin).toHaveBeenCalledTimes(2)
-      expect(compiler.plugin).toHaveBeenCalledWith('compilation', expect.any(Function))
-      expect(compiler.plugin).toHaveBeenCalledWith('watchRun', expect.any(Function))
+      expect(compiler.plugin).toHaveBeenCalledWith(
+        'compilation',
+        expect.any(Function)
+      )
+      expect(compiler.plugin).toHaveBeenCalledWith(
+        'watchRun',
+        expect.any(Function)
+      )
+    })
+
+    test('do nothing otherwise', () => {
+      const compiler = new MockCompiler()
+      const instance = new WebpackLicensePlugin()
+
+      instance.handleCompilation = jest.fn()
+      instance.apply(compiler)
+
+      expect(instance.handleCompilation).toHaveBeenCalledTimes(0)
     })
   })
 
@@ -65,33 +84,82 @@ describe('WebpackLicensePlugin', () => {
       })
       instance.handleCompilation(new MockCompiler(), compilation)
 
-      expect(compilation.hooks.optimizeChunkAssets.tapAsync).toHaveBeenCalledTimes(1)
-      expect(compilation.hooks.optimizeChunkAssets.tapAsync).toHaveBeenCalledWith(
-        'webpack-license-plugin',
+      expect(
+        compilation.hooks.optimizeChunkAssets.tapAsync
+      ).toHaveBeenCalledTimes(1)
+      expect(
+        compilation.hooks.optimizeChunkAssets.tapAsync
+      ).toHaveBeenCalledWith('webpack-license-plugin', expect.any(Function))
+    })
+
+    test('taps into processAssets hook even if optimizeChunkAssets exists', () => {
+      const instance = new WebpackLicensePlugin()
+      const compilation = new MockCompilation({
+        hooks: {
+          processAssets: { tapAsync: jest.fn() },
+          optimizeChunkAssets: { tapAsync: jest.fn() },
+        },
+      })
+      instance.handleChunkAssetOptimization = jest.fn()
+      instance.handleCompilation(new MockCompiler(), compilation)
+
+      expect(
+        compilation.hooks.optimizeChunkAssets.tapAsync
+      ).toHaveBeenCalledTimes(0)
+      expect(compilation.hooks.processAssets.tapAsync).toHaveBeenCalledTimes(1)
+      expect(compilation.hooks.processAssets.tapAsync).toHaveBeenCalledWith(
+        expect.objectContaining({
+          name: 'webpack-license-plugin',
+          stage: expect.any(Number),
+        }),
         expect.any(Function)
+      )
+      // @ts-ignore
+      const callback = compilation.hooks.processAssets.tapAsync.mock.calls[0][1]
+      callback(null, () => {})
+      expect(instance.handleChunkAssetOptimization).toBeCalledTimes(1)
+      expect(instance.handleChunkAssetOptimization).toHaveBeenCalledWith(
+        expect.objectContaining({}), // compiler
+        expect.objectContaining({}), // compilation
+        expect.objectContaining({}), // chunks
+        expect.any(Function) // callback
       )
     })
 
-    test('plugs into optimize-chunk-assets otherwise', () => {
+    test('plugs into optimize-chunk-assets if no hooks but plugin are defined', () => {
       const instance = new WebpackLicensePlugin()
       const compilation = new MockCompilation({ plugin: jest.fn() })
       instance.handleCompilation(new MockCompiler(), compilation)
 
       expect(compilation.plugin).toHaveBeenCalledTimes(1)
-      expect(compilation.plugin).toHaveBeenCalledWith('optimize-chunk-assets', expect.any(Function))
+      expect(compilation.plugin).toHaveBeenCalledWith(
+        'optimize-chunk-assets',
+        expect.any(Function)
+      )
+    })
+
+    test('handleChunkAssetOptimization not called otherwise', () => {
+      const instance = new WebpackLicensePlugin()
+      const compilation = new MockCompilation()
+
+      instance.handleChunkAssetOptimization = jest.fn()
+      instance.handleCompilation(new MockCompiler(), compilation)
+
+      expect(instance.handleChunkAssetOptimization).toHaveBeenCalledTimes(0)
     })
   })
 
   describe('handleChunkAssetOptimization', () => {
-    const createMockCompilation = (name: string, isChild:  boolean) => new MockCompilation({
-      assets: [],
-      errors: [],
-      warnings: [],
-      compiler: {
-        name,
-        isChild: () => isChild
-      }
-    })
+    const createMockCompilation = (name: string, isChild: boolean) =>
+      new MockCompilation({
+        assets: [],
+        errors: [],
+        warnings: [],
+        compiler: {
+          name,
+          isChild: () => isChild,
+        },
+      })
 
     test('calls plugin mechanism callback when done', async () => {
       const instance = new WebpackLicensePlugin()
@@ -108,18 +176,20 @@ describe('WebpackLicensePlugin', () => {
     })
 
     test('calls writeLicenseFiles with all filenames', async () => {
-      (WebpackChunkIterator as jest.Mock).mockReset();
-      (WebpackChunkIterator as jest.Mock)
+      ;(WebpackChunkIterator as jest.Mock).mockReset()
+      ;(WebpackChunkIterator as jest.Mock)
         .mockImplementationOnce(() => ({
-          iterateChunks: () => ['filename1', 'filename2']
+          iterateChunks: () => ['filename1', 'filename2'],
         }))
         .mockImplementationOnce(() => ({
-          iterateChunks: () => ['filename1', 'filename3', 'filename4']
+          iterateChunks: () => ['filename1', 'filename3', 'filename4'],
         }))
 
-      const writeLicenseFiles = jest.fn();
-      (LicenseFileWriter as jest.Mock).mockReset();
-      (LicenseFileWriter as jest.Mock).mockImplementationOnce(() => ({ writeLicenseFiles }))
+      const writeLicenseFiles = jest.fn()
+      ;(LicenseFileWriter as jest.Mock).mockReset()
+      ;(LicenseFileWriter as jest.Mock).mockImplementationOnce(() => ({
+        writeLicenseFiles,
+      }))
 
       const instance = new WebpackLicensePlugin()
 
@@ -131,7 +201,7 @@ describe('WebpackLicensePlugin', () => {
         [new MockChunk()],
         callback1
       )
-      
+
       const callback2 = jest.fn()
       const mockCompilation2 = createMockCompilation('mockCompiler2', false)
       await instance.handleChunkAssetOptimization(
@@ -147,7 +217,10 @@ describe('WebpackLicensePlugin', () => {
       expect(mockCompilation1.errors).toEqual([])
       expect(mockCompilation2.errors).toEqual([])
 
-      expect(writeLicenseFiles).toHaveBeenCalledWith(['filename1', 'filename2', 'filename3', 'filename4'], expect.anything())
+      expect(writeLicenseFiles).toHaveBeenCalledWith(
+        ['filename1', 'filename2', 'filename3', 'filename4'],
+        expect.anything()
+      )
       expect(writeLicenseFiles).toHaveBeenCalledTimes(1)
     })
 
@@ -176,7 +249,11 @@ describe('WebpackLicensePlugin', () => {
       expect(callback2).toHaveBeenCalledTimes(1)
 
       expect(mockCompilation1.errors).toEqual([])
-      expect(mockCompilation2.errors).toEqual(["WebpackLicensePlugin: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\ncompiler: mockCompiler1, isChild: false\ncompiler: mockCompiler2, isChild: true"])
+      expect(mockCompilation2.errors).toEqual([
+        new webpack.WebpackError(
+          'WebpackLicensePlugin: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\ncompiler: mockCompiler1, isChild: false\ncompiler: mockCompiler2, isChild: true'
+        ),
+      ])
     })
 
     test('reset when handleWatchRun is called', async () => {
@@ -219,7 +296,11 @@ describe('WebpackLicensePlugin', () => {
 
       expect(mockCompilation1.errors).toEqual([])
       expect(mockCompilation2.errors).toEqual([])
-      expect(mockCompilation3.errors).toEqual(["WebpackLicensePlugin: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\ncompiler: mockCompiler2, isChild: false\ncompiler: mockCompiler3, isChild: true"])
+      expect(mockCompilation3.errors).toEqual([
+        new webpack.WebpackError(
+          'WebpackLicensePlugin: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\ncompiler: mockCompiler2, isChild: false\ncompiler: mockCompiler3, isChild: true'
+        ),
+      ])
     })
   })
 })
