@@ -9,10 +9,8 @@ module.exports = {
     '!src/index.ts',
     '!src/defaultOptions.ts',
   ],
-  globals:{
-    'ts-jest': {
-      diagnostics: false
-    },
+  transform: {
+    '^.+\\.ts$': ['ts-jest', { diagnostics: false }],
   },
   watchPlugins: [
     require.resolve('jest-watch-typeahead/filename'),
