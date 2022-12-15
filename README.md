@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/codepunkt/webpack-license-plugin"><img src="https://raw.githubusercontent.com/codepunkt/webpack-license-plugin/master/docs/logo.png" alt="webpack-license-plugin logo" width="200"></a>
+  <a href="https://github.com/codepunkt/webpack-license-plugin"><img src="https://raw.githubusercontent.com/codepunkt/webpack-license-plugin/master/docs/logo.png" alt="" width="200"></a>
   <br>
   webpack-license-plugin
   <br>
@@ -39,7 +39,7 @@
 
 # Key features
 
-> This plugin extracts _open source license information_ about all of the npm packages in your webpack output and helps you identify and fix problems with your open source licensing policy.
+This plugin extracts _open source license information_ about all of the npm packages in your webpack output and helps you identify and fix problems with your open source licensing policy.
 
 This plugin has full test coverage and is tested with **webpack 2, 3, 4 and 5**. It will help you:
 
@@ -56,14 +56,14 @@ Install `webpack-license-plugin` as a development dependency to your current pro
 
 #### npm
 
-```bash
-npm install -D webpack-license-plugin
+```console
+$ npm install -D webpack-license-plugin
 ```
 
-#### yarn
+#### Yarn
 
-```bash
-yarn add -D webpack-license-plugin
+```console
+$ yarn add -D webpack-license-plugin
 ```
 
 # How to use
