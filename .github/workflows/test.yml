@@ -1,4 +1,4 @@
-name: tests
+name: Test
 
 on:
   workflow_dispatch:
@@ -11,6 +11,7 @@ on:
 
 jobs:
   test:
+    name: Test Node.js ${{ matrix.node-version }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -29,6 +30,13 @@ jobs:
       env:
         CI: true
     - name: Run tests and generate coverage information
+      if: matrix.node-version == '18.x'
+      run: |
+        NODE_OPTIONS=--openssl-legacy-provider npm run test:ci
+      env:
+        CI: true
+    - name: Run tests and generate coverage information
+      if: matrix.node-version != '18.x'
       run: |
         npm run test:ci
       env:
