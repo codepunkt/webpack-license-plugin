@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`end to end webpack v2 additionalFiles match snapshot 1`] = `"[{\\"name\\":\\"webpack-license-plugin-test-example\\",\\"version\\":\\"1.0.0\\",\\"author\\":\\"Christoph Werner <christoph@codepunkt.de>\\",\\"repository\\":null,\\"source\\":\\"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":null},{\\"name\\":\\"scheduler\\",\\"version\\":\\"0.19.1\\",\\"repository\\":\\"https://github.com/facebook/react.git\\",\\"source\\":\\"https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) Facebook, Inc. and its affiliates.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"react-dom\\",\\"version\\":\\"16.14.0\\",\\"repository\\":\\"git+https://github.com/facebook/react.git\\",\\"source\\":\\"https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) Facebook, Inc. and its affiliates.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"react\\",\\"version\\":\\"16.14.0\\",\\"repository\\":\\"git+https://github.com/facebook/react.git\\",\\"source\\":\\"https://registry.npmjs.org/react/-/react-16.14.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) Facebook, Inc. and its affiliates.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"prop-types\\",\\"version\\":\\"15.8.1\\",\\"repository\\":\\"facebook/prop-types\\",\\"source\\":\\"https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) 2013-present, Facebook, Inc.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"process\\",\\"version\\":\\"0.11.10\\",\\"author\\":\\"Roman Shtylman <shtylman@gmail.com>\\",\\"repository\\":\\"git://github.com/shtylman/node-process.git\\",\\"source\\":\\"https://registry.npmjs.org/process/-/process-0.11.10.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"(The MIT License)\\\\n\\\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining\\\\na copy of this software and associated documentation files (the\\\\n'Software'), to deal in the Software without restriction, including\\\\nwithout limitation the rights to use, copy, modify, merge, publish,\\\\ndistribute, sublicense, and/or sell copies of the Software, and to\\\\npermit persons to whom the Software is furnished to do so, subject to\\\\nthe following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be\\\\nincluded in all copies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\\\n\\"},{\\"name\\":\\"object-assign\\",\\"version\\":\\"4.1.1\\",\\"author\\":\\"Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\\",\\"repository\\":\\"sindresorhus/object-assign\\",\\"source\\":\\"https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"The MIT License (MIT)\\\\n\\\\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in\\\\nall copies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\\\nTHE SOFTWARE.\\\\n\\"},{\\"name\\":\\"date-fns\\",\\"version\\":\\"2.28.0\\",\\"repository\\":\\"https://github.com/date-fns/date-fns\\",\\"source\\":\\"https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"}]"`;
+exports[`end to end webpack v2 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null},{"name":"scheduler","version":"0.19.1","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react-dom","version":"16.14.0","repository":"git+https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react","version":"16.14.0","repository":"git+https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-16.14.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"prop-types","version":"15.8.1","repository":"facebook/prop-types","source":"https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) 2013-present, Facebook, Inc.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"process","version":"0.11.10","author":"Roman Shtylman <shtylman@gmail.com>","repository":"git://github.com/shtylman/node-process.git","source":"https://registry.npmjs.org/process/-/process-0.11.10.tgz","license":"MIT","licenseText":"(The MIT License)\\n\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"},{"name":"object-assign","version":"4.1.1","author":"Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)","repository":"sindresorhus/object-assign","source":"https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz","license":"MIT","licenseText":"The MIT License (MIT)\\n\\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in\\nall copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\nTHE SOFTWARE.\\n"},{"name":"date-fns","version":"2.28.0","repository":"https://github.com/date-fns/date-fns","source":"https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"}]"`;
 
 exports[`end to end webpack v2 output matches snapshot 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -20,7 +20,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -33,7 +33,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -41,7 +41,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -50,7 +50,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -63,7 +63,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -94,14 +94,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -110,7 +110,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -123,14 +123,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -139,7 +139,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -152,14 +152,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -168,7 +168,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -181,14 +181,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -197,7 +197,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -210,7 +210,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -223,15 +223,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v2 output matches snapshot when a package has been manually included that is also included in the build result 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -240,7 +240,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -253,7 +253,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -261,7 +261,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -270,7 +270,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -283,7 +283,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -314,14 +314,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -330,7 +330,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -343,14 +343,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -359,7 +359,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -372,14 +372,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -388,7 +388,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -401,14 +401,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -417,7 +417,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -430,7 +430,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -443,15 +443,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v2 output matches snapshot when packages have been excluded 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -460,7 +460,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -473,7 +473,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -481,7 +481,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -490,7 +490,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -503,7 +503,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -534,14 +534,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -550,7 +550,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -563,14 +563,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -579,7 +579,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -592,14 +592,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -608,7 +608,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -621,7 +621,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -634,15 +634,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v2 output matches snapshot when packages have been included 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -651,7 +651,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -664,15 +664,36 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "license": "MIT",
-    "licenseText": null,
+    "licenseText": "MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
     "name": "jest",
-    "repository": "https://github.com/facebook/jest",
-    "source": "https://registry.npmjs.org/jest/-/jest-24.9.0.tgz",
-    "version": "24.9.0",
+    "repository": "https://github.com/facebook/jest.git",
+    "source": "https://registry.npmjs.org/jest/-/jest-29.3.1.tgz",
+    "version": "29.3.1",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -680,7 +701,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -689,7 +710,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -702,7 +723,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -733,14 +754,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -749,7 +770,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -762,14 +783,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -778,7 +799,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -791,14 +812,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -807,7 +828,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -820,14 +841,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -836,7 +857,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -849,7 +870,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -862,15 +883,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v2 output to a different outputFilename matches snapshot 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -879,7 +900,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -892,7 +913,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -900,7 +921,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -909,7 +930,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -922,7 +943,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -953,14 +974,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -969,7 +990,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -982,14 +1003,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -998,7 +1019,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1011,14 +1032,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1027,7 +1048,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1040,14 +1061,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1056,7 +1077,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1069,7 +1090,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -1081,18 +1102,18 @@ SOFTWARE.
 ]
 `;
 
-exports[`end to end webpack v3 additionalFiles match snapshot 1`] = `"[{\\"name\\":\\"webpack-license-plugin-test-example\\",\\"version\\":\\"1.0.0\\",\\"author\\":\\"Christoph Werner <christoph@codepunkt.de>\\",\\"repository\\":null,\\"source\\":\\"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":null},{\\"name\\":\\"scheduler\\",\\"version\\":\\"0.19.1\\",\\"repository\\":\\"https://github.com/facebook/react.git\\",\\"source\\":\\"https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) Facebook, Inc. and its affiliates.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"react-dom\\",\\"version\\":\\"16.14.0\\",\\"repository\\":\\"git+https://github.com/facebook/react.git\\",\\"source\\":\\"https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) Facebook, Inc. and its affiliates.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"react\\",\\"version\\":\\"16.14.0\\",\\"repository\\":\\"git+https://github.com/facebook/react.git\\",\\"source\\":\\"https://registry.npmjs.org/react/-/react-16.14.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) Facebook, Inc. and its affiliates.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"prop-types\\",\\"version\\":\\"15.8.1\\",\\"repository\\":\\"facebook/prop-types\\",\\"source\\":\\"https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) 2013-present, Facebook, Inc.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"process\\",\\"version\\":\\"0.11.10\\",\\"author\\":\\"Roman Shtylman <shtylman@gmail.com>\\",\\"repository\\":\\"git://github.com/shtylman/node-process.git\\",\\"source\\":\\"https://registry.npmjs.org/process/-/process-0.11.10.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"(The MIT License)\\\\n\\\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining\\\\na copy of this software and associated documentation files (the\\\\n'Software'), to deal in the Software without restriction, including\\\\nwithout limitation the rights to use, copy, modify, merge, publish,\\\\ndistribute, sublicense, and/or sell copies of the Software, and to\\\\npermit persons to whom the Software is furnished to do so, subject to\\\\nthe following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be\\\\nincluded in all copies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\\\n\\"},{\\"name\\":\\"object-assign\\",\\"version\\":\\"4.1.1\\",\\"author\\":\\"Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\\",\\"repository\\":\\"sindresorhus/object-assign\\",\\"source\\":\\"https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"The MIT License (MIT)\\\\n\\\\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in\\\\nall copies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\\\nTHE SOFTWARE.\\\\n\\"},{\\"name\\":\\"date-fns\\",\\"version\\":\\"2.28.0\\",\\"repository\\":\\"https://github.com/date-fns/date-fns\\",\\"source\\":\\"https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"}]"`;
+exports[`end to end webpack v3 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null},{"name":"scheduler","version":"0.19.1","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react-dom","version":"16.14.0","repository":"git+https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react","version":"16.14.0","repository":"git+https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-16.14.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"prop-types","version":"15.8.1","repository":"facebook/prop-types","source":"https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) 2013-present, Facebook, Inc.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"process","version":"0.11.10","author":"Roman Shtylman <shtylman@gmail.com>","repository":"git://github.com/shtylman/node-process.git","source":"https://registry.npmjs.org/process/-/process-0.11.10.tgz","license":"MIT","licenseText":"(The MIT License)\\n\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"},{"name":"object-assign","version":"4.1.1","author":"Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)","repository":"sindresorhus/object-assign","source":"https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz","license":"MIT","licenseText":"The MIT License (MIT)\\n\\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in\\nall copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\nTHE SOFTWARE.\\n"},{"name":"date-fns","version":"2.28.0","repository":"https://github.com/date-fns/date-fns","source":"https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"}]"`;
 
 exports[`end to end webpack v3 output matches snapshot 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1101,7 +1122,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1114,7 +1135,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -1122,7 +1143,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1131,7 +1152,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1144,7 +1165,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -1175,14 +1196,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1191,7 +1212,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1204,14 +1225,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1220,7 +1241,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1233,14 +1254,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1249,7 +1270,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1262,14 +1283,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1278,7 +1299,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1291,7 +1312,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -1304,15 +1325,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v3 output matches snapshot when a package has been manually included that is also included in the build result 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1321,7 +1342,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1334,7 +1355,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -1342,7 +1363,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1351,7 +1372,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1364,7 +1385,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -1395,14 +1416,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1411,7 +1432,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1424,14 +1445,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1440,7 +1461,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1453,14 +1474,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1469,7 +1490,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1482,14 +1503,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1498,7 +1519,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1511,7 +1532,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -1524,15 +1545,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v3 output matches snapshot when packages have been excluded 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1541,7 +1562,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1554,7 +1575,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -1562,7 +1583,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1571,7 +1592,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1584,7 +1605,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -1615,14 +1636,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1631,7 +1652,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1644,14 +1665,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1660,7 +1681,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1673,14 +1694,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1689,7 +1710,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1702,7 +1723,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -1715,15 +1736,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v3 output matches snapshot when packages have been included 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1732,7 +1753,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1745,15 +1766,36 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "license": "MIT",
-    "licenseText": null,
+    "licenseText": "MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
     "name": "jest",
-    "repository": "https://github.com/facebook/jest",
-    "source": "https://registry.npmjs.org/jest/-/jest-24.9.0.tgz",
-    "version": "24.9.0",
+    "repository": "https://github.com/facebook/jest.git",
+    "source": "https://registry.npmjs.org/jest/-/jest-29.3.1.tgz",
+    "version": "29.3.1",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -1761,7 +1803,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1770,7 +1812,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1783,7 +1825,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -1814,14 +1856,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1830,7 +1872,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1843,14 +1885,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1859,7 +1901,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1872,14 +1914,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1888,7 +1930,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1901,14 +1943,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1917,7 +1959,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1930,7 +1972,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -1943,15 +1985,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v3 output to a different outputFilename matches snapshot 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1960,7 +2002,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -1973,7 +2015,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -1981,7 +2023,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -1990,7 +2032,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -2003,7 +2045,7 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "author": "Roman Shtylman <shtylman@gmail.com>",
     "license": "MIT",
     "licenseText": "(The MIT License)
@@ -2034,14 +2076,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2013-present, Facebook, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -2050,7 +2092,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -2063,14 +2105,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
     "version": "15.8.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -2079,7 +2121,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -2092,14 +2134,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -2108,7 +2150,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -2121,14 +2163,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -2137,7 +2179,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -2150,7 +2192,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -2943,18 +2985,18 @@ SOFTWARE.
 ]
 `;
 
-exports[`end to end webpack v5 additionalFiles match snapshot 1`] = `"[{\\"name\\":\\"webpack-license-plugin-test-example\\",\\"version\\":\\"1.0.0\\",\\"author\\":\\"Christoph Werner <christoph@codepunkt.de>\\",\\"repository\\":null,\\"source\\":\\"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":null},{\\"name\\":\\"scheduler\\",\\"version\\":\\"0.19.1\\",\\"repository\\":\\"https://github.com/facebook/react.git\\",\\"source\\":\\"https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) Facebook, Inc. and its affiliates.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"react-dom\\",\\"version\\":\\"16.14.0\\",\\"repository\\":\\"git+https://github.com/facebook/react.git\\",\\"source\\":\\"https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) Facebook, Inc. and its affiliates.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"react\\",\\"version\\":\\"16.14.0\\",\\"repository\\":\\"git+https://github.com/facebook/react.git\\",\\"source\\":\\"https://registry.npmjs.org/react/-/react-16.14.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) Facebook, Inc. and its affiliates.\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"},{\\"name\\":\\"object-assign\\",\\"version\\":\\"4.1.1\\",\\"author\\":\\"Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\\",\\"repository\\":\\"sindresorhus/object-assign\\",\\"source\\":\\"https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"The MIT License (MIT)\\\\n\\\\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in\\\\nall copies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\\\nTHE SOFTWARE.\\\\n\\"},{\\"name\\":\\"date-fns\\",\\"version\\":\\"2.28.0\\",\\"repository\\":\\"https://github.com/date-fns/date-fns\\",\\"source\\":\\"https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz\\",\\"license\\":\\"MIT\\",\\"licenseText\\":\\"MIT License\\\\n\\\\nCopyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org\\\\n\\\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\\\nof this software and associated documentation files (the \\\\\\"Software\\\\\\"), to deal\\\\nin the Software without restriction, including without limitation the rights\\\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\\\ncopies of the Software, and to permit persons to whom the Software is\\\\nfurnished to do so, subject to the following conditions:\\\\n\\\\nThe above copyright notice and this permission notice shall be included in all\\\\ncopies or substantial portions of the Software.\\\\n\\\\nTHE SOFTWARE IS PROVIDED \\\\\\"AS IS\\\\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\\\nSOFTWARE.\\\\n\\"}]"`;
+exports[`end to end webpack v5 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null},{"name":"scheduler","version":"0.19.1","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react-dom","version":"16.14.0","repository":"git+https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react","version":"16.14.0","repository":"git+https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-16.14.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"object-assign","version":"4.1.1","author":"Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)","repository":"sindresorhus/object-assign","source":"https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz","license":"MIT","licenseText":"The MIT License (MIT)\\n\\nCopyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in\\nall copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\\nTHE SOFTWARE.\\n"},{"name":"date-fns","version":"2.28.0","repository":"https://github.com/date-fns/date-fns","source":"https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"}]"`;
 
 exports[`end to end webpack v5 output matches snapshot 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -2963,7 +3005,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -2976,7 +3018,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -2984,7 +3026,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -2993,7 +3035,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3006,14 +3048,14 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3022,7 +3064,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3035,14 +3077,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3051,7 +3093,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3064,14 +3106,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3080,7 +3122,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3093,7 +3135,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -3106,15 +3148,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v5 output matches snapshot when a package has been manually included that is also included in the build result 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3123,7 +3165,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3136,7 +3178,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -3144,7 +3186,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3153,7 +3195,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3166,14 +3208,14 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3182,7 +3224,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3195,14 +3237,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3211,7 +3253,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3224,14 +3266,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3240,7 +3282,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3253,7 +3295,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -3266,15 +3308,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v5 output matches snapshot when packages have been excluded 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3283,7 +3325,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3296,7 +3338,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -3304,7 +3346,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3313,7 +3355,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3326,14 +3368,14 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3342,7 +3384,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3355,14 +3397,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3371,7 +3413,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3384,7 +3426,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -3397,15 +3439,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v5 output matches snapshot when packages have been included 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3414,7 +3456,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3427,15 +3469,36 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "license": "MIT",
-    "licenseText": null,
+    "licenseText": "MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+",
     "name": "jest",
-    "repository": "https://github.com/facebook/jest",
-    "source": "https://registry.npmjs.org/jest/-/jest-24.9.0.tgz",
-    "version": "24.9.0",
+    "repository": "https://github.com/facebook/jest.git",
+    "source": "https://registry.npmjs.org/jest/-/jest-29.3.1.tgz",
+    "version": "29.3.1",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -3443,7 +3506,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3452,7 +3515,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3465,14 +3528,14 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3481,7 +3544,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3494,14 +3557,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3510,7 +3573,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3523,14 +3586,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3539,7 +3602,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3552,7 +3615,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
@@ -3565,15 +3628,15 @@ SOFTWARE.
 `;
 
 exports[`end to end webpack v5 output to a different outputFilename matches snapshot 1`] = `
-Array [
-  Object {
+[
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) 2021 Sasha Koss and Lesha Koss https://kossnocorp.mit-license.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3582,7 +3645,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3595,7 +3658,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/date-fns/-/date-fns-2.28.0.tgz",
     "version": "2.28.0",
   },
-  Object {
+  {
     "author": "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "license": "MIT",
     "licenseText": "The MIT License (MIT)
@@ -3603,7 +3666,7 @@ SOFTWARE.
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3612,7 +3675,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3625,14 +3688,14 @@ THE SOFTWARE.
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "version": "4.1.1",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3641,7 +3704,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3654,14 +3717,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react/-/react-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3670,7 +3733,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3683,14 +3746,14 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz",
     "version": "16.14.0",
   },
-  Object {
+  {
     "license": "MIT",
     "licenseText": "MIT License
 
 Copyright (c) Facebook, Inc. and its affiliates.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \\"Software\\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -3699,7 +3762,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
@@ -3712,7 +3775,7 @@ SOFTWARE.
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz",
     "version": "0.19.1",
   },
-  Object {
+  {
     "author": "Christoph Werner <christoph@codepunkt.de>",
     "license": "MIT",
     "licenseText": null,
