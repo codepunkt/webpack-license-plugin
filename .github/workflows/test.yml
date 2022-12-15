@@ -1,4 +1,4 @@
-name: tests
+name: Test
 
 on:
   workflow_dispatch:
@@ -10,19 +10,12 @@ on:
       - main
 
 jobs:
-  security:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Run Snyk to check for vulnerabilities
-      run: npx snyk test --severity-threshold=high
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
   test:
+    name: Test Node.js ${{ matrix.node-version }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x]
+        node-version: [14.x, 16.x, 18.x]
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
@@ -37,6 +30,13 @@ jobs:
       env:
         CI: true
     - name: Run tests and generate coverage information
+      if: matrix.node-version == '18.x'
+      run: |
+        NODE_OPTIONS=--openssl-legacy-provider npm run test:ci
+      env:
+        CI: true
+    - name: Run tests and generate coverage information
+      if: matrix.node-version != '18.x'
       run: |
         npm run test:ci
       env:

@@ -64,13 +64,31 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
 
   public handleCompilation(
     compiler: webpack.Compiler,
-    compilation: webpack.compilation.Compilation
+    compilation: webpack.Compilation
   ) {
     if (typeof compilation.hooks !== 'undefined') {
-      compilation.hooks.optimizeChunkAssets.tapAsync(
-        'webpack-license-plugin',
-        this.handleChunkAssetOptimization.bind(this, compiler, compilation)
-      )
+      if (typeof compilation.hooks.processAssets !== 'undefined') {
+        const boundHandleChunkAssetOptimization =
+          this.handleChunkAssetOptimization.bind(
+            this,
+            compiler,
+            compilation,
+            compilation.chunks
+          )
+
+        compilation.hooks.processAssets.tapAsync(
+          {
+            name: 'webpack-license-plugin',
+            stage: webpack.Compilation.PROCESS_ASSETS_STAGE_ANALYSE,
+          },
+          (assets, callback) => boundHandleChunkAssetOptimization(callback)
+        )
+      } else {
+        compilation.hooks.optimizeChunkAssets.tapAsync(
+          'webpack-license-plugin',
+          this.handleChunkAssetOptimization.bind(this, compiler, compilation)
+        )
+      }
       // @ts-ignore
     } else if (typeof compilation.plugin !== 'undefined') {
       // @ts-ignore
@@ -83,8 +101,8 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
 
   public async handleChunkAssetOptimization(
     compiler: webpack.Compiler,
-    compilation: webpack.compilation.Compilation,
-    chunks: webpack.compilation.Chunk[],
+    compilation: webpack.Compilation,
+    chunks: Set<webpack.Chunk>,
     callback: () => void
   ) {
     this.observedCompilers.push({
@@ -96,7 +114,9 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
       const observedCompilersMessage = this.observedCompilers
         .map(({ name, isChild }) => `compiler: ${name}, isChild: ${isChild}`)
         .join('\n')
-      const errorMessage = `${pluginName}: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\n${observedCompilersMessage}`
+      const errorMessage = new webpack.WebpackError(
+        `${pluginName}: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\n${observedCompilersMessage}`
+      )
       compilation.errors.push(errorMessage)
       callback()
       return

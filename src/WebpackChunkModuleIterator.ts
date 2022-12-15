@@ -1,8 +1,8 @@
 import * as webpack from 'webpack'
 import IWebpackChunkModule from './types/IWebpackChunkModule'
 
-type Compilation = Partial<
-  webpack.compilation.Compilation & {
+export type Compilation = Partial<
+  webpack.Compilation & {
     chunkGraph: {
       getChunkModulesIterable: (chunk: Chunk) => IWebpackChunkModule[]
       getChunkEntryModulesIterable: (chunk: Chunk) => IWebpackChunkModule[]
@@ -12,7 +12,7 @@ type Compilation = Partial<
 
 type Chunk = Partial<
   Pick<
-    webpack.compilation.Chunk & {
+    webpack.Chunk & {
       forEachModule?: (callback: (module: IWebpackChunkModule) => void) => void
       modules?: IWebpackChunkModule[]
     },

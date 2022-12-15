@@ -1,20 +1,19 @@
 import MemoryFs = require('memory-fs')
 import { resolve, sep } from 'path'
-import * as webpack4 from 'webpack'
 import * as webpack2 from 'webpack2'
 import * as webpack3 from 'webpack3'
-// @ts-ignore
+import * as webpack4 from 'webpack4'
 import * as webpack5 from 'webpack5'
 import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 
 const outputPath = resolve(__dirname, './example/dist')
 
 const createBuild =
-  (wp: (options: object) => webpack5.Compiler) =>
+  (wp: (options: object) => any) =>
   (
     plugin: WebpackLicensePlugin,
     fileSystem: MemoryFs,
-    callback: (err: Error, stats: any) => void
+    callback: (err?: Error | null, stats?: any) => void
   ) => {
     const compiler = wp({
       entry: resolve(__dirname, './example/src/index.js'),
@@ -24,7 +23,7 @@ const createBuild =
     })
 
     compiler.outputFileSystem = fileSystem
-    compiler.run((err, stats) => callback(err, stats.toJson()))
+    compiler.run((err, stats) => callback(err, stats?.toJson()))
   }
 
 const webpackVersions = [
@@ -40,7 +39,7 @@ describe('end to end', () => {
       messages: string[]
     ): string[] | { message: string }[] => {
       return webpackVersion.description === 'webpack v5'
-        ? messages.map((message) => ({ message }))
+        ? messages.map((message) => expect.objectContaining({ message }))
         : messages
     }
 
@@ -147,11 +146,11 @@ describe('end to end', () => {
           (err, stats) => {
             expect(err).toBe(null)
             expect(stats.errors).toEqual(
-              expect.arrayContaining(
+              expect.arrayContaining<string | { message: string }>(
                 buildErrors([
                   'WebpackLicensePlugin: Found unacceptable license "MIT" for react@16.14.0',
                   'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@16.14.0',
-                ]) as string[]
+                ])
               )
             )
 
