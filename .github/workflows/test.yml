@@ -10,14 +10,6 @@ on:
       - main
 
 jobs:
-  security:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Run Snyk to check for vulnerabilities
-      run: npx snyk test --severity-threshold=high
-      env:
-        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
   test:
     runs-on: ubuntu-latest
     strategy:
