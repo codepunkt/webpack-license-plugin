@@ -30,7 +30,7 @@ jobs:
         CI: true
     - name: Run tests and generate coverage information
       run: |
-        npm run test:ci
+        npm run test:ci -- --openssl-legacy-provider
       env:
         CI: true
     - name: Upload coverage to Codecov
