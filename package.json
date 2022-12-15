@@ -54,7 +54,7 @@
     "chalk": "^5.0.1",
     "get-npm-tarball-url": "^2.0.1",
     "lodash": "^4.17.20",
-    "needle": "^2.2.4",
+    "needle": "^3.2.0",
     "spdx-expression-validate": "^2.0.0",
     "webpack-sources": "^3.2.1"
   },
@@ -62,7 +62,7 @@
     "@types/jest": "27.4.1",
     "@types/lodash": "^4.14.118",
     "@types/memory-fs": "^0.3.2",
-    "@types/needle": "^2.0.4",
+    "@types/needle": "^3.2.0",
     "@types/node": "^17.0.21",
     "codecov": "^3.1.0",
     "cross-env": "^7.0.2",
