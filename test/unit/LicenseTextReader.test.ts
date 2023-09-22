@@ -20,14 +20,14 @@ const DefaultLicenseTextProvider = jest.fn<IDefaultLicenseTextProvider, any[]>(
   })
 )
 
-const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>((i) => i)
 
 describe('LicenseTextReader', () => {
   describe('getLicenseFilename', () => {
     test('returns null if the license is undefined', async () => {
       const instance = new LicenseTextReader(
         new MockAlertAggregator(),
-        new FileSystem({ listPaths: d => ['index.js'] }),
+        new FileSystem({ listPaths: (d) => ['index.js'] }),
         defaultOptions
       )
 
@@ -43,7 +43,7 @@ describe('LicenseTextReader', () => {
     test('returns null if no license file is found', () => {
       const instance = new LicenseTextReader(
         new MockAlertAggregator(),
-        new FileSystem({ listPaths: d => ['index.js'] }),
+        new FileSystem({ listPaths: (d) => ['index.js'] }),
         defaultOptions
       )
 
@@ -53,7 +53,7 @@ describe('LicenseTextReader', () => {
     test('returns null if no license file is found', () => {
       const instance = new LicenseTextReader(
         new MockAlertAggregator(),
-        new FileSystem({ listPaths: d => ['index.js', 'LICENSE'] }),
+        new FileSystem({ listPaths: (d) => ['index.js', 'LICENSE'] }),
         defaultOptions
       )
 
@@ -68,7 +68,7 @@ describe('LicenseTextReader', () => {
       const instance = new LicenseTextReader(
         new MockAlertAggregator(),
         new FileSystem({
-          readFile: p => `license text in ${p}`,
+          readFile: (p) => `license text in ${p}`,
         }),
         defaultOptions
       )
@@ -85,8 +85,8 @@ describe('LicenseTextReader', () => {
         new MockAlertAggregator(),
         new FileSystem({
           join: (d, f) => `${d}/${f}`,
-          listPaths: d => ['index.js', 'LICENSE'],
-          readFile: p => `license in ${p}`,
+          listPaths: (d) => ['index.js', 'LICENSE'],
+          readFile: (p) => `license in ${p}`,
         }),
         defaultOptions
       )
@@ -105,7 +105,7 @@ describe('LicenseTextReader', () => {
     test('returns `null` when no license file was found', async () => {
       const instance = new LicenseTextReader(
         new MockAlertAggregator(),
-        new FileSystem({ listPaths: d => ['index.js'] }),
+        new FileSystem({ listPaths: (d) => ['index.js'] }),
         defaultOptions
       )
 
@@ -124,7 +124,7 @@ describe('LicenseTextReader', () => {
       })
       const instance = new LicenseTextReader(
         new MockAlertAggregator(),
-        new FileSystem({ listPaths: d => ['index.js'] }),
+        new FileSystem({ listPaths: (d) => ['index.js'] }),
         { ...defaultOptions, replenishDefaultLicenseTexts: true },
         licenseTextProvider
       )
@@ -147,8 +147,8 @@ describe('LicenseTextReader', () => {
       const instance = new LicenseTextReader(
         new MockAlertAggregator(),
         new FileSystem({
-          listPaths: d => ['index.js', 'foo.md'],
-          readFile: p => `foo in ${p}`,
+          listPaths: (d) => ['index.js', 'foo.md'],
+          readFile: (p) => `foo in ${p}`,
         }),
         defaultOptions
       )
@@ -169,8 +169,8 @@ describe('LicenseTextReader', () => {
       const instance = new LicenseTextReader(
         new MockAlertAggregator({ addError }),
         new FileSystem({
-          listPaths: d => ['index.js', 'foo.md'],
-          readFile: p => {
+          listPaths: (d) => ['index.js', 'foo.md'],
+          readFile: (p) => {
             throw new Error('fail')
           },
         }),

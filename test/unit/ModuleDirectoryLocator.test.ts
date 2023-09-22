@@ -2,7 +2,7 @@ import ModuleDirectoryLocator from '../../src/ModuleDirectoryLocator'
 import IFileSystem from '../../src/types/IFileSystem'
 import IPackageJsonReader from '../../src/types/IPackageJsonReader'
 
-const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>(i => i)
+const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>((i) => i)
 
 const FileSystem = jest.fn<IFileSystem, any[]>(
   ({ join, pathExists, resolve }) => ({
@@ -21,7 +21,7 @@ describe('ModuleDirectoryLocator', () => {
     test('finds module dir', () => {
       const instance = new ModuleDirectoryLocator(
         new FileSystem({
-          pathExists: p => {
+          pathExists: (p) => {
             return [
               ...(isWin
                 ? [
@@ -39,7 +39,7 @@ describe('ModuleDirectoryLocator', () => {
         }),
         isWin ? 'C:\\project' : '/project',
         new MockPackageJsonReader({
-          readPackageJson: path => {
+          readPackageJson: (path) => {
             if (path.endsWith('noname')) {
               return { version: '1.0.0' }
             } else if (path.endsWith('noversion')) {
@@ -65,13 +65,13 @@ describe('ModuleDirectoryLocator', () => {
     test('returns null for own sources', () => {
       const instance = new ModuleDirectoryLocator(
         new FileSystem({
-          pathExists: p =>
+          pathExists: (p) =>
             p ===
             (isWin ? 'C:\\project\\package.json' : '/project/package.json'),
         }),
         isWin ? 'C:\\project' : '/project',
         new MockPackageJsonReader({
-          readPackageJson: name => ({ name, version: '1.0.0' }),
+          readPackageJson: (name) => ({ name, version: '1.0.0' }),
         })
       )
 
@@ -85,11 +85,11 @@ describe('ModuleDirectoryLocator', () => {
     test('returns null for files outside of a module directory', () => {
       const instance = new ModuleDirectoryLocator(
         new FileSystem({
-          pathExists: p => false,
+          pathExists: (p) => false,
         }),
         isWin ? 'C:\\project' : '/project',
         new MockPackageJsonReader({
-          readPackageJson: name => ({ name, version: '1.0.0' }),
+          readPackageJson: (name) => ({ name, version: '1.0.0' }),
         })
       )
 

@@ -16,10 +16,10 @@ export default class LicenseFileWriter {
     options: IPluginOptions
   ): Promise<void> {
     const moduleDirs = this.getModuleDirs(filenames)
-    const includePackages = await options.includePackages();
-    const licenseMeta = await this.licenseMetaAggregator.aggregateMeta(
-      [...new Set([...moduleDirs, ...includePackages])]
-    )
+    const includePackages = await options.includePackages()
+    const licenseMeta = await this.licenseMetaAggregator.aggregateMeta([
+      ...new Set([...moduleDirs, ...includePackages]),
+    ])
 
     const fileContents = JSON.stringify(licenseMeta, null, 2)
     this.assetManager.addFile(options.outputFilename, fileContents)
@@ -33,7 +33,7 @@ export default class LicenseFileWriter {
   public getModuleDirs(filenames: string[]): string[] {
     return uniq(
       compact(
-        filenames.map(filename => {
+        filenames.map((filename) => {
           return this.moduleDirectoryLocator.getModuleDir(filename)
         })
       )

@@ -7,10 +7,10 @@ import IModuleDirectoryLocator from '../../src/types/IModuleDirectoryLocator'
 const AssetManager = jest.fn<IAssetManager, any[]>(() => ({
   addFile: jest.fn(),
 }))
-const DirectoryLocator = jest.fn<IModuleDirectoryLocator, any[]>(impl => ({
+const DirectoryLocator = jest.fn<IModuleDirectoryLocator, any[]>((impl) => ({
   getModuleDir: jest.fn(impl),
 }))
-const MetaAggregator = jest.fn<ILicenseMetaAggregator, any[]>(impl => ({
+const MetaAggregator = jest.fn<ILicenseMetaAggregator, any[]>((impl) => ({
   aggregateMeta: jest.fn(impl),
 }))
 
@@ -19,7 +19,7 @@ describe('LicenseFileWriter', () => {
     test('returns module dirs', () => {
       const instance = new LicenseFileWriter(
         new AssetManager(),
-        new DirectoryLocator(d => `dir-${d}`),
+        new DirectoryLocator((d) => `dir-${d}`),
         new MetaAggregator(() => undefined)
       )
 
@@ -29,7 +29,7 @@ describe('LicenseFileWriter', () => {
     test('only returns unique module dirs', () => {
       const instance = new LicenseFileWriter(
         new AssetManager(),
-        new DirectoryLocator(d => `dir-${d}`),
+        new DirectoryLocator((d) => `dir-${d}`),
         new MetaAggregator(() => undefined)
       )
 
@@ -41,7 +41,7 @@ describe('LicenseFileWriter', () => {
     test('returns module dirs without null values', () => {
       const instance = new LicenseFileWriter(
         new AssetManager(),
-        new DirectoryLocator(d => (d === 'a.js' ? 'module' : null)),
+        new DirectoryLocator((d) => (d === 'a.js' ? 'module' : null)),
         new MetaAggregator(() => undefined)
       )
 
@@ -54,7 +54,7 @@ describe('LicenseFileWriter', () => {
       const assetManager = new AssetManager()
       const instance = new LicenseFileWriter(
         assetManager,
-        new DirectoryLocator(d => `dir-${d}`),
+        new DirectoryLocator((d) => `dir-${d}`),
         new MetaAggregator(() => ({ foo: 'bar' }))
       )
 
@@ -71,7 +71,7 @@ describe('LicenseFileWriter', () => {
       const assetManager = new AssetManager()
       const instance = new LicenseFileWriter(
         assetManager,
-        new DirectoryLocator(d => `dir-${d}`),
+        new DirectoryLocator((d) => `dir-${d}`),
         new MetaAggregator(() => ({ foo: 'bar' }))
       )
 
@@ -91,16 +91,16 @@ describe('LicenseFileWriter', () => {
       const assetManager = new AssetManager()
       const instance = new LicenseFileWriter(
         assetManager,
-        new DirectoryLocator(d => `dir-${d}`),
+        new DirectoryLocator((d) => `dir-${d}`),
         new MetaAggregator(() => ({ foo: 'bar' }))
       )
 
       await instance.writeLicenseFiles([], {
         ...defaultOptions,
         additionalFiles: {
-          'bom.json': o => `bom${JSON.stringify(o)}`,
-          'bom_async.json': async o => `bom_async${JSON.stringify(o)}`,
-          'bom_promise.json': o =>
+          'bom.json': (o) => `bom${JSON.stringify(o)}`,
+          'bom_async.json': async (o) => `bom_async${JSON.stringify(o)}`,
+          'bom_promise.json': (o) =>
             Promise.resolve(`bom_promise${JSON.stringify(o)}`),
         },
       })

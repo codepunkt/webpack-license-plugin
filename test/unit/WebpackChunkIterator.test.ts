@@ -18,10 +18,10 @@ describe('WebpackChunkIterator', () => {
         new MockFileIterator({ iterateFiles: (f, cb) => cb(`/path/to/${f}`) })
       )
 
-      const result = instance.iterateChunks(compilation, new Set([
-        new MockChunk({ name: 'a' }),
-        new MockChunk({ name: 'b' }),
-      ]))
+      const result = instance.iterateChunks(
+        compilation,
+        new Set([new MockChunk({ name: 'a' }), new MockChunk({ name: 'b' })])
+      )
 
       expect(result).toEqual(['/path/to/a', '/path/to/b'])
     })

@@ -4,12 +4,12 @@ import ILicenseIdentifier from '../../src/types/ILicenseIdentifier'
 import ILicenseTextReader from '../../src/types/ILicenseTextReader'
 import IPackageJsonReader from '../../src/types/IPackageJsonReader'
 
-const MockLicenseIdentifier = jest.fn<ILicenseIdentifier, any[]>(i => i)
-const MockLicenseTextReader = jest.fn<ILicenseTextReader, any[]>(i => i)
-const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>(i => i)
+const MockLicenseIdentifier = jest.fn<ILicenseIdentifier, any[]>((i) => i)
+const MockLicenseTextReader = jest.fn<ILicenseTextReader, any[]>((i) => i)
+const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>((i) => i)
 
 const mockPackageJsonReader = new MockPackageJsonReader({
-  readPackageJson: name => ({
+  readPackageJson: (name) => ({
     name,
     version: '16.6.0',
     author: '@iamdevloper',
@@ -37,7 +37,6 @@ describe('LicenseMetaAggregator', () => {
     )
   })
 
-
   describe('aggregateMeta', () => {
     test('read repository string syntax', async () => {
       const instance = new LicenseMetaAggregator(
@@ -45,7 +44,7 @@ describe('LicenseMetaAggregator', () => {
         null,
         defaultOptions,
         new MockPackageJsonReader({
-          readPackageJson: name => ({
+          readPackageJson: (name) => ({
             name,
             version: '16.6.0',
             author: '@iamdevloper',

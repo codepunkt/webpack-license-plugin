@@ -36,7 +36,7 @@ export default class LicenseIdentifier {
     } else if (Array.isArray(meta.licenses) && meta.licenses.length > 0) {
       // handle deprecated `licenses` field
       license =
-        this.findPreferredLicense(meta.licenses.map(l => l.type)) ||
+        this.findPreferredLicense(meta.licenses.map((l) => l.type)) ||
         meta.licenses[0].type
     } else if (typeof meta.licenses === 'string') {
       // handle invalid string values for deprecated `licenses` field

@@ -4,7 +4,7 @@ describe('WebpackFileSystem', () => {
   describe('pathExists', () => {
     test('uses webpack.InputFileSystem.statSync to check the existance of a file', () => {
       const instance = new WebpackFileSystem({
-        statSync: filename => {
+        statSync: (filename) => {
           if (filename !== '/path/to/existing_file') {
             throw new Error("file doesn't exist")
           }
@@ -19,7 +19,7 @@ describe('WebpackFileSystem', () => {
   describe('readFile', () => {
     test('uses webpack.InputFileSystem.readFileSync to read the file', () => {
       const instance = new WebpackFileSystem({
-        readFileSync: filename => ({
+        readFileSync: (filename) => ({
           toString: () => `contents of ${filename}`,
         }),
       })

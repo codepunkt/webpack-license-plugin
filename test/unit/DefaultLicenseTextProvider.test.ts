@@ -39,7 +39,10 @@ describe('fetch', () => {
     const okResult = await fetch(okUrl)
     const notFoundResult = await fetch(notFoundUrl)
 
-    expect(needle.mock.calls).toEqual([['get', okUrl], ['get', notFoundUrl]])
+    expect(needle.mock.calls).toEqual([
+      ['get', okUrl],
+      ['get', notFoundUrl],
+    ])
     expect(notFoundResult).toBe(null)
     expect(okResult).toBe('body content')
   })

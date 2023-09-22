@@ -2,7 +2,12 @@ import IWebpackChunkModule from './types/IWebpackChunkModule'
 
 export default class WebpackModuleFileIterator {
   public iterateFiles(
-    {resource, rootModule, fileDependencies, dependencies}: IWebpackChunkModule,
+    {
+      resource,
+      rootModule,
+      fileDependencies,
+      dependencies,
+    }: IWebpackChunkModule,
     callback: (filename: string) => void
   ): void {
     if (resource) {
@@ -12,11 +17,11 @@ export default class WebpackModuleFileIterator {
     }
 
     if (fileDependencies) {
-      fileDependencies.forEach(dep => callback(dep))
+      fileDependencies.forEach((dep) => callback(dep))
     }
 
     if (dependencies) {
-      dependencies.forEach(({originModule, _parentModule}) => {
+      dependencies.forEach(({ originModule, _parentModule }) => {
         if (originModule?.resource) {
           callback(originModule.resource)
         }
