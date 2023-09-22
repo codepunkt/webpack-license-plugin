@@ -1,8 +1,9 @@
-import webpack = require('webpack')
-import WebpackChunkModuleIterator from '../../src/WebpackChunkModuleIterator'
+import { Module } from 'webpack'
+import WebpackChunkModuleIterator, { type Compilation } from '../../src/WebpackChunkModuleIterator'
 
 const moduleIterator = new WebpackChunkModuleIterator()
-const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>((i) => i)
+const MockCompilation = jest.fn<Compilation, any[]>((i) => i)
+const MockModule = jest.fn<Module, any[]>((i) => i)
 
 describe('WebpackChunkModuleIterator', () => {
   describe('iterateModules', () => {
@@ -15,8 +16,8 @@ describe('WebpackChunkModuleIterator', () => {
     test("doesn't iterate without modules", () => {
       const compilation = new MockCompilation()
       moduleIterator.iterateModules(compilation, {}, callbackSpy)
-      moduleIterator.iterateModules(compilation, { forEachModule: null }, callbackSpy)
-      moduleIterator.iterateModules(compilation, { modules: null }, callbackSpy)
+      moduleIterator.iterateModules(compilation, { forEachModule: undefined }, callbackSpy)
+      moduleIterator.iterateModules(compilation, { modules: undefined }, callbackSpy)
       expect(callbackSpy).toHaveBeenCalledTimes(0)
     })
 
@@ -39,7 +40,7 @@ describe('WebpackChunkModuleIterator', () => {
 
       moduleIterator.iterateModules(
         compilation,
-        { modulesIterable: [{ foo: 'bar' }, { baz: 'qux' }] },
+        { modulesIterable: [new MockModule({ foo: 'bar' }), new MockModule({ baz: 'qux' })] },
         callbackSpy
       )
       expect(callbackSpy).toHaveBeenCalledTimes(2)
@@ -78,14 +79,14 @@ describe('WebpackChunkModuleIterator', () => {
         compilation,
         {
           modules: [{ resource: 'wibble' }, { resource: 'wobble' }],
-          entryModule: 'flab',
+          entryModule: new MockModule({ entry: 'module'})
         },
         callbackSpy
       )
       expect(callbackSpy).toHaveBeenCalledTimes(3)
       expect(callbackSpy).toHaveBeenNthCalledWith(1, { resource: 'wibble' })
       expect(callbackSpy).toHaveBeenNthCalledWith(2, { resource: 'wobble' })
-      expect(callbackSpy).toHaveBeenNthCalledWith(3, 'flab')
+      expect(callbackSpy).toHaveBeenNthCalledWith(3, { entry: 'module' })
     })
   })
 })

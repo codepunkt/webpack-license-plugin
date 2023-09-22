@@ -44,10 +44,10 @@
     "manual": "npm run build && webpack --config test/e2e/webpack.config.js",
     "prepublishOnly": "npm run build",
     "test": "is-ci \"test:ci\" \"test:watch\"",
-    "test:e2e": "jest --runInBand --testPathPattern test/e2e",
+    "test:e2e": "cross-env NODE_OPTIONS=--openssl-legacy-provider jest --runInBand --testPathPattern test/e2e",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose",
     "test:watch": "jest --runInBand --testPathPattern test/unit --watch",
-    "test:ci": "cross-env CI=true jest --runInBand --verbose --colors",
+    "test:ci": "cross-env NODE_OPTIONS=--openssl-legacy-provider CI=true jest --runInBand --verbose --colors",
     "posttest:ci": "codecov -t $CODECOV_TOKEN"
   },
   "dependencies": {

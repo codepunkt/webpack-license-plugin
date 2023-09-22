@@ -1,9 +1,9 @@
-import MemoryFs = require('memory-fs')
+import MemoryFs from 'memory-fs'
 import { resolve, sep } from 'path'
-import * as webpack2 from 'webpack2'
-import * as webpack3 from 'webpack3'
-import * as webpack4 from 'webpack4'
-import * as webpack5 from 'webpack5'
+import webpack2 from 'webpack2'
+import webpack3 from 'webpack3'
+import webpack4 from 'webpack4'
+import webpack5 from 'webpack5'
 import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 
 const outputPath = resolve(__dirname, './example/dist')
@@ -148,8 +148,8 @@ describe('end to end', () => {
             expect(stats.errors).toEqual(
               expect.arrayContaining<string | { message: string }>(
                 buildErrors([
-                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react@16.14.0',
-                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@16.14.0',
+                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react@18.2.0',
+                  'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@18.2.0',
                 ])
               )
             )

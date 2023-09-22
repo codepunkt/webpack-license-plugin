@@ -1,12 +1,12 @@
+import webpack from 'webpack'
 import WebpackChunkIterator from '../../src/WebpackChunkIterator'
 import WebpackChunkModuleIterator from '../../src/WebpackChunkModuleIterator'
 import WebpackModuleFileIterator from '../../src/WebpackModuleFileIterator'
-import webpack = require('webpack')
 
-const MockChunk = jest.fn<webpack.compilation.Chunk, any[]>((i) => i)
+const MockChunk = jest.fn<webpack.Chunk, any[]>((i) => i)
 const MockModuleIterator = jest.fn<WebpackChunkModuleIterator, any[]>((i) => i)
 const MockFileIterator = jest.fn<WebpackModuleFileIterator, any[]>((i) => i)
-const MockCompilation = jest.fn<webpack.compilation.Compilation, any[]>((i) => i)
+const MockCompilation = jest.fn<webpack.Compilation, any[]>((i) => i)
 
 describe('WebpackChunkIterator', () => {
   describe('iterateChunks', () => {
@@ -18,10 +18,10 @@ describe('WebpackChunkIterator', () => {
         new MockFileIterator({ iterateFiles: (f, cb) => cb(`/path/to/${f}`) })
       )
 
-      const result = instance.iterateChunks(compilation, [
+      const result = instance.iterateChunks(compilation, new Set([
         new MockChunk({ name: 'a' }),
         new MockChunk({ name: 'b' }),
-      ])
+      ]))
 
       expect(result).toEqual(['/path/to/a', '/path/to/b'])
     })

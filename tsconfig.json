@@ -12,9 +12,9 @@
     "noImplicitAny": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": false,
+    "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
     // "strict": true,
     // "noImplicitAny": true,
     // "strictNullChecks": true,
@@ -26,6 +26,6 @@
     // "noUnusedParameters": true,
     // "noImplicitReturns": true,
     // "noFallthroughCasesInSwitch": true,
-    // "esModuleInterop": true
+    "esModuleInterop": true
   }
 }

@@ -1,5 +1,5 @@
 // @ts-ignore
-import * as validate from 'spdx-expression-validate'
+import validate from 'spdx-expression-validate'
 import defaultOptions from './defaultOptions'
 import IAlertAggregator from './types/IAlertAggregator'
 import IPluginOptions from './types/IPluginOptions'

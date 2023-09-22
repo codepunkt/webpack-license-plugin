@@ -168,7 +168,7 @@ describe('WebpackLicensePlugin', () => {
       await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         createMockCompilation('mockCompiler', false),
-        [new MockChunk()],
+        new Set([new MockChunk()]),
         callback
       )
 
@@ -198,7 +198,7 @@ describe('WebpackLicensePlugin', () => {
       await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         mockCompilation1,
-        [new MockChunk()],
+        new Set([new MockChunk()]),
         callback1
       )
 
@@ -207,7 +207,7 @@ describe('WebpackLicensePlugin', () => {
       await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         mockCompilation2,
-        [new MockChunk()],
+        new Set([new MockChunk()]),
         callback2
       )
 
@@ -232,7 +232,7 @@ describe('WebpackLicensePlugin', () => {
       await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         mockCompilation1,
-        [new MockChunk()],
+        new Set([new MockChunk()]),
         callback1
       )
 
@@ -241,7 +241,7 @@ describe('WebpackLicensePlugin', () => {
       await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         mockCompilation2,
-        [new MockChunk()],
+        new Set([new MockChunk()]),
         callback2
       )
 
@@ -264,7 +264,7 @@ describe('WebpackLicensePlugin', () => {
       await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         mockCompilation1,
-        [new MockChunk()],
+        new Set([new MockChunk()]),
         callback1
       )
 
@@ -276,7 +276,7 @@ describe('WebpackLicensePlugin', () => {
       await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         mockCompilation2,
-        [new MockChunk()],
+        new Set([new MockChunk()]),
         callback2
       )
 
@@ -285,7 +285,7 @@ describe('WebpackLicensePlugin', () => {
       await instance.handleChunkAssetOptimization(
         new MockCompiler({ inputFileSystem: 'a', options: { context: 'b' } }),
         mockCompilation3,
-        [new MockChunk()],
+        new Set([new MockChunk()]),
         callback3
       )
 

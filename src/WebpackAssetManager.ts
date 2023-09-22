@@ -1,4 +1,4 @@
-import webpack = require('webpack')
+import webpack from 'webpack'
 import IAssetManager from './types/IAssetManager'
 
 export default class WebpackAssetManager implements IAssetManager {
