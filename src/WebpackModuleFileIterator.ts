@@ -1,4 +1,4 @@
-import IWebpackChunkModule from './types/IWebpackChunkModule'
+import type IWebpackChunkModule from './types/IWebpackChunkModule'
 
 export default class WebpackModuleFileIterator {
   public iterateFiles(

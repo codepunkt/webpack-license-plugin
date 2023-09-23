@@ -2,9 +2,9 @@
   "name": "webpack-license-plugin-test-example",
   "version": "1.0.0",
   "private": true,
-  "main": "src/index.js",
   "author": "Christoph Werner <christoph@codepunkt.de>",
   "license": "MIT",
+  "main": "src/index.js",
   "dependencies": {
     "date-fns": "^2.30.0",
     "react": "^18.2.0",

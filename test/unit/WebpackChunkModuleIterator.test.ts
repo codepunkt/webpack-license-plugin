@@ -1,4 +1,4 @@
-import { Module } from 'webpack'
+import type { Module } from 'webpack'
 import WebpackChunkModuleIterator, {
   type Compilation,
 } from '../../src/WebpackChunkModuleIterator'
@@ -34,11 +34,11 @@ describe('WebpackChunkModuleIterator', () => {
     test('iterates over compilation.chunkGraph (webpack v5)', () => {
       const compilation = new MockCompilation({
         chunkGraph: {
-          getChunkModulesIterable: jest.fn((i) => [
+          getChunkModulesIterable: jest.fn(() => [
             { foo: 'bar' },
             { baz: 'qux' },
           ]), // Frage: woher soll dieser Return kommen?
-          getChunkEntryModulesIterable: jest.fn((i) => [
+          getChunkEntryModulesIterable: jest.fn(() => [
             { foo: 'bar' },
             { baz: 'qux' },
           ]),

@@ -1,4 +1,4 @@
-import IFileSystem from './types/IFileSystem'
+import type IFileSystem from './types/IFileSystem'
 
 // readFileSync(path: string): Buffer;
 // readlink(path: string, callback: (err: Error | undefined | null, linkString: string) => void): void;

@@ -1,7 +1,6 @@
-import * as webpack from 'webpack'
-import WebpackChunkModuleIterator, {
-  Compilation,
-} from './WebpackChunkModuleIterator'
+import type * as webpack from 'webpack'
+import type { Compilation } from './WebpackChunkModuleIterator'
+import WebpackChunkModuleIterator from './WebpackChunkModuleIterator'
 import WebpackModuleFileIterator from './WebpackModuleFileIterator'
 
 export default class WebpackChunkIterator {

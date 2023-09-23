@@ -4,12 +4,12 @@ import LicenseMetaAggregator from './LicenseMetaAggregator'
 import ModuleDirectoryLocator from './ModuleDirectoryLocator'
 import OptionsProvider from './OptionsProvider'
 import PackageJsonReader from './PackageJsonReader'
-import IPluginOptions from './types/IPluginOptions'
-import IWebpackPlugin from './types/IWebpackPlugin'
 import WebpackAlertAggregator from './WebpackAlertAggregator'
 import WebpackAssetManager from './WebpackAssetManager'
 import WebpackChunkIterator from './WebpackChunkIterator'
 import WebpackFileSystem from './WebpackFileSystem'
+import type IPluginOptions from './types/IPluginOptions'
+import type IWebpackPlugin from './types/IWebpackPlugin'
 
 const pluginName = 'WebpackLicensePlugin'
 
@@ -44,14 +44,14 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
         'webpack-license-plugin',
         this.handleWatchRun.bind(this)
       )
-      // @ts-ignore
+      // @ts-expect-error plugin doesn't exist on compiler
     } else if (typeof compiler.plugin !== 'undefined') {
-      // @ts-ignore
+      // @ts-expect-error plugin doesn't exist on compiler
       compiler.plugin(
         'compilation',
         this.handleCompilation.bind(this, compiler)
       )
-      // @ts-ignore
+      // @ts-expect-error plugin doesn't exist on compiler
       compiler.plugin('watchRun', this.handleWatchRun.bind(this))
     }
   }
@@ -89,9 +89,9 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
           this.handleChunkAssetOptimization.bind(this, compiler, compilation)
         )
       }
-      // @ts-ignore
+      // @ts-expect-error plugin doesn't exist on compilation
     } else if (typeof compilation.plugin !== 'undefined') {
-      // @ts-ignore
+      // @ts-expect-error plugin doesn't exist on compilation
       compilation.plugin(
         'optimize-chunk-assets',
         this.handleChunkAssetOptimization.bind(this, compiler, compilation)

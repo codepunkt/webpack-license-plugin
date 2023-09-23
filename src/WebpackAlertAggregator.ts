@@ -1,5 +1,5 @@
-import IAlertAggregator from './types/IAlertAggregator'
-import webpack = require('webpack')
+import webpack from 'webpack'
+import type IAlertAggregator from './types/IAlertAggregator'
 
 export default class WebpackAlertAggregator implements IAlertAggregator {
   private errors: string[] = []

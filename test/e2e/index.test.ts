@@ -1,5 +1,5 @@
+import { resolve, sep } from 'node:path'
 import MemoryFs from 'memory-fs'
-import { resolve, sep } from 'path'
 import webpack2 from 'webpack2'
 import webpack3 from 'webpack3'
 import webpack4 from 'webpack4'
@@ -8,9 +8,8 @@ import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
 
 const outputPath = resolve(__dirname, './example/dist')
 
-const createBuild =
-  (wp: (options: object) => any) =>
-  (
+function createBuild(wp: (options: object) => any) {
+  return (
     plugin: WebpackLicensePlugin,
     fileSystem: MemoryFs,
     callback: (err?: Error | null, stats?: any) => void
@@ -25,6 +24,7 @@ const createBuild =
     compiler.outputFileSystem = fileSystem
     compiler.run((err, stats) => callback(err, stats?.toJson()))
   }
+}
 
 const webpackVersions = [
   { description: 'webpack v2', fn: webpack2 },
@@ -57,7 +57,7 @@ describe('end to end', () => {
             licenseOverrides: { 'spdx-expression-parse@1.0.4': 'Apache-2.0' },
           }),
           fileSystem,
-          (err, stats) => {
+          (err) => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}oss-licenses.json`)
@@ -79,7 +79,7 @@ describe('end to end', () => {
             outputFilename: 'bill-of-materials.json',
           }),
           fileSystem,
-          (err, stats) => {
+          (err) => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}bill-of-materials.json`)
@@ -104,7 +104,7 @@ describe('end to end', () => {
             },
           }),
           fileSystem,
-          (err, stats) => {
+          (err) => {
             const additionalFile = fileSystem
               .readFileSync(`${outputPath}${sep}oss-reverse.json`)
               .toString()
@@ -162,11 +162,10 @@ describe('end to end', () => {
       test('output matches snapshot when packages have been excluded', (done) => {
         build(
           new WebpackLicensePlugin({
-            excludedPackageTest: (packageName, version) =>
-              packageName === 'react',
+            excludedPackageTest: (packageName) => packageName === 'react',
           }),
           fileSystem,
-          (err, stats) => {
+          (err) => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}oss-licenses.json`)
@@ -190,7 +189,7 @@ describe('end to end', () => {
             ],
           }),
           fileSystem,
-          (err, stats) => {
+          (err) => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}oss-licenses.json`)
@@ -214,7 +213,7 @@ describe('end to end', () => {
             ],
           }),
           fileSystem,
-          (err, stats) => {
+          (err) => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}oss-licenses.json`)

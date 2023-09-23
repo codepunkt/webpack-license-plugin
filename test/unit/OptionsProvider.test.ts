@@ -1,6 +1,6 @@
 import defaultOptions from '../../src/defaultOptions'
 import OptionsProvider from '../../src/OptionsProvider'
-import IAlertAggregator from '../../src/types/IAlertAggregator'
+import type IAlertAggregator from '../../src/types/IAlertAggregator'
 
 const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>((i) => i)
 
@@ -53,7 +53,7 @@ describe('OptionsProvider', () => {
         additionalFiles: {
           'foo.json': () => 'foo',
           'bar.json': () => Promise.resolve('bar'),
-          // @ts-ignore
+          // @ts-expect-error not a function
           'baz.json': 'baz',
         },
       })
@@ -70,7 +70,7 @@ describe('OptionsProvider', () => {
         new MockAlertAggregator({ addError })
       )
 
-      // @ts-ignore
+      // @ts-expect-error not a boolean
       instance.validateOptions({ replenishDefaultLicenseTexts: 'foo' })
 
       expect(addError).toHaveBeenCalledTimes(1)
@@ -85,7 +85,7 @@ describe('OptionsProvider', () => {
         new MockAlertAggregator({ addError })
       )
 
-      // @ts-ignore
+      // @ts-expect-error not a function
       instance.validateOptions({ includePackages: 'foo' })
 
       expect(addError).toHaveBeenCalledTimes(1)

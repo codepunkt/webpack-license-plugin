@@ -1,7 +1,7 @@
-const needle = require('needle')
+import needle from 'needle'
 import DefaultLicenseTextProvider, {
-  fetch,
   REPO_URL,
+  fetch,
 } from '../../src/DefaultLicenseTextProvider'
 
 jest.mock('needle', () =>
@@ -13,7 +13,7 @@ jest.mock('needle', () =>
 )
 
 const mockRequest = jest.fn((url: string) => {
-  const [_, license] = url.match(/^.*\/(.*?)\.txt$/i)
+  const [_, license] = url.match(/^.*\/(.*?)\.txt$/i)!
 
   let result
   switch (license) {
@@ -39,6 +39,7 @@ describe('fetch', () => {
     const okResult = await fetch(okUrl)
     const notFoundResult = await fetch(notFoundUrl)
 
+    // @ts-expect-error mock doesn't exist on needle
     expect(needle.mock.calls).toEqual([
       ['get', okUrl],
       ['get', notFoundUrl],

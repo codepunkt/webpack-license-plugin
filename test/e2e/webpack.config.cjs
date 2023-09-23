@@ -1,4 +1,4 @@
-const { resolve } = require('path')
+const { resolve } = require('node:path')
 const WebpackLicensePlugin = require('../../dist/index')
 
 module.exports = {

@@ -114,7 +114,7 @@ describe('WebpackLicensePlugin', () => {
         }),
         expect.any(Function)
       )
-      // @ts-ignore
+      // @ts-expect-error mock does not exist on type
       const callback = compilation.hooks.processAssets.tapAsync.mock.calls[0][1]
       callback(null, () => {})
       expect(instance.handleChunkAssetOptimization).toBeCalledTimes(1)

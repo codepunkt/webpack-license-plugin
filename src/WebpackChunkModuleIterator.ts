@@ -1,5 +1,5 @@
-import * as webpack from 'webpack'
-import IWebpackChunkModule from './types/IWebpackChunkModule'
+import type * as webpack from 'webpack'
+import type IWebpackChunkModule from './types/IWebpackChunkModule'
 
 export type Compilation = Partial<
   webpack.Compilation & {
@@ -34,11 +34,9 @@ export default class WebpackChunkModuleIterator {
       }
     } else if (typeof chunk.modulesIterable !== 'undefined') {
       for (const module of chunk.modulesIterable) {
-        // @ts-ignore
+        // @ts-expect-error module not assignable to IWebpackChunkModule
         callback(module)
       }
-      // } else if (typeof chunk.getModules === 'function') {
-      //   chunk.getModules().forEach(callback)
     } else if (typeof chunk.forEachModule === 'function') {
       chunk.forEachModule(callback)
     } else if (Array.isArray(chunk.modules)) {
@@ -52,7 +50,7 @@ export default class WebpackChunkModuleIterator {
         callback(module)
       }
     } else if (chunk.entryModule) {
-      // @ts-ignore
+      // @ts-expect-error chunk.entryModule not assignable to IWebpackChunkModule
       callback(chunk.entryModule)
     }
   }

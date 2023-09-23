@@ -1,6 +1,7 @@
+import process from 'node:process'
 import ModuleDirectoryLocator from '../../src/ModuleDirectoryLocator'
-import IFileSystem from '../../src/types/IFileSystem'
-import IPackageJsonReader from '../../src/types/IPackageJsonReader'
+import type IFileSystem from '../../src/types/IFileSystem'
+import type IPackageJsonReader from '../../src/types/IPackageJsonReader'
 
 const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>((i) => i)
 
@@ -65,7 +66,7 @@ describe('ModuleDirectoryLocator', () => {
     test('returns null for own sources', () => {
       const instance = new ModuleDirectoryLocator(
         new FileSystem({
-          pathExists: (p) =>
+          pathExists: (p: string) =>
             p ===
             (isWin ? 'C:\\project\\package.json' : '/project/package.json'),
         }),
@@ -85,7 +86,7 @@ describe('ModuleDirectoryLocator', () => {
     test('returns null for files outside of a module directory', () => {
       const instance = new ModuleDirectoryLocator(
         new FileSystem({
-          pathExists: (p) => false,
+          pathExists: () => false,
         }),
         isWin ? 'C:\\project' : '/project',
         new MockPackageJsonReader({

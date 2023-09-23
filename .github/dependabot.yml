@@ -1,18 +1,18 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: "weekly"
-    day: "sunday"
-    time: "06:00"
-    timezone: "Europe/Berlin"
-  # minor and patch updates for webpack and webpack's typescript
-  # types are updated manually as they will break the build
-  # rather often`
-  ignore:
-    - dependency-name: "webpack"
-      update-types: ["version-update:semver-minor", "version-update:semver-patch"]
-    - dependency-name: "@types/webpack"
-      update-types: ["version-update:semver-minor", "version-update:semver-patch"]
-  open-pull-requests-limit: 50
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: sunday
+      time: '06:00'
+      timezone: Europe/Berlin
+    # minor and patch updates for webpack and webpack's typescript
+    # types are updated manually as they will break the build
+    # rather often`
+    ignore:
+      - dependency-name: webpack
+        update-types: ['version-update:semver-minor', 'version-update:semver-patch']
+      - dependency-name: '@types/webpack'
+        update-types: ['version-update:semver-minor', 'version-update:semver-patch']
+    open-pull-requests-limit: 50

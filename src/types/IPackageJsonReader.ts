@@ -1,4 +1,4 @@
-import IPackageJson from './IPackageJson'
+import type IPackageJson from './IPackageJson'
 
 export default interface IPackageJsonReader {
   readPackageJson(moduleDir: string): IPackageJson

@@ -195,7 +195,7 @@ This way, the output can be formatted to any format you might need and then be w
 ```js
 const LicensePlugin = require('webpack-license-plugin')
 
-const csvTransform = (packages) => {
+function csvTransform(packages) {
   const keys = ['name', 'version', 'license']
 
   return [

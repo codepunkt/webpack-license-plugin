@@ -1,4 +1,4 @@
-import webpack from 'webpack'
+import type webpack from 'webpack'
 import WebpackAssetManager from '../../src/WebpackAssetManager'
 
 const MockCompilation = jest.fn<webpack.Compilation, any[]>((i) => i)

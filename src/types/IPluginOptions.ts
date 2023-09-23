@@ -1,4 +1,4 @@
-import IPackageLicenseMeta from './IPackageLicenseMeta'
+import type IPackageLicenseMeta from './IPackageLicenseMeta'
 
 export default interface IPluginOptions {
   additionalFiles: {

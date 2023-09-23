@@ -1,5 +1,5 @@
+import webpack from 'webpack'
 import WebpackAlertAggregator from '../../src/WebpackAlertAggregator'
-import webpack = require('webpack')
 
 const MockCompilation = jest.fn<webpack.Compilation, any[]>((i) => i)
 

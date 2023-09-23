@@ -1,5 +1,5 @@
 import webpack from 'webpack'
-import IAssetManager from './types/IAssetManager'
+import type IAssetManager from './types/IAssetManager'
 
 export default class WebpackAssetManager implements IAssetManager {
   constructor(private compilation: webpack.Compilation) {}

@@ -1,6 +1,6 @@
 import needle from 'needle'
 
-export const fetch = async (url: string): Promise<string | null> => {
+export async function fetch(url: string): Promise<string | null> {
   const res = await needle('get', url)
   return res.statusCode === 200 ? res.body : null
 }

@@ -1,5 +1,5 @@
 import PackageJsonReader from '../../src/PackageJsonReader'
-import IFileSystem from '../../src/types/IFileSystem'
+import type IFileSystem from '../../src/types/IFileSystem'
 
 const FileSystem = jest.fn<IFileSystem, any[]>(({ join, readFile }) => ({
   join: jest.fn(join),
@@ -9,7 +9,7 @@ const FileSystem = jest.fn<IFileSystem, any[]>(({ join, readFile }) => ({
 }))
 
 describe('PackageJsonReader', () => {
-  describe.only('readPackageJson', () => {
+  describe('readPackageJson', () => {
     test('reads and parses package.json', () => {
       const instance = new PackageJsonReader(
         new FileSystem({ readFile: () => `{"foo":"bar"}` })

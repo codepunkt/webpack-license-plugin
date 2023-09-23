@@ -1,4 +1,4 @@
-import IWebpackChunkModule from './IWebpackChunkModule'
+import type IWebpackChunkModule from './IWebpackChunkModule'
 
 export default interface IWebpackChunk {
   name: string
