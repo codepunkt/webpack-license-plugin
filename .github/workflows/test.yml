@@ -29,13 +29,16 @@ jobs:
           npm ci
         env:
           CI: true
-      - name: Run tests and generate coverage information
+      - name: Lint
+        run: |
+          npm run lint
+      - name: Run tests and generate coverage information (Node 18.x)
         if: matrix.node-version == '18.x'
         run: |
           NODE_OPTIONS=--openssl-legacy-provider npm run test:ci
         env:
           CI: true
-      - name: Run tests and generate coverage information
+      - name: Run tests and generate coverage information (Node 14.x, 16.x)
         if: matrix.node-version != '18.x'
         run: |
           npm run test:ci
