@@ -62,7 +62,7 @@
     "webpack-sources": "^3.2.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.41.0",
+    "@antfu/eslint-config": "0.43.1",
     "@types/jest": "29.5.5",
     "@types/lodash": "^4.14.198",
     "@types/memory-fs": "^0.3.3",
