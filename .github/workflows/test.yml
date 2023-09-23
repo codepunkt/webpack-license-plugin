@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [16.x, 18.x, 20.x]
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
@@ -32,14 +32,14 @@ jobs:
       - name: Lint
         run: |
           npm run lint
-      - name: Run tests and generate coverage information (Node 18.x)
-        if: matrix.node-version == '18.x'
+      - name: Run tests and generate coverage information (Node 18.x, Node 20.x)
+        if: matrix.node-version != '16.x'
         run: |
           NODE_OPTIONS=--openssl-legacy-provider npm run test:ci
         env:
           CI: true
-      - name: Run tests and generate coverage information (Node 14.x, 16.x)
-        if: matrix.node-version != '18.x'
+      - name: Run tests and generate coverage information (Node 16.x)
+        if: matrix.node-version == '16.x'
         run: |
           npm run test:ci
         env:
