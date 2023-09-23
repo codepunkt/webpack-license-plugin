@@ -7,9 +7,6 @@ import IPluginOptions from './types/IPluginOptions'
 /**
  * Identifies license type based on package.json and selects
  * preferred license type if multiple are found
- *
- * @todo handle spdx OR case
- * @todo handle license ambiguity via option (default to choosing the first)
  */
 export default class LicenseIdentifier {
   constructor(

@@ -38,7 +38,6 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
         .name.localeCompare(this.packageJsonReader.readPackageJson(b).name)
     )
 
-    // @todo parallel with Promise.all
     for (const moduleDir of sortedModuleDirs) {
       const meta = this.packageJsonReader.readPackageJson(moduleDir)
       const packageIdentifier = `${meta.name}@${meta.version}`

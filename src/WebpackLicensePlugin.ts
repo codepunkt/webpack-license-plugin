@@ -18,15 +18,6 @@ interface ObservedCompiler {
   isChild: boolean
 }
 
-/**
- * @todo "emit" vs "compilation" & "optimizeChunkAssets" hooks
- * @todo add banner to chunks? boolean option + banner formatter?
- * @todo override license text or license filename
- * @todo override for version ranges or *
- * @todo select output fields
- * @todo error on missing license text?
- * @todo preferred license types on ambiguity (licenses array or spdx expression)
- */
 export default class WebpackLicensePlugin implements IWebpackPlugin {
   private readonly filenames = new Set<string>()
   private createdFiles = false
@@ -45,7 +36,8 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
         this.handleWatchRun.bind(this)
       )
       // @ts-expect-error plugin doesn't exist on compiler
-    } else if (typeof compiler.plugin !== 'undefined') {
+    }
+ else if (typeof compiler.plugin !== 'undefined') {
       // @ts-expect-error plugin doesn't exist on compiler
       compiler.plugin(
         'compilation',
@@ -68,8 +60,8 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
   ) {
     if (typeof compilation.hooks !== 'undefined') {
       if (typeof compilation.hooks.processAssets !== 'undefined') {
-        const boundHandleChunkAssetOptimization =
-          this.handleChunkAssetOptimization.bind(
+        const boundHandleChunkAssetOptimization
+          = this.handleChunkAssetOptimization.bind(
             this,
             compiler,
             compilation,
@@ -83,14 +75,16 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
           },
           (assets, callback) => boundHandleChunkAssetOptimization(callback)
         )
-      } else {
+      }
+ else {
         compilation.hooks.optimizeChunkAssets.tapAsync(
           'webpack-license-plugin',
           this.handleChunkAssetOptimization.bind(this, compiler, compilation)
         )
       }
       // @ts-expect-error plugin doesn't exist on compilation
-    } else if (typeof compilation.plugin !== 'undefined') {
+    }
+ else if (typeof compilation.plugin !== 'undefined') {
       // @ts-expect-error plugin doesn't exist on compilation
       compilation.plugin(
         'optimize-chunk-assets',
