@@ -67,7 +67,7 @@
     "@types/lodash": "^4.14.198",
     "@types/memory-fs": "^0.3.3",
     "@types/needle": "^3.2.0",
-    "@types/node": "^18.11.15",
+    "@types/node": "^20.6.4",
     "codecov": "^3.8.3",
     "cross-env": "^7.0.2",
     "eslint": "^8.49.0",
