@@ -34,7 +34,7 @@
     "Mike Peters <mpeters@boundstatesoftware.com>"
   ],
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "clean": "node -e \"fs.rmSync('dist', { force: true, recursive: true })\"",
