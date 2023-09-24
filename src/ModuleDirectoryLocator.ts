@@ -20,31 +20,38 @@ export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
     return this.checkModuleDir(moduleDir)
   }
 
-  private checkModuleDir(
-    moduleDir: string,
-    prevModuleDir: string | null = null
-  ): string | null {
-    const checkParent = () =>
-      this.checkModuleDir(resolve(`${moduleDir}${sep}..${sep}`), moduleDir)
+  private checkModuleDir(moduleDir: string): string | null {
+    let dirWithVersion: string | null = null
+    let dirWithLicense: string | null = null
+    let prevModuleDir: string | null = null
 
-    const isNotPartOfPackage =
-      moduleDir === prevModuleDir || moduleDir === this.buildRoot
-    if (isNotPartOfPackage) {
-      return null
-    }
+    do {
+      if (this.fileSystem.pathExists(`${moduleDir}${sep}package.json`)) {
+        const packageMeta = this.packageJsonReader.readPackageJson(moduleDir)
 
-    const hasPackageJson = this.fileSystem.pathExists(
-      `${moduleDir}${sep}package.json`
+        if (
+          packageMeta.name !== undefined &&
+          packageMeta.version !== undefined
+        ) {
+          dirWithVersion = moduleDir
+
+          if (
+            packageMeta.license !== undefined ||
+            packageMeta.licenses !== undefined
+          ) {
+            dirWithLicense = moduleDir
+          }
+        }
+      }
+
+      prevModuleDir = moduleDir
+      moduleDir = resolve(`${moduleDir}${sep}..${sep}`)
+    } while (
+      !dirWithLicense &&
+      moduleDir !== prevModuleDir &&
+      moduleDir !== this.buildRoot
     )
-    if (!hasPackageJson) {
-      return checkParent()
-    }
 
-    const packageMeta = this.packageJsonReader.readPackageJson(moduleDir)
-    if (packageMeta.name === undefined || packageMeta.version === undefined) {
-      return checkParent()
-    }
-
-    return moduleDir
+    return dirWithLicense || dirWithVersion
   }
 }
