@@ -1,12 +1,16 @@
 import defaultOptions from '../../src/defaultOptions'
 import LicenseMetaAggregator from '../../src/LicenseMetaAggregator'
-import ILicenseIdentifier from '../../src/types/ILicenseIdentifier'
-import ILicenseTextReader from '../../src/types/ILicenseTextReader'
-import IPackageJsonReader from '../../src/types/IPackageJsonReader'
+import type IAlertAggregator from '../../src/types/IAlertAggregator'
+import type IFileSystem from '../../src/types/IFileSystem'
+import type ILicenseIdentifier from '../../src/types/ILicenseIdentifier'
+import type ILicenseTextReader from '../../src/types/ILicenseTextReader'
+import type IPackageJsonReader from '../../src/types/IPackageJsonReader'
 
 const MockLicenseIdentifier = jest.fn<ILicenseIdentifier, any[]>((i) => i)
 const MockLicenseTextReader = jest.fn<ILicenseTextReader, any[]>((i) => i)
 const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>((i) => i)
+const MockFileSystem = jest.fn<IFileSystem, any[]>((i) => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>((i) => i)
 
 const mockPackageJsonReader = new MockPackageJsonReader({
   readPackageJson: (name) => ({
@@ -22,14 +26,16 @@ const mockLicenseIdentifier = new MockLicenseIdentifier({
 const mockLicenseTextReader = new MockLicenseTextReader({
   readLicenseText: () => 'MIT text',
 })
+const mockFileSystem = new MockFileSystem()
+const mockAlertAggregator = new MockAlertAggregator()
 
 describe('LicenseMetaAggregator', () => {
   let instance: LicenseMetaAggregator
 
   beforeEach(() => {
     instance = new LicenseMetaAggregator(
-      null,
-      null,
+      mockFileSystem,
+      mockAlertAggregator,
       defaultOptions,
       mockPackageJsonReader,
       mockLicenseIdentifier,
@@ -40,8 +46,8 @@ describe('LicenseMetaAggregator', () => {
   describe('aggregateMeta', () => {
     test('read repository string syntax', async () => {
       const instance = new LicenseMetaAggregator(
-        null,
-        null,
+        mockFileSystem,
+        mockAlertAggregator,
         defaultOptions,
         new MockPackageJsonReader({
           readPackageJson: (name) => ({
@@ -104,8 +110,8 @@ describe('LicenseMetaAggregator', () => {
 
     test('excludes license meta for excluded packages', async () => {
       instance = new LicenseMetaAggregator(
-        null,
-        null,
+        mockFileSystem,
+        mockAlertAggregator,
         {
           ...defaultOptions,
           excludedPackageTest: (packageName, version) =>
@@ -195,7 +201,7 @@ describe('LicenseMetaAggregator', () => {
   describe('getRepository', () => {
     test("returns null repository field doesn't exist", () => {
       expect(instance.getRepository({})).toEqual(null)
-      expect(instance.getRepository({ repository: null })).toEqual(null)
+      expect(instance.getRepository({ repository: undefined })).toEqual(null)
     })
 
     test('parses object author', () => {

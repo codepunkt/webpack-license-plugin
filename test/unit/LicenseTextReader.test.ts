@@ -33,7 +33,7 @@ describe('LicenseTextReader', () => {
 
       const result = await instance.readLicenseText(
         { name: 'foo', version: 'bla' },
-        undefined,
+        '',
         `${sep}path${sep}to${sep}directory`
       )
 
