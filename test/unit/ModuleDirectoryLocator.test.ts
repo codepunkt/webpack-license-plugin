@@ -66,23 +66,23 @@ describe('ModuleDirectoryLocator', () => {
     test('finds module dir where package.json license is set', () => {
       const instance = new ModuleDirectoryLocator(
         new FileSystem({
-          pathExists: p => {
+          pathExists: (p) => {
             return [
               ...(isWin
                 ? [
-                  'C:\\project\\node_modules\\a\\package.json',
-                  'C:\\project\\node_modules\\a\\dist\\nolicense\\package.json',
-                ]
+                    'C:\\project\\node_modules\\a\\package.json',
+                    'C:\\project\\node_modules\\a\\dist\\nolicense\\package.json',
+                  ]
                 : [
-                  '/project/node_modules/a/package.json',
-                  '/project/node_modules/a/dist/nolicense/package.json',
-                ]),
+                    '/project/node_modules/a/package.json',
+                    '/project/node_modules/a/dist/nolicense/package.json',
+                  ]),
             ].includes(p)
           },
         }),
         isWin ? 'C:\\project' : '/project',
         new MockPackageJsonReader({
-          readPackageJson: path => {
+          readPackageJson: (path) => {
             if (path.endsWith('nolicense')) {
               return { name: 'foo', version: '1.0.0' }
             } else {

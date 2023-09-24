@@ -21,34 +21,37 @@ export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
   }
 
   private checkModuleDir(moduleDir: string): string | null {
-    let dirWithVersion: string | null = null;
-    let dirWithLicense: string | null = null;
-    let prevModuleDir: string | null = null;
+    let dirWithVersion: string | null = null
+    let dirWithLicense: string | null = null
+    let prevModuleDir: string | null = null
 
     do {
       if (this.fileSystem.pathExists(`${moduleDir}${sep}package.json`)) {
-        const packageMeta = this.packageJsonReader.readPackageJson(moduleDir);
+        const packageMeta = this.packageJsonReader.readPackageJson(moduleDir)
 
-        if (packageMeta.name !== undefined && packageMeta.version !== undefined) {
-          dirWithVersion = moduleDir;
+        if (
+          packageMeta.name !== undefined &&
+          packageMeta.version !== undefined
+        ) {
+          dirWithVersion = moduleDir
 
           if (
             packageMeta.license !== undefined ||
             packageMeta.licenses !== undefined
           ) {
-            dirWithLicense = moduleDir;
+            dirWithLicense = moduleDir
           }
         }
       }
 
-      prevModuleDir = moduleDir;
-      moduleDir = resolve(`${moduleDir}${sep}..${sep}`);
+      prevModuleDir = moduleDir
+      moduleDir = resolve(`${moduleDir}${sep}..${sep}`)
     } while (
       !dirWithLicense &&
       moduleDir !== prevModuleDir &&
       moduleDir !== this.buildRoot
-    );
+    )
 
-    return dirWithLicense || dirWithVersion;
+    return dirWithLicense || dirWithVersion
   }
 }
