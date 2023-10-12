@@ -35,13 +35,13 @@ jobs:
       - name: Run tests and generate coverage information (Node 18.x, Node 20.x)
         if: matrix.node-version != '16.x'
         run: |
-          NODE_OPTIONS=--openssl-legacy-provider npm run test:ci
+          NODE_OPTIONS=--openssl-legacy-provider npm run test && npm run coverage
         env:
           CI: true
       - name: Run tests and generate coverage information (Node 16.x)
         if: matrix.node-version == '16.x'
         run: |
-          npm run test:ci
+          npm run test && npm run coverage
         env:
           CI: true
       - name: Upload coverage to Codecov
