@@ -1,4 +1,4 @@
-import needle from 'needle'
+import * as needle from 'needle'
 import DefaultLicenseTextProvider, {
   REPO_URL,
   fetch,
