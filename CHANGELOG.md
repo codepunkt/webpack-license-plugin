@@ -1,3 +1,14 @@
+# 4.4.0
+
+- Fix a regression that changed importing behavior
+- Enable local testing with different node versions
+
+# 4.3.0
+
+- Change module directory locating behavior:
+
+  prefer a directory where the `package.json` has a `license` or `licenses` field. This improves reported licenses for a few libraries that have intermediate package.json files without license information in their directory structure - e.g. `socket.io-client` (thanks to [@mikejpeters](https://github.com/mikejpeters))
+
 # 4.2.2
 
 - fixed a bug where the plugin was missing omitting dependencies (thanks to [@WIStudent](https://github.com/WIStudent))
