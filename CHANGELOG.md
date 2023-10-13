@@ -1,4 +1,4 @@
-# 4.1.2
+# 4.4.2
 
 - Remove get-npm-tarball-url dependency
 
