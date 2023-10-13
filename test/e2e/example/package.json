@@ -1,5 +1,6 @@
 {
   "name": "webpack-license-plugin-test-example",
+  "type": "module",
   "version": "1.0.0",
   "private": true,
   "author": "Christoph Werner <christoph@codepunkt.de>",

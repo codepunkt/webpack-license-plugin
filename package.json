@@ -1,6 +1,7 @@
 {
   "name": "webpack-license-plugin",
-  "version": "4.4.0",
+  "type": "module",
+  "version": "4.4.1",
   "description": "Extracts OSS license information of the npm packages in your webpack output",
   "author": "Christoph Werner <christoph@codepunkt.de>",
   "license": "MIT",
@@ -26,7 +27,16 @@
     "bill of materials",
     "plugin"
   ],
-  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "contributors": [
     "Friedrich Wilms <f.wilms89@web.de>",
     "Tobias Trumm <info@tobiastrumm.de>",
@@ -39,15 +49,14 @@
   "scripts": {
     "clean": "node -e \"fs.rmSync('dist', { force: true, recursive: true })\"",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
-    "build": "npm run lint && npm run clean && npm run typescript",
-    "typescript": "tsc",
+    "build": "tsup",
     "install:e2e": "cd test/e2e/example && npm i",
     "manual": "npm run build && webpack --config test/e2e/webpack.config.js",
     "prepublishOnly": "npm run build",
-    "test": "if [ \"$(node -v | cut -c2-4)\" = \"16.\" ]; then cross-env CI=true jest --runInBand --verbose --colors; else cross-env CI=true NODE_OPTIONS=--openssl-legacy-provider jest --runInBand --verbose --colors; fi",
-    "test:e2e": "if [ \"$(node -v | cut -c2-4)\" = \"16.\" ]; then jest --runInBand --colors --testPathPattern test/e2e; else cross-env NODE_OPTIONS=--openssl-legacy-provider jest --runInBand --colors --testPathPattern test/e2e; fi",
+    "test": "cross-env CI=true npm run test:unit && npm run test:e2e",
+    "pretest:e2e": "npm run build",
+    "test:e2e": "if [ \"$(node -v | cut -c2-4)\" = \"16.\" ]; then jest --runInBand --colors --testPathPattern test/e2e --collectCoverage false; else cross-env NODE_OPTIONS=--openssl-legacy-provider jest --runInBand --colors --testPathPattern test/e2e --collectCoverage false; fi",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose --colors",
-    "test:both": "cross-env CI=true npm run test:unit && npm run test:e2e",
     "test:watch": "jest --runInBand --testPathPattern test/unit --watch",
     "coverage": "codecov -t $CODECOV_TOKEN",
     "prepare": "husky install"
@@ -65,6 +74,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.41.0",
+    "@swc/core": "^1.3.93",
     "@types/jest": "29.5.5",
     "@types/lodash": "^4.14.198",
     "@types/memory-fs": "^0.3.3",
@@ -82,6 +92,7 @@
     "prettier": "^3.0.3",
     "ts-jest": "^29.1.1",
     "ts-loader": "^9.4.4",
+    "tsup": "^7.2.0",
     "typescript": "^5.2.2",
     "webpack": "file:./node_modules/webpack5",
     "webpack-cli": "^5.1.4",

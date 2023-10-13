@@ -1,3 +1,9 @@
+# 4.4.1
+
+- Swich to ECMAScript modules
+- Use tsup to build both CJS and ESM
+- Simplify imports by using TypeScript `esModuleInterop`
+
 # 4.4.0
 
 - Fix a regression that changed importing behavior
