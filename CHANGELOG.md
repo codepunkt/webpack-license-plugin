@@ -1,3 +1,7 @@
+# 4.1.2
+
+- Remove get-npm-tarball-url dependency
+
 # 4.4.1
 
 - Swich to ECMAScript modules

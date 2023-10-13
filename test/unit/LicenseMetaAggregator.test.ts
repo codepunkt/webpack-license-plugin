@@ -50,18 +50,30 @@ describe('LicenseMetaAggregator', () => {
         mockAlertAggregator,
         defaultOptions,
         new MockPackageJsonReader({
-          readPackageJson: (name) => ({
-            name,
-            version: '16.6.0',
-            author: '@iamdevloper',
-            repository: 'git@github.com:facebook/react.git',
-          }),
+          readPackageJson: (name) => {
+            return {
+              name,
+              // '@types-react' has build metadata as part of it's version
+              version: name === 'react' ? '16.6.0' : '16.6.0+foo',
+              author: '@iamdevloper',
+              repository: 'git@github.com:facebook/react.git'
+            }
+          }
         }),
         mockLicenseIdentifier,
         mockLicenseTextReader
       )
-      const meta = await instance.aggregateMeta(['react-dom', 'react'])
+      const meta = await instance.aggregateMeta(['@types/react', 'react'])
       expect(meta).toEqual([
+        {
+          author: '@iamdevloper',
+          license: 'MIT',
+          licenseText: 'MIT text',
+          name: '@types/react',
+          repository: 'git@github.com:facebook/react.git',
+          source: 'https://registry.npmjs.org/@types/react/-/react-16.6.0.tgz',
+          version: '16.6.0+foo',
+        },
         {
           author: '@iamdevloper',
           license: 'MIT',
@@ -69,15 +81,6 @@ describe('LicenseMetaAggregator', () => {
           name: 'react',
           repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
-          version: '16.6.0',
-        },
-        {
-          author: '@iamdevloper',
-          license: 'MIT',
-          licenseText: 'MIT text',
-          name: 'react-dom',
-          repository: 'git@github.com:facebook/react.git',
-          source: 'https://registry.npmjs.org/react-dom/-/react-dom-16.6.0.tgz',
           version: '16.6.0',
         },
       ])

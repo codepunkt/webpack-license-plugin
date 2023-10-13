@@ -1,7 +1,7 @@
 {
   "name": "webpack-license-plugin",
   "type": "module",
-  "version": "4.4.1",
+  "version": "4.4.2",
   "description": "Extracts OSS license information of the npm packages in your webpack output",
   "author": "Christoph Werner <christoph@codepunkt.de>",
   "license": "MIT",
@@ -66,7 +66,6 @@
   },
   "dependencies": {
     "chalk": "^5.3.0",
-    "get-npm-tarball-url": "^2.0.3",
     "lodash": "^4.17.21",
     "needle": "^3.2.0",
     "spdx-expression-validate": "^2.0.0",

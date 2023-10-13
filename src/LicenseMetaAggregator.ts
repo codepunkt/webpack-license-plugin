@@ -1,4 +1,3 @@
-import getNpmTarballUrl from 'get-npm-tarball-url'
 import LicenseIdentifier from './LicenseIdentifier'
 import LicenseTextReader from './LicenseTextReader'
 import IAlertAggregator from './types/IAlertAggregator'
@@ -26,6 +25,16 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
       options
     )
   ) {}
+
+  private getNpmTarballUrl(
+    pkgName: string,
+    pkgVersion: string,
+  ) {
+    const scopelessName = pkgName[0] !== '@' ? pkgName : pkgName.split('/')[1]
+    const plusPos = pkgVersion.indexOf('+')
+    const version = plusPos === -1 ? pkgVersion : pkgVersion.substring(0, plusPos)
+    return `https://registry.npmjs.org/${pkgName}/-/${scopelessName}-${version}.tgz`
+  }
 
   public async aggregateMeta(
     moduleDirs: string[]
@@ -63,7 +72,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
         version: meta.version,
         author: this.getAuthor(meta),
         repository: this.getRepository(meta),
-        source: getNpmTarballUrl(meta.name, meta.version),
+        source: this.getNpmTarballUrl(meta.name, meta.version),
         license,
         licenseText,
       })
