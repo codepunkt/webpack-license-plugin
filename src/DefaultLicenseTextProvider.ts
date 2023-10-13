@@ -1,4 +1,4 @@
-import needle from 'needle'
+import * as needle from 'needle'
 
 export async function fetch(url: string): Promise<string | null> {
   const res = await needle('get', url)
