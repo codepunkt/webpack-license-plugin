@@ -1,4 +1,5 @@
-import webpack from 'webpack'
+import type webpack from 'webpack'
+import { WebpackError } from 'webpack'
 import WebpackAlertAggregator from '../../src/WebpackAlertAggregator'
 
 const MockCompilation = jest.fn<webpack.Compilation, any[]>((i) => i)
@@ -15,8 +16,8 @@ describe('WebpackAlertAggregator', () => {
     instance.flushAlerts(prefix)
 
     expect(compilation.errors).toEqual([
-      new webpack.WebpackError(`${prefix}: foo`),
-      new webpack.WebpackError(`${prefix}: bar`),
+      new WebpackError(`${prefix}: foo`),
+      new WebpackError(`${prefix}: bar`),
     ])
   })
 
@@ -31,8 +32,8 @@ describe('WebpackAlertAggregator', () => {
     instance.flushAlerts(prefix)
 
     expect(compilation.warnings).toEqual([
-      new webpack.WebpackError(`${prefix}: foo`),
-      new webpack.WebpackError(`${prefix}: bar`),
+      new WebpackError(`${prefix}: foo`),
+      new WebpackError(`${prefix}: bar`),
     ])
   })
 })

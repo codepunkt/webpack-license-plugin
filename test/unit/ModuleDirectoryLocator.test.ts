@@ -1,4 +1,4 @@
-import process from 'node:process'
+import { platform } from 'node:process'
 import ModuleDirectoryLocator from '../../src/ModuleDirectoryLocator'
 import type IFileSystem from '../../src/types/IFileSystem'
 import type IPackageJsonReader from '../../src/types/IPackageJsonReader'
@@ -15,7 +15,7 @@ const FileSystem = jest.fn<IFileSystem, any[]>(
   })
 )
 
-const isWin = process.platform === 'win32'
+const isWin = platform === 'win32'
 
 describe('ModuleDirectoryLocator', () => {
   describe('getModuleDir', () => {
