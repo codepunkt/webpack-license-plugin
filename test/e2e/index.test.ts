@@ -1,12 +1,11 @@
 import { resolve, sep } from 'node:path'
 
-// @ts-expect-error allowSyntheticDefaultImports
-import * as MemoryFs from 'memory-fs'
-import * as webpack2 from 'webpack2'
-import * as webpack3 from 'webpack3'
-import * as webpack4 from 'webpack4'
-import * as webpack5 from 'webpack5'
-import WebpackLicensePlugin from '../../src/WebpackLicensePlugin'
+import MemoryFs from 'memory-fs'
+import webpack2 from 'webpack2'
+import webpack3 from 'webpack3'
+import webpack4 from 'webpack4'
+import webpack5 from 'webpack5'
+import WebpackLicensePlugin from '../../src'
 
 const outputPath = resolve(__dirname, './example/dist')
 

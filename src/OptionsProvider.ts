@@ -1,4 +1,4 @@
-import * as validate from 'spdx-expression-validate'
+import validate from 'spdx-expression-validate'
 import defaultOptions from './defaultOptions'
 import type IAlertAggregator from './types/IAlertAggregator'
 import type IPluginOptions from './types/IPluginOptions'
