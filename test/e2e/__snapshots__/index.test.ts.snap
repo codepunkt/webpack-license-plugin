@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`end to end webpack v2 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null},{"name":"webpack","version":"2.7.0","author":"Tobias Koppers @sokra","repository":"https://github.com/webpack/webpack.git","source":"https://registry.npmjs.org/webpack/-/webpack-2.7.0.tgz","license":"MIT","licenseText":"Copyright JS Foundation and other contributors\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"},{"name":"timers-browserify","version":"2.0.12","author":"J. Ryan Stinnett <jryans@gmail.com> (https://convolv.es/)","repository":"git://github.com/jryans/timers-browserify.git","source":"https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz","license":"MIT","licenseText":"# timers-browserify\\n\\nThis project uses the [MIT](http://jryans.mit-license.org/) license:\\n\\n    Copyright © 2012 J. Ryan Stinnett <jryans@gmail.com>\\n\\n    Permission is hereby granted, free of charge, to any person obtaining a\\n    copy of this software and associated documentation files (the “Software”),\\n    to deal in the Software without restriction, including without limitation\\n    the rights to use, copy, modify, merge, publish, distribute, sublicense,\\n    and/or sell copies of the Software, and to permit persons to whom the\\n    Software is furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\\n    DEALINGS IN THE SOFTWARE.\\n\\n# lib/node\\n\\nThe \`lib/node\` directory borrows files from joyent/node which uses the following license:\\n\\n    Copyright Joyent, Inc. and other Node contributors. All rights reserved.\\n    Permission is hereby granted, free of charge, to any person obtaining a copy\\n    of this software and associated documentation files (the \\"Software\\"), to\\n    deal in the Software without restriction, including without limitation the\\n    rights to use, copy, modify, merge, publish, distribute, sublicense, and/or\\n    sell copies of the Software, and to permit persons to whom the Software is\\n    furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\\n    IN THE SOFTWARE.\\n"},{"name":"setimmediate","version":"1.0.5","author":"YuzuJS","repository":"YuzuJS/setImmediate","source":"https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz","license":"MIT","licenseText":"Copyright (c) 2012 Barnesandnoble.com, llc, Donavon West, and Domenic Denicola\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n\\"Software\\"), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"},{"name":"scheduler","version":"0.23.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react-dom","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"process","version":"0.11.10","author":"Roman Shtylman <shtylman@gmail.com>","repository":"git://github.com/shtylman/node-process.git","source":"https://registry.npmjs.org/process/-/process-0.11.10.tgz","license":"MIT","licenseText":"(The MIT License)\\n\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"}]"`;
+exports[`end to end webpack v2 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null,"noticeText":null},{"name":"webpack","version":"2.7.0","author":"Tobias Koppers @sokra","repository":"https://github.com/webpack/webpack.git","source":"https://registry.npmjs.org/webpack/-/webpack-2.7.0.tgz","license":"MIT","licenseText":"Copyright JS Foundation and other contributors\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n","noticeText":null},{"name":"timers-browserify","version":"2.0.12","author":"J. Ryan Stinnett <jryans@gmail.com> (https://convolv.es/)","repository":"git://github.com/jryans/timers-browserify.git","source":"https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz","license":"MIT","licenseText":"# timers-browserify\\n\\nThis project uses the [MIT](http://jryans.mit-license.org/) license:\\n\\n    Copyright © 2012 J. Ryan Stinnett <jryans@gmail.com>\\n\\n    Permission is hereby granted, free of charge, to any person obtaining a\\n    copy of this software and associated documentation files (the “Software”),\\n    to deal in the Software without restriction, including without limitation\\n    the rights to use, copy, modify, merge, publish, distribute, sublicense,\\n    and/or sell copies of the Software, and to permit persons to whom the\\n    Software is furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\\n    DEALINGS IN THE SOFTWARE.\\n\\n# lib/node\\n\\nThe \`lib/node\` directory borrows files from joyent/node which uses the following license:\\n\\n    Copyright Joyent, Inc. and other Node contributors. All rights reserved.\\n    Permission is hereby granted, free of charge, to any person obtaining a copy\\n    of this software and associated documentation files (the \\"Software\\"), to\\n    deal in the Software without restriction, including without limitation the\\n    rights to use, copy, modify, merge, publish, distribute, sublicense, and/or\\n    sell copies of the Software, and to permit persons to whom the Software is\\n    furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\\n    IN THE SOFTWARE.\\n","noticeText":null},{"name":"setimmediate","version":"1.0.5","author":"YuzuJS","repository":"YuzuJS/setImmediate","source":"https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz","license":"MIT","licenseText":"Copyright (c) 2012 Barnesandnoble.com, llc, Donavon West, and Domenic Denicola\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n\\"Software\\"), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n","noticeText":null},{"name":"scheduler","version":"0.23.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"react-dom","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"react","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"process","version":"0.11.10","author":"Roman Shtylman <shtylman@gmail.com>","repository":"git://github.com/shtylman/node-process.git","source":"https://registry.npmjs.org/process/-/process-0.11.10.tgz","license":"MIT","licenseText":"(The MIT License)\\n\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n","noticeText":null}]"`;
 
 exports[`end to end webpack v2 output matches snapshot 1`] = `
 [
@@ -31,6 +31,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -60,6 +61,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -89,6 +91,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -118,6 +121,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -147,6 +151,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -202,6 +207,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -231,6 +237,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-2.7.0.tgz",
     "version": "2.7.0",
@@ -240,6 +247,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -276,6 +284,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -305,6 +314,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -334,6 +344,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -363,6 +374,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -392,6 +404,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -447,6 +460,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -476,6 +490,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-2.7.0.tgz",
     "version": "2.7.0",
@@ -485,6 +500,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -521,6 +537,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -550,6 +567,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -579,6 +597,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -608,6 +627,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -663,6 +683,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -692,6 +713,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-2.7.0.tgz",
     "version": "2.7.0",
@@ -701,6 +723,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -735,6 +758,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "jest",
+    "noticeText": null,
     "repository": "https://github.com/jestjs/jest.git",
     "source": "https://registry.npmjs.org/jest/-/jest-29.7.0.tgz",
     "version": "29.7.0",
@@ -766,6 +790,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -795,6 +820,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -824,6 +850,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -853,6 +880,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -882,6 +910,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -937,6 +966,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -966,6 +996,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-2.7.0.tgz",
     "version": "2.7.0",
@@ -975,6 +1006,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -1011,6 +1043,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -1040,6 +1073,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -1069,6 +1103,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -1098,6 +1133,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -1127,6 +1163,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -1182,6 +1219,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -1211,6 +1249,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-2.7.0.tgz",
     "version": "2.7.0",
@@ -1220,6 +1259,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -1227,7 +1267,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ]
 `;
 
-exports[`end to end webpack v3 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null},{"name":"webpack","version":"3.12.0","author":"Tobias Koppers @sokra","repository":"https://github.com/webpack/webpack.git","source":"https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz","license":"MIT","licenseText":"Copyright JS Foundation and other contributors\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"},{"name":"timers-browserify","version":"2.0.12","author":"J. Ryan Stinnett <jryans@gmail.com> (https://convolv.es/)","repository":"git://github.com/jryans/timers-browserify.git","source":"https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz","license":"MIT","licenseText":"# timers-browserify\\n\\nThis project uses the [MIT](http://jryans.mit-license.org/) license:\\n\\n    Copyright © 2012 J. Ryan Stinnett <jryans@gmail.com>\\n\\n    Permission is hereby granted, free of charge, to any person obtaining a\\n    copy of this software and associated documentation files (the “Software”),\\n    to deal in the Software without restriction, including without limitation\\n    the rights to use, copy, modify, merge, publish, distribute, sublicense,\\n    and/or sell copies of the Software, and to permit persons to whom the\\n    Software is furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\\n    DEALINGS IN THE SOFTWARE.\\n\\n# lib/node\\n\\nThe \`lib/node\` directory borrows files from joyent/node which uses the following license:\\n\\n    Copyright Joyent, Inc. and other Node contributors. All rights reserved.\\n    Permission is hereby granted, free of charge, to any person obtaining a copy\\n    of this software and associated documentation files (the \\"Software\\"), to\\n    deal in the Software without restriction, including without limitation the\\n    rights to use, copy, modify, merge, publish, distribute, sublicense, and/or\\n    sell copies of the Software, and to permit persons to whom the Software is\\n    furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\\n    IN THE SOFTWARE.\\n"},{"name":"setimmediate","version":"1.0.5","author":"YuzuJS","repository":"YuzuJS/setImmediate","source":"https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz","license":"MIT","licenseText":"Copyright (c) 2012 Barnesandnoble.com, llc, Donavon West, and Domenic Denicola\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n\\"Software\\"), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"},{"name":"scheduler","version":"0.23.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react-dom","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"process","version":"0.11.10","author":"Roman Shtylman <shtylman@gmail.com>","repository":"git://github.com/shtylman/node-process.git","source":"https://registry.npmjs.org/process/-/process-0.11.10.tgz","license":"MIT","licenseText":"(The MIT License)\\n\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"}]"`;
+exports[`end to end webpack v3 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null,"noticeText":null},{"name":"webpack","version":"3.12.0","author":"Tobias Koppers @sokra","repository":"https://github.com/webpack/webpack.git","source":"https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz","license":"MIT","licenseText":"Copyright JS Foundation and other contributors\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n","noticeText":null},{"name":"timers-browserify","version":"2.0.12","author":"J. Ryan Stinnett <jryans@gmail.com> (https://convolv.es/)","repository":"git://github.com/jryans/timers-browserify.git","source":"https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz","license":"MIT","licenseText":"# timers-browserify\\n\\nThis project uses the [MIT](http://jryans.mit-license.org/) license:\\n\\n    Copyright © 2012 J. Ryan Stinnett <jryans@gmail.com>\\n\\n    Permission is hereby granted, free of charge, to any person obtaining a\\n    copy of this software and associated documentation files (the “Software”),\\n    to deal in the Software without restriction, including without limitation\\n    the rights to use, copy, modify, merge, publish, distribute, sublicense,\\n    and/or sell copies of the Software, and to permit persons to whom the\\n    Software is furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\\n    DEALINGS IN THE SOFTWARE.\\n\\n# lib/node\\n\\nThe \`lib/node\` directory borrows files from joyent/node which uses the following license:\\n\\n    Copyright Joyent, Inc. and other Node contributors. All rights reserved.\\n    Permission is hereby granted, free of charge, to any person obtaining a copy\\n    of this software and associated documentation files (the \\"Software\\"), to\\n    deal in the Software without restriction, including without limitation the\\n    rights to use, copy, modify, merge, publish, distribute, sublicense, and/or\\n    sell copies of the Software, and to permit persons to whom the Software is\\n    furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\\n    IN THE SOFTWARE.\\n","noticeText":null},{"name":"setimmediate","version":"1.0.5","author":"YuzuJS","repository":"YuzuJS/setImmediate","source":"https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz","license":"MIT","licenseText":"Copyright (c) 2012 Barnesandnoble.com, llc, Donavon West, and Domenic Denicola\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n\\"Software\\"), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n","noticeText":null},{"name":"scheduler","version":"0.23.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"react-dom","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"react","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"process","version":"0.11.10","author":"Roman Shtylman <shtylman@gmail.com>","repository":"git://github.com/shtylman/node-process.git","source":"https://registry.npmjs.org/process/-/process-0.11.10.tgz","license":"MIT","licenseText":"(The MIT License)\\n\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n","noticeText":null}]"`;
 
 exports[`end to end webpack v3 output matches snapshot 1`] = `
 [
@@ -1258,6 +1298,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -1287,6 +1328,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -1316,6 +1358,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -1345,6 +1388,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -1374,6 +1418,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -1429,6 +1474,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -1458,6 +1504,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz",
     "version": "3.12.0",
@@ -1467,6 +1514,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -1503,6 +1551,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -1532,6 +1581,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -1561,6 +1611,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -1590,6 +1641,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -1619,6 +1671,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -1674,6 +1727,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -1703,6 +1757,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz",
     "version": "3.12.0",
@@ -1712,6 +1767,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -1748,6 +1804,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -1777,6 +1834,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -1806,6 +1864,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -1835,6 +1894,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -1890,6 +1950,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -1919,6 +1980,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz",
     "version": "3.12.0",
@@ -1928,6 +1990,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -1962,6 +2025,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "jest",
+    "noticeText": null,
     "repository": "https://github.com/jestjs/jest.git",
     "source": "https://registry.npmjs.org/jest/-/jest-29.7.0.tgz",
     "version": "29.7.0",
@@ -1993,6 +2057,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -2022,6 +2087,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -2051,6 +2117,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -2080,6 +2147,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -2109,6 +2177,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -2164,6 +2233,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -2193,6 +2263,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz",
     "version": "3.12.0",
@@ -2202,6 +2273,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -2238,6 +2310,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -2267,6 +2340,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -2296,6 +2370,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -2325,6 +2400,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -2354,6 +2430,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -2409,6 +2486,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -2438,6 +2516,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-3.12.0.tgz",
     "version": "3.12.0",
@@ -2447,6 +2526,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -2454,7 +2534,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ]
 `;
 
-exports[`end to end webpack v4 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null},{"name":"webpack","version":"4.47.0","author":"Tobias Koppers @sokra","repository":"https://github.com/webpack/webpack.git","source":"https://registry.npmjs.org/webpack/-/webpack-4.47.0.tgz","license":"MIT","licenseText":"Copyright JS Foundation and other contributors\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"},{"name":"timers-browserify","version":"2.0.12","author":"J. Ryan Stinnett <jryans@gmail.com> (https://convolv.es/)","repository":"git://github.com/jryans/timers-browserify.git","source":"https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz","license":"MIT","licenseText":"# timers-browserify\\n\\nThis project uses the [MIT](http://jryans.mit-license.org/) license:\\n\\n    Copyright © 2012 J. Ryan Stinnett <jryans@gmail.com>\\n\\n    Permission is hereby granted, free of charge, to any person obtaining a\\n    copy of this software and associated documentation files (the “Software”),\\n    to deal in the Software without restriction, including without limitation\\n    the rights to use, copy, modify, merge, publish, distribute, sublicense,\\n    and/or sell copies of the Software, and to permit persons to whom the\\n    Software is furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\\n    DEALINGS IN THE SOFTWARE.\\n\\n# lib/node\\n\\nThe \`lib/node\` directory borrows files from joyent/node which uses the following license:\\n\\n    Copyright Joyent, Inc. and other Node contributors. All rights reserved.\\n    Permission is hereby granted, free of charge, to any person obtaining a copy\\n    of this software and associated documentation files (the \\"Software\\"), to\\n    deal in the Software without restriction, including without limitation the\\n    rights to use, copy, modify, merge, publish, distribute, sublicense, and/or\\n    sell copies of the Software, and to permit persons to whom the Software is\\n    furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\\n    IN THE SOFTWARE.\\n"},{"name":"setimmediate","version":"1.0.5","author":"YuzuJS","repository":"YuzuJS/setImmediate","source":"https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz","license":"MIT","licenseText":"Copyright (c) 2012 Barnesandnoble.com, llc, Donavon West, and Domenic Denicola\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n\\"Software\\"), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"},{"name":"scheduler","version":"0.23.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react-dom","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"process","version":"0.11.10","author":"Roman Shtylman <shtylman@gmail.com>","repository":"git://github.com/shtylman/node-process.git","source":"https://registry.npmjs.org/process/-/process-0.11.10.tgz","license":"MIT","licenseText":"(The MIT License)\\n\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n"}]"`;
+exports[`end to end webpack v4 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null,"noticeText":null},{"name":"webpack","version":"4.47.0","author":"Tobias Koppers @sokra","repository":"https://github.com/webpack/webpack.git","source":"https://registry.npmjs.org/webpack/-/webpack-4.47.0.tgz","license":"MIT","licenseText":"Copyright JS Foundation and other contributors\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n","noticeText":null},{"name":"timers-browserify","version":"2.0.12","author":"J. Ryan Stinnett <jryans@gmail.com> (https://convolv.es/)","repository":"git://github.com/jryans/timers-browserify.git","source":"https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz","license":"MIT","licenseText":"# timers-browserify\\n\\nThis project uses the [MIT](http://jryans.mit-license.org/) license:\\n\\n    Copyright © 2012 J. Ryan Stinnett <jryans@gmail.com>\\n\\n    Permission is hereby granted, free of charge, to any person obtaining a\\n    copy of this software and associated documentation files (the “Software”),\\n    to deal in the Software without restriction, including without limitation\\n    the rights to use, copy, modify, merge, publish, distribute, sublicense,\\n    and/or sell copies of the Software, and to permit persons to whom the\\n    Software is furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\\n    DEALINGS IN THE SOFTWARE.\\n\\n# lib/node\\n\\nThe \`lib/node\` directory borrows files from joyent/node which uses the following license:\\n\\n    Copyright Joyent, Inc. and other Node contributors. All rights reserved.\\n    Permission is hereby granted, free of charge, to any person obtaining a copy\\n    of this software and associated documentation files (the \\"Software\\"), to\\n    deal in the Software without restriction, including without limitation the\\n    rights to use, copy, modify, merge, publish, distribute, sublicense, and/or\\n    sell copies of the Software, and to permit persons to whom the Software is\\n    furnished to do so, subject to the following conditions:\\n\\n    The above copyright notice and this permission notice shall be included in\\n    all copies or substantial portions of the Software.\\n\\n    THE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\n    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\n    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\n    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\n    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\\n    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS\\n    IN THE SOFTWARE.\\n","noticeText":null},{"name":"setimmediate","version":"1.0.5","author":"YuzuJS","repository":"YuzuJS/setImmediate","source":"https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz","license":"MIT","licenseText":"Copyright (c) 2012 Barnesandnoble.com, llc, Donavon West, and Domenic Denicola\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n\\"Software\\"), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n","noticeText":null},{"name":"scheduler","version":"0.23.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"react-dom","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"react","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"process","version":"0.11.10","author":"Roman Shtylman <shtylman@gmail.com>","repository":"git://github.com/shtylman/node-process.git","source":"https://registry.npmjs.org/process/-/process-0.11.10.tgz","license":"MIT","licenseText":"(The MIT License)\\n\\nCopyright (c) 2013 Roman Shtylman <shtylman@gmail.com>\\n\\nPermission is hereby granted, free of charge, to any person obtaining\\na copy of this software and associated documentation files (the\\n'Software'), to deal in the Software without restriction, including\\nwithout limitation the rights to use, copy, modify, merge, publish,\\ndistribute, sublicense, and/or sell copies of the Software, and to\\npermit persons to whom the Software is furnished to do so, subject to\\nthe following conditions:\\n\\nThe above copyright notice and this permission notice shall be\\nincluded in all copies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\\n","noticeText":null}]"`;
 
 exports[`end to end webpack v4 output matches snapshot 1`] = `
 [
@@ -2485,6 +2565,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -2514,6 +2595,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -2543,6 +2625,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -2572,6 +2655,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -2601,6 +2685,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -2656,6 +2741,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -2685,6 +2771,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-4.47.0.tgz",
     "version": "4.47.0",
@@ -2694,6 +2781,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -2730,6 +2818,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -2759,6 +2848,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -2788,6 +2878,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -2817,6 +2908,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -2846,6 +2938,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -2901,6 +2994,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -2930,6 +3024,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-4.47.0.tgz",
     "version": "4.47.0",
@@ -2939,6 +3034,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -2975,6 +3071,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -3004,6 +3101,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -3033,6 +3131,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -3062,6 +3161,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -3117,6 +3217,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -3146,6 +3247,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-4.47.0.tgz",
     "version": "4.47.0",
@@ -3155,6 +3257,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -3189,6 +3292,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "jest",
+    "noticeText": null,
     "repository": "https://github.com/jestjs/jest.git",
     "source": "https://registry.npmjs.org/jest/-/jest-29.7.0.tgz",
     "version": "29.7.0",
@@ -3220,6 +3324,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -3249,6 +3354,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -3278,6 +3384,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -3307,6 +3414,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -3336,6 +3444,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -3391,6 +3500,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -3420,6 +3530,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-4.47.0.tgz",
     "version": "4.47.0",
@@ -3429,6 +3540,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -3465,6 +3577,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "process",
+    "noticeText": null,
     "repository": "git://github.com/shtylman/node-process.git",
     "source": "https://registry.npmjs.org/process/-/process-0.11.10.tgz",
     "version": "0.11.10",
@@ -3494,6 +3607,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -3523,6 +3637,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -3552,6 +3667,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -3581,6 +3697,7 @@ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "setimmediate",
+    "noticeText": null,
     "repository": "YuzuJS/setImmediate",
     "source": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",
     "version": "1.0.5",
@@ -3636,6 +3753,7 @@ The \`lib/node\` directory borrows files from joyent/node which uses the followi
     IN THE SOFTWARE.
 ",
     "name": "timers-browserify",
+    "noticeText": null,
     "repository": "git://github.com/jryans/timers-browserify.git",
     "source": "https://registry.npmjs.org/timers-browserify/-/timers-browserify-2.0.12.tgz",
     "version": "2.0.12",
@@ -3665,6 +3783,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ",
     "name": "webpack",
+    "noticeText": null,
     "repository": "https://github.com/webpack/webpack.git",
     "source": "https://registry.npmjs.org/webpack/-/webpack-4.47.0.tgz",
     "version": "4.47.0",
@@ -3674,6 +3793,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -3681,7 +3801,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ]
 `;
 
-exports[`end to end webpack v5 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null},{"name":"scheduler","version":"0.23.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react-dom","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"},{"name":"react","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n"}]"`;
+exports[`end to end webpack v5 additionalFiles match snapshot 1`] = `"[{"name":"webpack-license-plugin-test-example","version":"1.0.0","author":"Christoph Werner <christoph@codepunkt.de>","repository":null,"source":"https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz","license":"MIT","licenseText":null,"noticeText":null},{"name":"scheduler","version":"0.23.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"react-dom","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null},{"name":"react","version":"18.2.0","repository":"https://github.com/facebook/react.git","source":"https://registry.npmjs.org/react/-/react-18.2.0.tgz","license":"MIT","licenseText":"MIT License\\n\\nCopyright (c) Facebook, Inc. and its affiliates.\\n\\nPermission is hereby granted, free of charge, to any person obtaining a copy\\nof this software and associated documentation files (the \\"Software\\"), to deal\\nin the Software without restriction, including without limitation the rights\\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\\ncopies of the Software, and to permit persons to whom the Software is\\nfurnished to do so, subject to the following conditions:\\n\\nThe above copyright notice and this permission notice shall be included in all\\ncopies or substantial portions of the Software.\\n\\nTHE SOFTWARE IS PROVIDED \\"AS IS\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\\nSOFTWARE.\\n","noticeText":null}]"`;
 
 exports[`end to end webpack v5 output matches snapshot 1`] = `
 [
@@ -3710,6 +3830,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -3739,6 +3860,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -3768,6 +3890,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -3777,6 +3900,7 @@ SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -3811,6 +3935,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -3840,6 +3965,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -3869,6 +3995,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -3878,6 +4005,7 @@ SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -3912,6 +4040,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -3941,6 +4070,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -3950,6 +4080,7 @@ SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -3984,6 +4115,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "jest",
+    "noticeText": null,
     "repository": "https://github.com/jestjs/jest.git",
     "source": "https://registry.npmjs.org/jest/-/jest-29.7.0.tgz",
     "version": "29.7.0",
@@ -4013,6 +4145,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -4042,6 +4175,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -4071,6 +4205,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -4080,6 +4215,7 @@ SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",
@@ -4114,6 +4250,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
     "version": "18.2.0",
@@ -4143,6 +4280,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "react-dom",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
     "version": "18.2.0",
@@ -4172,6 +4310,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ",
     "name": "scheduler",
+    "noticeText": null,
     "repository": "https://github.com/facebook/react.git",
     "source": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",
     "version": "0.23.0",
@@ -4181,6 +4320,7 @@ SOFTWARE.
     "license": "MIT",
     "licenseText": null,
     "name": "webpack-license-plugin-test-example",
+    "noticeText": null,
     "repository": null,
     "source": "https://registry.npmjs.org/webpack-license-plugin-test-example/-/webpack-license-plugin-test-example-1.0.0.tgz",
     "version": "1.0.0",

@@ -1,10 +1,12 @@
 import LicenseIdentifier from './LicenseIdentifier'
 import LicenseTextReader from './LicenseTextReader'
+import NoticeTextReader from './NoticeTextReader'
 import IAlertAggregator from './types/IAlertAggregator'
 import IFileSystem from './types/IFileSystem'
 import ILicenseIdentifier from './types/ILicenseIdentifier'
 import ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
 import ILicenseTextReader from './types/ILicenseTextReader'
+import INoticeTextReader from './types/INoticeTextReader'
 import IPackageJson from './types/IPackageJson'
 import IPackageJsonReader from './types/IPackageJsonReader'
 import IPackageLicenseMeta from './types/IPackageLicenseMeta'
@@ -23,6 +25,9 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
       alertAggregator,
       fileSystem,
       options
+    ),
+    private noticeTextReader: INoticeTextReader = new NoticeTextReader(
+      fileSystem
     )
   ) {}
 
@@ -66,6 +71,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
         license,
         moduleDir
       )
+      const noticeText = await this.noticeTextReader.readNoticeText(moduleDir)
 
       result.push({
         name: meta.name,
@@ -75,6 +81,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
         source: this.getNpmTarballUrl(meta.name, meta.version),
         license,
         licenseText,
+        noticeText
       })
     }
 
