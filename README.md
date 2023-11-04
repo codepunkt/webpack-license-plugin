@@ -138,6 +138,7 @@ The output is a `oss-licenses.json` file in the webpack build output directory. 
 | **`source`** | package tarball url on npm registry |
 | **`license`** | the license listed in `package.json`. If this is not a valid [spdx license expression](https://spdx.org/spdx-specification-21-web-version#h.jxpfx0ykyb60), this plugin will inform you. You can then inform the package maintainers about this problem and temporarily workaround this issue with the `licenseOverrides` option for the specific combination of package name and version. |
 | **`licenseText`** | the license text read from a file matching `/^licen[cs]e/i` in the package's root |
+| **`noticeText`** | the notice text read from a file matching `/^notice/i` in the package's root |
 
 ### Example output file
 ```json
@@ -148,7 +149,8 @@ The output is a `oss-licenses.json` file in the webpack build output directory. 
     "repository": "https://github.com/facebook/fbjs",
     "source": "https://registry.npmjs.org/fbjs/-/fbjs-0.8.17.tgz",
     "license": "MIT",
-    "licenseText": "..."
+    "licenseText": "...",
+    "noticeText": "..."
   },
   {
     "name": "object-assign",
@@ -157,7 +159,8 @@ The output is a `oss-licenses.json` file in the webpack build output directory. 
     "repository": "https://github.com/sindresorhus/object-assign",
     "source": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
     "license": "MIT",
-    "licenseText": "..."
+    "licenseText": "...",
+    "noticeText": "..."
   },
   {
     "name": "react-dom",
@@ -165,7 +168,8 @@ The output is a `oss-licenses.json` file in the webpack build output directory. 
     "repository": "https://github.com/facebook/react",
     "source": "https://registry.npmjs.org/react-dom/-/react-dom-16.4.2.tgz",
     "license": "MIT",
-    "licenseText": "..."
+    "licenseText": "...",
+    "noticeText": "..."
   },
   {
     "name": "react",
@@ -173,7 +177,8 @@ The output is a `oss-licenses.json` file in the webpack build output directory. 
     "repository": "https://github.com/facebook/react",
     "source": "https://registry.npmjs.org/react/-/react-16.4.2.tgz",
     "license": "MIT",
-    "licenseText": "..."
+    "licenseText": "...",
+    "noticeText": "..."
   }
 ]
 ```
