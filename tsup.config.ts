@@ -9,10 +9,12 @@ export default defineConfig({
   sourcemap: true,
   splitting: false,
   esbuildOptions: (options) => {
-    options.footer = {
-      // This ensures publishing this as a CJS library with a default export.
-      // @see https://github.com/evanw/esbuild/issues/1182#issuecomment-1011414271
-      js: 'module.exports = module.exports.default;',
+    if (options.format === 'cjs') {
+      options.footer = {
+        // This ensures publishing this as a CJS library with a default export.
+        // @see https://github.com/evanw/esbuild/issues/1182#issuecomment-1011414271
+        js: 'module.exports = module.exports.default;',
+      }
     }
   },
 })

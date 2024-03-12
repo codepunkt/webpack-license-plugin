@@ -1,6 +1,8 @@
 import type { Compilation } from 'webpack'
-import { sources } from 'webpack'
+import webpack from 'webpack'
 import type IAssetManager from './types/IAssetManager'
+
+const sources = webpack.sources
 
 export default class WebpackAssetManager implements IAssetManager {
   constructor(private compilation: Compilation) {}

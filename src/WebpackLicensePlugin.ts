@@ -1,5 +1,5 @@
 import type { Chunk, Compilation, Compiler } from 'webpack'
-import webpack, { WebpackError } from 'webpack'
+import webpack from 'webpack'
 import LicenseFileWriter from './LicenseFileWriter'
 import LicenseMetaAggregator from './LicenseMetaAggregator'
 import ModuleDirectoryLocator from './ModuleDirectoryLocator'
@@ -12,6 +12,7 @@ import WebpackFileSystem from './WebpackFileSystem'
 import type IPluginOptions from './types/IPluginOptions'
 import type IWebpackPlugin from './types/IWebpackPlugin'
 
+const WebpackError = webpack.WebpackError
 const pluginName = 'WebpackLicensePlugin'
 
 interface ObservedCompiler {
