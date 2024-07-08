@@ -13,7 +13,7 @@ function createBuild(wp: (options: object) => any) {
   return (
     plugin: WebpackLicensePlugin,
     fileSystem: MemoryFs,
-    callback: (err?: Error | null, stats?: any) => void
+    callback: (err?: Error | null, stats?: any) => void,
   ) => {
     const compiler = wp({
       entry: resolve(__dirname, './example/src/index.js'),
@@ -37,10 +37,10 @@ const webpackVersions = [
 describe('end to end', () => {
   webpackVersions.forEach((webpackVersion) => {
     const buildErrors = (
-      messages: string[]
+      messages: string[],
     ): string[] | { message: string }[] => {
       return webpackVersion.description === 'webpack v5'
-        ? messages.map((message) => expect.objectContaining({ message }))
+        ? messages.map(message => expect.objectContaining({ message }))
         : messages
     }
 
@@ -52,7 +52,7 @@ describe('end to end', () => {
         fileSystem = new MemoryFs()
       })
 
-      test('output matches snapshot', (done) => {
+      it('output matches snapshot', (done) => {
         build(
           new WebpackLicensePlugin({
             licenseOverrides: { 'spdx-expression-parse@1.0.4': 'Apache-2.0' },
@@ -62,7 +62,7 @@ describe('end to end', () => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}oss-licenses.json`)
-                .toString()
+                .toString(),
             )
 
             expect(err).toBe(null)
@@ -70,11 +70,11 @@ describe('end to end', () => {
             expect(output).toMatchSnapshot()
 
             done()
-          }
+          },
         )
       })
 
-      test('output to a different outputFilename matches snapshot', (done) => {
+      it('output to a different outputFilename matches snapshot', (done) => {
         build(
           new WebpackLicensePlugin({
             outputFilename: 'bill-of-materials.json',
@@ -84,7 +84,7 @@ describe('end to end', () => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}bill-of-materials.json`)
-                .toString()
+                .toString(),
             )
 
             expect(err).toBe(null)
@@ -92,15 +92,15 @@ describe('end to end', () => {
             expect(output).toMatchSnapshot()
 
             done()
-          }
+          },
         )
       })
 
-      test('additionalFiles match snapshot', (done) => {
+      it('additionalFiles match snapshot', (done) => {
         build(
           new WebpackLicensePlugin({
             additionalFiles: {
-              'oss-reverse.json': (packages) =>
+              'oss-reverse.json': packages =>
                 JSON.stringify(packages.reverse()),
             },
           }),
@@ -115,11 +115,11 @@ describe('end to end', () => {
             expect(additionalFile).toMatchSnapshot()
 
             done()
-          }
+          },
         )
       })
 
-      test('has compilation error on invalid configuration', (done) => {
+      it('has compilation error on invalid configuration', (done) => {
         build(
           new WebpackLicensePlugin({
             licenseOverrides: { 'spdx-expression-parse@1.0.4': 'Apache 2.0' },
@@ -130,18 +130,18 @@ describe('end to end', () => {
             expect(stats.errors).toEqual(
               buildErrors([
                 'WebpackLicensePlugin: Invalid licenseOverrides option: "Apache 2.0" is not a valid SPDX expression!',
-              ])
+              ]),
             )
 
             done()
-          }
+          },
         )
       })
 
-      test('has compilation error when encountering unacceptable licenses', (done) => {
+      it('has compilation error when encountering unacceptable licenses', (done) => {
         build(
           new WebpackLicensePlugin({
-            unacceptableLicenseTest: (license) => ['MIT'].includes(license),
+            unacceptableLicenseTest: license => ['MIT'].includes(license),
           }),
           fileSystem,
           (err, stats) => {
@@ -151,26 +151,26 @@ describe('end to end', () => {
                 buildErrors([
                   'WebpackLicensePlugin: Found unacceptable license "MIT" for react@18.2.0',
                   'WebpackLicensePlugin: Found unacceptable license "MIT" for react-dom@18.2.0',
-                ])
-              )
+                ]),
+              ),
             )
 
             done()
-          }
+          },
         )
       })
 
-      test('output matches snapshot when packages have been excluded', (done) => {
+      it('output matches snapshot when packages have been excluded', (done) => {
         build(
           new WebpackLicensePlugin({
-            excludedPackageTest: (packageName) => packageName === 'react',
+            excludedPackageTest: packageName => packageName === 'react',
           }),
           fileSystem,
           (err) => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}oss-licenses.json`)
-                .toString()
+                .toString(),
             )
 
             expect(err).toBe(null)
@@ -178,11 +178,11 @@ describe('end to end', () => {
             expect(output).toMatchSnapshot()
 
             done()
-          }
+          },
         )
       })
 
-      test('output matches snapshot when packages have been included', (done) => {
+      it('output matches snapshot when packages have been included', (done) => {
         build(
           new WebpackLicensePlugin({
             includePackages: () => [
@@ -194,7 +194,7 @@ describe('end to end', () => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}oss-licenses.json`)
-                .toString()
+                .toString(),
             )
 
             expect(err).toBe(null)
@@ -202,11 +202,11 @@ describe('end to end', () => {
             expect(output).toMatchSnapshot()
 
             done()
-          }
+          },
         )
       })
 
-      test('output matches snapshot when a package has been manually included that is also included in the build result', (done) => {
+      it('output matches snapshot when a package has been manually included that is also included in the build result', (done) => {
         build(
           new WebpackLicensePlugin({
             includePackages: () => [
@@ -218,7 +218,7 @@ describe('end to end', () => {
             const output = JSON.parse(
               fileSystem
                 .readFileSync(`${outputPath}${sep}oss-licenses.json`)
-                .toString()
+                .toString(),
             )
 
             expect(err).toBe(null)
@@ -226,7 +226,7 @@ describe('end to end', () => {
             expect(output).toMatchSnapshot()
 
             done()
-          }
+          },
         )
       })
     })

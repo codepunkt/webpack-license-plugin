@@ -1,11 +1,11 @@
 import type webpack from 'webpack'
 import WebpackAssetManager from '../../src/WebpackAssetManager'
 
-const MockCompilation = jest.fn<webpack.Compilation, any[]>((i) => i)
+const MockCompilation = jest.fn<webpack.Compilation, any[]>(i => i)
 
-describe('WebpackAssetManager', () => {
+describe('webpackAssetManager', () => {
   describe('addFile', () => {
-    test('adds file to compilation assets', () => {
+    it('adds file to compilation assets', () => {
       const assets = {}
       const compilation = new MockCompilation({ assets })
       const instance = new WebpackAssetManager(compilation)

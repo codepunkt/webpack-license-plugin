@@ -1,5 +1,5 @@
 export default interface IAlertAggregator {
-  addError(message: string)
-  addWarning(message: string)
-  flushAlerts(prefix: string): void
+  addError: (message: string) => any
+  addWarning: (message: string) => any
+  flushAlerts: (prefix: string) => void
 }

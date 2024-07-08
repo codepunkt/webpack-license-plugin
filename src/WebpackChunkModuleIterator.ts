@@ -24,32 +24,36 @@ export default class WebpackChunkModuleIterator {
   public iterateModules(
     compilation: Compilation,
     chunk: Chunk,
-    callback: (module: IWebpackChunkModule) => void
+    callback: (module: IWebpackChunkModule) => void,
   ): void {
     if (typeof compilation.chunkGraph !== 'undefined') {
       for (const module of compilation.chunkGraph.getChunkModulesIterable(
-        chunk
+        chunk,
       )) {
         callback(module)
       }
-    } else if (typeof chunk.modulesIterable !== 'undefined') {
+    }
+    else if (typeof chunk.modulesIterable !== 'undefined') {
       for (const module of chunk.modulesIterable) {
         // @ts-expect-error module not assignable to IWebpackChunkModule
         callback(module)
       }
-    } else if (typeof chunk.forEachModule === 'function') {
+    }
+    else if (typeof chunk.forEachModule === 'function') {
       chunk.forEachModule(callback)
-    } else if (Array.isArray(chunk.modules)) {
-      chunk.modules.forEach((module) => callback(module))
+    }
+    else if (Array.isArray(chunk.modules)) {
+      chunk.modules.forEach(module => callback(module))
     }
 
     if (typeof compilation.chunkGraph !== 'undefined') {
       for (const module of compilation.chunkGraph.getChunkEntryModulesIterable(
-        chunk
+        chunk,
       )) {
         callback(module)
       }
-    } else if (chunk.entryModule) {
+    }
+    else if (chunk.entryModule) {
       // @ts-expect-error chunk.entryModule not assignable to IWebpackChunkModule
       callback(chunk.entryModule)
     }

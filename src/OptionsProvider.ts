@@ -17,7 +17,7 @@ export default class OptionsProvider {
       for (const fileName of Object.keys(inputOptions.additionalFiles)) {
         if (typeof inputOptions.additionalFiles[fileName] !== 'function') {
           this.alertAggregator.addError(
-            `Invalid additionalFiles option: Value for key "${fileName}" is not a function!`
+            `Invalid additionalFiles option: Value for key "${fileName}" is not a function!`,
           )
         }
       }
@@ -27,27 +27,27 @@ export default class OptionsProvider {
       for (const packageVersion of Object.keys(inputOptions.licenseOverrides)) {
         if (!validate(inputOptions.licenseOverrides[packageVersion])) {
           this.alertAggregator.addError(
-            `Invalid licenseOverrides option: "${inputOptions.licenseOverrides[packageVersion]}" is not a valid SPDX expression!`
+            `Invalid licenseOverrides option: "${inputOptions.licenseOverrides[packageVersion]}" is not a valid SPDX expression!`,
           )
         }
       }
     }
 
     if (
-      inputOptions.replenishDefaultLicenseTexts &&
-      typeof inputOptions.replenishDefaultLicenseTexts !== 'boolean'
+      inputOptions.replenishDefaultLicenseTexts
+      && typeof inputOptions.replenishDefaultLicenseTexts !== 'boolean'
     ) {
       this.alertAggregator.addError(
-        `Invalid replenishDefaultLicenseTexts option: Not a boolean!`
+        `Invalid replenishDefaultLicenseTexts option: Not a boolean!`,
       )
     }
 
     if (
-      inputOptions.includePackages &&
-      typeof inputOptions.includePackages !== 'function'
+      inputOptions.includePackages
+      && typeof inputOptions.includePackages !== 'function'
     ) {
       this.alertAggregator.addError(
-        `Invalid includePackages option: Not a function!`
+        `Invalid includePackages option: Not a function!`,
       )
     }
   }

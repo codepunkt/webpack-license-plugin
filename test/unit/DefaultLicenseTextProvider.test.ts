@@ -9,10 +9,10 @@ jest.mock('needle', () =>
     return url.match(/notfound$/i)
       ? { statusCode: 404 }
       : { statusCode: 200, body: 'body content' }
-  })
-)
+  }))
 
 const mockRequest = jest.fn((url: string) => {
+  // eslint-disable-next-line regexp/no-super-linear-backtracking
   const [_, license] = url.match(/^.*\/(.*?)\.txt$/i)!
 
   let result
@@ -32,7 +32,7 @@ const mockRequest = jest.fn((url: string) => {
 })
 
 describe('fetch', () => {
-  test('fetch starts get request with url and returns the response body or null', async () => {
+  it('fetch starts get request with url and returns the response body or null', async () => {
     const okUrl = 'https://example.com'
     const notFoundUrl = 'https://example.com/notfound'
 
@@ -49,12 +49,12 @@ describe('fetch', () => {
   })
 })
 
-describe('DefaultLicenseTextProvider', () => {
+describe('defaultLicenseTextProvider', () => {
   beforeEach(() => {
     jest.clearAllMocks()
   })
 
-  test('returns null when no license text was found on spdx', async () => {
+  it('returns null when no license text was found on spdx', async () => {
     const unknownLicenseName = 'foo'
     const instance = new DefaultLicenseTextProvider(mockRequest)
     const result = await instance.retrieveLicenseText(unknownLicenseName)
@@ -62,11 +62,11 @@ describe('DefaultLicenseTextProvider', () => {
     expect(result).toBe(null)
     expect(mockRequest).toHaveBeenCalledTimes(1)
     expect(mockRequest).toHaveBeenCalledWith(
-      `${REPO_URL}/master/text/${unknownLicenseName}.txt`
+      `${REPO_URL}/master/text/${unknownLicenseName}.txt`,
     )
   })
 
-  test('returns license text from spdx', async () => {
+  it('returns license text from spdx', async () => {
     const instance = new DefaultLicenseTextProvider(mockRequest)
 
     const result1 = await instance.retrieveLicenseText('MIT')
@@ -76,7 +76,7 @@ describe('DefaultLicenseTextProvider', () => {
     expect(mockRequest).toBeCalledTimes(2)
   })
 
-  test('returns license text from cache on cache hit', async () => {
+  it('returns license text from cache on cache hit', async () => {
     const instance = new DefaultLicenseTextProvider(mockRequest)
 
     const result1 = await instance.retrieveLicenseText('MIT')
@@ -86,7 +86,7 @@ describe('DefaultLicenseTextProvider', () => {
     expect(mockRequest).toBeCalledTimes(1)
   })
 
-  test('uses fetch when not given a request method', async () => {
+  it('uses fetch when not given a request method', async () => {
     const instance = new DefaultLicenseTextProvider()
 
     await instance.retrieveLicenseText('MIT')

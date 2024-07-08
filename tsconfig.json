@@ -2,18 +2,18 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["es2018", "dom", "esnext.asynciterable"],
-    "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "declaration": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "downlevelIteration": true,
-    "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
-    "skipLibCheck": true,
-    "esModuleInterop": true
+    "declaration": true,
+    "downlevelIteration": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
