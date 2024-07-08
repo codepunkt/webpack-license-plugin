@@ -1,6 +1,7 @@
-import type webpack from 'webpack'
-import { WebpackError } from 'webpack'
+import webpack from 'webpack'
 import type IAlertAggregator from './types/IAlertAggregator'
+
+const WebpackError = webpack.WebpackError
 
 export default class WebpackAlertAggregator implements IAlertAggregator {
   private errors: string[] = []

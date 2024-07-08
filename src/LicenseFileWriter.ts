@@ -1,8 +1,10 @@
-import { compact, uniq } from 'lodash'
+import lodash from 'lodash'
 import IAssetManager from './types/IAssetManager'
 import ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
 import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
 import IPluginOptions from './types/IPluginOptions'
+
+const { compact, uniq } = lodash
 
 export default class LicenseFileWriter {
   constructor(
