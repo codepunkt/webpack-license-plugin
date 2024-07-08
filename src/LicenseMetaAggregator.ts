@@ -24,10 +24,10 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
     private licenseTextReader: ILicenseTextReader = new LicenseTextReader(
       alertAggregator,
       fileSystem,
-      options
+      options,
     ),
     private noticeTextReader: INoticeTextReader = new NoticeTextReader(
-      fileSystem
+      fileSystem,
     ),
   ) {}
 
@@ -81,7 +81,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
         source: this.getNpmTarballUrl(meta.name, meta.version),
         license,
         licenseText,
-        noticeText
+        noticeText,
       })
     }
 

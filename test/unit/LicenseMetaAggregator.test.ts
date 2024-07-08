@@ -4,15 +4,15 @@ import type IAlertAggregator from '../../src/types/IAlertAggregator'
 import type IFileSystem from '../../src/types/IFileSystem'
 import type ILicenseIdentifier from '../../src/types/ILicenseIdentifier'
 import type ILicenseTextReader from '../../src/types/ILicenseTextReader'
-import INoticeTextReader from '../../src/types/INoticeTextReader'
+import type INoticeTextReader from '../../src/types/INoticeTextReader'
 import type IPackageJsonReader from '../../src/types/IPackageJsonReader'
 
-const MockLicenseIdentifier = jest.fn<ILicenseIdentifier, any[]>((i) => i)
-const MockLicenseTextReader = jest.fn<ILicenseTextReader, any[]>((i) => i)
-const MockNoticeTextReader = jest.fn<INoticeTextReader, any[]>((i) => i)
-const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>((i) => i)
-const MockFileSystem = jest.fn<IFileSystem, any[]>((i) => i)
-const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>((i) => i)
+const MockLicenseIdentifier = jest.fn<ILicenseIdentifier, any[]>(i => i)
+const MockLicenseTextReader = jest.fn<ILicenseTextReader, any[]>(i => i)
+const MockNoticeTextReader = jest.fn<INoticeTextReader, any[]>(i => i)
+const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>(i => i)
+const MockFileSystem = jest.fn<IFileSystem, any[]>(i => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
 
 const mockPackageJsonReader = new MockPackageJsonReader({
   readPackageJson: name => ({

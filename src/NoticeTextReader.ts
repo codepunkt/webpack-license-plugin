@@ -12,7 +12,7 @@ export default class NoticeTextReader {
   public async readNoticeText(moduleDir: string): Promise<string | null> {
     const noticeFilename = this.fileSystem
       .listPaths(moduleDir)
-      .find((filename) => /^notice/i.test(filename))
+      .find(filename => /^notice/i.test(filename))
 
     if (!noticeFilename) {
       return null
