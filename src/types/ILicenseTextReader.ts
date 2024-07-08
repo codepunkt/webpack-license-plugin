@@ -1,9 +1,9 @@
 import type IPackageJson from './IPackageJson'
 
 export default interface ILicenseTextReader {
-  readLicenseText(
+  readLicenseText: (
     meta: IPackageJson,
     license: string,
     moduleDir: string
-  ): Promise<string | null>
+  ) => Promise<string | null>
 }

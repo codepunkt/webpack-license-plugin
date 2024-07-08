@@ -1,10 +1,10 @@
-import { join } from 'path'
+import { join } from 'node:path'
 import DefaultLicenseTextProvider from './DefaultLicenseTextProvider'
-import IAlertAggregator from './types/IAlertAggregator'
-import IDefaultLicenseTextProvider from './types/IDefaultLicenseTextProvider'
-import IFileSystem from './types/IFileSystem'
-import IPackageJson from './types/IPackageJson'
-import IPluginOptions from './types/IPluginOptions'
+import type IAlertAggregator from './types/IAlertAggregator'
+import type IDefaultLicenseTextProvider from './types/IDefaultLicenseTextProvider'
+import type IFileSystem from './types/IFileSystem'
+import type IPackageJson from './types/IPackageJson'
+import type IPluginOptions from './types/IPluginOptions'
 
 /**
  * Reads license text from license file.
@@ -18,13 +18,13 @@ export default class LicenseTextReader {
     private alertAggregator: IAlertAggregator,
     private fileSystem: IFileSystem,
     private options: Pick<IPluginOptions, 'replenishDefaultLicenseTexts'>,
-    private defaultLicenseReader: IDefaultLicenseTextProvider = new DefaultLicenseTextProvider()
+    private defaultLicenseReader: IDefaultLicenseTextProvider = new DefaultLicenseTextProvider(),
   ) {}
 
   public async readLicenseText(
     meta: IPackageJson,
     license: string,
-    moduleDir: string
+    moduleDir: string,
   ): Promise<string | null> {
     const id = `${meta.name}@${meta.version}`
 
@@ -36,9 +36,11 @@ export default class LicenseTextReader {
       const filename = license.split(' ')[3]
       try {
         return this.readFile(moduleDir, filename)
-      } catch (e) {
+      }
+      // eslint-disable-next-line unused-imports/no-unused-vars
+      catch (e) {
         this.alertAggregator.addError(
-          `could not find file specified in package.json license field of ${id}`
+          `could not find file specified in package.json license field of ${id}`,
         )
       }
     }

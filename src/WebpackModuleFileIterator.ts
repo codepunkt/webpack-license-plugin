@@ -8,16 +8,17 @@ export default class WebpackModuleFileIterator {
       fileDependencies,
       dependencies,
     }: IWebpackChunkModule,
-    callback: (filename: string) => void
+    callback: (filename: string) => void,
   ): void {
     if (resource) {
       callback(resource)
-    } else if (rootModule?.resource) {
+    }
+    else if (rootModule?.resource) {
       callback(rootModule.resource)
     }
 
     if (fileDependencies) {
-      fileDependencies.forEach((dep) => callback(dep))
+      fileDependencies.forEach(dep => callback(dep))
     }
 
     if (dependencies) {

@@ -15,7 +15,7 @@ const MockFileSystem = jest.fn<IFileSystem, any[]>((i) => i)
 const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>((i) => i)
 
 const mockPackageJsonReader = new MockPackageJsonReader({
-  readPackageJson: (name) => ({
+  readPackageJson: name => ({
     name,
     version: '16.6.0',
     author: '@iamdevloper',
@@ -34,7 +34,7 @@ const mockNoticeTextReader = new MockNoticeTextReader({
 const mockFileSystem = new MockFileSystem()
 const mockAlertAggregator = new MockAlertAggregator()
 
-describe('LicenseMetaAggregator', () => {
+describe('licenseMetaAggregator', () => {
   let instance: LicenseMetaAggregator
 
   beforeEach(() => {
@@ -45,12 +45,12 @@ describe('LicenseMetaAggregator', () => {
       mockPackageJsonReader,
       mockLicenseIdentifier,
       mockLicenseTextReader,
-      mockNoticeTextReader
+      mockNoticeTextReader,
     )
   })
 
   describe('aggregateMeta', () => {
-    test('read repository string syntax', async () => {
+    it('read repository string syntax', async () => {
       const instance = new LicenseMetaAggregator(
         mockFileSystem,
         mockAlertAggregator,
@@ -62,13 +62,13 @@ describe('LicenseMetaAggregator', () => {
               // '@types-react' has build metadata as part of it's version
               version: name === 'react' ? '16.6.0' : '16.6.0+foo',
               author: '@iamdevloper',
-              repository: 'git@github.com:facebook/react.git'
+              repository: 'git@github.com:facebook/react.git',
             }
-          }
+          },
         }),
         mockLicenseIdentifier,
         mockLicenseTextReader,
-        mockNoticeTextReader
+        mockNoticeTextReader,
       )
       const meta = await instance.aggregateMeta(['@types/react', 'react'])
       expect(meta).toEqual([
@@ -95,7 +95,7 @@ describe('LicenseMetaAggregator', () => {
       ])
     })
 
-    test('returns license meta for the given modules', async () => {
+    it('returns license meta for the given modules', async () => {
       const meta = await instance.aggregateMeta(['react-dom', 'react'])
 
       expect(meta).toEqual([
@@ -122,7 +122,7 @@ describe('LicenseMetaAggregator', () => {
       ])
     })
 
-    test('excludes license meta for excluded packages', async () => {
+    it('excludes license meta for excluded packages', async () => {
       instance = new LicenseMetaAggregator(
         mockFileSystem,
         mockAlertAggregator,
@@ -134,7 +134,7 @@ describe('LicenseMetaAggregator', () => {
         mockPackageJsonReader,
         mockLicenseIdentifier,
         mockLicenseTextReader,
-        mockNoticeTextReader
+        mockNoticeTextReader,
       )
 
       const meta = await instance.aggregateMeta([
@@ -153,7 +153,7 @@ describe('LicenseMetaAggregator', () => {
       ])
     })
 
-    test('deduplicates package/version identifiers', async () => {
+    it('deduplicates package/version identifiers', async () => {
       const meta = await instance.aggregateMeta([
         'react-dom',
         'react',
@@ -186,46 +186,46 @@ describe('LicenseMetaAggregator', () => {
   })
 
   describe('getAuthor', () => {
-    test('parses string author', () => {
+    it('parses string author', () => {
       expect(instance.getAuthor({ author: 'foo' })).toEqual('foo')
     })
 
-    test('parses object author', () => {
+    it('parses object author', () => {
       expect(instance.getAuthor({ author: { name: 'foo' } })).toEqual('foo')
     })
 
-    test('parses object author with email', () => {
+    it('parses object author with email', () => {
       expect(
-        instance.getAuthor({ author: { name: 'foo', email: 'bar' } })
+        instance.getAuthor({ author: { name: 'foo', email: 'bar' } }),
       ).toEqual('foo <bar>')
     })
 
-    test('parses object author with url', () => {
+    it('parses object author with url', () => {
       expect(
-        instance.getAuthor({ author: { name: 'foo', url: 'baz' } })
+        instance.getAuthor({ author: { name: 'foo', url: 'baz' } }),
       ).toEqual('foo (baz)')
     })
 
-    test('parses object author with url and email', () => {
+    it('parses object author with url and email', () => {
       expect(
         instance.getAuthor({
           author: { name: 'foo', email: 'bar', url: 'baz' },
-        })
+        }),
       ).toEqual('foo <bar> (baz)')
     })
   })
 
   describe('getRepository', () => {
-    test("returns null repository field doesn't exist", () => {
+    it('returns null repository field doesn\'t exist', () => {
       expect(instance.getRepository({})).toEqual(null)
       expect(instance.getRepository({ repository: undefined })).toEqual(null)
     })
 
-    test('parses object author', () => {
+    it('parses object author', () => {
       expect(
         instance.getRepository({
           repository: { url: 'git@github.com:facebook/react.git' },
-        })
+        }),
       ).toEqual('git@github.com:facebook/react.git')
     })
   })

@@ -9,5 +9,5 @@ ReactDOM.render(
     React.createElement('h1', {}, ['Hello world']),
     React.createElement('p', {}, ['This is the value of pi: ', pi]),
   ]),
-  document.querySelector('body')
+  document.querySelector('body'),
 )

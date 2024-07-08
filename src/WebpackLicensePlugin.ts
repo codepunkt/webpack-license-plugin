@@ -1,5 +1,5 @@
 import type { Chunk, Compilation, Compiler } from 'webpack'
-import webpack, { WebpackError } from 'webpack'
+import webpack from 'webpack'
 import LicenseFileWriter from './LicenseFileWriter'
 import LicenseMetaAggregator from './LicenseMetaAggregator'
 import ModuleDirectoryLocator from './ModuleDirectoryLocator'
@@ -12,6 +12,7 @@ import WebpackFileSystem from './WebpackFileSystem'
 import type IPluginOptions from './types/IPluginOptions'
 import type IWebpackPlugin from './types/IWebpackPlugin'
 
+const WebpackError = webpack.WebpackError
 const pluginName = 'WebpackLicensePlugin'
 
 interface ObservedCompiler {
@@ -30,18 +31,19 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     if (typeof compiler.hooks !== 'undefined') {
       compiler.hooks.compilation.tap(
         'webpack-license-plugin',
-        this.handleCompilation.bind(this, compiler)
+        this.handleCompilation.bind(this, compiler),
       )
       compiler.hooks.watchRun.tapAsync(
         'webpack-license-plugin',
-        this.handleWatchRun.bind(this)
+        this.handleWatchRun.bind(this),
       )
-      // @ts-expect-error plugin doesn't exist on compiler
-    } else if (typeof compiler.plugin !== 'undefined') {
+    }
+    // @ts-expect-error plugin doesn't exist on compiler
+    else if (typeof compiler.plugin !== 'undefined') {
       // @ts-expect-error plugin doesn't exist on compiler
       compiler.plugin(
         'compilation',
-        this.handleCompilation.bind(this, compiler)
+        this.handleCompilation.bind(this, compiler),
       )
       // @ts-expect-error plugin doesn't exist on compiler
       compiler.plugin('watchRun', this.handleWatchRun.bind(this))
@@ -57,12 +59,12 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
   public handleCompilation(compiler: Compiler, compilation: Compilation) {
     if (typeof compilation.hooks !== 'undefined') {
       if (typeof compilation.hooks.processAssets !== 'undefined') {
-        const boundHandleChunkAssetOptimization =
-          this.handleChunkAssetOptimization.bind(
+        const boundHandleChunkAssetOptimization
+          = this.handleChunkAssetOptimization.bind(
             this,
             compiler,
             compilation,
-            compilation.chunks
+            compilation.chunks,
           )
 
         compilation.hooks.processAssets.tapAsync(
@@ -70,20 +72,22 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
             name: 'webpack-license-plugin',
             stage: webpack.Compilation.PROCESS_ASSETS_STAGE_ANALYSE,
           },
-          (assets, callback) => boundHandleChunkAssetOptimization(callback)
-        )
-      } else {
-        compilation.hooks.optimizeChunkAssets.tapAsync(
-          'webpack-license-plugin',
-          this.handleChunkAssetOptimization.bind(this, compiler, compilation)
+          (assets, callback) => boundHandleChunkAssetOptimization(callback),
         )
       }
-      // @ts-expect-error plugin doesn't exist on compilation
-    } else if (typeof compilation.plugin !== 'undefined') {
+      else {
+        compilation.hooks.optimizeChunkAssets.tapAsync(
+          'webpack-license-plugin',
+          this.handleChunkAssetOptimization.bind(this, compiler, compilation),
+        )
+      }
+    }
+    // @ts-expect-error plugin doesn't exist on compilation
+    else if (typeof compilation.plugin !== 'undefined') {
       // @ts-expect-error plugin doesn't exist on compilation
       compilation.plugin(
         'optimize-chunk-assets',
-        this.handleChunkAssetOptimization.bind(this, compiler, compilation)
+        this.handleChunkAssetOptimization.bind(this, compiler, compilation),
       )
     }
   }
@@ -92,7 +96,7 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
     compiler: Compiler,
     compilation: Compilation,
     chunks: Set<Chunk>,
-    callback: () => void
+    callback: () => void,
   ) {
     this.observedCompilers.push({
       name: compilation.compiler.name,
@@ -104,7 +108,7 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
         .map(({ name, isChild }) => `compiler: ${name}, isChild: ${isChild}`)
         .join('\n')
       const errorMessage = new WebpackError(
-        `${pluginName}: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\n${observedCompilersMessage}`
+        `${pluginName}: Found licenses after license files were already created.\nIf you see this message, you ran into an edge case we thought would not happen. Please open an isssue at https://github.com/codepunkt/webpack-license-plugin/issues with details of your webpack configuration so we can invastigate it further.\n${observedCompilersMessage}`,
       )
       compilation.errors.push(errorMessage)
       callback()
@@ -138,14 +142,14 @@ export default class WebpackLicensePlugin implements IWebpackPlugin {
       new ModuleDirectoryLocator(
         fileSystem,
         compiler.options.context,
-        packageJsonReader
+        packageJsonReader,
       ),
       new LicenseMetaAggregator(
         fileSystem,
         alertAggregator,
         options,
-        packageJsonReader
-      )
+        packageJsonReader,
+      ),
     )
 
     await licenseFileWriter.writeLicenseFiles([...this.filenames], options)

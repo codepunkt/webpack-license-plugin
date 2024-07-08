@@ -1,10 +1,5 @@
 import type IFileSystem from './types/IFileSystem'
 
-// readFileSync(path: string): Buffer;
-// readlink(path: string, callback: (err: Error | undefined | null, linkString: string) => void): void;
-// readlinkSync(path: string): string;
-// statSync(path: string): any;
-
 export default class WebpackFileSystem implements IFileSystem {
   constructor(private fs: any) {}
 
@@ -12,7 +7,9 @@ export default class WebpackFileSystem implements IFileSystem {
     try {
       this.fs.statSync(filename)
       return true
-    } catch (e) {
+    }
+    // eslint-disable-next-line unused-imports/no-unused-vars
+    catch (e) {
       return false
     }
   }

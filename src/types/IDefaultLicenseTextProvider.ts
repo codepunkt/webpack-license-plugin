@@ -1,3 +1,3 @@
 export default interface IDefaultLicenseTextProvider {
-  retrieveLicenseText(license: string): Promise<string | null>
+  retrieveLicenseText: (license: string) => Promise<string | null>
 }

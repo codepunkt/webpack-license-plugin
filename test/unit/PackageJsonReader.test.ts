@@ -8,11 +8,11 @@ const FileSystem = jest.fn<IFileSystem, any[]>(({ join, readFile }) => ({
   pathExists: jest.fn(),
 }))
 
-describe('PackageJsonReader', () => {
+describe('packageJsonReader', () => {
   describe('readPackageJson', () => {
-    test('reads and parses package.json', () => {
+    it('reads and parses package.json', () => {
       const instance = new PackageJsonReader(
-        new FileSystem({ readFile: () => `{"foo":"bar"}` })
+        new FileSystem({ readFile: () => `{"foo":"bar"}` }),
       )
 
       const result = instance.readPackageJson('path')
@@ -22,7 +22,7 @@ describe('PackageJsonReader', () => {
       })
     })
 
-    test('reads from the cache when applicable', () => {
+    it('reads from the cache when applicable', () => {
       const readFile = jest.fn(() => `{"foo":"bar"}`)
       const instance = new PackageJsonReader(new FileSystem({ readFile }))
 
