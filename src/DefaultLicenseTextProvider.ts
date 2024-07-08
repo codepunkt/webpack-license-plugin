@@ -5,8 +5,8 @@ export async function fetch(url: string): Promise<string | null> {
   return res.statusCode === 200 ? res.body : null
 }
 
-export const REPO_URL =
-  'https://raw.githubusercontent.com/spdx/license-list-data'
+export const REPO_URL
+  = 'https://raw.githubusercontent.com/spdx/license-list-data'
 
 interface IDefaultLicenseTextCache {
   [license: string]: string | null

@@ -1,14 +1,14 @@
 import LicenseIdentifier from './LicenseIdentifier'
 import LicenseTextReader from './LicenseTextReader'
-import IAlertAggregator from './types/IAlertAggregator'
-import IFileSystem from './types/IFileSystem'
-import ILicenseIdentifier from './types/ILicenseIdentifier'
-import ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
-import ILicenseTextReader from './types/ILicenseTextReader'
-import IPackageJson from './types/IPackageJson'
-import IPackageJsonReader from './types/IPackageJsonReader'
-import IPackageLicenseMeta from './types/IPackageLicenseMeta'
-import IPluginOptions from './types/IPluginOptions'
+import type IAlertAggregator from './types/IAlertAggregator'
+import type IFileSystem from './types/IFileSystem'
+import type ILicenseIdentifier from './types/ILicenseIdentifier'
+import type ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
+import type ILicenseTextReader from './types/ILicenseTextReader'
+import type IPackageJson from './types/IPackageJson'
+import type IPackageJsonReader from './types/IPackageJsonReader'
+import type IPackageLicenseMeta from './types/IPackageLicenseMeta'
+import type IPluginOptions from './types/IPluginOptions'
 
 export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   constructor(
@@ -17,13 +17,13 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
     private options: IPluginOptions,
     private packageJsonReader: IPackageJsonReader,
     private licenseIdentifier: ILicenseIdentifier = new LicenseIdentifier(
-      alertAggregator
+      alertAggregator,
     ),
     private licenseTextReader: ILicenseTextReader = new LicenseTextReader(
       alertAggregator,
       fileSystem,
-      options
-    )
+      options,
+    ),
   ) {}
 
   private getNpmTarballUrl(
@@ -37,14 +37,14 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   }
 
   public async aggregateMeta(
-    moduleDirs: string[]
+    moduleDirs: string[],
   ): Promise<IPackageLicenseMeta[]> {
     const packageSet = new Set()
     const result: IPackageLicenseMeta[] = []
     const sortedModuleDirs = moduleDirs.sort((a, b) =>
       this.packageJsonReader
         .readPackageJson(a)
-        .name.localeCompare(this.packageJsonReader.readPackageJson(b).name)
+        .name.localeCompare(this.packageJsonReader.readPackageJson(b).name),
     )
 
     for (const moduleDir of sortedModuleDirs) {
@@ -64,7 +64,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
       const licenseText = await this.licenseTextReader.readLicenseText(
         meta,
         license,
-        moduleDir
+        moduleDir,
       )
 
       result.push({
@@ -92,7 +92,8 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   public getRepository(meta: Pick<IPackageJson, 'repository'>): string {
     if (meta.repository && meta.repository.url) {
       return meta.repository.url
-    } else if (typeof meta.repository === 'string') {
+    }
+    else if (typeof meta.repository === 'string') {
       return meta.repository
     }
 

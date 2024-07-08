@@ -2,11 +2,11 @@ import defaultOptions from '../../src/defaultOptions'
 import OptionsProvider from '../../src/OptionsProvider'
 import type IAlertAggregator from '../../src/types/IAlertAggregator'
 
-const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>((i) => i)
+const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
 
-describe('OptionsProvider', () => {
+describe('optionsProvider', () => {
   describe('getOptions', () => {
-    test('applies defaultOptions', () => {
+    it('applies defaultOptions', () => {
       const instance = new OptionsProvider(new MockAlertAggregator())
 
       expect(instance.getOptions({})).toEqual(defaultOptions)
@@ -14,10 +14,10 @@ describe('OptionsProvider', () => {
   })
 
   describe('validateOptions', () => {
-    test("doesn't add an error on valid licenseOverrides spdx expression", () => {
+    it('doesn\'t add an error on valid licenseOverrides spdx expression', () => {
       const addError = jest.fn()
       const instance = new OptionsProvider(
-        new MockAlertAggregator({ addError })
+        new MockAlertAggregator({ addError }),
       )
 
       instance.validateOptions({
@@ -27,10 +27,10 @@ describe('OptionsProvider', () => {
       expect(addError).toHaveBeenCalledTimes(0)
     })
 
-    test('errors on invalid licenseOverrides spdx expression', () => {
+    it('errors on invalid licenseOverrides spdx expression', () => {
       const addError = jest.fn()
       const instance = new OptionsProvider(
-        new MockAlertAggregator({ addError })
+        new MockAlertAggregator({ addError }),
       )
 
       instance.validateOptions({
@@ -39,14 +39,14 @@ describe('OptionsProvider', () => {
 
       expect(addError).toHaveBeenCalledTimes(1)
       expect(addError).toHaveBeenCalledWith(
-        'Invalid licenseOverrides option: "Apache 2.0" is not a valid SPDX expression!'
+        'Invalid licenseOverrides option: "Apache 2.0" is not a valid SPDX expression!',
       )
     })
 
-    test('errors on invalid return type for additionalFile contents', () => {
+    it('errors on invalid return type for additionalFile contents', () => {
       const addError = jest.fn()
       const instance = new OptionsProvider(
-        new MockAlertAggregator({ addError })
+        new MockAlertAggregator({ addError }),
       )
 
       instance.validateOptions({
@@ -60,14 +60,14 @@ describe('OptionsProvider', () => {
 
       expect(addError).toHaveBeenCalledTimes(1)
       expect(addError).toHaveBeenCalledWith(
-        'Invalid additionalFiles option: Value for key "baz.json" is not a function!'
+        'Invalid additionalFiles option: Value for key "baz.json" is not a function!',
       )
     })
 
-    test('errors on invalid type for replenishDefaultLicenseTexts option', () => {
+    it('errors on invalid type for replenishDefaultLicenseTexts option', () => {
       const addError = jest.fn()
       const instance = new OptionsProvider(
-        new MockAlertAggregator({ addError })
+        new MockAlertAggregator({ addError }),
       )
 
       // @ts-expect-error not a boolean
@@ -75,14 +75,14 @@ describe('OptionsProvider', () => {
 
       expect(addError).toHaveBeenCalledTimes(1)
       expect(addError).toHaveBeenCalledWith(
-        'Invalid replenishDefaultLicenseTexts option: Not a boolean!'
+        'Invalid replenishDefaultLicenseTexts option: Not a boolean!',
       )
     })
 
-    test('errors on invalid type for includePackages option', () => {
+    it('errors on invalid type for includePackages option', () => {
       const addError = jest.fn()
       const instance = new OptionsProvider(
-        new MockAlertAggregator({ addError })
+        new MockAlertAggregator({ addError }),
       )
 
       // @ts-expect-error not a function
@@ -90,7 +90,7 @@ describe('OptionsProvider', () => {
 
       expect(addError).toHaveBeenCalledTimes(1)
       expect(addError).toHaveBeenCalledWith(
-        'Invalid includePackages option: Not a function!'
+        'Invalid includePackages option: Not a function!',
       )
     })
   })

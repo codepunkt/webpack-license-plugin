@@ -2,10 +2,10 @@ import type webpack from 'webpack'
 import { WebpackError } from 'webpack'
 import WebpackAlertAggregator from '../../src/WebpackAlertAggregator'
 
-const MockCompilation = jest.fn<webpack.Compilation, any[]>((i) => i)
+const MockCompilation = jest.fn<webpack.Compilation, any[]>(i => i)
 
-describe('WebpackAlertAggregator', () => {
-  test('stores errors and flushes previously added errors', () => {
+describe('webpackAlertAggregator', () => {
+  it('stores errors and flushes previously added errors', () => {
     const compilation = new MockCompilation({ errors: [], warnings: [] })
     const instance = new WebpackAlertAggregator(compilation)
     const prefix = 'WebpackLicensePlugin'
@@ -21,7 +21,7 @@ describe('WebpackAlertAggregator', () => {
     ])
   })
 
-  test('stores warnings and flushes previously added warnings', () => {
+  it('stores warnings and flushes previously added warnings', () => {
     const compilation = new MockCompilation({ errors: [], warnings: [] })
     const instance = new WebpackAlertAggregator(compilation)
     const prefix = 'WebpackLicensePlugin'

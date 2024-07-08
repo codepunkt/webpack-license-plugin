@@ -1,8 +1,8 @@
 import lodash from 'lodash'
-import IAssetManager from './types/IAssetManager'
-import ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
-import IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
-import IPluginOptions from './types/IPluginOptions'
+import type IAssetManager from './types/IAssetManager'
+import type ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
+import type IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
+import type IPluginOptions from './types/IPluginOptions'
 
 const { compact, uniq } = lodash
 
@@ -10,12 +10,12 @@ export default class LicenseFileWriter {
   constructor(
     private assetManager: IAssetManager,
     private moduleDirectoryLocator: IModuleDirectoryLocator,
-    private licenseMetaAggregator: ILicenseMetaAggregator
+    private licenseMetaAggregator: ILicenseMetaAggregator,
   ) {}
 
   public async writeLicenseFiles(
     filenames: string[],
-    options: IPluginOptions
+    options: IPluginOptions,
   ): Promise<void> {
     const moduleDirs = this.getModuleDirs(filenames)
     const includePackages = await options.includePackages()
@@ -37,8 +37,8 @@ export default class LicenseFileWriter {
       compact(
         filenames.map((filename) => {
           return this.moduleDirectoryLocator.getModuleDir(filename)
-        })
-      )
+        }),
+      ),
     )
   }
 }

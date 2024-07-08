@@ -1,36 +1,36 @@
 import defaultOptions from '../../src/defaultOptions'
 import LicenseFileWriter from '../../src/LicenseFileWriter'
-import IAssetManager from '../../src/types/IAssetManager'
-import ILicenseMetaAggregator from '../../src/types/ILicenseMetaAggregator'
-import IModuleDirectoryLocator from '../../src/types/IModuleDirectoryLocator'
+import type IAssetManager from '../../src/types/IAssetManager'
+import type ILicenseMetaAggregator from '../../src/types/ILicenseMetaAggregator'
+import type IModuleDirectoryLocator from '../../src/types/IModuleDirectoryLocator'
 
 const AssetManager = jest.fn<IAssetManager, any[]>(() => ({
   addFile: jest.fn(),
 }))
-const DirectoryLocator = jest.fn<IModuleDirectoryLocator, any[]>((impl) => ({
+const DirectoryLocator = jest.fn<IModuleDirectoryLocator, any[]>(impl => ({
   getModuleDir: jest.fn(impl),
 }))
-const MetaAggregator = jest.fn<ILicenseMetaAggregator, any[]>((impl) => ({
+const MetaAggregator = jest.fn<ILicenseMetaAggregator, any[]>(impl => ({
   aggregateMeta: jest.fn(impl),
 }))
 
-describe('LicenseFileWriter', () => {
+describe('licenseFileWriter', () => {
   describe('getModuleDirs', () => {
-    test('returns module dirs', () => {
+    it('returns module dirs', () => {
       const instance = new LicenseFileWriter(
         new AssetManager(),
-        new DirectoryLocator((d) => `dir-${d}`),
-        new MetaAggregator(() => undefined)
+        new DirectoryLocator(d => `dir-${d}`),
+        new MetaAggregator(() => undefined),
       )
 
       expect(instance.getModuleDirs(['index.js'])).toEqual(['dir-index.js'])
     })
 
-    test('only returns unique module dirs', () => {
+    it('only returns unique module dirs', () => {
       const instance = new LicenseFileWriter(
         new AssetManager(),
-        new DirectoryLocator((d) => `dir-${d}`),
-        new MetaAggregator(() => undefined)
+        new DirectoryLocator(d => `dir-${d}`),
+        new MetaAggregator(() => undefined),
       )
 
       expect(instance.getModuleDirs(['index.js', 'index.js'])).toEqual([
@@ -38,11 +38,11 @@ describe('LicenseFileWriter', () => {
       ])
     })
 
-    test('returns module dirs without null values', () => {
+    it('returns module dirs without null values', () => {
       const instance = new LicenseFileWriter(
         new AssetManager(),
-        new DirectoryLocator((d) => (d === 'a.js' ? 'module' : null)),
-        new MetaAggregator(() => undefined)
+        new DirectoryLocator(d => (d === 'a.js' ? 'module' : null)),
+        new MetaAggregator(() => undefined),
       )
 
       expect(instance.getModuleDirs(['a.js', 'b.js'])).toEqual(['module'])
@@ -50,12 +50,12 @@ describe('LicenseFileWriter', () => {
   })
 
   describe('writeLicenseFiles', () => {
-    test('adds meta file to the output', async () => {
+    it('adds meta file to the output', async () => {
       const assetManager = new AssetManager()
       const instance = new LicenseFileWriter(
         assetManager,
-        new DirectoryLocator((d) => `dir-${d}`),
-        new MetaAggregator(() => ({ foo: 'bar' }))
+        new DirectoryLocator(d => `dir-${d}`),
+        new MetaAggregator(() => ({ foo: 'bar' })),
       )
 
       await instance.writeLicenseFiles([], defaultOptions)
@@ -63,16 +63,16 @@ describe('LicenseFileWriter', () => {
       expect(assetManager.addFile).toHaveBeenCalledTimes(1)
       expect(assetManager.addFile).toHaveBeenCalledWith(
         defaultOptions.outputFilename,
-        '{\n  "foo": "bar"\n}'
+        '{\n  "foo": "bar"\n}',
       )
     })
 
-    test('adds a different file when options.outputFilename is set', async () => {
+    it('adds a different file when options.outputFilename is set', async () => {
       const assetManager = new AssetManager()
       const instance = new LicenseFileWriter(
         assetManager,
-        new DirectoryLocator((d) => `dir-${d}`),
-        new MetaAggregator(() => ({ foo: 'bar' }))
+        new DirectoryLocator(d => `dir-${d}`),
+        new MetaAggregator(() => ({ foo: 'bar' })),
       )
 
       await instance.writeLicenseFiles([], {
@@ -83,24 +83,24 @@ describe('LicenseFileWriter', () => {
       expect(assetManager.addFile).toHaveBeenCalledTimes(1)
       expect(assetManager.addFile).toHaveBeenCalledWith(
         'bom.json',
-        '{\n  "foo": "bar"\n}'
+        '{\n  "foo": "bar"\n}',
       )
     })
 
-    test('options.additionalFiles adds additional files', async () => {
+    it('options.additionalFiles adds additional files', async () => {
       const assetManager = new AssetManager()
       const instance = new LicenseFileWriter(
         assetManager,
-        new DirectoryLocator((d) => `dir-${d}`),
-        new MetaAggregator(() => ({ foo: 'bar' }))
+        new DirectoryLocator(d => `dir-${d}`),
+        new MetaAggregator(() => ({ foo: 'bar' })),
       )
 
       await instance.writeLicenseFiles([], {
         ...defaultOptions,
         additionalFiles: {
-          'bom.json': (o) => `bom${JSON.stringify(o)}`,
-          'bom_async.json': async (o) => `bom_async${JSON.stringify(o)}`,
-          'bom_promise.json': (o) =>
+          'bom.json': o => `bom${JSON.stringify(o)}`,
+          'bom_async.json': async o => `bom_async${JSON.stringify(o)}`,
+          'bom_promise.json': o =>
             Promise.resolve(`bom_promise${JSON.stringify(o)}`),
         },
       })
@@ -109,22 +109,22 @@ describe('LicenseFileWriter', () => {
       expect(assetManager.addFile).toHaveBeenNthCalledWith(
         1,
         defaultOptions.outputFilename,
-        '{\n  "foo": "bar"\n}'
+        '{\n  "foo": "bar"\n}',
       )
       expect(assetManager.addFile).toHaveBeenNthCalledWith(
         2,
         'bom.json',
-        'bom{"foo":"bar"}'
+        'bom{"foo":"bar"}',
       )
       expect(assetManager.addFile).toHaveBeenNthCalledWith(
         3,
         'bom_async.json',
-        'bom_async{"foo":"bar"}'
+        'bom_async{"foo":"bar"}',
       )
       expect(assetManager.addFile).toHaveBeenNthCalledWith(
         4,
         'bom_promise.json',
-        'bom_promise{"foo":"bar"}'
+        'bom_promise{"foo":"bar"}',
       )
     })
   })

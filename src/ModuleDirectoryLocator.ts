@@ -12,7 +12,7 @@ export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
   constructor(
     private fileSystem: IFileSystem,
     private buildRoot: string,
-    private packageJsonReader: IPackageJsonReader
+    private packageJsonReader: IPackageJsonReader,
   ) {}
 
   public getModuleDir(filename: string): string | null {
@@ -30,14 +30,14 @@ export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
         const packageMeta = this.packageJsonReader.readPackageJson(moduleDir)
 
         if (
-          packageMeta.name !== undefined &&
-          packageMeta.version !== undefined
+          packageMeta.name !== undefined
+          && packageMeta.version !== undefined
         ) {
           dirWithVersion = moduleDir
 
           if (
-            packageMeta.license !== undefined ||
-            packageMeta.licenses !== undefined
+            packageMeta.license !== undefined
+            || packageMeta.licenses !== undefined
           ) {
             dirWithLicense = moduleDir
           }
@@ -47,9 +47,9 @@ export default class ModuleDirectoryLocator implements IModuleDirectoryLocator {
       prevModuleDir = moduleDir
       moduleDir = resolve(`${moduleDir}${sep}..${sep}`)
     } while (
-      !dirWithLicense &&
-      moduleDir !== prevModuleDir &&
-      moduleDir !== this.buildRoot
+      !dirWithLicense
+      && moduleDir !== prevModuleDir
+      && moduleDir !== this.buildRoot
     )
 
     return dirWithLicense || dirWithVersion

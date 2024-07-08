@@ -4,10 +4,10 @@ import WebpackChunkModuleIterator, {
 } from '../../src/WebpackChunkModuleIterator'
 
 const moduleIterator = new WebpackChunkModuleIterator()
-const MockCompilation = jest.fn<Compilation, any[]>((i) => i)
-const MockModule = jest.fn<Module, any[]>((i) => i)
+const MockCompilation = jest.fn<Compilation, any[]>(i => i)
+const MockModule = jest.fn<Module, any[]>(i => i)
 
-describe('WebpackChunkModuleIterator', () => {
+describe('webpackChunkModuleIterator', () => {
   describe('iterateModules', () => {
     let callbackSpy
 
@@ -15,23 +15,23 @@ describe('WebpackChunkModuleIterator', () => {
       callbackSpy = jest.fn()
     })
 
-    test("doesn't iterate without modules", () => {
+    it('doesn\'t iterate without modules', () => {
       const compilation = new MockCompilation()
       moduleIterator.iterateModules(compilation, {}, callbackSpy)
       moduleIterator.iterateModules(
         compilation,
         { forEachModule: undefined },
-        callbackSpy
+        callbackSpy,
       )
       moduleIterator.iterateModules(
         compilation,
         { modules: undefined },
-        callbackSpy
+        callbackSpy,
       )
       expect(callbackSpy).toHaveBeenCalledTimes(0)
     })
 
-    test('iterates over compilation.chunkGraph (webpack v5)', () => {
+    it('iterates over compilation.chunkGraph (webpack v5)', () => {
       const compilation = new MockCompilation({
         chunkGraph: {
           getChunkModulesIterable: jest.fn(() => [
@@ -51,7 +51,7 @@ describe('WebpackChunkModuleIterator', () => {
       expect(callbackSpy).toHaveBeenNthCalledWith(2, { baz: 'qux' })
     })
 
-    test('iterates over chunk.modulesIterable', () => {
+    it('iterates over chunk.modulesIterable', () => {
       const compilation = new MockCompilation()
 
       moduleIterator.iterateModules(
@@ -62,27 +62,27 @@ describe('WebpackChunkModuleIterator', () => {
             new MockModule({ baz: 'qux' }),
           ],
         },
-        callbackSpy
+        callbackSpy,
       )
       expect(callbackSpy).toHaveBeenCalledTimes(2)
       expect(callbackSpy).toHaveBeenNthCalledWith(1, { foo: 'bar' })
       expect(callbackSpy).toHaveBeenNthCalledWith(2, { baz: 'qux' })
     })
 
-    test('iterates using chunk.forEachModule', () => {
+    it('iterates using chunk.forEachModule', () => {
       const compilation = new MockCompilation()
 
       const forEachModuleSpy = jest.fn()
       moduleIterator.iterateModules(
         compilation,
         { forEachModule: forEachModuleSpy },
-        callbackSpy
+        callbackSpy,
       )
       expect(forEachModuleSpy).toHaveBeenCalledTimes(1)
       expect(forEachModuleSpy).toHaveBeenNthCalledWith(1, callbackSpy)
     })
 
-    test('iterates over chunk.modules', () => {
+    it('iterates over chunk.modules', () => {
       const compilation = new MockCompilation()
 
       moduleIterator.iterateModules(
@@ -90,14 +90,14 @@ describe('WebpackChunkModuleIterator', () => {
         {
           modules: [{ resource: 'wibble' }, { resource: 'wobble' }],
         },
-        callbackSpy
+        callbackSpy,
       )
       expect(callbackSpy).toHaveBeenCalledTimes(2)
       expect(callbackSpy).toHaveBeenNthCalledWith(1, { resource: 'wibble' })
       expect(callbackSpy).toHaveBeenNthCalledWith(2, { resource: 'wobble' })
     })
 
-    test('takes entryModule into account', () => {
+    it('takes entryModule into account', () => {
       const compilation = new MockCompilation()
 
       moduleIterator.iterateModules(
@@ -106,7 +106,7 @@ describe('WebpackChunkModuleIterator', () => {
           modules: [{ resource: 'wibble' }, { resource: 'wobble' }],
           entryModule: new MockModule({ entry: 'module' }),
         },
-        callbackSpy
+        callbackSpy,
       )
       expect(callbackSpy).toHaveBeenCalledTimes(3)
       expect(callbackSpy).toHaveBeenNthCalledWith(1, { resource: 'wibble' })

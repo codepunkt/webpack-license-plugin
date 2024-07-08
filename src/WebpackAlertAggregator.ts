@@ -19,11 +19,11 @@ export default class WebpackAlertAggregator implements IAlertAggregator {
 
   public flushAlerts(prefix: string): void {
     this.compilation.errors.push(
-      ...this.errors.map((e) => new WebpackError(`${prefix}: ${e}`))
+      ...this.errors.map(e => new WebpackError(`${prefix}: ${e}`)),
     )
     this.errors = []
     this.compilation.warnings.push(
-      ...this.warnings.map((w) => new WebpackError(`${prefix}: ${w}`))
+      ...this.warnings.map(w => new WebpackError(`${prefix}: ${w}`)),
     )
     this.warnings = []
   }

@@ -2,7 +2,7 @@ import WebpackModuleFileIterator from '../../src/WebpackModuleFileIterator'
 
 const fileIterator = new WebpackModuleFileIterator()
 
-describe('WebpackModuleFileIterator', () => {
+describe('webpackModuleFileIterator', () => {
   describe('iterateFiles', () => {
     let callbackSpy
 
@@ -10,33 +10,33 @@ describe('WebpackModuleFileIterator', () => {
       callbackSpy = jest.fn()
     })
 
-    test('iterates over module.resource', () => {
+    it('iterates over module.resource', () => {
       fileIterator.iterateFiles(
         {
           resource: '/home/codepunkt/.zshrc',
         },
-        callbackSpy
+        callbackSpy,
       )
 
       expect(callbackSpy).toHaveBeenCalledTimes(1)
       expect(callbackSpy).toHaveBeenNthCalledWith(1, '/home/codepunkt/.zshrc')
     })
 
-    test('iterates over module.rootModule.resource', () => {
+    it('iterates over module.rootModule.resource', () => {
       fileIterator.iterateFiles(
         {
           rootModule: {
             resource: '/home/codepunkt/.npmrc',
           },
         },
-        callbackSpy
+        callbackSpy,
       )
 
       expect(callbackSpy).toHaveBeenCalledTimes(1)
       expect(callbackSpy).toHaveBeenNthCalledWith(1, '/home/codepunkt/.npmrc')
     })
 
-    test('iterates over module.fileDependencies', () => {
+    it('iterates over module.fileDependencies', () => {
       fileIterator.iterateFiles(
         {
           fileDependencies: [
@@ -44,7 +44,7 @@ describe('WebpackModuleFileIterator', () => {
             '/home/codepunkt/.vimrc',
           ],
         },
-        callbackSpy
+        callbackSpy,
       )
 
       expect(callbackSpy).toHaveBeenCalledTimes(2)
@@ -52,7 +52,7 @@ describe('WebpackModuleFileIterator', () => {
       expect(callbackSpy).toHaveBeenNthCalledWith(2, '/home/codepunkt/.vimrc')
     })
 
-    test('iterates over module.dependencies', () => {
+    it('iterates over module.dependencies', () => {
       fileIterator.iterateFiles(
         {
           dependencies: [
@@ -64,13 +64,13 @@ describe('WebpackModuleFileIterator', () => {
             { _parentModule: {} },
           ],
         },
-        callbackSpy
+        callbackSpy,
       )
 
       expect(callbackSpy).toHaveBeenCalledTimes(4)
       expect(callbackSpy).toHaveBeenNthCalledWith(
         1,
-        '/home/codepunkt/.prettierrc'
+        '/home/codepunkt/.prettierrc',
       )
       expect(callbackSpy).toHaveBeenNthCalledWith(2, '/home/codepunkt/.nvmrc')
       expect(callbackSpy).toHaveBeenNthCalledWith(3, '/home/codepunkt/file1')

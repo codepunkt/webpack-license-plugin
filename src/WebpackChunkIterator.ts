@@ -6,12 +6,12 @@ import WebpackModuleFileIterator from './WebpackModuleFileIterator'
 export default class WebpackChunkIterator {
   constructor(
     private moduleIterator: WebpackChunkModuleIterator = new WebpackChunkModuleIterator(),
-    private fileIterator: WebpackModuleFileIterator = new WebpackModuleFileIterator()
+    private fileIterator: WebpackModuleFileIterator = new WebpackModuleFileIterator(),
   ) {}
 
   public iterateChunks(
     compilation: webpack.Compilation,
-    chunks: Set<webpack.Chunk>
+    chunks: Set<webpack.Chunk>,
   ): string[] {
     const filenames = []
 
@@ -23,7 +23,7 @@ export default class WebpackChunkIterator {
           this.fileIterator.iterateFiles(module, (filename) => {
             filenames.push(filename)
           })
-        }
+        },
       )
     }
 

@@ -46,7 +46,6 @@ This plugin has full unit and end to end test coverage and is tested with **webp
 - Exclude internal packages from being scanned
 - Create a customized inventory (usually called _bill of materials_) in `json`, `html`, `csv` or other formats
 
-
 # Installation
 
 Install `webpack-license-plugin` as a development dependency to your current project
@@ -83,7 +82,7 @@ module.exports = {
 Options are given as an `Object` to the first parameter of the `LicensePlugin` constructor:
 
 ```js
-new LicensePlugin({ outputFilename: 'thirdPartyNotice.json' })
+const licensePlugin = new LicensePlugin({ outputFilename: 'thirdPartyNotice.json' })
 ```
 
 The available options are:
@@ -178,7 +177,6 @@ The output is a `oss-licenses.json` file in the webpack build output directory. 
 ]
 ```
 
-
 # Examples
 
 ## _additionalFiles_ examples
@@ -224,7 +222,7 @@ module.exports = {
   plugins: [
     new LicensePlugin({
       additionalFiles: {
-        'oss-summary.json': packages => {
+        'oss-summary.json': (packages) => {
           return JSON.stringify(
             packages.reduce(
               (prev, { license }) => ({
