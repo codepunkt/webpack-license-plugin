@@ -1,7 +1,7 @@
 {
   "name": "webpack-license-plugin",
   "type": "module",
-  "version": "4.4.2",
+  "version": "4.5.0",
   "packageManager": "npm@10.8.1",
   "description": "Extracts OSS license information of the npm packages in your webpack output",
   "author": "Christoph Werner <christoph@codepunkt.de>",
