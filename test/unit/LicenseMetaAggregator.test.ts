@@ -54,7 +54,7 @@ describe('licenseMetaAggregator', () => {
       const instance = new LicenseMetaAggregator(
         mockFileSystem,
         mockAlertAggregator,
-        defaultOptions,
+        { ...defaultOptions, includeNoticeText: true },
         new MockPackageJsonReader({
           readPackageJson: (name) => {
             return {
@@ -103,7 +103,6 @@ describe('licenseMetaAggregator', () => {
           author: '@iamdevloper',
           license: 'MIT',
           licenseText: 'MIT text',
-          noticeText: 'NOTICE text',
           name: 'react',
           repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
@@ -113,7 +112,6 @@ describe('licenseMetaAggregator', () => {
           author: '@iamdevloper',
           license: 'MIT',
           licenseText: 'MIT text',
-          noticeText: 'NOTICE text',
           name: 'react-dom',
           repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react-dom/-/react-dom-16.6.0.tgz',
@@ -165,7 +163,6 @@ describe('licenseMetaAggregator', () => {
           author: '@iamdevloper',
           license: 'MIT',
           licenseText: 'MIT text',
-          noticeText: 'NOTICE text',
           name: 'react',
           repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
@@ -175,7 +172,6 @@ describe('licenseMetaAggregator', () => {
           author: '@iamdevloper',
           license: 'MIT',
           licenseText: 'MIT text',
-          noticeText: 'NOTICE text',
           name: 'react-dom',
           repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react-dom/-/react-dom-16.6.0.tgz',

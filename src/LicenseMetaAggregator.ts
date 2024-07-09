@@ -29,7 +29,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
     private noticeTextReader: INoticeTextReader = new NoticeTextReader(
       fileSystem,
     ),
-  ) {}
+  ) { }
 
   private getNpmTarballUrl(
     pkgName: string,
@@ -71,8 +71,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
         license,
         moduleDir,
       )
-      const noticeText = await this.noticeTextReader.readNoticeText(moduleDir)
-
+      const noticeText = this.options.includeNoticeText ? await this.noticeTextReader.readNoticeText(moduleDir) : undefined
       result.push({
         name: meta.name,
         version: meta.version,
@@ -81,7 +80,7 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
         source: this.getNpmTarballUrl(meta.name, meta.version),
         license,
         licenseText,
-        noticeText,
+        ...(noticeText ? { noticeText } : {}),
       })
     }
 
@@ -90,9 +89,8 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
 
   public getAuthor(meta: Pick<IPackageJson, 'author'>): string {
     return typeof meta.author === 'object'
-      ? `${meta.author.name}${
-          meta.author.email ? ` <${meta.author.email}>` : ''
-        }${meta.author.url ? ` (${meta.author.url})` : ''}`
+      ? `${meta.author.name}${meta.author.email ? ` <${meta.author.email}>` : ''
+      }${meta.author.url ? ` (${meta.author.url})` : ''}`
       : meta.author
   }
 
