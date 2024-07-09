@@ -1,13 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
-// just for test the NOTICE file extraction
-import { pi } from 'mathjs'
+const container = document.querySelector('body')
+const root = createRoot(container)
 
-ReactDOM.render(
-  React.createElement('div', {}, [
-    React.createElement('h1', {}, ['Hello world']),
-    React.createElement('p', {}, ['This is the value of pi: ', pi]),
-  ]),
-  document.querySelector('body'),
+root.render(
+  React.createElement('h1', {}, ['Hello world']),
 )
