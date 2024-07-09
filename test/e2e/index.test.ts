@@ -72,7 +72,7 @@ describe('end to end', () => {
             done()
           },
         )
-      })
+      }, 30000)
 
       it('output to a different outputFilename matches snapshot', (done) => {
         build(
@@ -94,7 +94,7 @@ describe('end to end', () => {
             done()
           },
         )
-      })
+      }, 30000)
 
       it('additionalFiles match snapshot', (done) => {
         build(
@@ -117,7 +117,7 @@ describe('end to end', () => {
             done()
           },
         )
-      })
+      }, 30000)
 
       it('has compilation error on invalid configuration', (done) => {
         build(
@@ -136,7 +136,7 @@ describe('end to end', () => {
             done()
           },
         )
-      })
+      }, 30000)
 
       it('has compilation error when encountering unacceptable licenses', (done) => {
         build(

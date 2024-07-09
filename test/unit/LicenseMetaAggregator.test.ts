@@ -4,10 +4,12 @@ import type IAlertAggregator from '../../src/types/IAlertAggregator'
 import type IFileSystem from '../../src/types/IFileSystem'
 import type ILicenseIdentifier from '../../src/types/ILicenseIdentifier'
 import type ILicenseTextReader from '../../src/types/ILicenseTextReader'
+import type INoticeTextReader from '../../src/types/INoticeTextReader'
 import type IPackageJsonReader from '../../src/types/IPackageJsonReader'
 
 const MockLicenseIdentifier = jest.fn<ILicenseIdentifier, any[]>(i => i)
 const MockLicenseTextReader = jest.fn<ILicenseTextReader, any[]>(i => i)
+const MockNoticeTextReader = jest.fn<INoticeTextReader, any[]>(i => i)
 const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>(i => i)
 const MockFileSystem = jest.fn<IFileSystem, any[]>(i => i)
 const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
@@ -26,6 +28,9 @@ const mockLicenseIdentifier = new MockLicenseIdentifier({
 const mockLicenseTextReader = new MockLicenseTextReader({
   readLicenseText: () => 'MIT text',
 })
+const mockNoticeTextReader = new MockNoticeTextReader({
+  readNoticeText: () => 'NOTICE text',
+})
 const mockFileSystem = new MockFileSystem()
 const mockAlertAggregator = new MockAlertAggregator()
 
@@ -40,6 +45,7 @@ describe('licenseMetaAggregator', () => {
       mockPackageJsonReader,
       mockLicenseIdentifier,
       mockLicenseTextReader,
+      mockNoticeTextReader,
     )
   })
 
@@ -48,7 +54,7 @@ describe('licenseMetaAggregator', () => {
       const instance = new LicenseMetaAggregator(
         mockFileSystem,
         mockAlertAggregator,
-        defaultOptions,
+        { ...defaultOptions, includeNoticeText: true },
         new MockPackageJsonReader({
           readPackageJson: (name) => {
             return {
@@ -62,6 +68,7 @@ describe('licenseMetaAggregator', () => {
         }),
         mockLicenseIdentifier,
         mockLicenseTextReader,
+        mockNoticeTextReader,
       )
       const meta = await instance.aggregateMeta(['@types/react', 'react'])
       expect(meta).toEqual([
@@ -69,6 +76,7 @@ describe('licenseMetaAggregator', () => {
           author: '@iamdevloper',
           license: 'MIT',
           licenseText: 'MIT text',
+          noticeText: 'NOTICE text',
           name: '@types/react',
           repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/@types/react/-/react-16.6.0.tgz',
@@ -78,6 +86,7 @@ describe('licenseMetaAggregator', () => {
           author: '@iamdevloper',
           license: 'MIT',
           licenseText: 'MIT text',
+          noticeText: 'NOTICE text',
           name: 'react',
           repository: 'git@github.com:facebook/react.git',
           source: 'https://registry.npmjs.org/react/-/react-16.6.0.tgz',
@@ -123,6 +132,7 @@ describe('licenseMetaAggregator', () => {
         mockPackageJsonReader,
         mockLicenseIdentifier,
         mockLicenseTextReader,
+        mockNoticeTextReader,
       )
 
       const meta = await instance.aggregateMeta([

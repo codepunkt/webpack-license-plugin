@@ -1,7 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
-ReactDOM.render(
+const container = document.querySelector('body')
+const root = createRoot(container)
+
+root.render(
   React.createElement('h1', {}, ['Hello world']),
-  document.querySelector('body'),
 )

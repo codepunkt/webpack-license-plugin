@@ -56,7 +56,7 @@
     "prepublishOnly": "npm run build",
     "test": "cross-env CI=true npm run test:unit && npm run test:e2e",
     "pretest:e2e": "npm run build",
-    "test:e2e": "if [ \"$(node -v | cut -c2-4)\" = \"16.\" ]; then jest --runInBand --colors --testPathPattern test/e2e --collectCoverage false; else cross-env NODE_OPTIONS=--openssl-legacy-provider jest --runInBand --colors --testPathPattern test/e2e --collectCoverage false; fi",
+    "test:e2e": "cross-env NODE_OPTIONS=--openssl-legacy-provider jest --runInBand --colors --testPathPattern test/e2e --collectCoverage false",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose --colors",
     "test:watch": "jest --runInBand --testPathPattern test/unit --watch",
     "coverage": "codecov -t $CODECOV_TOKEN",
