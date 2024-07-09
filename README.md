@@ -6,7 +6,8 @@
   <br>
 </h1>
 
-<h4 align="center">Manage third-party license compliance in your webpack build</h4>
+<h4 align="center">Manage third-party license compliance in your Webpack build</h4>
+<h6 align="center">Are you using <b>Rollup</b> or <b>Vite</b>? have a look at <a href="https://github.com/codepunkt/rollup-license-plugin">rollup-license-plugin</a>!</h6>
 
 <p align="center">
   <a href="https://badge.fury.io/js/webpack-license-plugin">
