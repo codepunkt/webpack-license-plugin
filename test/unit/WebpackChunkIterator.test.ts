@@ -10,6 +10,12 @@ const MockCompilation = jest.fn<webpack.Compilation, any[]>(i => i)
 
 describe('webpackChunkIterator', () => {
   describe('iterateChunks', () => {
+    it('returns an empty list without chunks', () => {
+      const instance = new WebpackChunkIterator()
+      const result = instance.iterateChunks(new MockCompilation(), new Set([]))
+      expect(result).toEqual([])
+    })
+
     it('returns a list of all file paths', () => {
       const compilation = new MockCompilation()
 
