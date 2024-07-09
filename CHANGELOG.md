@@ -1,6 +1,6 @@
 # 4.5.0
 
-- Add the option `includeNoticeText` to include `NOTICE` contents as part of the output
+- Add the option `includeNoticeText` to include `NOTICE` contents as part of the output (thanks to [@ccatterina](https://github.com/ccatterina))
 - Switched testing between Node versions 16-20 to Node versions 18-22
 
 # 4.4.2
