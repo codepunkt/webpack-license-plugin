@@ -62,7 +62,7 @@ describe('defaultLicenseTextProvider', () => {
     expect(result).toBe(null)
     expect(mockRequest).toHaveBeenCalledTimes(1)
     expect(mockRequest).toHaveBeenCalledWith(
-      `${REPO_URL}/master/text/${unknownLicenseName}.txt`,
+      `${REPO_URL}/main/text/${unknownLicenseName}.txt`,
     )
   })
 

@@ -19,7 +19,7 @@ export default class DefaultLicenseTextProvider {
 
   public async retrieveLicenseText(license: string): Promise<string | null> {
     if (!this.cache[license]) {
-      const res = await this.request(`${REPO_URL}/master/text/${license}.txt`)
+      const res = await this.request(`${REPO_URL}/main/text/${license}.txt`)
       this.cache[license] = res
     }
 
