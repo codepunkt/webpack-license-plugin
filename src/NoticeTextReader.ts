@@ -1,5 +1,5 @@
-import { join } from 'node:path'
 import type IFileSystem from './types/IFileSystem'
+import { join } from 'node:path'
 
 /**
  * Reads notice text from notice file.

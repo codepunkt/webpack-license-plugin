@@ -1,7 +1,7 @@
-import validate from 'spdx-expression-validate'
-import defaultOptions from './defaultOptions'
 import type IAlertAggregator from './types/IAlertAggregator'
 import type IPluginOptions from './types/IPluginOptions'
+import validate from 'spdx-expression-validate'
+import defaultOptions from './defaultOptions'
 
 export default class OptionsProvider {
   constructor(private readonly alertAggregator: IAlertAggregator) {}

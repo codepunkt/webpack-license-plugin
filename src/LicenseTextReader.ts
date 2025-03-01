@@ -1,10 +1,10 @@
-import { join } from 'node:path'
-import DefaultLicenseTextProvider from './DefaultLicenseTextProvider'
 import type IAlertAggregator from './types/IAlertAggregator'
 import type IDefaultLicenseTextProvider from './types/IDefaultLicenseTextProvider'
 import type IFileSystem from './types/IFileSystem'
 import type IPackageJson from './types/IPackageJson'
 import type IPluginOptions from './types/IPluginOptions'
+import { join } from 'node:path'
+import DefaultLicenseTextProvider from './DefaultLicenseTextProvider'
 
 /**
  * Reads license text from license file.

@@ -1,7 +1,7 @@
-import { resolve, sep } from 'node:path'
 import type IFileSystem from './types/IFileSystem'
 import type IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
 import type IPackageJsonReader from './types/IPackageJsonReader'
+import { resolve, sep } from 'node:path'
 
 /**
  * Locates module directories for given filenames by searching

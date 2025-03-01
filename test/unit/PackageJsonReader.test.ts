@@ -1,5 +1,5 @@
-import PackageJsonReader from '../../src/PackageJsonReader'
 import type IFileSystem from '../../src/types/IFileSystem'
+import PackageJsonReader from '../../src/PackageJsonReader'
 
 const FileSystem = jest.fn<IFileSystem, any[]>(({ join, readFile }) => ({
   join: jest.fn(join),

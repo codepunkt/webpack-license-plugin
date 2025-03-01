@@ -1,5 +1,5 @@
-import webpack from 'webpack'
 import type IAlertAggregator from './types/IAlertAggregator'
+import webpack from 'webpack'
 
 const WebpackError = webpack.WebpackError
 

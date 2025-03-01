@@ -1,6 +1,6 @@
-import { join } from 'node:path'
 import type IFileSystem from './types/IFileSystem'
 import type IPackageJson from './types/IPackageJson'
+import { join } from 'node:path'
 
 interface IPackageJsonCache {
   [moduleDir: string]: IPackageJson

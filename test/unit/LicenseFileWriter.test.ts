@@ -1,8 +1,8 @@
-import defaultOptions from '../../src/defaultOptions'
-import LicenseFileWriter from '../../src/LicenseFileWriter'
 import type IAssetManager from '../../src/types/IAssetManager'
 import type ILicenseMetaAggregator from '../../src/types/ILicenseMetaAggregator'
 import type IModuleDirectoryLocator from '../../src/types/IModuleDirectoryLocator'
+import defaultOptions from '../../src/defaultOptions'
+import LicenseFileWriter from '../../src/LicenseFileWriter'
 
 const AssetManager = jest.fn<IAssetManager, any[]>(() => ({
   addFile: jest.fn(),

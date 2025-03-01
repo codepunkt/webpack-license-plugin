@@ -1,7 +1,7 @@
-import { platform } from 'node:process'
-import ModuleDirectoryLocator from '../../src/ModuleDirectoryLocator'
 import type IFileSystem from '../../src/types/IFileSystem'
 import type IPackageJsonReader from '../../src/types/IPackageJsonReader'
+import { platform } from 'node:process'
+import ModuleDirectoryLocator from '../../src/ModuleDirectoryLocator'
 
 const MockPackageJsonReader = jest.fn<IPackageJsonReader, any[]>(i => i)
 

@@ -1,11 +1,11 @@
-import defaultOptions from '../../src/defaultOptions'
-import LicenseMetaAggregator from '../../src/LicenseMetaAggregator'
 import type IAlertAggregator from '../../src/types/IAlertAggregator'
 import type IFileSystem from '../../src/types/IFileSystem'
 import type ILicenseIdentifier from '../../src/types/ILicenseIdentifier'
 import type ILicenseTextReader from '../../src/types/ILicenseTextReader'
 import type INoticeTextReader from '../../src/types/INoticeTextReader'
 import type IPackageJsonReader from '../../src/types/IPackageJsonReader'
+import defaultOptions from '../../src/defaultOptions'
+import LicenseMetaAggregator from '../../src/LicenseMetaAggregator'
 
 const MockLicenseIdentifier = jest.fn<ILicenseIdentifier, any[]>(i => i)
 const MockLicenseTextReader = jest.fn<ILicenseTextReader, any[]>(i => i)

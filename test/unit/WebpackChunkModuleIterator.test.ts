@@ -1,7 +1,6 @@
 import type { Module } from 'webpack'
-import WebpackChunkModuleIterator, {
-  type Compilation,
-} from '../../src/WebpackChunkModuleIterator'
+import type { Compilation } from '../../src/WebpackChunkModuleIterator'
+import WebpackChunkModuleIterator from '../../src/WebpackChunkModuleIterator'
 
 const moduleIterator = new WebpackChunkModuleIterator()
 const MockCompilation = jest.fn<Compilation, any[]>(i => i)

@@ -1,6 +1,6 @@
+import type IFileSystem from '../../src/types/IFileSystem'
 import { sep } from 'node:path'
 import NoticeTextReader from '../../src/NoticeTextReader'
-import type IFileSystem from '../../src/types/IFileSystem'
 
 const FileSystem = jest.fn<IFileSystem, any[]>(
   ({ listPaths, readFile, pathExists }) => ({
