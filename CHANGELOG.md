@@ -1,3 +1,7 @@
+# 4.5.1
+
+- Change default branch used to replenish licenses from to `main` (thanks to [@mzedel](https://github.com/mzedel))
+
 # 4.5.0
 
 - Add the option `includeNoticeText` to include `NOTICE` contents as part of the output (thanks to [@ccatterina](https://github.com/ccatterina))
