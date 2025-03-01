@@ -59,7 +59,6 @@
     "test:e2e": "cross-env NODE_OPTIONS=--openssl-legacy-provider jest --runInBand --colors --testPathPattern test/e2e --collectCoverage false",
     "test:unit": "jest --runInBand --testPathPattern test/unit --verbose --colors",
     "test:watch": "jest --runInBand --testPathPattern test/unit --watch",
-    "coverage": "codecov -t $CODECOV_TOKEN",
     "prepare": "husky install"
   },
   "peerDependencies": {
@@ -80,7 +79,6 @@
     "@types/memory-fs": "^0.3.3",
     "@types/needle": "^3.2.0",
     "@types/node": "^22.2.0",
-    "codecov": "^3.8.3",
     "cross-env": "^7.0.2",
     "eslint": "^9.6.0",
     "eslint-config-prettier": "^9.1.0",
