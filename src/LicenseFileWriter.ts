@@ -1,8 +1,8 @@
-import lodash from 'lodash'
 import type IAssetManager from './types/IAssetManager'
 import type ILicenseMetaAggregator from './types/ILicenseMetaAggregator'
 import type IModuleDirectoryLocator from './types/IModuleDirectoryLocator'
 import type IPluginOptions from './types/IPluginOptions'
+import lodash from 'lodash'
 
 const { compact, uniq } = lodash
 

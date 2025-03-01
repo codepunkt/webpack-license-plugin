@@ -1,5 +1,5 @@
-import LicenseIdentifier from '../../src/LicenseIdentifier'
 import type IAlertAggregator from '../../src/types/IAlertAggregator'
+import LicenseIdentifier from '../../src/LicenseIdentifier'
 
 const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
 

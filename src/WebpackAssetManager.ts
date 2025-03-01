@@ -1,6 +1,6 @@
 import type { Compilation } from 'webpack'
-import webpack from 'webpack'
 import type IAssetManager from './types/IAssetManager'
+import webpack from 'webpack'
 
 const sources = webpack.sources
 

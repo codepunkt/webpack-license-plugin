@@ -1,6 +1,3 @@
-import LicenseIdentifier from './LicenseIdentifier'
-import LicenseTextReader from './LicenseTextReader'
-import NoticeTextReader from './NoticeTextReader'
 import type IAlertAggregator from './types/IAlertAggregator'
 import type IFileSystem from './types/IFileSystem'
 import type ILicenseIdentifier from './types/ILicenseIdentifier'
@@ -11,6 +8,9 @@ import type IPackageJson from './types/IPackageJson'
 import type IPackageJsonReader from './types/IPackageJsonReader'
 import type IPackageLicenseMeta from './types/IPackageLicenseMeta'
 import type IPluginOptions from './types/IPluginOptions'
+import LicenseIdentifier from './LicenseIdentifier'
+import LicenseTextReader from './LicenseTextReader'
+import NoticeTextReader from './NoticeTextReader'
 
 export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
   constructor(
@@ -49,7 +49,8 @@ export default class LicenseMetaAggregator implements ILicenseMetaAggregator {
     const sortedModuleDirs = moduleDirs.sort((a, b) =>
       this.packageJsonReader
         .readPackageJson(a)
-        .name.localeCompare(this.packageJsonReader.readPackageJson(b).name),
+        .name
+        .localeCompare(this.packageJsonReader.readPackageJson(b).name),
     )
 
     for (const moduleDir of sortedModuleDirs) {

@@ -1,9 +1,9 @@
-import { sep } from 'node:path'
-import defaultOptions from '../../src/defaultOptions'
-import LicenseTextReader from '../../src/LicenseTextReader'
 import type IAlertAggregator from '../../src/types/IAlertAggregator'
 import type IDefaultLicenseTextProvider from '../../src/types/IDefaultLicenseTextProvider'
 import type IFileSystem from '../../src/types/IFileSystem'
+import { sep } from 'node:path'
+import defaultOptions from '../../src/defaultOptions'
+import LicenseTextReader from '../../src/LicenseTextReader'
 
 const FileSystem = jest.fn<IFileSystem, any[]>(
   ({ join, listPaths, readFile }) => ({

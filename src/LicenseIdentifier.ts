@@ -1,7 +1,7 @@
-import validate from 'spdx-expression-validate'
 import type IAlertAggregator from './types/IAlertAggregator'
 import type IPackageJson from './types/IPackageJson'
 import type IPluginOptions from './types/IPluginOptions'
+import validate from 'spdx-expression-validate'
 
 /**
  * Identifies license type based on package.json and selects
@@ -36,7 +36,7 @@ export default class LicenseIdentifier {
       // handle deprecated `licenses` field
       license
         = this.findPreferredLicense(meta.licenses.map(l => l.type))
-        || meta.licenses[0].type
+          || meta.licenses[0].type
     }
     else if (typeof meta.licenses === 'string') {
       // handle invalid string values for deprecated `licenses` field

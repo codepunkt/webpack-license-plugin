@@ -1,6 +1,6 @@
+import type IAlertAggregator from '../../src/types/IAlertAggregator'
 import defaultOptions from '../../src/defaultOptions'
 import OptionsProvider from '../../src/OptionsProvider'
-import type IAlertAggregator from '../../src/types/IAlertAggregator'
 
 const MockAlertAggregator = jest.fn<IAlertAggregator, any[]>(i => i)
 

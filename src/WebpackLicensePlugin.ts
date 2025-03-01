@@ -1,4 +1,6 @@
 import type { Chunk, Compilation, Compiler } from 'webpack'
+import type IPluginOptions from './types/IPluginOptions'
+import type IWebpackPlugin from './types/IWebpackPlugin'
 import webpack from 'webpack'
 import LicenseFileWriter from './LicenseFileWriter'
 import LicenseMetaAggregator from './LicenseMetaAggregator'
@@ -9,8 +11,6 @@ import WebpackAlertAggregator from './WebpackAlertAggregator'
 import WebpackAssetManager from './WebpackAssetManager'
 import WebpackChunkIterator from './WebpackChunkIterator'
 import WebpackFileSystem from './WebpackFileSystem'
-import type IPluginOptions from './types/IPluginOptions'
-import type IWebpackPlugin from './types/IWebpackPlugin'
 
 const WebpackError = webpack.WebpackError
 const pluginName = 'WebpackLicensePlugin'

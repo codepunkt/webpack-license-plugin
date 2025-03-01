@@ -1,7 +1,7 @@
 import * as needle from 'needle'
 import DefaultLicenseTextProvider, {
-  REPO_URL,
   fetch,
+  REPO_URL,
 } from '../../src/DefaultLicenseTextProvider'
 
 jest.mock('needle', () =>
