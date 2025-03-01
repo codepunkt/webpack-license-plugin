@@ -34,7 +34,7 @@ jobs:
           npm run lint
       - name: Run tests and generate coverage info
         run: |
-          npm run test && npm run coverage
+          npm run test
         env:
           CI: true
       - name: Upload coverage to Codecov
