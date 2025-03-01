@@ -93,7 +93,7 @@
     "tsup": "^8.0.1",
     "typescript": "^5.2.2",
     "webpack": "file:./node_modules/webpack5",
-    "webpack-cli": "^5.1.4",
+    "webpack-cli": "^6.0.1",
     "webpack2": "npm:webpack@^2",
     "webpack3": "npm:webpack@^3",
     "webpack4": "npm:webpack@^4",
