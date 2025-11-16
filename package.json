@@ -78,7 +78,7 @@
     "@types/lodash": "^4.14.198",
     "@types/memory-fs": "^0.3.3",
     "@types/needle": "^3.2.0",
-    "@types/node": "^22.2.0",
+    "@types/node": "^24.10.1",
     "cross-env": "^7.0.2",
     "eslint": "^9.6.0",
     "eslint-config-prettier": "^10.0.2",
